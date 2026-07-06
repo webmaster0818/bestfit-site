@@ -1,0 +1,332 @@
+[
+ {
+  "id": "sGSCtxosyziST0Qi",
+  "name": "月額制",
+  "category": "サービス",
+  "key": "009"
+ },
+ {
+  "id": "j2ceJHDYVIJAMV13",
+  "name": "施設",
+  "category": "施設",
+  "key": "016"
+ },
+ {
+  "id": "BFC4ZaxemKF5aWTo",
+  "name": "子連れOK",
+  "category": "施設",
+  "key": "017"
+ },
+ {
+  "id": "1kCwLQbLh12rgQoe",
+  "name": "駐車場",
+  "category": "施設",
+  "key": "018"
+ },
+ {
+  "id": "6zdj3YfuB4n4u0Tt",
+  "name": "女性トレーナー在籍",
+  "category": "トレーナー",
+  "key": "019"
+ },
+ {
+  "id": "Zv2NMCiMcVmi004t",
+  "name": "トレーナー担当制",
+  "category": "トレーナー",
+  "key": "020"
+ },
+ {
+  "id": "8S6DfFb8q0zbli9Y",
+  "name": "トレーナー変動制",
+  "category": "トレーナー",
+  "key": "021"
+ },
+ {
+  "id": "Tqll7BnOdBHfAA2e",
+  "name": "トレーナー指名あり(有料)",
+  "category": "トレーナー",
+  "key": "022"
+ },
+ {
+  "id": "2QXooMFohdFJsYK1",
+  "name": "ダイエット",
+  "category": "トレーニング目的",
+  "key": "023"
+ },
+ {
+  "id": "9vXTMYlGLAhlxdYf",
+  "name": "筋力アップ(バルクアップ)",
+  "category": "トレーニング目的",
+  "key": "024"
+ },
+ {
+  "id": "eRU0YicppbCLy4yg",
+  "name": "毎日",
+  "category": "食事指導",
+  "key": "048"
+ },
+ {
+  "id": "4eR7Qb99zZqMsRBk",
+  "name": "毎食",
+  "category": "食事指導",
+  "key": "049"
+ },
+ {
+  "id": "lUFxdRPqHpyQ2nTN",
+  "name": "LINE",
+  "category": "食事指導",
+  "key": "050"
+ },
+ {
+  "id": "mBt29zJ4mzvSfHHD",
+  "name": "専用アプリ",
+  "category": "食事指導",
+  "key": "051"
+ },
+ {
+  "id": "Run8chbSV5svsIYQ",
+  "name": "食事報告必須",
+  "category": "食事指導",
+  "key": "052"
+ },
+ {
+  "id": "owcdygZEPEGSEvOQ",
+  "name": "食事報告自由",
+  "category": "食事指導",
+  "key": "053"
+ },
+ {
+  "id": "Uf5IgeJ23zTSyQUi",
+  "name": "食事制限管理",
+  "category": "食事指導",
+  "key": "054"
+ },
+ {
+  "id": "t2WmLnGQV2bmveyJ",
+  "name": "厳しい制限無し",
+  "category": "食事指導",
+  "key": "055"
+ },
+ {
+  "id": "4JsEjXzikuOX5CIA",
+  "name": "女性専用",
+  "category": "サービス",
+  "key": "001"
+ },
+ {
+  "id": "lV7bwsP4oRNlgcKh",
+  "name": "食事指導",
+  "category": "サービス",
+  "key": "002"
+ },
+ {
+  "id": "hSvoqkFkXCCDRqDt",
+  "name": "入会金不要",
+  "category": "サービス",
+  "key": "003"
+ },
+ {
+  "id": "vvlAReyeCjuE8LLS",
+  "name": "通い放題",
+  "category": "サービス",
+  "key": "004"
+ },
+ {
+  "id": "UVLIEY5LG6OxUfpI",
+  "name": "ウォーターサーバー",
+  "category": "サービス",
+  "key": "005"
+ },
+ {
+  "id": "ZKS5zbvLiS84AC1j",
+  "name": "早朝深夜",
+  "category": "サービス",
+  "key": "006"
+ },
+ {
+  "id": "BqZK5B9M6HOYg36x",
+  "name": "トライアルプラン",
+  "category": "サービス",
+  "key": "007"
+ },
+ {
+  "id": "5Xdw8OmlLhakG0u2",
+  "name": "モニタープラン",
+  "category": "サービス",
+  "key": "008"
+ },
+ {
+  "id": "qW52olWvgbex8Hyq",
+  "name": "完全個室",
+  "category": "施設",
+  "key": "010"
+ },
+ {
+  "id": "wFBaPkdPRnPvJxOZ",
+  "name": "半個室",
+  "category": "施設",
+  "key": "011"
+ },
+ {
+  "id": "jIvw9PJp2YTGI8os",
+  "name": "シャワー",
+  "category": "施設",
+  "key": "012"
+ },
+ {
+  "id": "M7GgfIjNaIXXbU1i",
+  "name": "パウダールーム",
+  "category": "施設",
+  "key": "013"
+ },
+ {
+  "id": "59LjqHB6raw2Edfz",
+  "name": "手ぶらOK",
+  "category": "施設",
+  "key": "014"
+ },
+ {
+  "id": "K89P6oZN8FaAOQD9",
+  "name": "シューズ預かり",
+  "category": "施設",
+  "key": "015"
+ },
+ {
+  "id": "2oBS6TpcnxuMKrPw",
+  "name": "ボディシェイプ",
+  "category": "トレーニング目的",
+  "key": "025"
+ },
+ {
+  "id": "xTUmb5OjOwC9iZVv",
+  "name": "脱・リバウンド",
+  "category": "トレーニング目的",
+  "key": "026"
+ },
+ {
+  "id": "FeIlEspAbk3LOee2",
+  "name": "肩こり改善",
+  "category": "トレーニング目的",
+  "key": "027"
+ },
+ {
+  "id": "403vA5xN3ljygtXt",
+  "name": "姿勢改善",
+  "category": "トレーニング目的",
+  "key": "028"
+ },
+ {
+  "id": "oylaxmMOwY6ixkNg",
+  "name": "アンチエイジング",
+  "category": "トレーニング目的",
+  "key": "029"
+ },
+ {
+  "id": "rRtmQaAfI4BBCk09",
+  "name": "健康診断の数値改善",
+  "category": "トレーニング目的",
+  "key": "030"
+ },
+ {
+  "id": "YaZpHT0bvjTrrmI8",
+  "name": "健康・体型維持",
+  "category": "トレーニング目的",
+  "key": "031"
+ },
+ {
+  "id": "bQwY8HlcHG0GMlZK",
+  "name": "運動不足解消",
+  "category": "トレーニング目的",
+  "key": "032"
+ },
+ {
+  "id": "XiHMVM7pVpJdyt0e",
+  "name": "ストレス発散",
+  "category": "トレーニング目的",
+  "key": "033"
+ },
+ {
+  "id": "JkAKV67tH6dRdOGq",
+  "name": "産後ダイエット",
+  "category": "トレーニング目的",
+  "key": "034"
+ },
+ {
+  "id": "wY89aXviG7QpF4cf",
+  "name": "フリーウエイト",
+  "category": "トレーニング種類・器具",
+  "key": "035"
+ },
+ {
+  "id": "3Vh6aOkenFWcpwnk",
+  "name": "チューブ",
+  "category": "トレーニング種類・器具",
+  "key": "036"
+ },
+ {
+  "id": "josLUtWiR7R3bD0u",
+  "name": "マシン",
+  "category": "トレーニング種類・器具",
+  "key": "037"
+ },
+ {
+  "id": "9hzcvkuZ6z7tPjUL",
+  "name": "自重",
+  "category": "トレーニング種類・器具",
+  "key": "038"
+ },
+ {
+  "id": "aq3LnWORV4Tn6t6p",
+  "name": "EMS",
+  "category": "トレーニング種類・器具",
+  "key": "039"
+ },
+ {
+  "id": "8AU9qejj8RgxYJZU",
+  "name": "加圧",
+  "category": "トレーニング種類・器具",
+  "key": "040"
+ },
+ {
+  "id": "EbA0UL3DYHKbdxV7",
+  "name": "キックボクシング",
+  "category": "トレーニング種類・器具",
+  "key": "041"
+ },
+ {
+  "id": "HSeX50Qlr0q6aAyz",
+  "name": "有酸素マシン",
+  "category": "トレーニング種類・器具",
+  "key": "042"
+ },
+ {
+  "id": "fkVox7ThTaU1R3sy",
+  "name": "HIIT",
+  "category": "トレーニング種類・器具",
+  "key": "043"
+ },
+ {
+  "id": "ZFZmxowrn6Aurtnr",
+  "name": "管理栄養士",
+  "category": "食事指導",
+  "key": "044"
+ },
+ {
+  "id": "8xj3NofQO8iEPcpD",
+  "name": "カロリー計算",
+  "category": "食事指導",
+  "key": "045"
+ },
+ {
+  "id": "Tc8Nyy0driIKLQfN",
+  "name": "メニューアドバイス",
+  "category": "食事指導",
+  "key": "046"
+ },
+ {
+  "id": "mNUvTRDzbJQG5jhl",
+  "name": "レシピ提供",
+  "category": "食事指導",
+  "key": "047"
+ }
+]
