@@ -126,3 +126,11 @@ body {
   color: var(--bf-accent-deep);
   font-weight: 800;
 }
+
+/* モダン区切り線 */
+.bf-divider {
+  height: 1px;
+  max-width: 64rem;
+  margin: 0 auto;
+  background: linear-gradient(90deg, transparent, rgba(25,112,252,0.35), rgba(51,51,51,0.25), transparent);
+}

@@ -39,7 +39,7 @@ export default function Home() {
     .map(([p, m]) => ({ href: p, title: m.title.split("｜")[0] }));
 
   return (
-    <div style={{ background: "url('/images/top_bg_img.png')", backgroundSize: "420px" }}>
+    <div style={{ background: "linear-gradient(rgba(248,250,253,0.94), rgba(248,250,253,0.94)), url('/images/gym-bg-s.jpg') center top / cover fixed, url('/images/top_bg_img.png')" }}>
       {/* ===== ファーストビュー: 現行KV画像 + 検索パネル ===== */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -85,6 +85,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="bf-divider" />
+
       {/* ===== こだわり条件 ===== */}
       <section className="py-12" style={{ background: "linear-gradient(180deg, rgba(14,95,168,0.06), rgba(14,95,168,0.02))" }}>
         <div className="max-w-5xl mx-auto px-4">
@@ -97,21 +99,23 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="bf-divider" />
+
       {/* ===== エリア記事(県別アコーディオン) ===== */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">エリアからおすすめ記事を探す</h2>
-          <div className="grid md:grid-cols-2 gap-2 mt-2">
+          <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">エリア特集から探す</h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-2">
             {articleAreaTree.map((pref) => (
-              <details key={pref.name} className="bf-card overflow-hidden">
-                <summary className="cursor-pointer px-5 py-3.5 font-bold text-sm flex items-center justify-between" style={{ color: "var(--bf-ink)" }}>
-                  <span>{pref.name}のパーソナルジム記事</span>
-                  <span className="text-xs font-normal" style={{ color: "var(--bf-primary)" }}>{pref.children.length}件 ▼</span>
+              <details key={pref.name} className="bf-card overflow-hidden [&[open]]:col-span-3 md:[&[open]]:col-span-4">
+                <summary className="cursor-pointer px-2 py-3 font-bold text-sm text-center list-none" style={{ color: "var(--bf-primary)" }}>
+                  {pref.name}
+                  <span className="ml-1 text-[10px] font-normal align-middle rounded-full px-1.5 py-0.5" style={{ background: "var(--bf-primary-soft)", color: "var(--bf-primary-deep)" }}>{pref.children.length}</span>
                 </summary>
-                <ul className="px-5 pb-4 flex flex-wrap gap-2 border-t border-gray-100 pt-3">
+                <ul className="px-4 pb-4 flex flex-wrap gap-2 border-t border-gray-100 pt-3 justify-center">
                   {pref.children.map((c) => (
                     <li key={c.slug}>
-                      <Link href={`/articles/${c.category}/${c.slug}`} className="bf-chip-link">{c.name}</Link>
+                      <Link href={`/articles/${c.category}/${c.slug}`} className="bf-chip-link">{c.name}のジム特集</Link>
                     </li>
                   ))}
                 </ul>
@@ -120,6 +124,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="bf-divider" />
 
       {/* ===== 新着記事 ===== */}
       <section className="py-12">
@@ -160,6 +166,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="bf-divider" />
 
       {/* ===== 使い方 ===== */}
       <section className="py-12">
