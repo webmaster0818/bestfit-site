@@ -51,9 +51,20 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
     url: `https://dunlopsportsclub.jp${p}`,
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
+      ...(s._prefCode ? [{ "@type": "ListItem", position: 2, name: prefName, item: `https://dunlopsportsclub.jp/gyms/list/pref-${s._prefCode}` }] : []),
+      { "@type": "ListItem", position: s._prefCode ? 3 : 2, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://dunlopsportsclub.jp${p}` },
+    ],
+  };
+
   return (
     <article className="max-w-4xl mx-auto px-4 py-6 md:py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <nav className="text-xs mb-5" style={{ color: "var(--bf-muted)" }}>
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-1">›</span>

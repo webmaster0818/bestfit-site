@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
   const { segs } = await params;
   const m = metaFor(pagePath(segs));
   if (!m) return {};
-  return { title: { absolute: m.title }, description: m.desc };
+  return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: pagePath(segs) } };
 }
 
 export default async function ListPage({ params }: { params: Promise<{ segs: string[] }> }) {
@@ -32,8 +32,19 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
   const labelText = deduped.join("・");
   const brandMap = Object.values(brands());
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
+      { "@type": "ListItem", position: 2, name: "ジムを探す", item: "https://dunlopsportsclub.jp/gyms/list" },
+      { "@type": "ListItem", position: 3, name: labelText, item: `https://dunlopsportsclub.jp${p}` },
+    ],
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <nav className="text-xs text-gray-500 mb-4">
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/gyms/list" className="hover:underline">ジムを探す</Link> › {labelText}

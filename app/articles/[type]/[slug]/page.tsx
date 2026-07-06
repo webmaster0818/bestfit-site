@@ -43,10 +43,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/articles" className="hover:underline">記事一覧</Link>
       </nav>
-      <h1 className="text-2xl font-extrabold mb-6">{m?.h1 || m?.title.split("｜")[0]}</h1>
+      <h1 className="text-2xl font-extrabold mb-4">{m?.h1 || m?.title.split("｜")[0]}</h1>
+      {sections.length > 2 && (
+        <nav className="bf-card p-5 mb-8">
+          <p className="font-bold text-sm mb-2">目次</p>
+          <ol className="text-sm space-y-1">
+            {sections.map((sec, i) => (
+              <li key={i}><a href={`#sec-${i}`} className="hover:underline" style={{ color: "var(--bf-primary)" }}>{sec.name}</a></li>
+            ))}
+          </ol>
+        </nav>
+      )}
       {sections.map((s, i) => (
-        <section key={i} className="mb-8">
-          <h2 className="text-lg font-bold border-l-4 pl-3 mb-3" style={{ borderColor: "var(--bf-primary)" }}>{s.name}</h2>
+        <section key={i} className="mb-8" id={`sec-${i}`}>
+          <h2 className="bf-h2">{s.name}</h2>
           <div
             className="prose prose-sm max-w-none text-gray-700 leading-relaxed [&_a]:text-blue-700 [&_a]:underline [&_img]:max-w-full"
             dangerouslySetInnerHTML={{ __html: s.content }}
