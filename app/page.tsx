@@ -4,7 +4,7 @@ import { metaFor, taxonomies, brands, stores } from "@/lib/data";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/");
-  return m ? { title: { absolute: m.title }, description: m.desc } : {};
+  return m ? { title: { absolute: m.title }, description: m.desc, alternates: { canonical: "/" } } : {};
 }
 
 export default function Home() {

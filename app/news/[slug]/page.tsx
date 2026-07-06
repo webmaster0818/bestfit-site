@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const m = metaFor(`/news/${slug}`);
-  return m ? { title: { absolute: m.title }, description: m.desc } : {};
+  return m ? { title: { absolute: m.title }, description: m.desc, alternates: { canonical: `/news/${slug}` } } : {};
 }
 
 export default async function NewsPage({ params }: { params: Promise<{ slug: string }> }) {

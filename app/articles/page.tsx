@@ -4,7 +4,7 @@ import { metaFor, urlMeta } from "@/lib/data";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/articles");
-  return m ? { title: { absolute: m.title }, description: m.desc } : { title: "記事一覧｜BEST-FIT" };
+  return m ? { title: { absolute: m.title }, description: m.desc, alternates: { canonical: "/articles" } } : { title: "記事一覧｜BEST-FIT" };
 }
 
 export default function ArticlesIndex() {
