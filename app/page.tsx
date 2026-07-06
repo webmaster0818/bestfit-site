@@ -27,6 +27,7 @@ export default function Home() {
   const areas = loadJson("areas-tree.json");
   const featuresCatalog = loadJson("features-catalog.json");
   const topArticles: { href: string; img: string }[] = loadJson("top-articles.json");
+  const articleAreaTree: { name: string; children: { name: string; category: string; slug: string }[] }[] = loadJson("article-area-tree.json");
   const imageMap: Record<string, string> = loadJson("image-map.json");
   const meta = urlMeta();
   const articleCards = topArticles
@@ -44,7 +45,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <Image src="/images/kv.png" alt="" fill priority className="object-cover object-[70%_top] hidden md:block" />
           <Image src="/images/kv-sp.png" alt="" fill priority className="object-cover object-top md:hidden" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(7,42,77,0.88) 0%, rgba(10,58,104,0.72) 45%, rgba(10,58,104,0.25) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(15,18,24,0.62) 0%, rgba(15,18,24,0.38) 45%, rgba(15,18,24,0.08) 100%)" }} />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
           <div className="text-white">
@@ -93,6 +94,30 @@ export default function Home() {
               <li key={id}><Link href={`/gyms/list/feature-${id}`} className="bf-chip-link bg-white">{name}</Link></li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* ===== エリア記事(県別アコーディオン) ===== */}
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">エリアからおすすめ記事を探す</h2>
+          <div className="grid md:grid-cols-2 gap-2 mt-2">
+            {articleAreaTree.map((pref) => (
+              <details key={pref.name} className="bf-card overflow-hidden">
+                <summary className="cursor-pointer px-5 py-3.5 font-bold text-sm flex items-center justify-between" style={{ color: "var(--bf-ink)" }}>
+                  <span>{pref.name}のパーソナルジム記事</span>
+                  <span className="text-xs font-normal" style={{ color: "var(--bf-primary)" }}>{pref.children.length}件 ▼</span>
+                </summary>
+                <ul className="px-5 pb-4 flex flex-wrap gap-2 border-t border-gray-100 pt-3">
+                  {pref.children.map((c) => (
+                    <li key={c.slug}>
+                      <Link href={`/articles/${c.category}/${c.slug}`} className="bf-chip-link">{c.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

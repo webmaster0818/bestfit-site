@@ -26,10 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-gray-200 bg-white">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-            <Link href="/" className="font-extrabold text-xl" style={{ color: "var(--bf-primary)" }}>
-              BEST-FIT
+            <Link href="/" className="flex items-center">
+              <img src="/images/logo.png" alt="BEST-FIT" className="h-7 w-auto" />
             </Link>
-            <nav className="text-sm text-gray-600 flex gap-4">
+            <nav className="text-sm font-bold flex gap-4" style={{ color: "var(--bf-ink)" }}>
               <Link href="/gyms/list" className="hover:underline">ジムを探す</Link>
               <Link href="/articles" className="hover:underline">エリア記事</Link>
               <Link href="/news" className="hover:underline">お知らせ</Link>

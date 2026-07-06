@@ -75,3 +75,39 @@ export function resolveListPage(segs: string[]) {
   };
   return { cond, labels, stores: hit };
 }
+
+// 一覧ページの「さらに絞り込む」リンク: 実在する静的list URLだけから「現在の条件+1」の選択肢を生成(セグメント順非依存)
+export function refineLinks(segs: string[]) {
+  const tax = taxonomies();
+  const cur = new Set(segs);
+  const kinds = new Set(segs.map((x) => x.split("-")[0]));
+  const out: { href: string; label: string; kind: string }[] = [];
+  const seen = new Set<string>();
+  for (const p of listPaths()) {
+    const parts = p.replace("/gyms/list/", "").split("/");
+    if (parts.length !== segs.length + 1) continue;
+    if (!segs.every((x) => parts.includes(x))) continue;
+    const extra = parts.find((x) => !cur.has(x));
+    if (!extra || seen.has(extra)) continue;
+    const i = extra.indexOf("-");
+    const kind = extra.slice(0, i);
+    const val = extra.slice(i + 1);
+    if (kinds.has(kind)) continue;
+    let label = "";
+    if (kind === "pref") label = tax.pref[val] || "";
+    else if (kind === "city") {
+      label = tax.city[val] || "";
+      const prefSeg = segs.find((x) => x.startsWith("pref-"));
+      if (prefSeg) {
+        const pn = tax.pref[prefSeg.slice(5)] || "";
+        if (pn && label.startsWith(pn)) label = label.slice(pn.length) || label;
+      }
+    } else if (kind === "ward") label = tax.ward[val] || "";
+    else if (kind === "feature") label = tax.feature[val] || "";
+    if (!label) continue;
+    seen.add(extra);
+    out.push({ href: p, label, kind });
+  }
+  const order: Record<string, number> = { pref: 0, city: 1, ward: 2, feature: 3 };
+  return out.sort((a, b) => (order[a.kind] ?? 9) - (order[b.kind] ?? 9) || a.label.localeCompare(b.label, "ja"));
+}

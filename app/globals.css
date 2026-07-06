@@ -2,12 +2,12 @@
 
 :root {
   /* BEST-FIT デザイントークン v1 */
-  --bf-primary: #0e5fa8;        /* 信頼のブルー */
-  --bf-primary-deep: #0a4a85;
-  --bf-primary-soft: #eaf3fb;
+  --bf-primary: #1970fc;        /* ロゴブルー(明るい青) */
+  --bf-primary-deep: #0d54c9;
+  --bf-primary-soft: #eaf2ff;
   --bf-accent: #f97316;         /* CTAオレンジ(CTA専用・装飾に使わない) */
   --bf-accent-deep: #ea580c;
-  --bf-ink: #1e293b;
+  --bf-ink: #333333;           /* ロゴの黒=差し色 */
   --bf-muted: #64748b;
   --bf-line: #e2e8f0;
   --bf-bg: #f8fafc;

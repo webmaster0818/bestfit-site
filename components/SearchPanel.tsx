@@ -54,7 +54,7 @@ export default function SearchPanel({ areas, features }: { areas: AreaTree; feat
   const selectCls = "w-full rounded-lg border border-white/30 bg-white/95 px-3 py-2.5 text-sm font-semibold text-slate-800";
 
   return (
-    <div className="rounded-2xl p-5 md:p-6 shadow-2xl" style={{ background: "rgba(10, 58, 104, 0.92)", backdropFilter: "blur(4px)" }}>
+    <div className="rounded-2xl p-5 md:p-6 shadow-2xl" style={{ background: "rgba(20, 24, 32, 0.82)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.15)" }}>
       <p className="text-white font-extrabold mb-3 text-sm tracking-wider">エリアと条件からパーソナルジムを探す</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-3">
         <select className={selectCls} value={pref} onChange={(e) => { setPref(e.target.value); setCity(""); setWard(""); }}>

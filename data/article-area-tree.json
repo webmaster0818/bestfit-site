@@ -1,0 +1,789 @@
+[
+ {
+  "id": "Jm7k0XcORs1i",
+  "name": "北海道",
+  "order": 1,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "PF6Xhs5E2TLN",
+    "name": "札幌",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "sapporo",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "frWfleBvVoZ8",
+  "name": "岩手",
+  "order": 2,
+  "type": "pref",
+  "pickup": false,
+  "children": [
+   {
+    "id": "Ll1thfKtEbQC",
+    "name": "盛岡",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "morioka",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "8cvMftKwBccl",
+  "name": "宮城",
+  "order": 3,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "HMZ9pR3Nd371",
+    "name": "仙台",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "sendai",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "5IpL324U2WgY",
+  "name": "東京",
+  "order": 1,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "1OtgU3dtFMJ0",
+    "name": "東京",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "tokyo",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "dOZ5c40sPUkS",
+    "name": "新宿",
+    "order": 2,
+    "type": "link",
+    "category": "station",
+    "slug": "shinjuku",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "CQFUw2sWc35b",
+    "name": "銀座",
+    "order": 3,
+    "type": "link",
+    "category": "station",
+    "slug": "ginza",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "J9LBDCbFsyim",
+    "name": "池袋",
+    "order": 4,
+    "type": "link",
+    "category": "station",
+    "slug": "ikebukuro",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "6VGMQW3AgdHV",
+    "name": "渋谷",
+    "order": 5,
+    "type": "link",
+    "category": "station",
+    "slug": "shibuya",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "nxBP2E6xMa0t",
+    "name": "恵比寿",
+    "order": 6,
+    "type": "link",
+    "category": "station",
+    "slug": "ebisu",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "UV97TzGQyrzK",
+    "name": "五反田",
+    "order": 7,
+    "type": "link",
+    "category": "station",
+    "slug": "gotanda",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "TbGQj9dUdvFr",
+    "name": "錦糸町",
+    "order": 8,
+    "type": "link",
+    "category": "station",
+    "slug": "kinshicho",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "bERElS0150t7",
+    "name": "吉祥寺",
+    "order": 9,
+    "type": "link",
+    "category": "station",
+    "slug": "kichijoji",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "sLIABiwIHbgj",
+    "name": "立川",
+    "order": 10,
+    "type": "link",
+    "category": "city",
+    "slug": "tachikawa",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "9kWgOWCdGDAv",
+    "name": "八王子",
+    "order": 11,
+    "type": "link",
+    "category": "city",
+    "slug": "hachioji",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "GV2muosVyodI",
+    "name": "板橋",
+    "order": 12,
+    "type": "link",
+    "category": "city",
+    "slug": "itabashi",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "H43sxJRklRnq",
+    "name": "練馬",
+    "order": 13,
+    "type": "link",
+    "category": "city",
+    "slug": "nerima",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "PvbmMjxRG8Tt",
+    "name": "国分寺",
+    "order": 14,
+    "type": "link",
+    "category": "city",
+    "slug": "kokubunji",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "8iLvtg6F8Djp",
+    "name": "蒲田",
+    "order": 15,
+    "type": "link",
+    "category": "station",
+    "slug": "kamata",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "jAes8cE2ttbQ",
+    "name": "秋葉原",
+    "order": 16,
+    "type": "link",
+    "category": "station",
+    "slug": "akihabara",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "NSLICxLmEGg7",
+    "name": "六本木",
+    "order": 17,
+    "type": "link",
+    "category": "station",
+    "slug": "roppongi",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "krXi9bXpMupq",
+    "name": "赤羽",
+    "order": 18,
+    "type": "link",
+    "category": "station",
+    "slug": "akabane",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "7EYt1TTi9dIF",
+    "name": "三軒茶屋",
+    "order": 19,
+    "type": "link",
+    "category": "station",
+    "slug": "sangenjaya",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "CEbNCsGaGeAr",
+    "name": "目黒",
+    "order": 20,
+    "type": "link",
+    "category": "station",
+    "slug": "meguro",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "VcGHR5ei6zOX",
+  "name": "神奈川",
+  "order": 2,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "LJ5Br8hpsONd",
+    "name": "横浜",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "yokohama",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "vfHW39ohK0l6",
+    "name": "関内",
+    "order": 2,
+    "type": "link",
+    "category": "station",
+    "slug": "kannai",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "X792sKeO4WUe",
+    "name": "川崎",
+    "order": 3,
+    "type": "link",
+    "category": "city",
+    "slug": "kawasaki",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "ZMMDu1WR7t2i",
+    "name": "藤沢",
+    "order": 4,
+    "type": "link",
+    "category": "station",
+    "slug": "fujisawa",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "TjUeLTfNTH9m",
+    "name": "武蔵小杉",
+    "order": 5,
+    "type": "link",
+    "category": "station",
+    "slug": "musashikosugi",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "Uzl1ry6F0POl",
+    "name": "茅ヶ崎",
+    "order": 6,
+    "type": "link",
+    "category": "station",
+    "slug": "chigasaki",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "mD4hfmAVGNQO",
+    "name": "平塚",
+    "order": 7,
+    "type": "link",
+    "category": "station",
+    "slug": "hiratsuka",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "fgAAN3tvUz0v",
+  "name": "埼玉",
+  "order": 3,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "SObYLhZ4i90s",
+    "name": "大宮",
+    "order": 1,
+    "type": "link",
+    "category": "station",
+    "slug": "omiya",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "Jv3tmjNp6Q1j",
+    "name": "浦和",
+    "order": 2,
+    "type": "link",
+    "category": "station",
+    "slug": "urawa",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "ikUbNA7KYmU2",
+    "name": "川越",
+    "order": 3,
+    "type": "link",
+    "category": "station",
+    "slug": "kawagoe",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "p7KhMn9osYdl",
+    "name": "草加",
+    "order": 4,
+    "type": "link",
+    "category": "city",
+    "slug": "soka",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "iZ6ZFgULJk2m",
+    "name": "所沢",
+    "order": 5,
+    "type": "link",
+    "category": "station",
+    "slug": "tokorozawa",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "n40Uz0cO1k82",
+  "name": "千葉",
+  "order": 4,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "ADpFSYKXl4Wa",
+    "name": "船橋",
+    "order": 1,
+    "type": "link",
+    "category": "station",
+    "slug": "funabashi",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "1Bh5VvwtGrwv",
+    "name": "柏",
+    "order": 2,
+    "type": "link",
+    "category": "station",
+    "slug": "kashiwa",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "NnQDCSuJC0Je",
+  "name": "茨城",
+  "order": 5,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "d0dYJWQlMA1l",
+    "name": "つくば",
+    "order": 1,
+    "type": "link",
+    "category": "station",
+    "slug": "tsukuba",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "49Nx5ZnGgdWW",
+  "name": "栃木",
+  "order": 6,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "n56Ha5PmUSqD",
+    "name": "宇都宮",
+    "order": 1,
+    "type": "link",
+    "category": "station",
+    "slug": "utsunomiya",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "85VTfNcVxlIx",
+  "name": "群馬",
+  "order": 7,
+  "type": "pref",
+  "pickup": false,
+  "children": [
+   {
+    "id": "Tv9ongb5McBy",
+    "name": "高崎",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "takasaki",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "AauYQd91JCr0",
+  "name": "岐阜",
+  "order": 1,
+  "type": "pref",
+  "pickup": false,
+  "children": [
+   {
+    "id": "4eghQiXYQerv",
+    "name": "岐阜",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "gifu",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "CerMjkSk48gC",
+  "name": "静岡",
+  "order": 2,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "GSODVAWKU4MM",
+    "name": "静岡",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "shizuoka",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "pb22sNeKC7tL",
+    "name": "浜松",
+    "order": 2,
+    "type": "link",
+    "category": "city",
+    "slug": "hamamatsu",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "dn1L3Z9ysL9e",
+  "name": "新潟",
+  "order": 3,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "lsas6vlUFttB",
+    "name": "新潟",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "niigata",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "XLuPhCr7cFMx",
+  "name": "愛知",
+  "order": 4,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "Bp0f5HdWNKtt",
+    "name": "名古屋",
+    "order": 1,
+    "type": "link",
+    "category": "city",
+    "slug": "nagoya",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "tzAcp050MWmY",
+  "name": "大阪",
+  "order": 1,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "HYi3dC5f5TAN",
+    "name": "大阪",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "osaka",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "tqwYt7APfWiv",
+    "name": "梅田",
+    "order": 2,
+    "type": "link",
+    "category": "station",
+    "slug": "umeda",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "dCK28z1vniQo",
+    "name": "豊中",
+    "order": 3,
+    "type": "link",
+    "category": "station",
+    "slug": "toyonaka",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "RbnkikXdCRid",
+  "name": "兵庫",
+  "order": 2,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "HkJAm51hVsb3",
+    "name": "姫路",
+    "order": 1,
+    "type": "link",
+    "category": "station",
+    "slug": "himeji",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "gAP9mNFxuyHm",
+  "name": "和歌山",
+  "order": 3,
+  "type": "pref",
+  "pickup": false,
+  "children": [
+   {
+    "id": "mB7oTlH7HVe5",
+    "name": "和歌山",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "wakayama",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "qLI6UsXGTwOE",
+  "name": "岡山",
+  "order": 1,
+  "type": "pref",
+  "pickup": false,
+  "children": [
+   {
+    "id": "ddOW7SlIfDgr",
+    "name": "岡山",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "okayama",
+    "pickup": false,
+    "children": []
+   },
+   {
+    "id": "xQpIXOKUrwOu",
+    "name": "倉敷",
+    "order": 2,
+    "type": "link",
+    "category": "city",
+    "slug": "kurashiki",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "1axY5mbRDLRD",
+  "name": "広島",
+  "order": 2,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "adD3cY6bDHZ0",
+    "name": "広島",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "hiroshima",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "3FFSTucs4Y4T",
+  "name": "福岡",
+  "order": 1,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "IC6EHVH5GJXF",
+    "name": "福岡",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "fukuoka",
+    "pickup": true,
+    "children": []
+   },
+   {
+    "id": "FgHxwg6KLs5d",
+    "name": "久留米",
+    "order": 2,
+    "type": "link",
+    "category": "city",
+    "slug": "kurume",
+    "pickup": false,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "l6LKe1sAftbL",
+  "name": "熊本",
+  "order": 2,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "Yl0vciHgCNRT",
+    "name": "熊本",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "kumamoto",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "tzGDEvpQBD0S",
+  "name": "鹿児島",
+  "order": 3,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "PEj3C4KLd0qE",
+    "name": "鹿児島",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "kagoshima",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ },
+ {
+  "id": "sTq3OXTgL4q8",
+  "name": "沖縄",
+  "order": 4,
+  "type": "pref",
+  "pickup": true,
+  "children": [
+   {
+    "id": "DHgr4IaJSR7u",
+    "name": "沖縄",
+    "order": 1,
+    "type": "link",
+    "category": "pref",
+    "slug": "okinawa",
+    "pickup": true,
+    "children": []
+   }
+  ]
+ }
+]

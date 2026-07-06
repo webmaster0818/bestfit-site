@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { listPaths, metaFor, resolveListPage, brands } from "@/lib/data";
+import { listPaths, metaFor, resolveListPage, brands, refineLinks } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -50,7 +50,38 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         <Link href="/gyms/list" className="hover:underline">ジムを探す</Link> › {labelText}
       </nav>
       <h1 className="text-xl md:text-2xl font-extrabold mb-2">{`「${labelText}」のパーソナルジム検索結果`}</h1>
-      <p className="text-sm text-gray-500 mb-8">{hits.length}件のパーソナルジムが見つかりました</p>
+      <p className="text-sm text-gray-500 mb-5">{hits.length}件のパーソナルジムが見つかりました</p>
+
+      {(() => {
+        const refs = refineLinks(segs);
+        if (!refs.length) return null;
+        const areas = refs.filter((r) => r.kind !== "feature");
+        const feats = refs.filter((r) => r.kind === "feature");
+        return (
+          <div className="bf-card p-4 mb-8">
+            {areas.length > 0 && (
+              <div className="mb-3">
+                <p className="text-xs font-extrabold mb-2" style={{ color: "var(--bf-ink)" }}>エリアでさらに絞り込む</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {areas.map((r) => (
+                    <Link key={r.href} href={r.href} className="bf-chip-link">{r.label}</Link>
+                  ))}
+                </div>
+              </div>
+            )}
+            {feats.length > 0 && (
+              <div>
+                <p className="text-xs font-extrabold mb-2" style={{ color: "var(--bf-ink)" }}>条件でさらに絞り込む</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {feats.map((r) => (
+                    <Link key={r.href} href={r.href} className="bf-chip-link">{r.label}</Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })()}
 
       <div className="space-y-4">
         {hits.map(([path, s]) => {
