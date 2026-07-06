@@ -26,7 +26,10 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
   const p = pagePath(segs);
   const m = metaFor(p);
   const { labels, stores: hits } = resolveListPage(segs);
-  const labelText = [labels.pref, labels.city, labels.ward, labels.feature].filter(Boolean).join("・");
+  const parts = [labels.pref, labels.city, labels.ward, labels.feature].filter(Boolean) as string[];
+  // 「千葉県」+「千葉県千葉市」のような包含重複を除去
+  const deduped = parts.filter((x, i) => !parts.some((y, j) => j > i && y.includes(x)));
+  const labelText = deduped.join("・");
   const brandMap = Object.values(brands());
 
   return (
