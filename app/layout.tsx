@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://dunlopsportsclub.jp"),
+  title: "パーソナルジム専門の比較・口コミサイト｜BEST-FIT",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ja">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "BEST-FIT",
+              url: "https://dunlopsportsclub.jp",
+            }),
+          }}
+        />
+      </head>
+      <body>
+        <header className="border-b border-gray-200 bg-white">
+          <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <Link href="/" className="font-extrabold text-xl" style={{ color: "var(--bf-primary)" }}>
+              BEST-FIT
+            </Link>
+            <nav className="text-sm text-gray-600 flex gap-4">
+              <Link href="/gyms/list" className="hover:underline">ジムを探す</Link>
+              <Link href="/articles" className="hover:underline">エリア記事</Link>
+              <Link href="/news" className="hover:underline">お知らせ</Link>
+            </nav>
+          </div>
+        </header>
+        <main className="min-h-screen">{children}</main>
+        <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-500" style={{ background: "var(--bf-bg)" }}>
+          <div className="max-w-5xl mx-auto px-4 space-y-2">
+            <p className="font-bold text-gray-700">BEST-FIT｜パーソナルジム専門の比較・口コミサイト</p>
+            <nav className="flex gap-4 flex-wrap">
+              <Link href="/privacy-policy" className="hover:underline">プライバシーポリシー</Link>
+              <Link href="/terms-of-service" className="hover:underline">利用規約</Link>
+              <Link href="/content-policy" className="hover:underline">コンテンツポリシー</Link>
+            </nav>
+            <p>© BEST-FIT</p>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}

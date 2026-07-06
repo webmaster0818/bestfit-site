@@ -1,0 +1,39 @@
+{
+ "path": "/news",
+ "entity": null,
+ "sections": [
+  {
+   "name": "next-size-adjust",
+   "content": ""
+  },
+  {
+   "name": "viewport",
+   "content": "width=device-width, initial-scale=1"
+  },
+  {
+   "name": "description",
+   "content": "パーソナルジムに関する最新のお知らせ・ニュースをお届けします。"
+  },
+  {
+   "name": "keywords",
+   "content": "パーソナルジム,パーソナルトレーニング, フィットネス, トレーニング, 健康, ダイエット, 初心者, 選び方, トレーニング方法, 健康維持, ジム比較"
+  },
+  {
+   "name": "google-site-verification",
+   "content": "QKQuYbUx_Sh3r0wz13gDJhNC8Agw6cjIz_a44gp4QKQ"
+  },
+  {
+   "name": "twitter:card",
+   "content": "summary"
+  },
+  {
+   "name": "twitter:title",
+   "content": "お知らせ一覧"
+  },
+  {
+   "name": "twitter:description",
+   "content": "パーソナルジムに関する最新のお知らせ・ニュースをお届けします。"
+  }
+ ],
+ "reviews": []
+}

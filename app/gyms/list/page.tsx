@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { metaFor, taxonomies } from "@/lib/data";
+
+export function generateMetadata(): Metadata {
+  const m = metaFor("/gyms/list");
+  return m ? { title: { absolute: m.title }, description: m.desc } : {};
+}
+
+export default function ListTop() {
+  const tax = taxonomies();
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-2xl font-extrabold mb-6">パーソナルジムを探す</h1>
+      <h2 className="font-bold mb-3">都道府県から探す</h2>
+      <ul className="flex flex-wrap gap-2 mb-8 text-sm">
+        {Object.entries(tax.pref).map(([id, name]) => (
+          <li key={id}><Link href={`/gyms/list/pref-${id}`} className="text-blue-700 hover:underline">{name}</Link></li>
+        ))}
+      </ul>
+      <h2 className="font-bold mb-3">特徴から探す</h2>
+      <ul className="flex flex-wrap gap-2 text-sm">
+        {Object.entries(tax.feature).map(([id, name]) => (
+          <li key={id}><Link href={`/gyms/list/feature-${id}`} className="text-blue-700 hover:underline">{name}</Link></li>
+        ))}
+      </ul>
+    </div>
+  );
+}

@@ -1,0 +1,1197 @@
+{
+ "outline": {
+  "brandId": "sxeS2FrNHZgkkCpb",
+  "slug": "outline",
+  "name": "OUTLINE"
+ },
+ "beyond": {
+  "brandId": "Un8T38clvKsFmEbY",
+  "slug": "beyond",
+  "name": "ビヨンド"
+ },
+ "tpg": {
+  "brandId": "79FtVHLN7VbNgXuV",
+  "slug": "tpg",
+  "name": "THE PERSONAL GYM"
+ },
+ "rizap": {
+  "brandId": "9cBue3OZVMuPArpb",
+  "slug": "rizap",
+  "name": "ライザップ"
+ },
+ "lim": {
+  "brandId": "BN2ZtFT9X11luiJR",
+  "slug": "lim",
+  "name": "LIM"
+ },
+ "palms": {
+  "brandId": "Wn2j3fMvcfkYV1WH",
+  "slug": "palms",
+  "name": "PALMS"
+ },
+ "brlabo": {
+  "brandId": "sytwNXTncak28moK",
+  "slug": "brlabo",
+  "name": "BRラボ"
+ },
+ "peace": {
+  "brandId": "MEfpiA4KwrOTkH7s",
+  "slug": "peace",
+  "name": "BodymakeGym Peace"
+ },
+ "chf": {
+  "brandId": "lkgamF5ALglYfWoS",
+  "slug": "chf",
+  "name": "COCO HACK FITNESS"
+ },
+ "undeux": {
+  "brandId": "J3ceNHbnLZZGfK2G",
+  "slug": "undeux",
+  "name": "UNDEUX SUPERBODY"
+ },
+ "studiou": {
+  "brandId": "1ISoKW6skUrsNibb",
+  "slug": "studiou",
+  "name": "PERSONAL TRAINING STUDIO U"
+ },
+ "drtraining": {
+  "brandId": "pqqDl46n8YpBZnht",
+  "slug": "drtraining",
+  "name": "Dr.トレーニング"
+ },
+ "bodydesigngym": {
+  "brandId": "7SOOXxz10GLd4pT7",
+  "slug": "bodydesigngym",
+  "name": "Body Design GYM"
+ },
+ "gasy": {
+  "brandId": "tea3PWWSPchydRg5",
+  "slug": "gasy",
+  "name": "GASY"
+ },
+ "247workout": {
+  "brandId": "bdNO7SgBdiDt0icx",
+  "slug": "247workout",
+  "name": "24/7Workout"
+ },
+ "exercisecoach": {
+  "brandId": "VjFqZgUBcCpsTpWc",
+  "slug": "exercisecoach",
+  "name": "TheExerciseCoach"
+ },
+ "daction": {
+  "brandId": "FbISHb8RhAcI9Ech",
+  "slug": "daction",
+  "name": "D ACTION"
+ },
+ "rizapwoman": {
+  "brandId": "MCTKy2I1vYqh4dU3",
+  "slug": "rizapwoman",
+  "name": "RIZAP WOMAN"
+ },
+ "ales": {
+  "brandId": "1GW9DipV8H7N6Zmj",
+  "slug": "ales",
+  "name": "ALES"
+ },
+ "rashiku": {
+  "brandId": "ILYHSzdJMIpKuGTT",
+  "slug": "rashiku",
+  "name": "Rashiku"
+ },
+ "riot": {
+  "brandId": "JGoCNBJVCjv9dSng",
+  "slug": "riot",
+  "name": "RIOT"
+ },
+ "peachgym": {
+  "brandId": "RlnPxrslNdWu7t1G",
+  "slug": "peachgym",
+  "name": "PEACH GYM"
+ },
+ "chicken": {
+  "brandId": "jsaQoYbz05WEQk1g",
+  "slug": "chicken",
+  "name": "Chicken Gym"
+ },
+ "rinorise": {
+  "brandId": "gymS94B36ygxUhe9",
+  "slug": "rinorise",
+  "name": "RinoRise"
+ },
+ "gym": {
+  "brandId": "bq9g2qtwAH2xDct3",
+  "slug": "gym",
+  "name": "JIYUGAOKA GYM"
+ },
+ "miyazakigym": {
+  "brandId": "Nlh0pv2Oa0mtkqdW",
+  "slug": "miyazakigym",
+  "name": "MIYAZAKI GYM"
+ },
+ "kayg": {
+  "brandId": "9EHEb3EoMImUX0Ly",
+  "slug": "kayg",
+  "name": "KayG"
+ },
+ "nextgymtokyo": {
+  "brandId": "PW0ZZhSbzU5cctp4",
+  "slug": "nextgymtokyo",
+  "name": "NEXT GYM TOKYO"
+ },
+ "deed": {
+  "brandId": "yhTDszp9lSsDzeTz",
+  "slug": "deed",
+  "name": "DEED"
+ },
+ "element": {
+  "brandId": "1qV4yHU9ifzDV8O6",
+  "slug": "element",
+  "name": "ELEMENT"
+ },
+ "goodlife": {
+  "brandId": "QNCibR0Uk93aXUpE",
+  "slug": "goodlife",
+  "name": "GOODLIFE GYM"
+ },
+ "grap": {
+  "brandId": "6DTDyO7eOOBTnBnG",
+  "slug": "grap",
+  "name": "GRAP"
+ },
+ "aspi": {
+  "brandId": "UvONejT8E3mSlFdB",
+  "slug": "aspi",
+  "name": "アスピ"
+ },
+ "eaglebase": {
+  "brandId": "01Yj2yRjmTR3LFcf",
+  "slug": "eaglebase",
+  "name": "EAGLE BASE"
+ },
+ "globalfitness": {
+  "brandId": "HyMbwVvPFYcqDbL2",
+  "slug": "globalfitness",
+  "name": "Global fitness"
+ },
+ "fitbeleza": {
+  "brandId": "waiNF7wZwD4uBXk4",
+  "slug": "fitbeleza",
+  "name": "Fit Beleza"
+ },
+ "rexer": {
+  "brandId": "JSJH5CBYL4tCBYlf",
+  "slug": "rexer",
+  "name": "ReXeR"
+ },
+ "personalland": {
+  "brandId": "rs2SKnTTnEzwG6D3",
+  "slug": "personalland",
+  "name": "PERSONALLAND"
+ },
+ "oxwm": {
+  "brandId": "DOLvBCtWmbLUu0fu",
+  "slug": "oxwm",
+  "name": "OXWM"
+ },
+ "ver": {
+  "brandId": "A8Hv2PdfWsP5iJoR",
+  "slug": "ver",
+  "name": "身体新変論VER"
+ },
+ "infinitystyle": {
+  "brandId": "Y904AHFiggCIFvzn",
+  "slug": "infinitystyle",
+  "name": "aperfect circle beauty"
+ },
+ "ritastyle": {
+  "brandId": "EFs2eR3SnBJkLUYE",
+  "slug": "ritastyle",
+  "name": "RITA-STYLE"
+ },
+ "3beauty": {
+  "brandId": "po49uy6jRTYxWxKC",
+  "slug": "3beauty",
+  "name": "3BEAUTY"
+ },
+ "nexfit": {
+  "brandId": "8gwnfRCLyA0xL6b6",
+  "slug": "nexfit",
+  "name": "Nexfit"
+ },
+ "revina": {
+  "brandId": "7yhdZeJgBKLUutEm",
+  "slug": "revina",
+  "name": "ReViNa"
+ },
+ "rebornmyself": {
+  "brandId": "KfJFLA1lQbwXAWn9",
+  "slug": "rebornmyself",
+  "name": "Reborn myself"
+ },
+ "mermake": {
+  "brandId": "d8IFSpRnU5M1R3VH",
+  "slug": "mermake",
+  "name": "メルメイク"
+ },
+ "rprecious": {
+  "brandId": "bAUaRUcEk1O5lqlb",
+  "slug": "rprecious",
+  "name": "Rprecious"
+ },
+ "katagiri": {
+  "brandId": "wsbUwNrz92410ALp",
+  "slug": "katagiri",
+  "name": "かたぎり塾"
+ },
+ "drfitplus": {
+  "brandId": "Ji9ma5TM2UniJGET",
+  "slug": "drfitplus",
+  "name": "Dr.Fit Plus"
+ },
+ "exe": {
+  "brandId": "xFuORJQsNcQKyqt6",
+  "slug": "exe",
+  "name": "EXE"
+ },
+ "playgrand": {
+  "brandId": "GNoX2LsZqL8F4DwO",
+  "slug": "playgrand",
+  "name": "PLAYGRAND"
+ },
+ "whoever": {
+  "brandId": "cmW4FPbIjziQDvf2",
+  "slug": "whoever",
+  "name": "WHOEVER"
+ },
+ "vibrun": {
+  "brandId": "tfeZ98BHKtIeLsFM",
+  "slug": "vibrun",
+  "name": "VIBRUN"
+ },
+ "alesco": {
+  "brandId": "ad1uf4QulDyWvrsS",
+  "slug": "alesco",
+  "name": "Alesco"
+ },
+ "kbt": {
+  "brandId": "BbITChKbwa9hd78Y",
+  "slug": "kbt",
+  "name": "加圧ビューティーテラス"
+ },
+ "bconcept": {
+  "brandId": "tMWAbvssZcOBieOo",
+  "slug": "bconcept",
+  "name": "ビーコンセプト"
+ },
+ "aim": {
+  "brandId": "p93DzMbgvQSmsBpP",
+  "slug": "aim",
+  "name": "AIM"
+ },
+ "bele": {
+  "brandId": "JGmrmmmovVl59wAQ",
+  "slug": "bele",
+  "name": "BELE BODYMAKE STUDIO"
+ },
+ "gofit": {
+  "brandId": "M60Z2Eut9rGCMf8D",
+  "slug": "gofit",
+  "name": "GO FIT SHINAGAWA"
+ },
+ "cuetre": {
+  "brandId": "BniV1IxwRgSiy6p6",
+  "slug": "cuetre",
+  "name": "Cuetre"
+ },
+ "nexus": {
+  "brandId": "PlACkKhONO44Nsmy",
+  "slug": "nexus",
+  "name": "Functional trainig gym NEXUS"
+ },
+ "zilch": {
+  "brandId": "8BLqwpUxYGRFBLCw",
+  "slug": "zilch",
+  "name": "パーソナルトレーニングジムZilch"
+ },
+ "tryve": {
+  "brandId": "hTZfbEvQwyFA11Nx",
+  "slug": "tryve",
+  "name": "TRYVE"
+ },
+ "brillio": {
+  "brandId": "7UnhvN946tm0xRvz",
+  "slug": "brillio",
+  "name": "Brillio"
+ },
+ "gos": {
+  "brandId": "mLG4JFFj5yWt5BI0",
+  "slug": "gos",
+  "name": "GOS GYM"
+ },
+ "sense": {
+  "brandId": "UjPBZBAzGrroV3BB",
+  "slug": "sense",
+  "name": "SENSE BODY DESIGN STUDIO"
+ },
+ "lore": {
+  "brandId": "ktuht6YYJeXaQgOL",
+  "slug": "lore",
+  "name": "LORE"
+ },
+ "m16tokyo": {
+  "brandId": "YzfoW44M07ZFFq5J",
+  "slug": "m16tokyo",
+  "name": "M16 TOKYO"
+ },
+ "samona": {
+  "brandId": "U8yySStRqwiYGqmS",
+  "slug": "samona",
+  "name": "サモーナ"
+ },
+ "bodyhl": {
+  "brandId": "P9mh7V71alhqyqDx",
+  "slug": "bodyhl",
+  "name": "Body Hackers Lab"
+ },
+ "ambition": {
+  "brandId": "EA2wyY8stKv31CIc",
+  "slug": "ambition",
+  "name": "Ambition"
+ },
+ "chart": {
+  "brandId": "UFQhwICq78fBYS4T",
+  "slug": "chart",
+  "name": "CHART"
+ },
+ "raysgym": {
+  "brandId": "NKxMJke75EhNcs99",
+  "slug": "raysgym",
+  "name": "Rays GyM"
+ },
+ "esthree": {
+  "brandId": "jaHoqIQAmjMj31lu",
+  "slug": "esthree",
+  "name": "es three"
+ },
+ "qualitas": {
+  "brandId": "F3Hl9t4Gnb5YJBAY",
+  "slug": "qualitas",
+  "name": "QUALITAS"
+ },
+ "bejyu": {
+  "brandId": "sgmnNiGeFwMCbtBn",
+  "slug": "bejyu",
+  "name": "BE-JYU"
+ },
+ "studiojplus": {
+  "brandId": "beksqNJ1o8KXOQpg",
+  "slug": "studiojplus",
+  "name": "スタジオ J+"
+ },
+ "beu": {
+  "brandId": "Bf9DCI9AuWfJFlCV",
+  "slug": "beu",
+  "name": "パーソナルジムビーユー"
+ },
+ "arcs": {
+  "brandId": "si8Reg2wZeJtKeJw",
+  "slug": "arcs",
+  "name": "TrainingStudio ARCS"
+ },
+ "bbody": {
+  "brandId": "6DaUcWDDr2cLqpjE",
+  "slug": "bbody",
+  "name": "B-BODY"
+ },
+ "prest": {
+  "brandId": "qM8OrFDPWP5X4oKf",
+  "slug": "prest",
+  "name": "PREST"
+ },
+ "lastyle": {
+  "brandId": "ovG4lG22Ds05q6vk",
+  "slug": "lastyle",
+  "name": "Lastyle"
+ },
+ "trainforlife": {
+  "brandId": "oiN7ylrujP8joFlP",
+  "slug": "trainforlife",
+  "name": "Train For Life"
+ },
+ "miurajuku": {
+  "brandId": "K15oBaNvtWGJvQG0",
+  "slug": "miurajuku",
+  "name": "三浦塾"
+ },
+ "exeed": {
+  "brandId": "Hw88VJx6OTIZyLyj",
+  "slug": "exeed",
+  "name": "EXEED"
+ },
+ "8proud": {
+  "brandId": "Kg5ttjU1xdCgeVHT",
+  "slug": "8proud",
+  "name": "8proud"
+ },
+ "dbhs": {
+  "brandId": "ggA4zcdAnV8DiJ1i",
+  "slug": "dbhs",
+  "name": "トータル健康スペースDBHS"
+ },
+ "limit": {
+  "brandId": "zSYUeJzVMJLaoddC",
+  "slug": "limit",
+  "name": "PersonalGym LIMIT"
+ },
+ "shials": {
+  "brandId": "X1IZgvs5LDddcUi1",
+  "slug": "shials",
+  "name": "SHIALS"
+ },
+ "vase": {
+  "brandId": "tfLTAwAj6v86A3XD",
+  "slug": "vase",
+  "name": "VASE"
+ },
+ "alivegym": {
+  "brandId": "oQDPLSgCWRZyjt3N",
+  "slug": "alivegym",
+  "name": "ALIVE GYM"
+ },
+ "luxgym": {
+  "brandId": "tkMnPlXYzcXwqFap",
+  "slug": "luxgym",
+  "name": "LUXGYM"
+ },
+ "skillupgym": {
+  "brandId": "3GGLnBbFl09s8fVL",
+  "slug": "skillupgym",
+  "name": "Skill UP GYM"
+ },
+ "gymcube": {
+  "brandId": "kREYiLATFjkYwxFg",
+  "slug": "gymcube",
+  "name": "GYM CUBE"
+ },
+ "bfit": {
+  "brandId": "v20yH1xuqdydGFLa",
+  "slug": "bfit",
+  "name": "B.FIT"
+ },
+ "exercisecoarch": {
+  "brandId": "DOCd6dldXiu97nMX",
+  "slug": "exercisecoarch",
+  "name": "TheExerciseCoach"
+ },
+ "linou": {
+  "brandId": "i2LrDnMonWM1gkEh",
+  "slug": "linou",
+  "name": "Lino U"
+ },
+ "tommy": {
+  "brandId": "WWcicidqAmv3OfLF",
+  "slug": "tommy",
+  "name": "TOMMY WORKOUT GYM"
+ },
+ "axis": {
+  "brandId": "fE6AnyO0DURSWFNq",
+  "slug": "axis",
+  "name": "AXIS Training Studio"
+ },
+ "hebgym": {
+  "brandId": "YOOrBAq6E8diMjzF",
+  "slug": "hebgym",
+  "name": "HEB GYM"
+ },
+ "habit": {
+  "brandId": "OxWsrjvgwHK3HmwB",
+  "slug": "habit",
+  "name": "HABIT"
+ },
+ "highlight": {
+  "brandId": "uGQcR4aInjc6xhfb",
+  "slug": "highlight",
+  "name": "ハイライト"
+ },
+ "stepupstyle": {
+  "brandId": "JjEH352qBSkadF8L",
+  "slug": "stepupstyle",
+  "name": "STEP up style"
+ },
+ "1to1": {
+  "brandId": "HMJQxkMsWY7hmqir",
+  "slug": "1to1",
+  "name": "ピラティス＆ジム1to1"
+ },
+ "bewell": {
+  "brandId": "nVbGeshNy9K4JPJS",
+  "slug": "bewell",
+  "name": "BEWELL personal training studio"
+ },
+ "gs": {
+  "brandId": "yxHWOSDmPbyh7G9B",
+  "slug": "gs",
+  "name": "GSトレーニング"
+ },
+ "halle": {
+  "brandId": "6Nk7qphMBXFGorxt",
+  "slug": "halle",
+  "name": "Halle"
+ },
+ "salus": {
+  "brandId": "VhhxJ2FrSKoKqNXO",
+  "slug": "salus",
+  "name": "Body Make Studio Salus"
+ },
+ "reraise": {
+  "brandId": "446KhoYJvhsmaivY",
+  "slug": "reraise",
+  "name": "パーソナルジム リレイズ"
+ },
+ "rdcgym": {
+  "brandId": "SgT7eudSKEXlRRlc",
+  "slug": "rdcgym",
+  "name": "RDC GYM"
+ },
+ "nine": {
+  "brandId": "3zSNn6jciyVEhGZm",
+  "slug": "nine",
+  "name": "NINE"
+ },
+ "chancegym": {
+  "brandId": "IYhT0vxCUHFuJ7ki",
+  "slug": "chancegym",
+  "name": "CHANCEGYM"
+ },
+ "tralia": {
+  "brandId": "JpCMvpcq5wwzpPcG",
+  "slug": "tralia",
+  "name": "トラリア"
+ },
+ "bravo": {
+  "brandId": "W2uXf71SXGINZ8bF",
+  "slug": "bravo",
+  "name": "studio bravo"
+ },
+ "mileswoman": {
+  "brandId": "ncI3XVeQTYccsKGJ",
+  "slug": "mileswoman",
+  "name": "MILES WOMANS"
+ },
+ "leading": {
+  "brandId": "GuQ7xwSY3MuDBsfS",
+  "slug": "leading",
+  "name": "LEADING"
+ },
+ "w": {
+  "brandId": "8jOq67xPrxDgaknf",
+  "slug": "w",
+  "name": "パーソナルトレーニング W"
+ },
+ "privegym": {
+  "brandId": "afrCJbgc1UTFzvpA",
+  "slug": "privegym",
+  "name": "PRIVE GYM"
+ },
+ "gprime": {
+  "brandId": "63epBlzj1rQrFyhQ",
+  "slug": "gprime",
+  "name": "パーソナルジムG-Prime"
+ },
+ "ezil": {
+  "brandId": "ffCBDrzEdfoXUpxn",
+  "slug": "ezil",
+  "name": "EZIL"
+ },
+ "nextbody": {
+  "brandId": "Bbx79qB6lBG17mFT",
+  "slug": "nextbody",
+  "name": "NEXTBODY"
+ },
+ "rat": {
+  "brandId": "Nh3ROehs38l3rsLT",
+  "slug": "rat",
+  "name": "Rat"
+ },
+ "shine": {
+  "brandId": "YlW3Y7ikr1MJltQZ",
+  "slug": "shine",
+  "name": "SHINE"
+ },
+ "afford": {
+  "brandId": "CYOi4SpwTd9NxFne",
+  "slug": "afford",
+  "name": "AFFORD"
+ },
+ "privatefit": {
+  "brandId": "mrTBoZGNtvvlvBWi",
+  "slug": "privatefit",
+  "name": "Private Fit"
+ },
+ "veatm": {
+  "brandId": "AcQawpvDPq8JY0XQ",
+  "slug": "veatm",
+  "name": "VEATM GYM"
+ },
+ "bodyimage": {
+  "brandId": "rR2W07WK68DiZCYg",
+  "slug": "bodyimage",
+  "name": "BODY IMAGE"
+ },
+ "forme": {
+  "brandId": "SYgJAzj0snrltd5V",
+  "slug": "forme",
+  "name": "FORME"
+ },
+ "ashiyase": {
+  "brandId": "xpYKWDMf86I2Yrjs",
+  "slug": "ashiyase",
+  "name": "ASHIYASE"
+ },
+ "bazooka": {
+  "brandId": "n9WJRiJn5hwluvLs",
+  "slug": "bazooka",
+  "name": "STUDIO BAZOOKA"
+ },
+ "libertex": {
+  "brandId": "126l76YEOgmCGQqK",
+  "slug": "libertex",
+  "name": "身体工房LIBERTEX"
+ },
+ "mp": {
+  "brandId": "kVTn2AOk8JpqMfzK",
+  "slug": "mp",
+  "name": "MPトレーニング"
+ },
+ "bosty": {
+  "brandId": "L6rCgqMdWrVhGjSC",
+  "slug": "bosty",
+  "name": "BOSTY"
+ },
+ "entwulf": {
+  "brandId": "XANfvfM5mMoFFmA2",
+  "slug": "entwulf",
+  "name": "Entwurf Body Design"
+ },
+ "iroas": {
+  "brandId": "rCw7sgI2jIhDPnw2",
+  "slug": "iroas",
+  "name": "イロアスジム"
+ },
+ "belue": {
+  "brandId": "WYpPyKW50ebSC8z2",
+  "slug": "belue",
+  "name": "BELUE"
+ },
+ "rivill": {
+  "brandId": "4fl5xz6M3cJSARZJ",
+  "slug": "rivill",
+  "name": "RIVILL"
+ },
+ "studioaunn": {
+  "brandId": "KIGYCFysvOIWdAcH",
+  "slug": "studioaunn",
+  "name": "studioAUNN"
+ },
+ "soragym": {
+  "brandId": "SlGPCKRJLQMubSxt",
+  "slug": "soragym",
+  "name": "SORAGYM"
+ },
+ "lamuda": {
+  "brandId": "fm0magr369eeUOo4",
+  "slug": "lamuda",
+  "name": "LAMUDA Body Make Club"
+ },
+ "carat": {
+  "brandId": "SIaEn50C8BauGUYT",
+  "slug": "carat",
+  "name": "Carat"
+ },
+ "kokyu": {
+  "brandId": "HVSIu6L0wcWio1Ud",
+  "slug": "kokyu",
+  "name": "KOKYU OSAKA Pilates&amp;Bodycare"
+ },
+ "workoutholic": {
+  "brandId": "9ZkKERPwYVwzbvUh",
+  "slug": "workoutholic",
+  "name": "WORKOUTHOLIC"
+ },
+ "unkibakuage": {
+  "brandId": "oRhC99OQMd1M5NwF",
+  "slug": "unkibakuage",
+  "name": "運気爆上げジムって"
+ },
+ "lamua": {
+  "brandId": "DVyEkfQi5mE1lVkv",
+  "slug": "lamua",
+  "name": "LAMUA"
+ },
+ "blc": {
+  "brandId": "EsxRb4UQinPgXSL4",
+  "slug": "blc",
+  "name": "BLC"
+ },
+ "create": {
+  "brandId": "0yUOwnQBH2MiiTO0",
+  "slug": "create",
+  "name": "CREATE GYM"
+ },
+ "blueoceangym": {
+  "brandId": "wy2H73jCraK5bco1",
+  "slug": "blueoceangym",
+  "name": "Blue Ocean Gym"
+ },
+ "will": {
+  "brandId": "7qulgwj15p15eyoM",
+  "slug": "will",
+  "name": "Privategym will"
+ },
+ "seazons": {
+  "brandId": "UEtIK6wkjPkB0U6j",
+  "slug": "seazons",
+  "name": "seazons"
+ },
+ "hakogym": {
+  "brandId": "967gq86wIOtR8T1s",
+  "slug": "hakogym",
+  "name": "ハコジム"
+ },
+ "sakuragym": {
+  "brandId": "hw2gHaM2U9Hf75m0",
+  "slug": "sakuragym",
+  "name": "SAKURA GYM"
+ },
+ "makeinbody": {
+  "brandId": "iTfarc2jaDCMPEJq",
+  "slug": "makeinbody",
+  "name": "Make InBody"
+ },
+ "goodlifegym": {
+  "brandId": "hPExljBDxdM3LCFO",
+  "slug": "goodlifegym",
+  "name": "GOODLIFE GYM"
+ },
+ "triplem": {
+  "brandId": "ZgQcdKNPIX4ym9RI",
+  "slug": "triplem",
+  "name": "MMM"
+ },
+ "forh": {
+  "brandId": "L5vvYZ44g1QqSOtg",
+  "slug": "forh",
+  "name": "FORH BODY PERFORMANCE"
+ },
+ "lotusmoon": {
+  "brandId": "SMIi5LxomE8UPV2Q",
+  "slug": "lotusmoon",
+  "name": "lotus moon studio"
+ },
+ "switchbody": {
+  "brandId": "1kI8VsEhCbEYBZbC",
+  "slug": "switchbody",
+  "name": "SWITCH BODY"
+ },
+ "felicitas": {
+  "brandId": "iFo2dGnlEs3wu4MY",
+  "slug": "felicitas",
+  "name": "felicitas"
+ },
+ "bcs": {
+  "brandId": "2zEBecrcUsA20acT",
+  "slug": "bcs",
+  "name": "BCS"
+ },
+ "pulse": {
+  "brandId": "cuy3G1gn8wNfJ6qW",
+  "slug": "pulse",
+  "name": "FIT STUDIO PULSE"
+ },
+ "asmake": {
+  "brandId": "eEqZd9Q4Ujb4s5XU",
+  "slug": "asmake",
+  "name": "ASmake"
+ },
+ "bodyleap": {
+  "brandId": "xoCEdxZeytBsxZje",
+  "slug": "bodyleap",
+  "name": "Body Leap"
+ },
+ "functionjunction": {
+  "brandId": "zaou4Yyt24Ug6Ka7",
+  "slug": "functionjunction",
+  "name": "FunctionJunction"
+ },
+ "future": {
+  "brandId": "fEobgB2sVTf9r7rV",
+  "slug": "future",
+  "name": "FUTURE"
+ },
+ "lifeby53": {
+  "brandId": "onuvXXQthpWANbh9",
+  "slug": "lifeby53",
+  "name": "Lifeby53"
+ },
+ "myno": {
+  "brandId": "QnFNBUap50Gpcy2M",
+  "slug": "myno",
+  "name": "パーソナルジムMyno"
+ },
+ "calore": {
+  "brandId": "7D2ksoCV4LR8UUBZ",
+  "slug": "calore",
+  "name": "CALORE"
+ },
+ "allstargym": {
+  "brandId": "Od5eCWypF2un8Rcy",
+  "slug": "allstargym",
+  "name": "Functional trainig gym NEXUS"
+ },
+ "lifemake": {
+  "brandId": "Ds9Ic3kjfAhhoWuw",
+  "slug": "lifemake",
+  "name": "LIFEMAKEパーソナルトレーニングジム"
+ },
+ "b3fit": {
+  "brandId": "ZqZpQy5wYMkG93l7",
+  "slug": "b3fit",
+  "name": "B3FIT"
+ },
+ "bellpha": {
+  "brandId": "EF9R1ij1km7aC09J",
+  "slug": "bellpha",
+  "name": "Bellpha"
+ },
+ "improve": {
+  "brandId": "5Yzib0IAeDsIeCMZ",
+  "slug": "improve",
+  "name": "improve"
+ },
+ "adjust": {
+  "brandId": "CoSuKib4CXWJQzfw",
+  "slug": "adjust",
+  "name": "ADJUST"
+ },
+ "waple": {
+  "brandId": "lJTCNFGOaws4XAWI",
+  "slug": "waple",
+  "name": "WAPLE"
+ },
+ "inrc": {
+  "brandId": "AtbKBWIfMbBQHTaU",
+  "slug": "inrc",
+  "name": "INRC"
+ },
+ "baysfit": {
+  "brandId": "7MHpZK9RLlzUUBzj",
+  "slug": "baysfit",
+  "name": "Secret Bay’s FIT"
+ },
+ "crebiq": {
+  "brandId": "rj56pCWJSvDf3kwu",
+  "slug": "crebiq",
+  "name": "CREBIQ"
+ },
+ "kenz": {
+  "brandId": "55dSdCEL2b9p6mGv",
+  "slug": "kenz",
+  "name": "Kenz"
+ },
+ "tonedbody": {
+  "brandId": "7AG171yksvrwSAT5",
+  "slug": "tonedbody",
+  "name": "Toned body"
+ },
+ "bodience": {
+  "brandId": "kye5lFqIM9FhFTJt",
+  "slug": "bodience",
+  "name": "BODIENCE"
+ },
+ "gis": {
+  "brandId": "O13hfeJkMgbUtIAc",
+  "slug": "gis",
+  "name": "gis"
+ },
+ "rise": {
+  "brandId": "1V6ZjTFMWSDFNxga",
+  "slug": "rise",
+  "name": "RISE personal training gym"
+ },
+ "hirooplatinum": {
+  "brandId": "S7EQHq5XD3iRCv0s",
+  "slug": "hirooplatinum",
+  "name": "HIROO PLATINUM GYM"
+ },
+ "kogym": {
+  "brandId": "9KyCV3N5IYL1LwYQ",
+  "slug": "kogym",
+  "name": "K.O.GYM"
+ },
+ "belloamuscolo": {
+  "brandId": "ZP5iNYFNYSWXMoDi",
+  "slug": "belloamuscolo",
+  "name": "Bello/a muscolo"
+ },
+ "memott": {
+  "brandId": "psvSU470OfNgW2hL",
+  "slug": "memott",
+  "name": "Me-Mott"
+ },
+ "oz": {
+  "brandId": "IQqGtqJVVwQyia7q",
+  "slug": "oz",
+  "name": "Oz"
+ },
+ "ciabody": {
+  "brandId": "BHjeDZGVs7S7jLE3",
+  "slug": "ciabody",
+  "name": "CIA BODY"
+ },
+ "switchibody": {
+  "brandId": "AjoGJ4CX6ub2IHjj",
+  "slug": "switchibody",
+  "name": "SWITCH BODY"
+ },
+ "arisanfit": {
+  "brandId": "d3t7nANbQ64e0cXp",
+  "slug": "arisanfit",
+  "name": "ARISAN FIT"
+ },
+ "accept": {
+  "brandId": "InUkvXgVpNICV0CR",
+  "slug": "accept",
+  "name": "accept"
+ },
+ "miostile": {
+  "brandId": "TWag2tgMMJ5ETmcy",
+  "slug": "miostile",
+  "name": "MIO STILE GINZA"
+ },
+ "bolche": {
+  "brandId": "MozOrEJH67OYSQUX",
+  "slug": "bolche",
+  "name": "トータルボディメイク BoLche"
+ },
+ "morefit": {
+  "brandId": "VLKeEA7DDTqeGPja",
+  "slug": "morefit",
+  "name": "more fit"
+ },
+ "bconcpt": {
+  "brandId": "mbumbWyTDhy7dkPW",
+  "slug": "bconcpt",
+  "name": "ビーコンセプト"
+ },
+ "drenchworks": {
+  "brandId": "jcTHroKvJ6MuBcEZ",
+  "slug": "drenchworks",
+  "name": "drenchworks"
+ },
+ "rdcbodylab": {
+  "brandId": "MmLoTxy8Fk5SPCjv",
+  "slug": "rdcbodylab",
+  "name": "RDC BODY LAB"
+ },
+ "sinyou": {
+  "brandId": "pTZvFNei4mcuYVbt",
+  "slug": "sinyou",
+  "name": "SIN-YOU"
+ },
+ "pearlfitness": {
+  "brandId": "urzOZr0G4gv6ePb8",
+  "slug": "pearlfitness",
+  "name": "Pearl Fitness"
+ },
+ "regnas": {
+  "brandId": "QHtCZPJefxMSL7Vn",
+  "slug": "regnas",
+  "name": "REGNAS"
+ },
+ "plume": {
+  "brandId": "GdpJ72annsZGw0Lu",
+  "slug": "plume",
+  "name": "PLUME"
+ },
+ "force": {
+  "brandId": "UtNNI79SAXQkAXFp",
+  "slug": "force",
+  "name": "FORCE"
+ },
+ "belion": {
+  "brandId": "2xblBTPXfCKSeCi5",
+  "slug": "belion",
+  "name": "BELION"
+ },
+ "studiobalance": {
+  "brandId": "KUHcsk1LV9PuBz5L",
+  "slug": "studiobalance",
+  "name": "studio balance."
+ },
+ "3cfitness": {
+  "brandId": "CKk1cShTfSoA3H2y",
+  "slug": "3cfitness",
+  "name": "3c fitness"
+ },
+ "racine": {
+  "brandId": "RRseKu6UvxDwUARz",
+  "slug": "racine",
+  "name": "RACINE"
+ },
+ "rebogym": {
+  "brandId": "hKHdhsKTqRV8CZ7i",
+  "slug": "rebogym",
+  "name": "REBOGYM"
+ },
+ "improvement": {
+  "brandId": "EJjxcX7SrcllwvzO",
+  "slug": "improvement",
+  "name": "IMPROVEMENT STUDIO"
+ },
+ "mizukamigym": {
+  "brandId": "wrisJGSkHFrFNQ8Y",
+  "slug": "mizukamigym",
+  "name": "MIZUKAMIGYM"
+ },
+ "marbellgym": {
+  "brandId": "wL7ctSlxCJftA6Va",
+  "slug": "marbellgym",
+  "name": "MARBELL GYM"
+ },
+ "sante": {
+  "brandId": "e6pQSxsLbQTW7WRl",
+  "slug": "sante",
+  "name": "SANTE"
+ },
+ "steelo": {
+  "brandId": "aQT1CsYBmqYdUNmW",
+  "slug": "steelo",
+  "name": "STEELO GYM"
+ },
+ "styleshown": {
+  "brandId": "H7FIUOguNMhqlXBm",
+  "slug": "styleshown",
+  "name": "STYLESHOWN"
+ },
+ "fukury": {
+  "brandId": "QyzcqVFKGFs8bgd0",
+  "slug": "fukury",
+  "name": "Personal beauty studio FUKU-RY"
+ },
+ "nexusfitness": {
+  "brandId": "2lZOmcW0AQcdpzMe",
+  "slug": "nexusfitness",
+  "name": "NEX-US FITNESS"
+ },
+ "breaks": {
+  "brandId": "Ygr6YdJ4Qqw6NI6c",
+  "slug": "breaks",
+  "name": "BREAKS"
+ },
+ "rpresious": {
+  "brandId": "ksaM9fcNNkuRuMUC",
+  "slug": "rpresious",
+  "name": "Rprecious"
+ },
+ "grance": {
+  "brandId": "m2U1A93mxyxk9PYp",
+  "slug": "grance",
+  "name": "GRANCE"
+ },
+ "miles": {
+  "brandId": "hxWOPO60BUrdBLP9",
+  "slug": "miles",
+  "name": "MILES"
+ },
+ "hangout": {
+  "brandId": "HQDoSxt51yaB3UpP",
+  "slug": "hangout",
+  "name": "ハングアウト"
+ },
+ "bodyinnovation": {
+  "brandId": "RJFCazbEtyzGepWq",
+  "slug": "bodyinnovation",
+  "name": "Body Innovation"
+ },
+ "caras": {
+  "brandId": "GjzinOEAtwceZm5G",
+  "slug": "caras",
+  "name": "CARAS"
+ },
+ "rifegym": {
+  "brandId": "lif7V1TaDau5ETmo",
+  "slug": "rifegym",
+  "name": "Rife gym"
+ },
+ "4fgym": {
+  "brandId": "aS7FgUzEJzHrSFow",
+  "slug": "4fgym",
+  "name": "4Fのパーソナルジム"
+ },
+ "revon24": {
+  "brandId": "ORc5t0vaXWJfyAte",
+  "slug": "revon24",
+  "name": "Revon24"
+ },
+ "luana": {
+  "brandId": "wy2PWPdnkZugkIDS",
+  "slug": "luana",
+  "name": "luana fitness"
+ },
+ "xingfu": {
+  "brandId": "Ml6XElo08Cl1yoZy",
+  "slug": "xingfu",
+  "name": "Xingfu"
+ },
+ "crategym": {
+  "brandId": "uxMJGHDWjwxpx67u",
+  "slug": "crategym",
+  "name": "MILL GYM"
+ },
+ "ivy": {
+  "brandId": "89LBaueUxIvGWygo",
+  "slug": "ivy",
+  "name": "女性専門プライベートジム IVY"
+ },
+ "luxxs": {
+  "brandId": "qXgus2qIa44ggzkl",
+  "slug": "luxxs",
+  "name": "LUXXS"
+ },
+ "lifetime": {
+  "brandId": "EqLCXdxXaO81a8BW",
+  "slug": "lifetime",
+  "name": "LIFE TIME"
+ },
+ "highness": {
+  "brandId": "BFOXEbMZ3xSv1xFK",
+  "slug": "highness",
+  "name": "Highness"
+ },
+ "aokijyuku": {
+  "brandId": "WKxTjfFR8HaB6hKG",
+  "slug": "aokijyuku",
+  "name": "AOKI JYUKU"
+ },
+ "wivo": {
+  "brandId": "DuVygvKK6HpWUa1i",
+  "slug": "wivo",
+  "name": "wivo conditioning"
+ },
+ "trigger": {
+  "brandId": "3cLoc0h1FimvYlrC",
+  "slug": "trigger",
+  "name": "TRIGGER"
+ },
+ "upb": {
+  "brandId": "H3T5N6STW1HerEcs",
+  "slug": "upb",
+  "name": "UPB ヨガ&amp;トレーニング"
+ },
+ "into9": {
+  "brandId": "kwtznrMjR9IVJg3u",
+  "slug": "into9",
+  "name": "INTO9 beauty&amp;strength"
+ }
+}

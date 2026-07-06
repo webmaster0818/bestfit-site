@@ -1,0 +1,31 @@
+{
+ "path": "/terms-of-service",
+ "entity": null,
+ "sections": [
+  {
+   "name": "next-size-adjust",
+   "content": ""
+  },
+  {
+   "name": "viewport",
+   "content": "width=device-width, initial-scale=1"
+  },
+  {
+   "name": "robots",
+   "content": "index, follow"
+  },
+  {
+   "name": "google-site-verification",
+   "content": "QKQuYbUx_Sh3r0wz13gDJhNC8Agw6cjIz_a44gp4QKQ"
+  },
+  {
+   "name": "twitter:card",
+   "content": "summary"
+  },
+  {
+   "name": "twitter:title",
+   "content": "利用規約｜パーソナルジム専門の比較・口コミサイト｜BEST-FIT"
+  }
+ ],
+ "reviews": []
+}
