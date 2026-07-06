@@ -35,7 +35,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/gyms/list" className="hover:underline">ジムを探す</Link> › {labelText}
       </nav>
-      <h1 className="text-xl md:text-2xl font-extrabold mb-2">{m?.h1 || `「${labelText}」の検索結果`}</h1>
+      <h1 className="text-xl md:text-2xl font-extrabold mb-2">{`「${labelText}」のパーソナルジム検索結果`}</h1>
       <p className="text-sm text-gray-500 mb-8">{hits.length}件のパーソナルジムが見つかりました</p>
 
       <div className="space-y-4">

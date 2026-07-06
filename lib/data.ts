@@ -58,9 +58,9 @@ export function resolveListPage(segs: string[]) {
   }
   const all = Object.entries(stores());
   const hit = all.filter(([, s]) => {
-    if (cond.pref && s.prefectureId !== cond.pref) return false;
-    if (cond.city && s.cityId !== cond.city) return false;
-    if (cond.ward && s.wardId !== cond.ward) return false;
+    if (cond.pref && s._prefCode !== cond.pref) return false;
+    if (cond.city && s._cityCode !== cond.city) return false;
+    if (cond.ward && s._wardCode !== cond.ward) return false;
     if (cond.feature) {
       const fts: { id?: string }[] = Array.isArray(s.features) ? s.features : [];
       if (!fts.some((f) => f?.id === cond.feature)) return false;

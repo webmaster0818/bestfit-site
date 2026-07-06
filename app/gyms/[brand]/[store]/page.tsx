@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { stores, metaFor, brands, taxonomies } from "@/lib/data";
+import { stores, metaFor, brands } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -33,14 +33,13 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   const p = pagePath(prm);
   const s = stores()[p];
   const m = metaFor(p);
-  const tax = taxonomies();
   const brand = Object.values(brands()).find((b) => b.slug.toLowerCase() === prm.brand.toLowerCase());
   const plans: any[] = Array.isArray(s.pricePlans) ? s.pricePlans : [];
   const features: any[] = Array.isArray(s.features) ? s.features : [];
   const nearby: any[] = Array.isArray(s.nearbyStores) ? s.nearbyStores : [];
   const minPlan = plans.filter((pl) => typeof pl.price === "number" && pl.price > 0).sort((a, c) => a.price - c.price)[0];
-  const prefName = s.prefectureId ? tax.pref[s.prefectureId] : undefined;
-  const cityName = s.cityId ? tax.city[s.cityId] : undefined;
+  const prefName = s._prefName as string | undefined;
+  const cityName = s._cityName as string | undefined;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -58,14 +57,14 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
       <nav className="text-xs mb-5" style={{ color: "var(--bf-muted)" }}>
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-1">›</span>
-        {s.prefectureId && <><Link href={`/gyms/list/pref-${s.prefectureId}`} className="hover:underline">{prefName}</Link><span className="mx-1">›</span></>}
-        {s.prefectureId && s.cityId && <><Link href={`/gyms/list/pref-${s.prefectureId}/city-${s.cityId}`} className="hover:underline">{cityName}</Link><span className="mx-1">›</span></>}
+        {s._prefCode && <><Link href={`/gyms/list/pref-${s._prefCode}`} className="hover:underline">{prefName}</Link><span className="mx-1">›</span></>}
+        {s._prefCode && s._cityCode && <><Link href={`/gyms/list/pref-${s._prefCode}/city-${s._cityCode}`} className="hover:underline">{cityName}</Link><span className="mx-1">›</span></>}
         <span>{brand?.name} {s.name}</span>
       </nav>
 
       {/* ヒーローカード: 結論ファースト */}
       <div className="bf-card p-6 md:p-8 mb-8" style={{ borderTop: "4px solid var(--bf-primary)" }}>
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-1">{m?.h1 || `${brand?.name || ""} ${s.name}`}</h1>
+        <h1 className="text-2xl md:text-3xl font-extrabold mb-1">{`${brand?.name || ""} ${s.name}`.trim()}</h1>
         {s.catchcopy && <p className="text-sm font-bold mb-4" style={{ color: "var(--bf-primary)" }}>{s.catchcopy}</p>}
         <div className="grid sm:grid-cols-3 gap-3 mb-5 text-sm">
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
