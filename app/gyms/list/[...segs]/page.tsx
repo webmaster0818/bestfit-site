@@ -45,7 +45,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
             .filter((pl: any) => typeof pl.price === "number")
             .sort((a: any, c: any) => a.price - c.price)[0];
           return (
-            <div key={path} className="border border-gray-200 rounded-xl p-5">
+            <div key={path} className="bf-card bf-card-hover p-5">
               <h2 className="font-bold text-lg">
                 <Link href={path} className="hover:underline" style={{ color: "var(--bf-primary)" }}>
                   {b?.name || ""} {s.name}
@@ -55,7 +55,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
               <div className="text-sm text-gray-600 mt-2 space-y-0.5">
                 {s.address && <p>📍 {s.address}</p>}
                 {s.access && <p>🚉 {s.access}</p>}
-                {minPlan && <p>💰 {minPlan.name}: {minPlan.price.toLocaleString()}円〜</p>}
+                {minPlan && <p>💰 <span className="bf-price">{minPlan.price.toLocaleString()}円〜</span>（{minPlan.name}）</p>}
               </div>
             </div>
           );

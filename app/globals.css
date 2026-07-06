@@ -1,3 +1,128 @@
 @import "tailwindcss";
-:root { --bf-primary: #0f6bb0; --bf-accent: #f97316; --bf-bg: #f8fafc; }
-body { color: #1f2937; background: #fff; line-height: 1.8; }
+
+:root {
+  /* BEST-FIT デザイントークン v1 */
+  --bf-primary: #0e5fa8;        /* 信頼のブルー */
+  --bf-primary-deep: #0a4a85;
+  --bf-primary-soft: #eaf3fb;
+  --bf-accent: #f97316;         /* CTAオレンジ(CTA専用・装飾に使わない) */
+  --bf-accent-deep: #ea580c;
+  --bf-ink: #1e293b;
+  --bf-muted: #64748b;
+  --bf-line: #e2e8f0;
+  --bf-bg: #f8fafc;
+  --bf-gold: #f59e0b;
+}
+
+body {
+  color: var(--bf-ink);
+  background: #fff;
+  line-height: 1.8;
+  font-feature-settings: "palt";
+}
+
+/* 見出し */
+.bf-h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  border-left: 4px solid var(--bf-primary);
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* カード */
+.bf-card {
+  background: #fff;
+  border: 1px solid var(--bf-line);
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+.bf-card-hover {
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.bf-card-hover:hover {
+  border-color: var(--bf-primary);
+  box-shadow: 0 4px 16px rgba(14, 95, 168, 0.12);
+}
+
+/* CTAボタン */
+.bf-cta {
+  display: inline-block;
+  background: var(--bf-accent);
+  color: #fff;
+  font-weight: 800;
+  border-radius: 0.625rem;
+  padding: 0.875rem 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(249, 115, 22, 0.35);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.bf-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.45);
+}
+.bf-cta-sub {
+  display: inline-block;
+  background: #fff;
+  color: var(--bf-primary);
+  border: 2px solid var(--bf-primary);
+  font-weight: 700;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.85rem;
+  text-align: center;
+  transition: background 0.15s;
+}
+.bf-cta-sub:hover { background: var(--bf-primary-soft); }
+
+/* タグ・チップ */
+.bf-chip {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--bf-primary-soft);
+  color: var(--bf-primary-deep);
+  border-radius: 9999px;
+  padding: 0.3rem 0.8rem;
+}
+.bf-chip-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #fff;
+  color: var(--bf-ink);
+  border: 1px solid var(--bf-line);
+  border-radius: 9999px;
+  padding: 0.45rem 1rem;
+  transition: all 0.15s;
+}
+.bf-chip-link:hover {
+  border-color: var(--bf-primary);
+  color: var(--bf-primary);
+  background: var(--bf-primary-soft);
+}
+
+/* データテーブル */
+.bf-table { width: 100%; font-size: 0.875rem; border-collapse: collapse; }
+.bf-table th {
+  background: var(--bf-bg);
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: var(--bf-ink);
+  border-bottom: 1px solid var(--bf-line);
+  white-space: nowrap;
+}
+.bf-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--bf-line);
+  color: #334155;
+}
+.bf-table tr:last-child th, .bf-table tr:last-child td { border-bottom: none; }
+
+/* 価格強調 */
+.bf-price {
+  color: var(--bf-accent-deep);
+  font-weight: 800;
+}
