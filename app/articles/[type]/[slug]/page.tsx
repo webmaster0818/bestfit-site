@@ -44,7 +44,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         crumbs={[
           { href: "/", label: "ホーム" },
           { href: "/articles", label: "エリア記事" },
-          { label: (m?.h1 || m?.title.split("｜")[0] || "").slice(0, 30) },
+          { label: (m?.title.split("｜")[0] || "").slice(0, 32) },
         ]}
       />
       <div className="max-w-3xl mx-auto px-4 py-8">
