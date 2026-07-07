@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listPaths, metaFor, resolveListPage, brands, refineLinks } from "@/lib/data";
+import { IcoPin, IcoTrain, IcoYen, IcoChevron } from "@/components/Ico";
 
 export const dynamicParams = false;
 
@@ -89,20 +90,34 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
           const minPlan = (Array.isArray(s.pricePlans) ? s.pricePlans : [])
             .filter((pl: any) => typeof pl.price === "number")
             .sort((a: any, c: any) => a.price - c.price)[0];
+          const feats: any[] = Array.isArray(s.features) ? s.features : [];
           return (
-            <div key={path} className="bf-card bf-card-hover p-5">
-              <h2 className="font-bold text-lg">
-                <Link href={path} className="hover:underline" style={{ color: "var(--bf-primary)" }}>
-                  {b?.name || ""} {s.name}
-                </Link>
-              </h2>
-              {s.catchcopy && <p className="text-xs text-gray-500 mt-1">{s.catchcopy}</p>}
-              <div className="text-sm text-gray-600 mt-2 space-y-0.5">
-                {s.address && <p>📍 {s.address}</p>}
-                {s.access && <p>🚉 {s.access}</p>}
-                {minPlan && <p>💰 <span className="bf-price">{minPlan.price.toLocaleString()}円〜</span>（{minPlan.name}）</p>}
+            <Link key={path} href={path} className="bf-card bf-card-hover p-5 block group relative">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <h2 className="font-extrabold text-lg leading-snug group-hover:underline" style={{ color: "var(--bf-primary)" }}>
+                    {b?.name || ""} {s.name}
+                  </h2>
+                  {s.catchcopy && <p className="text-xs mt-1 line-clamp-1" style={{ color: "var(--bf-muted)" }}>{s.catchcopy}</p>}
+                </div>
+                {minPlan && (
+                  <div className="shrink-0 text-right rounded-lg px-3 py-1.5" style={{ background: "var(--bf-primary-soft)" }}>
+                    <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン</p>
+                    <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                  </div>
+                )}
               </div>
-            </div>
+              <div className="text-[13px] mt-3 space-y-1.5" style={{ color: "#475569" }}>
+                {s.address && <p className="flex items-start gap-1.5"><IcoPin className="mt-1 shrink-0 text-[13px]" /><span>{s.address}</span></p>}
+                {s.access && <p className="flex items-start gap-1.5"><IcoTrain className="mt-1 shrink-0 text-[13px]" /><span>{s.access}</span></p>}
+              </div>
+              {feats.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  {feats.slice(0, 4).map((f: any) => f?.name && <span key={f.id} className="bf-chip">{f.name}</span>)}
+                </div>
+              )}
+              <span className="absolute bottom-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-white text-sm group-hover:translate-x-0.5 transition-transform" style={{ background: "var(--bf-primary)" }}><IcoChevron /></span>
+            </Link>
           );
         })}
         {hits.length === 0 && (

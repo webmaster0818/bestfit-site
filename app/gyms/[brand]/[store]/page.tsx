@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { stores, metaFor, brands } from "@/lib/data";
+import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
 
 export const dynamicParams = false;
 
@@ -79,15 +80,15 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         {s.catchcopy && <p className="text-sm font-bold mb-4" style={{ color: "var(--bf-primary)" }}>{s.catchcopy}</p>}
         <div className="grid sm:grid-cols-3 gap-3 mb-5 text-sm">
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
-            <p className="text-xs mb-0.5" style={{ color: "var(--bf-muted)" }}>最安プラン</p>
+            <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoYen className="text-xs" />最安プラン</p>
             <p className="font-bold">{minPlan ? <span className="bf-price">{yen(minPlan.price)}</span> : "要問合せ"}{minPlan?.sessionCount ? <span className="text-xs font-normal">（{minPlan.sessionCount}回）</span> : null}</p>
           </div>
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
-            <p className="text-xs mb-0.5" style={{ color: "var(--bf-muted)" }}>エリア</p>
+            <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoPin className="text-xs" />エリア</p>
             <p className="font-bold">{[prefName, cityName].filter(Boolean).join(" ") || "—"}</p>
           </div>
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
-            <p className="text-xs mb-0.5" style={{ color: "var(--bf-muted)" }}>営業時間</p>
+            <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoClock className="text-xs" />営業時間</p>
             <p className="font-bold text-xs leading-relaxed">{s.openingHours || "公式サイトで確認"}</p>
           </div>
         </div>
@@ -151,18 +152,18 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         <div className="bf-card overflow-hidden">
           <table className="bf-table">
             <tbody>
-              {[
-                ["店舗名", `${brand?.name || ""} ${s.name}`],
-                ["住所", s.address],
-                ["アクセス", s.access],
-                ["営業時間", s.openingHours],
-                ["電話番号", s.telephoneNumber],
-              ]
+              {([
+                ["店舗名", `${brand?.name || ""} ${s.name}`, <IcoStore key="i" className="text-sm" />],
+                ["住所", s.address, <IcoPin key="i" className="text-sm" />],
+                ["アクセス", s.access, <IcoTrain key="i" className="text-sm" />],
+                ["営業時間", s.openingHours, <IcoClock key="i" className="text-sm" />],
+                ["電話番号", s.telephoneNumber, <IcoPhone key="i" className="text-sm" />],
+              ] as [string, string, React.ReactNode][])
                 .filter(([, v]) => v)
-                .map(([k, v]) => (
-                  <tr key={k as string}>
-                    <th className="w-28">{k}</th>
-                    <td>{v as string}</td>
+                .map(([k, v, ico]) => (
+                  <tr key={k}>
+                    <th className="w-32"><span className="flex items-center gap-1.5" style={{ color: "var(--bf-primary)" }}>{ico}<span style={{ color: "var(--bf-ink)" }}>{k}</span></span></th>
+                    <td>{v}</td>
                   </tr>
                 ))}
             </tbody>
@@ -190,8 +191,8 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
               if (!b || !n.slug) return null;
               return (
                 <li key={i} className="bf-card bf-card-hover">
-                  <Link href={`/gyms/${b.slug}/${n.slug}`} className="block px-4 py-3 font-semibold" style={{ color: "var(--bf-primary)" }}>
-                    {b.name} {n.name} →
+                  <Link href={`/gyms/${b.slug}/${n.slug}`} className="flex items-center justify-between px-4 py-3 font-semibold" style={{ color: "var(--bf-primary)" }}>
+                    <span>{b.name} {n.name}</span><IcoChevron className="text-xs shrink-0" />
                   </Link>
                 </li>
               );
