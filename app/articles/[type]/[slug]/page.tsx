@@ -35,19 +35,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const prm = await params;
   const p = pagePath(prm);
   const m = metaFor(p);
-  const body = articleHtml(p);
+  const bodyRaw = articleHtml(p);
+  const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
 
   return (
     <article>
-      <PageHero
-        eyebrow="AREA FEATURE"
-        crumbs={[
-          { href: "/", label: "ホーム" },
-          { href: "/articles", label: "エリア記事" },
-          { label: (m?.title.split("｜")[0] || "").slice(0, 32) },
-        ]}
-      />
+      <PageHero eyebrow="AREA FEATURE" title={m?.title.split("｜")[0] || ""} />
       <div className="max-w-3xl mx-auto px-4 py-8">
+      <nav className="text-xs text-gray-500 mb-4">
+        <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
+        <Link href="/articles" className="hover:underline">エリア記事</Link> › {(m?.title.split("｜")[0] || "").slice(0, 28)}
+      </nav>
       {body ? (
         <div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
       ) : (
