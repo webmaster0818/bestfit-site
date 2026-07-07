@@ -227,8 +227,8 @@ body {
 }
 /* 目次「Contents」等のグラデ文字(唯一の組合せをハードコードで保証) */
 .article-body [class*="ui-bg-clip-text"] {
-  background-image: linear-gradient(to right, rgba(25,112,252,0.99), rgba(51,184,255,1));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background-image: linear-gradient(to right, rgba(25,112,252,0.99), rgba(51,184,255,1)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
 }
