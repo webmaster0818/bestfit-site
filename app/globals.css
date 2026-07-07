@@ -211,3 +211,24 @@ body {
   border: none; box-shadow: none; padding: 0; margin: 0.5rem 0;
 }
 .article-body hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(25,112,252,0.35), rgba(51,51,51,0.25), transparent); margin: 2rem 0; }
+
+/* Tailwind v3系ユーティリティ(移植記事本文)が参照するCSS変数の基底デフォルト */
+.article-body *, .article-body *::before, .article-body *::after {
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-translate-x: 0; --tw-translate-y: 0;
+  --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0;
+  --tw-scale-x: 1; --tw-scale-y: 1;
+}
+/* 目次「Contents」等のグラデ文字(唯一の組合せをハードコードで保証) */
+.article-body [class*="ui-bg-clip-text"] {
+  background-image: linear-gradient(to right, rgba(25,112,252,0.99), rgba(51,184,255,1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
