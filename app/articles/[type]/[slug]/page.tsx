@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import fs from "node:fs";
@@ -42,6 +42,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
+  const siblings = !isBrand ? areaArticleSiblings(p) : [];
 
   return (
     <article>
@@ -63,6 +64,19 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         <><ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} /></>
       ) : (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
+      )}
+
+      {siblings.length > 0 && (
+        <section className="mt-12 bf-card p-5">
+          <h2 className="bf-h2 mb-3">同じエリアの特集記事</h2>
+          <ul className="grid sm:grid-cols-2 gap-2 text-sm">
+            {siblings.map((sib) => (
+              <li key={sib.path}>
+                <Link href={sib.path} className="font-semibold hover:underline" style={{ color: "var(--bf-primary)" }}>{sib.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {(() => {

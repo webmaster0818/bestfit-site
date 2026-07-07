@@ -145,3 +145,23 @@ export function brandPrice(slug: string) {
   }
   return _brandPrice![slug] || null;
 }
+
+// エリア記事の地域クラスタ: 同一都道府県配下の他エリア記事を返す（article-area-tree由来）
+let _areaTree: any[] | null = null;
+export function areaArticleSiblings(pathname: string): { path: string; name: string }[] {
+  if (!_areaTree) {
+    const f = path.join(DATA, "article-area-tree.json");
+    _areaTree = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : [];
+  }
+  const slug = pathname.split("/").pop();
+  const toPath = (c: any) => `/articles/${c.category || "city"}/${c.slug}`;
+  for (const pref of _areaTree!) {
+    const kids: any[] = Array.isArray(pref.children) ? pref.children : [];
+    if (kids.some((c) => c.slug === slug)) {
+      return kids
+        .filter((c) => c.slug && c.slug !== slug)
+        .map((c) => ({ path: toPath(c), name: `${c.name}のパーソナルジム` }));
+    }
+  }
+  return [];
+}
