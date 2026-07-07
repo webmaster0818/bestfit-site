@@ -39,12 +39,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
 
   return (
     <article>
-      <PageHero eyebrow="AREA FEATURE" title={m?.h1 || m?.title.split("｜")[0] || ""} asH1={false} />
+      <PageHero
+        eyebrow="AREA FEATURE"
+        crumbs={[
+          { href: "/", label: "ホーム" },
+          { href: "/articles", label: "エリア記事" },
+          { label: (m?.h1 || m?.title.split("｜")[0] || "").slice(0, 30) },
+        ]}
+      />
       <div className="max-w-3xl mx-auto px-4 py-8">
-      <nav className="text-xs text-gray-500 mb-4">
-        <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
-        <Link href="/articles" className="hover:underline">記事一覧</Link>
-      </nav>
       {body ? (
         <div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
       ) : (
