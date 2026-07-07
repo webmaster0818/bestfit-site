@@ -135,3 +135,79 @@ body {
   margin: 0 auto;
   background: linear-gradient(90deg, transparent, rgba(25,112,252,0.35), rgba(51,51,51,0.25), transparent);
 }
+
+/* ===== 記事本文(移植HTML)のデザイン最適化: TOPトーン ===== */
+.article-body { color: var(--bf-ink); line-height: 1.9; font-size: 0.95rem; }
+.article-body h1 {
+  font-size: 1.5rem; font-weight: 800; line-height: 1.5;
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, var(--bf-primary), var(--bf-primary-deep));
+  color: #fff; border-radius: 0.75rem;
+}
+.article-body h2 {
+  font-size: 1.2rem; font-weight: 800;
+  margin: 2.5rem 0 1rem;
+  padding: 0.7rem 1rem;
+  background: var(--bf-primary-soft);
+  border-left: 5px solid var(--bf-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.article-body h3 {
+  font-size: 1.05rem; font-weight: 800;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--bf-primary);
+}
+.article-body h4 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: var(--bf-primary-deep); }
+.article-body p { margin: 0.75rem 0; }
+.article-body a { color: var(--bf-primary); text-decoration: underline; font-weight: 600; }
+.article-body img { max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1rem 0; }
+.article-body ul, .article-body ol { padding-left: 1.4rem; margin: 0.75rem 0; }
+.article-body li { margin: 0.3rem 0; }
+
+/* 料金/コース内容/形式などの表 → 格子デザイン */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  background: #fff;
+  border: 1px solid var(--bf-line);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-size: 0.88rem;
+  display: table;
+}
+.article-body table th, .article-body table td {
+  border: 1px solid var(--bf-line);
+  padding: 0.65rem 0.9rem;
+  vertical-align: top;
+  text-align: left;
+}
+.article-body table th,
+.article-body table td:first-child {
+  background: var(--bf-primary-soft);
+  font-weight: 700;
+  color: var(--bf-primary-deep);
+  white-space: nowrap;
+  width: 1%;
+  min-width: 7em;
+}
+.article-body table tr:nth-child(even) td:not(:first-child) { background: #fafcff; }
+
+/* orizmブロック(Box)をカード化 */
+.article-body [data-orizm-block-type="Box"] > div {
+  background: #fff;
+}
+.article-body [data-orizm-block-type="Box"] {
+  background: #fff;
+  border: 1px solid var(--bf-line);
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.article-body [data-orizm-block-type="Box"] [data-orizm-block-type="Box"] {
+  border: none; box-shadow: none; padding: 0; margin: 0.5rem 0;
+}
+.article-body hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(25,112,252,0.35), rgba(51,51,51,0.25), transparent); margin: 2rem 0; }

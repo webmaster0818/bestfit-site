@@ -12,7 +12,7 @@ export type UrlMeta = { title: string; desc: string; canonical: string; h1: stri
 
 let _stores: Record<string, StoreEntity> | null = null;
 let _meta: Record<string, UrlMeta> | null = null;
-let _tax: { pref: Record<string, string>; city: Record<string, string>; ward: Record<string, string>; feature: Record<string, string> } | null = null;
+let _tax: { pref: Record<string, string>; city: Record<string, string>; ward: Record<string, string>; feature: Record<string, string>; tag: Record<string, string> } | null = null;
 let _brands: Record<string, { brandId: string; slug: string; name: string }> | null = null;
 let _listPaths: string[] | null = null;
 
@@ -65,6 +65,10 @@ export function resolveListPage(segs: string[]) {
       const fts: { id?: string }[] = Array.isArray(s.features) ? s.features : [];
       if (!fts.some((f) => f?.id === cond.feature)) return false;
     }
+    if (cond.tag) {
+      const tks: string[] = Array.isArray(s._tagKeys) ? s._tagKeys : [];
+      if (!tks.includes(cond.tag)) return false;
+    }
     return true;
   });
   const labels = {
@@ -72,6 +76,7 @@ export function resolveListPage(segs: string[]) {
     city: cond.city ? tax.city[cond.city] : undefined,
     ward: cond.ward ? tax.ward[cond.ward] : undefined,
     feature: cond.feature ? tax.feature[cond.feature] : undefined,
+    tag: cond.tag ? tax.tag?.[cond.tag] : undefined,
   };
   return { cond, labels, stores: hit };
 }
@@ -104,11 +109,12 @@ export function refineLinks(segs: string[]) {
       }
     } else if (kind === "ward") label = tax.ward[val] || "";
     else if (kind === "feature") label = tax.feature[val] || "";
+    else if (kind === "tag") label = tax.tag?.[val] || "";
     if (!label) continue;
     seen.add(extra);
     out.push({ href: p, label, kind });
   }
-  const order: Record<string, number> = { pref: 0, city: 1, ward: 2, feature: 3 };
+  const order: Record<string, number> = { pref: 0, city: 1, ward: 2, feature: 3, tag: 4 };
   return out.sort((a, b) => (order[a.kind] ?? 9) - (order[b.kind] ?? 9) || a.label.localeCompare(b.label, "ja"));
 }
 
