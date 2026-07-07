@@ -40,17 +40,35 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   const plans: any[] = Array.isArray(s.pricePlans) ? s.pricePlans : [];
   const features: any[] = Array.isArray(s.features) ? s.features : [];
   const nearby: any[] = Array.isArray(s.nearbyStores) ? s.nearbyStores : [];
+  const allStores = stores();
+  const sameBrand = Object.entries(allStores)
+    .filter(([path]) => path.split("/")[2] === prm.brand.toLowerCase() && path !== p)
+    .slice(0, 12)
+    .map(([path, st]: [string, any]) => ({ path, name: st.name, city: st._cityName as string | undefined }));
   const minPlan = plans.filter((pl) => typeof pl.price === "number" && pl.price > 0).sort((a, c) => a.price - c.price)[0];
   const prefName = s._prefName as string | undefined;
   const cityName = s._cityName as string | undefined;
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ExerciseGym",
+    "@type": ["ExerciseGym", "LocalBusiness"],
     name: `${brand?.name || ""} ${s.name}`.trim(),
-    ...(s.address ? { address: s.address } : {}),
+    ...(s.catchcopy ? { description: s.catchcopy } : {}),
+    ...(s.address
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: "JP",
+            ...(prefName ? { addressRegion: prefName } : {}),
+            ...(cityName ? { addressLocality: cityName } : {}),
+            streetAddress: s.address,
+          },
+        }
+      : {}),
     ...(s.telephoneNumber ? { telephone: s.telephoneNumber } : {}),
     ...(s.openingHours ? { openingHours: s.openingHours } : {}),
+    ...(minPlan ? { priceRange: `¥${minPlan.price.toLocaleString()}〜` } : {}),
+    ...(cityName ? { areaServed: cityName } : {}),
     url: `https://dunlopsportsclub.jp${p}`,
   };
 
@@ -203,6 +221,21 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                 </li>
               );
             })}
+          </ul>
+        </section>
+      )}
+
+      {sameBrand.length > 0 && (
+        <section className="mt-8">
+          <h2 className="bf-h2">{brand?.name}の他の店舗</h2>
+          <ul className="grid sm:grid-cols-2 gap-2 text-sm">
+            {sameBrand.map((n) => (
+              <li key={n.path} className="bf-card bf-card-hover">
+                <Link href={n.path} className="flex items-center justify-between px-4 py-3 font-semibold" style={{ color: "var(--bf-primary)" }}>
+                  <span>{brand?.name} {n.name}{n.city ? `（${n.city}）` : ""}</span><IcoChevron className="text-xs shrink-0" />
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
       )}
