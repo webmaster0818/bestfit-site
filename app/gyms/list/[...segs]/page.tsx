@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
   const label = [area, cond].filter(Boolean).join("・");
   if (label && hits.length > 0) {
     const head = cond && area ? `${area}の${cond}パーソナルジム` : cond ? `${cond}のパーソナルジム` : `${area}のパーソナルジム`;
-    const title = `${head}おすすめ${hits.length}選｜料金比較・口コミ｜BEST-FIT`;
+    const title = `${head}${hits.length >= 2 ? `おすすめ${hits.length}選` : ""}｜料金比較・口コミ｜BEST-FIT`;
     const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もひと目でチェック。あなたに合う一軒が見つかるBEST-FITの検索結果です。`;
     return { title: { absolute: title }, description: desc, alternates: { canonical: p } };
   }
