@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../data/article-html";
 
 :root {
   /* BEST-FIT デザイントークン v1 */

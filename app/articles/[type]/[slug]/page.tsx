@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleFor, metaFor, urlMeta } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 
 export const dynamicParams = false;
@@ -33,10 +33,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const prm = await params;
   const p = pagePath(prm);
   const m = metaFor(p);
-  const art = articleFor(p);
-  const sections = (art?.sections || []).filter(
-    (s) => s?.content && s?.name && !["next-size-adjust", "viewport"].includes(s.name)
-  );
+  const body = articleHtml(p);
 
   return (
     <article>
@@ -46,26 +43,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/articles" className="hover:underline">記事一覧</Link>
       </nav>
-      {sections.length > 2 && (
-        <nav className="bf-card p-5 mb-8">
-          <p className="font-bold text-sm mb-2">目次</p>
-          <ol className="text-sm space-y-1">
-            {sections.map((sec, i) => (
-              <li key={i}><a href={`#sec-${i}`} className="hover:underline" style={{ color: "var(--bf-primary)" }}>{sec.name}</a></li>
-            ))}
-          </ol>
-        </nav>
-      )}
-      {sections.map((s, i) => (
-        <section key={i} className="mb-8" id={`sec-${i}`}>
-          <h2 className="bf-h2">{s.name}</h2>
-          <div
-            className="prose prose-sm max-w-none text-gray-700 leading-relaxed [&_a]:text-blue-700 [&_a]:underline [&_img]:max-w-full"
-            dangerouslySetInnerHTML={{ __html: s.content }}
-          />
-        </section>
-      ))}
-      {sections.length === 0 && (
+      {body ? (
+        <div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+      ) : (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
       )}
       </div>

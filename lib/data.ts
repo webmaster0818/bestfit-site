@@ -121,3 +121,11 @@ export function planPriceLabel(plan: any): string {
   if (sc) return `${sc}回コース総額`;
   return "コース料金";
 }
+
+// 記事本文(現行サイトから移植した生HTML・アフィリンク保全済み)
+export function articleHtml(pathname: string): string | null {
+  const slug = pathname.replace(/^\//, "").replace(/\//g, "__");
+  const f = path.join(DATA, "article-html", `${slug}.html`);
+  if (!fs.existsSync(f)) return null;
+  return fs.readFileSync(f, "utf-8");
+}
