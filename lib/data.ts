@@ -165,3 +165,61 @@ export function areaArticleSiblings(pathname: string): { path: string; name: str
   }
   return [];
 }
+
+// ===== エリア記事のデータ駆動化(biyori型) 2026-07-08 =====
+let _areaTreeFlat: Record<string, { name: string; category: string }> | null = null;
+function areaSlugMap() {
+  if (_areaTreeFlat) return _areaTreeFlat;
+  const f = path.join(DATA, "article-area-tree.json");
+  const tree: any[] = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : [];
+  const m: Record<string, { name: string; category: string }> = {};
+  for (const pref of tree) {
+    if (pref.slug) m[pref.slug] = { name: pref.name, category: "pref" };
+    for (const c of pref.children || []) if (c.slug) m[c.slug] = { name: c.name, category: c.category || "city" };
+  }
+  _areaTreeFlat = m;
+  return m;
+}
+
+// エリア記事(type,slug)→ そのエリアの店舗・相場・一覧パス。データ不足ならnull
+export function areaArticleData(type: string, slug: string) {
+  const info = areaSlugMap()[slug];
+  const tax = taxonomies();
+  const all = Object.entries(stores());
+  let matched: [string, any][] = [];
+  let areaName = info?.name || slug;
+  let listPath = "/gyms/list";
+  if (info?.category === "pref") {
+    const codes = Object.keys(tax.pref).filter((k) => tax.pref[k] === info.name || tax.pref[k].replace(/[都道府県]/g, "") === info.name);
+    matched = all.filter(([, s]) => codes.includes(s._prefCode));
+    if (codes[0]) { listPath = `/gyms/list/pref-${codes[0]}`; areaName = tax.pref[codes[0]]; }
+  } else {
+    const codes = Object.keys(tax.city).filter((k) => tax.city[k].includes(info?.name || " "));
+    matched = all.filter(([, s]) => codes.includes(s._cityCode));
+    if (codes[0]) { listPath = `/gyms/list/pref-${matched[0]?.[1]?._prefCode}/city-${codes[0]}`; areaName = tax.city[codes[0]]; }
+  }
+  if (matched.length < 3) return null;
+  const scored = matched
+    .map(([p, s]) => ({
+      path: p,
+      name: s.name as string,
+      brand: p.split("/")[2],
+      address: s.address as string | undefined,
+      access: s.access as string | undefined,
+      catchcopy: s.catchcopy as string | undefined,
+      affiliateLink: s.affiliateLink as string | undefined,
+      features: (Array.isArray(s.features) ? s.features : []).map((f: any) => f?.name).filter(Boolean).slice(0, 4) as string[],
+      minPlan: (Array.isArray(s.pricePlans) ? s.pricePlans : [])
+        .filter((pl: any) => typeof pl.price === "number" && pl.price > 0)
+        .sort((a: any, b: any) => a.price - b.price)[0],
+    }))
+    .sort((a, b) => (a.affiliateLink ? 0 : 1) - (b.affiliateLink ? 0 : 1) || b.features.length - a.features.length);
+  const cards = scored.slice(0, 10);
+  const prices = matched
+    .flatMap(([, s]) => (Array.isArray(s.pricePlans) ? s.pricePlans : []))
+    .map((pl: any) => pl.price)
+    .filter((n: any) => typeof n === "number" && n > 0)
+    .sort((a: number, b: number) => a - b);
+  const priceRange = prices.length ? { min: prices[0], max: prices[prices.length - 1], mid: prices[Math.floor(prices.length / 2)] } : null;
+  return { areaName, total: matched.length, cards, priceRange, listPath, category: info?.category || "city" };
+}
