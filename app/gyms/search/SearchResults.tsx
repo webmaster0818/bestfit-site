@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { IcoYen, IcoChevron } from "@/components/Ico";
+import PageHero from "@/components/PageHero";
 
 type Row = { p: string; n: string; b: string; pr?: string; ct?: string; wd?: string; f: string[]; mp: number | null };
 type Feature = { id: string; name: string; category: string };
@@ -34,11 +35,13 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
   const condLabel = feats.map(fname).filter(Boolean).join("・");
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-xl md:text-2xl font-extrabold mb-2">
-        {[areaLabel, condLabel].filter(Boolean).join("×") || "すべて"}のパーソナルジム検索結果
-      </h1>
-      <p className="text-sm mb-6" style={{ color: "var(--bf-muted)" }}>{hits.length}件が条件に一致しました（複数条件の絞り込み結果）</p>
+    <div>
+      <PageHero
+        eyebrow="PERSONAL GYM SEARCH"
+        title={`${[areaLabel, condLabel].filter(Boolean).join("×") || "すべて"}のパーソナルジム検索結果`}
+        subtitle={`${hits.length}件が条件に一致しました（複数条件の絞り込み結果）`}
+      />
+      <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="space-y-4">
         {hits.map((r) => (
           <Link key={r.p} href={r.p} className="bf-card bf-card-hover p-5 block group relative">
@@ -64,6 +67,7 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
             条件に一致するジムが見つかりませんでした。条件を減らして再検索してみてください。
           </div>
         )}
+      </div>
       </div>
     </div>
   );

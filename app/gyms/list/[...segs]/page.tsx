@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { listPaths, metaFor, resolveListPage, brands, refineLinks } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoChevron } from "@/components/Ico";
+import PageHero from "@/components/PageHero";
+import { planPriceLabel } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -44,14 +46,18 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <nav className="text-xs text-gray-500 mb-4">
+      <PageHero
+        eyebrow="PERSONAL GYM SEARCH"
+        title={`「${labelText}」のパーソナルジム検索結果`}
+        subtitle={`${hits.length}件のパーソナルジムが見つかりました`}
+      />
+      <div className="max-w-4xl mx-auto px-4 py-8">
+      <nav className="text-xs text-gray-500 mb-5">
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/gyms/list" className="hover:underline">ジムを探す</Link> › {labelText}
       </nav>
-      <h1 className="text-xl md:text-2xl font-extrabold mb-2">{`「${labelText}」のパーソナルジム検索結果`}</h1>
-      <p className="text-sm text-gray-500 mb-5">{hits.length}件のパーソナルジムが見つかりました</p>
 
       {(() => {
         const refs = refineLinks(segs);
@@ -102,7 +108,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
                 </div>
                 {minPlan && (
                   <div className="shrink-0 text-right rounded-lg px-3 py-1.5" style={{ background: "var(--bf-primary-soft)" }}>
-                    <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン</p>
+                    <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
                     <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[10px]">円〜</span></p>
                   </div>
                 )}
@@ -123,6 +129,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         {hits.length === 0 && (
           <p className="text-sm text-gray-500">条件に一致するジムが見つかりませんでした。</p>
         )}
+      </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { articleFor, metaFor, urlMeta } from "@/lib/data";
+import PageHero from "@/components/PageHero";
 
 export const dynamicParams = false;
 
@@ -38,12 +39,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   );
 
   return (
-    <article className="max-w-3xl mx-auto px-4 py-8">
+    <article>
+      <PageHero eyebrow="AREA FEATURE" title={m?.h1 || m?.title.split("｜")[0] || ""} />
+      <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
         <Link href="/articles" className="hover:underline">記事一覧</Link>
       </nav>
-      <h1 className="text-2xl font-extrabold mb-4">{m?.h1 || m?.title.split("｜")[0]}</h1>
       {sections.length > 2 && (
         <nav className="bf-card p-5 mb-8">
           <p className="font-bold text-sm mb-2">目次</p>
@@ -66,6 +68,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       {sections.length === 0 && (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
       )}
+      </div>
     </article>
   );
 }

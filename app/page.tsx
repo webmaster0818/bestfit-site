@@ -40,7 +40,7 @@ export default function Home() {
     .map(([p, m]) => ({ href: p, title: m.title.split("｜")[0] }));
 
   return (
-    <div style={{ background: "linear-gradient(rgba(248,250,253,0.94), rgba(248,250,253,0.94)), url('/images/gym-bg-s.jpg') center top / cover fixed, url('/images/top_bg_img.png')" }}>
+    <div>
       {/* ===== ファーストビュー: 現行KV画像 + 検索パネル ===== */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">

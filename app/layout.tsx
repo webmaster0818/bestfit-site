@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </header>
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen" style={{ background: "linear-gradient(rgba(248,250,253,0.94), rgba(248,250,253,0.94)), url('/images/gym-bg-s.jpg') center top / cover fixed, url('/images/top_bg_img.png')" }}>{children}</main>
         <footer className="border-t border-gray-200 mt-16 py-10 text-sm text-gray-500" style={{ background: "var(--bf-bg)" }}>
           <div className="max-w-5xl mx-auto px-4 space-y-2">
             <p className="font-bold text-gray-700">BEST-FIT｜パーソナルジム専門の比較・口コミサイト</p>

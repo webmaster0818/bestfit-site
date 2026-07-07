@@ -111,3 +111,13 @@ export function refineLinks(segs: string[]) {
   const order: Record<string, number> = { pref: 0, city: 1, ward: 2, feature: 3 };
   return out.sort((a, b) => (order[a.kind] ?? 9) - (order[b.kind] ?? 9) || a.label.localeCompare(b.label, "ja"));
 }
+
+// 最安プランの価格が「月額」か「コース総額」かを明示するラベル
+export function planPriceLabel(plan: any): string {
+  if (!plan) return "";
+  const name = String(plan.name || "");
+  if (/マンスリー|月額|月謝|サブスク/.test(name)) return "月額";
+  const sc = plan.sessionCount ? String(plan.sessionCount).replace(/[^0-9]/g, "") : "";
+  if (sc) return `${sc}回コース総額`;
+  return "コース料金";
+}

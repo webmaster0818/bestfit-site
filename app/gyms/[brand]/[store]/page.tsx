@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { stores, metaFor, brands } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
+import PageHero from "@/components/PageHero";
+import { planPriceLabel } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -63,9 +65,15 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   };
 
   return (
-    <article className="max-w-4xl mx-auto px-4 py-6 md:py-10">
+    <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <PageHero
+        eyebrow="PERSONAL GYM"
+        title={`${brand?.name || ""} ${s.name}`.trim()}
+        subtitle={s.catchcopy || [prefName, cityName].filter(Boolean).join(" ")}
+      />
+      <div className="max-w-4xl mx-auto px-4 py-6 md:py-10">
       <nav className="text-xs mb-5" style={{ color: "var(--bf-muted)" }}>
         <Link href="/" className="hover:underline">ホーム</Link>
         <span className="mx-1">›</span>
@@ -76,11 +84,9 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
 
       {/* ヒーローカード: 結論ファースト */}
       <div className="bf-card p-6 md:p-8 mb-8" style={{ borderTop: "4px solid var(--bf-primary)" }}>
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-1">{`${brand?.name || ""} ${s.name}`.trim()}</h1>
-        {s.catchcopy && <p className="text-sm font-bold mb-4" style={{ color: "var(--bf-primary)" }}>{s.catchcopy}</p>}
         <div className="grid sm:grid-cols-3 gap-3 mb-5 text-sm">
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
-            <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoYen className="text-xs" />最安プラン</p>
+            <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoYen className="text-xs" />最安プラン{minPlan ? `（${planPriceLabel(minPlan)}）` : ""}</p>
             <p className="font-bold">{minPlan ? <span className="bf-price">{yen(minPlan.price)}</span> : "要問合せ"}{minPlan?.sessionCount ? <span className="text-xs font-normal">（{minPlan.sessionCount}回）</span> : null}</p>
           </div>
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
@@ -200,6 +206,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
           </ul>
         </section>
       )}
+      </div>
     </article>
   );
 }
