@@ -135,3 +135,13 @@ export function articleHtml(pathname: string): string | null {
   if (!fs.existsSync(f)) return null;
   return fs.readFileSync(f, "utf-8");
 }
+
+// ブランド記事の検証済み料金（メタ・料金早見ボックス用・2026-07-07公式確認）
+let _brandPrice: Record<string, { name: string; price: string; join: string; note: string }> | null = null;
+export function brandPrice(slug: string) {
+  if (!_brandPrice) {
+    const f = path.join(DATA, "brand-price.json");
+    _brandPrice = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {};
+  }
+  return _brandPrice![slug] || null;
+}

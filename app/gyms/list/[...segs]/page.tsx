@@ -19,9 +19,21 @@ function pagePath(segs: string[]) {
 
 export async function generateMetadata({ params }: { params: Promise<{ segs: string[] }> }): Promise<Metadata> {
   const { segs } = await params;
-  const m = metaFor(pagePath(segs));
+  const p = pagePath(segs);
+  const m = metaFor(p);
+  const { labels, stores: hits } = resolveListPage(segs);
+  // 地域ラベルは最深のもの（ward/city）が上位（県名）を内包するため最深のみ採用
+  const area = labels.ward || labels.city || labels.pref || "";
+  const cond = [labels.feature, labels.tag].filter(Boolean).join("・");
+  const label = [area, cond].filter(Boolean).join("・");
+  if (label && hits.length > 0) {
+    const head = cond && area ? `${area}の${cond}パーソナルジム` : cond ? `${cond}のパーソナルジム` : `${area}のパーソナルジム`;
+    const title = `${head}おすすめ${hits.length}選｜料金比較・口コミ｜BEST-FIT`;
+    const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もひと目でチェック。あなたに合う一軒が見つかるBEST-FITの検索結果です。`;
+    return { title: { absolute: title }, description: desc, alternates: { canonical: p } };
+  }
   if (!m) return {};
-  return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: pagePath(segs) } };
+  return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: p } };
 }
 
 export default async function ListPage({ params }: { params: Promise<{ segs: string[] }> }) {
