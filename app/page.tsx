@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { metaFor, taxonomies, brands, stores, urlMeta } from "@/lib/data";
 import SearchPanel from "@/components/SearchPanel";
+import FeatureIcons from "@/components/FeatureIcons";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/");
@@ -124,6 +125,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="bf-divider" />
+
+      <FeatureIcons />
 
       <div className="bf-divider" />
 
