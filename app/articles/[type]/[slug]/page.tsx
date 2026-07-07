@@ -46,12 +46,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const siblings = !isBrand ? areaArticleSiblings(p) : [];
   // エリア記事のデータ駆動化(試験対象slugのみ)。データ不足やブランドはnull→移植HTML
   const AREA_PILOT = new Set(["yokohama", "shinjuku", "hachioji", "funabashi", "sendai", "kashiwa"]);
-  const area = !isBrand && AREA_PILOT.has(prm.slug) ? areaArticleData(prm.type, prm.slug) : null;
-  const brandsMap = area ? brands() : null;
+  const areaRaw = !isBrand && AREA_PILOT.has(prm.slug) ? areaArticleData(prm.type, prm.slug) : null;
+  const brandsMap = areaRaw ? brands() : null;
   const brandName = (slug: string) => (brandsMap ? Object.values(brandsMap).find((b) => b.slug.toLowerCase() === slug.toLowerCase())?.name || "" : "");
+  const area = areaRaw ? { ...areaRaw, cards: areaRaw.cards.map((c: any) => ({ ...c, brandName: brandName(c.brand) })) } : null;
   const areaFaqs = area
     ? [
-        { q: `${area.areaName}のパーソナルジムの料金相場はいくらですか？`, a: area.priceRange ? `当サイト掲載の${area.areaName}のパーソナルジム${area.total}件のコース料金では、最安クラスで${area.priceRange.min.toLocaleString()}円〜、中央値の目安は${area.priceRange.mid.toLocaleString()}円前後、高価格帯で${area.priceRange.max.toLocaleString()}円ほどです（税込・当サイト集計）。月額だけでなく入会金・回数を含めた総額で比較しましょう。` : `店舗により幅があります。無料カウンセリングで総額の見積もりを取るのが確実です。` },
+        { q: `${area.areaName}のパーソナルジムの料金相場はいくらですか？`, a: area.priceRange ? `1回あたり（コース総額÷回数）に換算すると、最安クラスで${area.priceRange.min.toLocaleString()}円〜、中央値の目安は${area.priceRange.mid.toLocaleString()}円前後、高価格帯で${area.priceRange.max.toLocaleString()}円ほどです（税込・当サイト集計・入会金別）。回数の違うプランを公平に比べるための指標です。` : `店舗により幅があります。無料カウンセリングで総額の見積もりを取るのが確実です。` },
         { q: `${area.areaName}で女性専用や完全個室のジムはありますか？`, a: `あります。${area.areaName}のパーソナルジムはこだわり条件で絞り込めます。女性専用・完全個室・食事指導などの条件別一覧から、目的に合う店舗を探せます。` },
         { q: `${area.areaName}のパーソナルジムは体験・カウンセリングを受けられますか？`, a: `多くの店舗が無料カウンセリングや体験トレーニングを用意しています。料金や雰囲気は店舗ごとに異なるため、各ジムの詳細ページと公式サイトで確認のうえ、複数を比較して決めるのがおすすめです。` },
       ]
@@ -82,7 +83,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           <p className="text-sm leading-7 mb-8" style={{ color: "var(--bf-ink)" }}>
             {area.areaName}のパーソナルジムを、料金・アクセス・こだわり条件で比較できるようまとめました。当サイト掲載の{area.total}件から、料金プランや特徴が明確な店舗を厳選し、最安プラン・アクセス・特徴を一覧で確認できます。各ジムの詳細ページで口コミや全プランもチェックできます。
           </p>
-          <DataAreaArticle areaName={area.areaName} total={area.total} cards={area.cards} priceRange={area.priceRange} listPath={area.listPath} brandName={brandName} />
+          <DataAreaArticle areaName={area.areaName} total={area.total} cards={area.cards} priceRange={area.priceRange} listPath={area.listPath} />
           <section className="mt-4 mb-8">
             <h2 className="bf-h2 mb-3">よくある質問</h2>
             <div className="space-y-2">

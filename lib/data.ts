@@ -200,26 +200,51 @@ export function areaArticleData(type: string, slug: string) {
   }
   if (matched.length < 3) return null;
   const scored = matched
-    .map(([p, s]) => ({
-      path: p,
-      name: s.name as string,
-      brand: p.split("/")[2],
-      address: s.address as string | undefined,
-      access: s.access as string | undefined,
-      catchcopy: s.catchcopy as string | undefined,
-      affiliateLink: s.affiliateLink as string | undefined,
-      features: (Array.isArray(s.features) ? s.features : []).map((f: any) => f?.name).filter(Boolean).slice(0, 4) as string[],
-      minPlan: (Array.isArray(s.pricePlans) ? s.pricePlans : [])
-        .filter((pl: any) => typeof pl.price === "number" && pl.price > 0)
-        .sort((a: any, b: any) => a.price - b.price)[0],
-    }))
+    .map(([p, s]) => {
+      const rawPlans = (Array.isArray(s.pricePlans) ? s.pricePlans : []).filter((pl: any) => typeof pl.price === "number" && pl.price > 0);
+      const plans = rawPlans.map((pl: any) => {
+        const sc = pl.sessionCount ? Number(String(pl.sessionCount).replace(/[^0-9]/g, "")) : 0;
+        return {
+          name: pl.name as string,
+          price: pl.price as number,
+          sessionCount: sc || null,
+          minutes: pl.minutes || null,
+          membershipFee: typeof pl.membershipFee === "number" ? pl.membershipFee : null,
+          perSession: sc > 0 ? Math.round(pl.price / sc) : null,
+          isMonthly: /マンスリー|月額|月謝|サブスク/.test(String(pl.name || "")),
+          note: (pl.note as string) || "",
+        };
+      });
+      const perSessionCandidates = plans.filter((pl: any) => pl.perSession);
+      const minPerSession = perSessionCandidates.sort((a: any, b: any) => a.perSession - b.perSession)[0] || null;
+      return {
+        path: p,
+        name: s.name as string,
+        brand: p.split("/")[2],
+        address: s.address as string | undefined,
+        access: s.access as string | undefined,
+        openingHours: s.openingHours as string | undefined,
+        catchcopy: s.catchcopy as string | undefined,
+        affiliateLink: s.affiliateLink as string | undefined,
+        features: (Array.isArray(s.features) ? s.features : []).map((f: any) => f?.name).filter(Boolean).slice(0, 6) as string[],
+        plans: plans.slice(0, 5),
+        minPerSession,
+        membershipFee: plans.map((pl: any) => pl.membershipFee).filter((n: any) => typeof n === "number")[0] ?? null,
+      };
+    })
     .sort((a, b) => (a.affiliateLink ? 0 : 1) - (b.affiliateLink ? 0 : 1) || b.features.length - a.features.length);
   const cards = scored.slice(0, 10);
-  const prices = matched
+  // 相場は「1回あたり」換算で統一
+  const perSessions = matched
     .flatMap(([, s]) => (Array.isArray(s.pricePlans) ? s.pricePlans : []))
-    .map((pl: any) => pl.price)
-    .filter((n: any) => typeof n === "number" && n > 0)
-    .sort((a: number, b: number) => a - b);
-  const priceRange = prices.length ? { min: prices[0], max: prices[prices.length - 1], mid: prices[Math.floor(prices.length / 2)] } : null;
+    .map((pl: any) => {
+      const sc = pl.sessionCount ? Number(String(pl.sessionCount).replace(/[^0-9]/g, "")) : 0;
+      return sc > 0 && typeof pl.price === "number" ? Math.round(pl.price / sc) : null;
+    })
+    .filter((n: any): n is number => typeof n === "number" && n > 0)
+    .sort((a, b) => a - b);
+  const priceRange = perSessions.length
+    ? { min: perSessions[0], max: perSessions[perSessions.length - 1], mid: perSessions[Math.floor(perSessions.length / 2)] }
+    : null;
   return { areaName, total: matched.length, cards, priceRange, listPath, category: info?.category || "city" };
 }
