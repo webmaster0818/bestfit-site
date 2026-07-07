@@ -232,3 +232,43 @@ body {
   background-clip: text !important;
   color: transparent !important;
 }
+
+/* ===== 記事コンパクト化(スマホ1画面志向・2026-07-07施主指示) ===== */
+.article-body { line-height: 1.7; }
+.article-body p { margin: 0.5rem 0; }
+.article-body h2 {
+  margin: 1.25rem 0 0.6rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.1rem;
+}
+.article-body h3 { margin: 1rem 0 0.5rem; font-size: 1rem; padding-bottom: 0.3rem; }
+.article-body h4 { margin: 0.8rem 0 0.4rem; }
+.article-body [data-orizm-block-type="Box"] { padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.article-body table th, .article-body table td { padding: 0.45rem 0.65rem; }
+.article-body img { margin: 0.5rem 0; }
+.article-body ul, .article-body ol { margin: 0.5rem 0; }
+.article-body li { margin: 0.15rem 0; }
+
+/* 目次ボックス: 余白圧縮+リンク1行化 */
+.article-body [class*="px-[20px]"][class*="py-[32px]"] {
+  padding: 12px 14px !important;
+  gap: 8px !important;
+}
+.article-body [class*="ui-bg-clip-text"] { font-size: 18px !important; line-height: 1.3 !important; }
+.article-body [class*="px-[20px]"][class*="py-[32px]"] ol {
+  gap: 3px !important;
+  line-height: 1.45;
+}
+.article-body [class*="px-[20px]"][class*="py-[32px]"] ol a {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12.5px !important;
+}
+.article-body [class*="px-[20px]"][class*="py-[32px]"] ol ol { padding-left: 12px !important; }
+.article-body [class*="px-[20px]"][class*="py-[32px]"] button {
+  padding: 9px 16px !important;
+  font-size: 13px !important;
+}

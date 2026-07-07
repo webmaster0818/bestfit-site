@@ -45,7 +45,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
         <Link href="/" className="hover:underline">ホーム</Link> ›{" "}
-        <Link href="/articles" className="hover:underline">エリア記事</Link> › {(m?.title.split("｜")[0] || "").slice(0, 28)}
+        <Link href="/articles" className="hover:underline">エリア記事</Link> › {m?.title.split("｜")[0] || ""}
       </nav>
       {body ? (
         <><ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} /></>
