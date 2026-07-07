@@ -45,10 +45,10 @@ export default function Home() {
         <div className="absolute inset-0">
           <Image src="/images/kv.png" alt="" fill priority className="object-cover object-[70%_top] hidden md:block" />
           <Image src="/images/kv-sp.png" alt="" fill priority className="object-cover object-top md:hidden" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(15,18,24,0.62) 0%, rgba(15,18,24,0.38) 45%, rgba(15,18,24,0.08) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(15,18,24,0.30) 0%, rgba(15,18,24,0.38) 55%, rgba(15,18,24,0.66) 100%)" }} />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
-          <div className="text-white">
+          <div className="text-white md:order-2">
             <p className="text-xs font-bold tracking-[0.25em] opacity-90 mb-3">PERSONAL GYM SEARCH &amp; REVIEW</p>
             <h1 className="text-3xl md:text-[2.6rem] font-extrabold leading-tight mb-4 drop-shadow">
               理想のカラダへ、<br />あなたに合う<span style={{ color: "#ffb45e" }}>パーソナルジム</span>が見つかる
@@ -59,7 +59,7 @@ export default function Home() {
               料金・特徴・口コミで比較して、無料カウンセリングから始めよう。
             </p>
           </div>
-          <SearchPanel areas={areas} features={featuresCatalog} />
+          <div className="md:order-1"><SearchPanel areas={areas} features={featuresCatalog} /></div>
         </div>
       </section>
 
