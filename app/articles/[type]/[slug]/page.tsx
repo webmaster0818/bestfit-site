@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { articleHtml, metaFor, urlMeta } from "@/lib/data";
 import PageHero from "@/components/PageHero";
+import ArticleEnhancer from "@/components/ArticleEnhancer";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -47,7 +48,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         <Link href="/articles" className="hover:underline">エリア記事</Link> › {(m?.title.split("｜")[0] || "").slice(0, 28)}
       </nav>
       {body ? (
-        <div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+        <><ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} /></>
       ) : (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
       )}
