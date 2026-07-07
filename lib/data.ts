@@ -217,6 +217,25 @@ export function areaArticleData(type: string, slug: string) {
       });
       const perSessionCandidates = plans.filter((pl: any) => pl.perSession);
       const minPerSession = perSessionCandidates.sort((a: any, b: any) => a.perSession - b.perSession)[0] || null;
+      const featNames = (Array.isArray(s.features) ? s.features : []).map((f: any) => f?.name).filter(Boolean) as string[];
+      const fset = new Set(featNames);
+      const PERSONA: [string, string][] = [
+        ["完全個室", "人目を気にせず集中してトレーニングしたい方"],
+        ["女性トレーナー在籍", "女性トレーナーに担当してほしい方"],
+        ["子連れOK", "お子さま連れで通いたい方"],
+        ["産後ダイエット", "産後の体型を戻したい方"],
+        ["脱・リバウンド", "リバウンドを繰り返してきた方"],
+        ["食事指導", "食事から本気で体を変えたい方"],
+        ["手ぶらOK", "仕事帰りに手ぶらで通いたい方"],
+        ["パウダールーム", "トレーニング後にそのまま外出したい方"],
+        ["姿勢改善", "姿勢や体の歪みを整えたい方"],
+        ["健康・体型維持", "健康的に体型を維持したい方"],
+        ["月額制", "月額制で気軽に続けたい方"],
+        ["毎日", "高頻度でしっかり通いたい方"],
+        ["HIIT", "短時間で効率よく追い込みたい方"],
+        ["アンチエイジング", "年齢に負けない体づくりをしたい方"],
+      ];
+      const personas = PERSONA.filter(([f]) => fset.has(f)).map(([, p]) => p).slice(0, 4);
       return {
         path: p,
         name: s.name as string,
@@ -226,7 +245,8 @@ export function areaArticleData(type: string, slug: string) {
         openingHours: s.openingHours as string | undefined,
         catchcopy: s.catchcopy as string | undefined,
         affiliateLink: s.affiliateLink as string | undefined,
-        features: (Array.isArray(s.features) ? s.features : []).map((f: any) => f?.name).filter(Boolean).slice(0, 6) as string[],
+        features: featNames.slice(0, 6),
+        personas,
         plans: plans.slice(0, 5),
         minPerSession,
         membershipFee: plans.map((pl: any) => pl.membershipFee).filter((n: any) => typeof n === "number")[0] ?? null,
