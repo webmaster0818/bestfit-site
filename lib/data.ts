@@ -181,6 +181,14 @@ function areaSlugMap() {
   return m;
 }
 
+let _placeReviews: Record<string, any> | null = null;
+function placeReviews(): Record<string, any> {
+  if (_placeReviews) return _placeReviews;
+  const f = path.join(DATA, "place-reviews.json");
+  _placeReviews = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {};
+  return _placeReviews as Record<string, any>;
+}
+
 // エリア記事(type,slug)→ そのエリアの店舗・相場・一覧パス。データ不足ならnull
 export function areaArticleData(type: string, slug: string) {
   const info = areaSlugMap()[slug];
@@ -236,8 +244,10 @@ export function areaArticleData(type: string, slug: string) {
         ["アンチエイジング", "年齢に負けない体づくりをしたい方"],
       ];
       const personas = PERSONA.filter(([f]) => fset.has(f)).map(([, p]) => p).slice(0, 4);
+      const rev = placeReviews()[p] || null;
       return {
         path: p,
+        reviews: rev,
         name: s.name as string,
         brand: p.split("/")[2],
         address: s.address as string | undefined,

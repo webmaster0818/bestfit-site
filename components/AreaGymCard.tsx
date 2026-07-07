@@ -5,6 +5,8 @@ import Link from "next/link";
 import { IcoPin, IcoTrain, IcoYen, IcoClock } from "@/components/Ico";
 
 type Plan = { name: string; price: number; sessionCount: number | null; minutes: number | null; membershipFee: number | null; perSession: number | null; isMonthly: boolean; note: string };
+type Review = { rating: number; when: string; text: string };
+type Reviews = { rating: number | null; count: number | null; mapsUri: string; reviews: Review[] };
 export type AreaCard = {
   path: string;
   name: string;
@@ -20,17 +22,24 @@ export type AreaCard = {
   plans: Plan[];
   minPerSession: Plan | null;
   membershipFee: number | null;
+  reviews: Reviews | null;
 };
 
 const yen = (n: number) => `${n.toLocaleString()}円`;
+const Stars = ({ n }: { n: number }) => {
+  const full = Math.round(n);
+  return <span style={{ color: "#f59e0b", letterSpacing: "1px" }} aria-hidden>{"★".repeat(full)}<span style={{ color: "#d1d5db" }}>{"★".repeat(5 - full)}</span></span>;
+};
 
-// biyori型: タブ切替で同一カード内に情報を表示。口コミデータは持たないため生成しない
+// biyori型: タブ切替で同一カード内に情報を表示。Google口コミはPlaces APIの実データ
 export default function AreaGymCard({ card, index }: { card: AreaCard; index: number }) {
+  const hasReviews = !!(card.reviews && card.reviews.reviews && card.reviews.reviews.length);
   const tabs = [
     ...(card.plans.length ? [{ id: "plan", label: "人気プラン" }] : []),
     ...(card.personas.length ? [{ id: "persona", label: "こんな方におすすめ" }] : []),
     { id: "info", label: "基本情報" },
     { id: "map", label: "地図・アクセス" },
+    ...(hasReviews ? [{ id: "review", label: "Google口コミ" }] : []),
   ];
   const [tab, setTab] = useState(tabs[0].id);
   const mapQuery = encodeURIComponent(`${card.brandName} ${card.name} ${card.address || ""}`.trim());
@@ -39,9 +48,17 @@ export default function AreaGymCard({ card, index }: { card: AreaCard; index: nu
   return (
     <div className="bf-card p-5">
       <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
-        <h3 className="font-extrabold text-base">
-          {index + 1}. <Link href={card.path} style={{ color: "var(--bf-primary)" }} className="hover:underline">{card.brandName} {card.name}</Link>
-        </h3>
+        <div>
+          <h3 className="font-extrabold text-base">
+            {index + 1}. <Link href={card.path} style={{ color: "var(--bf-primary)" }} className="hover:underline">{card.brandName} {card.name}</Link>
+          </h3>
+          {card.reviews?.rating != null && (
+            <button onClick={() => setTab("review")} className="mt-0.5 text-xs flex items-center gap-1 hover:underline" style={{ color: "var(--bf-muted)" }}>
+              <Stars n={card.reviews.rating} /><span className="font-bold" style={{ color: "var(--bf-ink)" }}>{card.reviews.rating.toFixed(1)}</span>
+              {card.reviews.count != null && <span>（{card.reviews.count}件）</span>}
+            </button>
+          )}
+        </div>
         {card.minPerSession && (
           <span className="text-right shrink-0">
             <span className="text-[10px] block" style={{ color: "var(--bf-muted)" }}>1回あたり（{card.minPerSession.sessionCount}回コース換算）</span>
@@ -114,6 +131,27 @@ export default function AreaGymCard({ card, index }: { card: AreaCard; index: nu
             <p className="text-[11px] font-bold mb-1" style={{ color: "var(--bf-muted)" }}>住所</p>
             <p className="text-xs flex gap-2 mb-3"><IcoPin className="text-xs shrink-0 mt-0.5" /><span>{card.address || "—"}</span></p>
             <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="bf-cta-sub inline-block">Googleマップで場所を見る</a>
+          </div>
+        )}
+        {tab === "review" && card.reviews && (
+          <div>
+            <div className="flex items-center gap-2 mb-3 pb-2 border-b" style={{ borderColor: "var(--bf-line)" }}>
+              <Stars n={card.reviews.rating || 0} />
+              <span className="font-bold text-sm">{(card.reviews.rating || 0).toFixed(1)}</span>
+              {card.reviews.count != null && <span className="text-xs" style={{ color: "var(--bf-muted)" }}>Googleの口コミ{card.reviews.count}件</span>}
+            </div>
+            <div className="space-y-3">
+              {card.reviews.reviews.map((rv, i) => (
+                <div key={i} className="rounded-lg p-3" style={{ background: "#fff", border: "1px solid var(--bf-line)" }}>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <Stars n={rv.rating} /><span className="text-[10px]" style={{ color: "var(--bf-muted)" }}>{rv.when}</span>
+                  </div>
+                  <p className="text-xs leading-6" style={{ color: "var(--bf-ink)" }}>{rv.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-[10px] mt-2" style={{ color: "var(--bf-muted)" }}>※Googleマップの口コミ（実際の投稿）を表示しています。</p>
+            <a href={card.reviews.mapsUri || mapUrl} target="_blank" rel="noopener noreferrer" className="text-xs underline mt-1 inline-block" style={{ color: "var(--bf-primary)" }}>出典: Google Mapsで口コミを見る →</a>
           </div>
         )}
       </div>
