@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const bp = bslug ? brandPrice(bslug) : null;
   if (!m) return {};
   // 料金intentが最大流入(curves料金67k imp等)→titleに実額を前出しでCTR回収
-  const brandTitle = bp ? `${bp.name}の料金【${bp.price}】口コミ・評判も徹底比較｜BEST-FIT` : m.title;
+  const brandTitle = bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】｜BEST-FIT` : m.title;
   return {
     title: { absolute: brandTitle },
     description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。` : m?.desc,
@@ -84,10 +84,19 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       </nav>
       {bp && (
         <div className="bf-card p-5 mb-6" style={{ borderTop: "4px solid var(--bf-primary)" }}>
-          <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>料金早見（{bp.note}）</p>
+          <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>料金の目安（{bp.note}）</p>
           <p className="text-lg font-extrabold" style={{ color: "var(--bf-primary)" }}>{bp.price}</p>
           {bp.join && <p className="text-sm mt-1" style={{ color: "var(--bf-ink)" }}>{bp.join}</p>}
-          <p className="text-[11px] mt-2" style={{ color: "var(--bf-muted)" }}>※料金は税込・公式サイトで確認した最新値です。店舗・時期により変わる場合があります。詳細は本文と公式サイトでご確認ください。</p>
+          <p className="text-[11px] mt-2 mb-3" style={{ color: "var(--bf-muted)" }}>※税込・{bp.note}の目安。<strong>入会金無料などのキャンペーンや店舗で変わる</strong>ため、実際に払う総額は記事内の詳細と公式サイトでご確認ください。</p>
+          <div className="border-t pt-3" style={{ borderColor: "var(--bf-line)" }}>
+            <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-ink)" }}>この記事でわかること</p>
+            <div className="flex flex-wrap gap-2">
+              <span className="bf-chip">料金プランの内訳と総額</span>
+              <span className="bf-chip">入会金無料キャンペーンの有無</span>
+              <span className="bf-chip">リアルな口コミ・評判</span>
+              <span className="bf-chip">他ジムとの料金比較</span>
+            </div>
+          </div>
         </div>
       )}
       {brandFaqs.length > 0 && (
