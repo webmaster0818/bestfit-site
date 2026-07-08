@@ -295,3 +295,12 @@ export function areaArticleData(type: string, slug: string) {
     : null;
   return { areaName, total: matched.length, cards, priceRange, listPath, category: type };
 }
+
+// エリアのみ一覧→対応エリア記事のcanonicalマップ(重複解消・2026-07-08)
+let _listCanon: Record<string, string> | null = null;
+export function listCanonicalMap(): Record<string, string> {
+  if (_listCanon) return _listCanon;
+  const f = path.join(DATA, "list-canonical-map.json");
+  _listCanon = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf-8")) : {};
+  return _listCanon as Record<string, string>;
+}
