@@ -73,8 +73,23 @@ export default function CurvesFinder({ stores }: { stores: Store[] }) {
         </div>
       )}
 
+      {/* 男性: カーブスは女性専用→自社の男性OKパーソナルジムへ誘導(矛盾解消) */}
+      {step === 2 && goal && goal.id === "male" && (
+        <div>
+          <div className="rounded-lg p-3 mb-4 text-xs leading-6" style={{ background: "#fff7ed", color: "var(--bf-ink)" }}>
+            <strong>！ カーブスは女性専用です</strong>：{goal.note}
+          </div>
+          <div className="rounded-xl p-4 text-center" style={{ background: "var(--bf-primary-soft)" }}>
+            <p className="text-sm font-bold mb-1">男性も通えるパーソナルジムを探す</p>
+            <p className="text-[11px] mb-3" style={{ color: "var(--bf-muted)" }}>BEST-FITでは男性歓迎のパーソナルジムを、エリア・料金・こだわり条件で比較できます。</p>
+            <a href="/gyms/search" className="bf-cta inline-block">男性OKのジムを探す →</a>
+          </div>
+          <button onClick={() => { setStep(1); setGoal(null); }} className="w-full mt-3 text-xs underline" style={{ color: "var(--bf-muted)" }}>最初からやり直す</button>
+        </div>
+      )}
+
       {/* Step2: エリア */}
-      {step === 2 && goal && (
+      {step === 2 && goal && goal.id !== "male" && (
         <div>
           <div className="rounded-lg p-3 mb-4 text-xs leading-6" style={{ background: goal.fit === "high" ? "#ecfdf5" : "#fff7ed", color: "var(--bf-ink)" }}>
             <strong>{goal.fit === "high" ? "✓ カーブス向きです" : "！ 一度ご確認を"}</strong>：{goal.note}
