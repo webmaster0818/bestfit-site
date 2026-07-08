@@ -67,9 +67,16 @@ export default function DataAreaArticle({
             <tbody>
               {cards.map((c) => (
                 <tr key={c.path}>
-                  <td className="px-3 py-2.5 font-bold whitespace-nowrap"><Link href={c.path} style={{ color: "var(--bf-primary)" }} className="hover:underline">{c.brandName} {c.name}</Link></td>
-                  <td className="px-3 py-2.5">{c.minPerSession ? `${c.minPerSession.perSession!.toLocaleString()}円〜（${c.minPerSession.sessionCount}回コース換算）` : "要問合せ"}</td>
-                  <td className="px-3 py-2.5 text-xs">{c.access || "—"}</td>
+                  <td className="px-3 py-2.5 font-bold"><Link href={c.path} style={{ color: "var(--bf-primary)" }} className="hover:underline">{c.brandName} {c.name}</Link></td>
+                  <td className="px-3 py-2.5">
+                    {c.minPerSession ? (
+                      <span className="inline-block">
+                        <span className="bf-price whitespace-nowrap">{c.minPerSession.perSession!.toLocaleString()}円〜</span>
+                        <span className="block text-[10px] whitespace-nowrap" style={{ color: "var(--bf-muted)" }}>{c.minPerSession.sessionCount}回コース換算</span>
+                      </span>
+                    ) : "要問合せ"}
+                  </td>
+                  <td className="px-3 py-2.5 text-xs" style={{ minWidth: "8em" }}>{c.access || "—"}</td>
                 </tr>
               ))}
             </tbody>
