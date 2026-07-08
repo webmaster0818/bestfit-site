@@ -6,6 +6,7 @@ import path from "node:path";
 import { metaFor, taxonomies, brands, stores, urlMeta } from "@/lib/data";
 import SearchPanel from "@/components/SearchPanel";
 import FeatureIcons from "@/components/FeatureIcons";
+import GymConcierge from "@/components/GymConcierge";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/");
@@ -19,6 +20,7 @@ function loadJson(file: string) {
 }
 
 export default function Home() {
+  const conciergeStores = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "concierge-stores.json"), "utf-8"));
   const tax = taxonomies();
   const storeCount = Object.keys(stores()).length;
   const brandCount = Object.keys(brands()).length;
@@ -61,6 +63,13 @@ export default function Home() {
             </p>
           </div>
           <div className="md:order-1"><SearchPanel areas={areas} features={featuresCatalog} /></div>
+        </div>
+      </section>
+
+      {/* ===== AI診断コンシェルジュ ===== */}
+      <section className="py-8">
+        <div className="max-w-3xl mx-auto px-4">
+          <GymConcierge stores={conciergeStores} />
         </div>
       </section>
 
