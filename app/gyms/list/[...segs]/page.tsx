@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listPaths, metaFor, resolveListPage, brands, refineLinks, listCanonicalMap } from "@/lib/data";
-import { IcoPin, IcoTrain, IcoYen, IcoChevron } from "@/components/Ico";
+import { IcoPin, IcoTrain, IcoYen, IcoChevron, IcoClock } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
 
@@ -107,10 +107,27 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
       <div className="space-y-4">
         {hits.map(([path, s]) => {
           const b = brandMap.find((x) => x.brandId === s.brandId);
-          const minPlan = (Array.isArray(s.pricePlans) ? s.pricePlans : [])
-            .filter((pl: any) => typeof pl.price === "number")
-            .sort((a: any, c: any) => a.price - c.price)[0];
+          const plans = (Array.isArray(s.pricePlans) ? s.pricePlans : []).filter((pl: any) => typeof pl.price === "number" && pl.price > 0);
+          const minPlan = [...plans].sort((a: any, c: any) => a.price - c.price)[0];
+          // 1回あたり最安(回数のあるプラン)
+          const perList = plans
+            .map((pl: any) => { const sc = pl.sessionCount ? Number(String(pl.sessionCount).replace(/[^0-9]/g, "")) : 0; return sc > 0 ? { per: Math.round(pl.price / sc), sc } : null; })
+            .filter(Boolean) as { per: number; sc: number }[];
+          const minPer = perList.sort((a, b) => a.per - b.per)[0];
+          // 入会金(0=無料)
+          const joinFees = plans.map((pl: any) => pl.membershipFee).filter((n: any) => typeof n === "number");
+          const freeJoin = joinFees.length > 0 && Math.min(...joinFees) === 0;
+          // 営業時間から早朝/夜間判定
+          const oh: string = s.openingHours || "";
+          const times = [...oh.matchAll(/(\d{1,2}):\d{2}/g)].map((m) => Number(m[1]));
+          const opensEarly = times.length > 0 && Math.min(...times) <= 7;
+          const closesLate = times.length > 0 && Math.max(...times) >= 22;
           const feats: any[] = Array.isArray(s.features) ? s.features : [];
+          const featNames = feats.map((f: any) => f?.name).filter(Boolean) as string[];
+          const hasTrial = featNames.includes("トライアルプラン");
+          // 絞り込み中の条件(feature/tag)にマッチするか→先頭に✓表示
+          const activeCond = [labels.feature, labels.tag].filter(Boolean) as string[];
+          const sortedFeats = [...featNames].sort((a, b) => (activeCond.includes(b) ? 1 : 0) - (activeCond.includes(a) ? 1 : 0));
           return (
             <Link key={path} href={path} className="bf-card bf-card-hover p-5 block group relative">
               <div className="flex items-start justify-between gap-3">
@@ -122,18 +139,41 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
                 </div>
                 {minPlan && (
                   <div className="shrink-0 text-right rounded-lg px-3 py-1.5" style={{ background: "var(--bf-primary-soft)" }}>
-                    <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
-                    <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                    {minPer ? (
+                      <>
+                        <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>1回あたり（{minPer.sc}回換算）</p>
+                        <p className="bf-price text-base leading-tight">{minPer.per.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
+                        <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                      </>
+                    )}
                   </div>
                 )}
               </div>
+              {/* 訴求バッジ */}
+              {(freeJoin || hasTrial || closesLate || opensEarly) && (
+                <div className="flex flex-wrap gap-1.5 mt-2.5">
+                  {freeJoin && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#fef2f2", color: "#dc2626" }}>入会金無料</span>}
+                  {hasTrial && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#ecfdf5", color: "#059669" }}>無料体験あり</span>}
+                  {closesLate && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#eff6ff", color: "#2563eb" }}>夜間OK</span>}
+                  {opensEarly && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#eff6ff", color: "#2563eb" }}>早朝OK</span>}
+                </div>
+              )}
               <div className="text-[13px] mt-3 space-y-1.5" style={{ color: "#475569" }}>
-                {s.address && <p className="flex items-start gap-1.5"><IcoPin className="mt-1 shrink-0 text-[13px]" /><span>{s.address}</span></p>}
                 {s.access && <p className="flex items-start gap-1.5"><IcoTrain className="mt-1 shrink-0 text-[13px]" /><span>{s.access}</span></p>}
+                {s.openingHours && <p className="flex items-start gap-1.5"><IcoClock className="mt-1 shrink-0 text-[13px]" /><span>{s.openingHours.split("\n")[0]}</span></p>}
+                {s.address && <p className="flex items-start gap-1.5"><IcoPin className="mt-1 shrink-0 text-[13px]" /><span className="line-clamp-1">{s.address}</span></p>}
               </div>
-              {feats.length > 0 && (
+              {sortedFeats.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-3">
-                  {feats.slice(0, 4).map((f: any) => f?.name && <span key={f.id} className="bf-chip">{f.name}</span>)}
+                  {sortedFeats.slice(0, 4).map((name) => (
+                    <span key={name} className="bf-chip" style={activeCond.includes(name) ? { background: "var(--bf-primary)", color: "#fff" } : undefined}>
+                      {activeCond.includes(name) ? `✓ ${name}` : name}
+                    </span>
+                  ))}
                 </div>
               )}
               <span className="absolute bottom-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-white text-sm group-hover:translate-x-0.5 transition-transform" style={{ background: "var(--bf-primary)" }}><IcoChevron /></span>
