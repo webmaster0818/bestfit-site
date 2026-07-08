@@ -182,6 +182,7 @@ function areaSlugMap() {
 }
 
 let _placeReviews: Record<string, any> | null = null;
+export function storeReviews(): Record<string, any> { return placeReviews(); }
 function placeReviews(): Record<string, any> {
   if (_placeReviews) return _placeReviews;
   const f = path.join(DATA, "place-reviews.json");

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { listPaths, metaFor, resolveListPage, brands, refineLinks, listCanonicalMap } from "@/lib/data";
+import { listPaths, metaFor, resolveListPage, brands, refineLinks, listCanonicalMap, storeReviews } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoChevron, IcoClock } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
+import DistanceSort from "@/components/DistanceSort";
 import { planPriceLabel } from "@/lib/data";
 
 export const dynamicParams = false;
@@ -48,6 +49,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
   const deduped = parts.filter((x, i) => !parts.some((y, j) => j > i && y.includes(x)));
   const labelText = deduped.join("・");
   const brandMap = Object.values(brands());
+  const reviews = storeReviews();
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -104,9 +106,11 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         );
       })()}
 
-      <div className="space-y-4">
+      {hits.length >= 2 && <DistanceSort containerId="gym-list" />}
+      <div className="space-y-4" id="gym-list">
         {hits.map(([path, s]) => {
           const b = brandMap.find((x) => x.brandId === s.brandId);
+          const rev = reviews[path];
           const plans = (Array.isArray(s.pricePlans) ? s.pricePlans : []).filter((pl: any) => typeof pl.price === "number" && pl.price > 0);
           const minPlan = [...plans].sort((a: any, c: any) => a.price - c.price)[0];
           // 1回あたり最安(回数のあるプラン)
@@ -129,12 +133,19 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
           const activeCond = [labels.feature, labels.tag].filter(Boolean) as string[];
           const sortedFeats = [...featNames].sort((a, b) => (activeCond.includes(b) ? 1 : 0) - (activeCond.includes(a) ? 1 : 0));
           return (
-            <Link key={path} href={path} className="bf-card bf-card-hover p-5 block group relative">
+            <Link key={path} href={path} className="bf-card bf-card-hover p-5 block group relative" data-lat={rev?.lat ?? undefined} data-lng={rev?.lng ?? undefined}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <h2 className="font-extrabold text-lg leading-snug group-hover:underline" style={{ color: "var(--bf-primary)" }}>
                     {b?.name || ""} {s.name}
                   </h2>
+                  {rev?.rating != null && (
+                    <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "#f59e0b" }}>
+                      <span>{"★".repeat(Math.round(rev.rating))}<span style={{ color: "#d1d5db" }}>{"★".repeat(5 - Math.round(rev.rating))}</span></span>
+                      <span className="font-bold" style={{ color: "var(--bf-ink)" }}>{rev.rating.toFixed(1)}</span>
+                      {rev.count != null && <span style={{ color: "var(--bf-muted)" }}>（{rev.count}件）</span>}
+                    </p>
+                  )}
                   {s.catchcopy && <p className="text-xs mt-1 line-clamp-1" style={{ color: "var(--bf-muted)" }}>{s.catchcopy}</p>}
                 </div>
                 {minPlan && (
@@ -163,7 +174,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
                 </div>
               )}
               <div className="text-[13px] mt-3 space-y-1.5" style={{ color: "#475569" }}>
-                {s.access && <p className="flex items-start gap-1.5"><IcoTrain className="mt-1 shrink-0 text-[13px]" /><span>{s.access}</span></p>}
+                {s.access && <p className="flex items-start gap-1.5"><IcoTrain className="mt-1 shrink-0 text-[13px]" /><span>{s.access}<span data-dist className="ml-1 font-bold" style={{ color: "var(--bf-primary)" }} /></span></p>}
                 {s.openingHours && <p className="flex items-start gap-1.5"><IcoClock className="mt-1 shrink-0 text-[13px]" /><span>{s.openingHours.split("\n")[0]}</span></p>}
                 {s.address && <p className="flex items-start gap-1.5"><IcoPin className="mt-1 shrink-0 text-[13px]" /><span className="line-clamp-1">{s.address}</span></p>}
               </div>
