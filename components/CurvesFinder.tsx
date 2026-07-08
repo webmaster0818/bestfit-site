@@ -103,11 +103,14 @@ export default function CurvesFinder({ stores }: { stores: Store[] }) {
               {results.map((s, i) => (
                 <div key={i} className="rounded-lg p-3" style={{ border: "1px solid var(--bf-line)" }}>
                   <div className="flex items-center justify-between gap-2">
-                    <p className="font-bold text-sm">{s.name}</p>
+                    <a href={AFF} rel="sponsored nofollow" target="_blank" className="font-bold text-sm hover:underline" style={{ color: "var(--bf-primary)" }}>{s.name}</a>
                     {s.rating != null && <span className="text-xs whitespace-nowrap" style={{ color: "#f59e0b" }}>★{s.rating.toFixed(1)}<span style={{ color: "var(--bf-muted)" }}>（{s.count}）</span></span>}
                   </div>
                   <p className="text-[11px] mt-0.5" style={{ color: "var(--bf-muted)" }}>{s.address}{geo && `　約${dist(geo, s).toFixed(1)}km`}</p>
-                  {s.mapsUri && <a href={s.mapsUri} target="_blank" rel="noopener noreferrer" className="text-[11px] underline" style={{ color: "var(--bf-primary)" }}>Googleマップで見る →</a>}
+                  <div className="flex gap-3 mt-1">
+                    <a href={AFF} rel="sponsored nofollow" target="_blank" className="text-[11px] font-bold underline" style={{ color: "var(--bf-primary)" }}>公式で体験予約 →</a>
+                    {s.mapsUri && <a href={s.mapsUri} target="_blank" rel="noopener noreferrer" className="text-[11px] underline" style={{ color: "var(--bf-muted)" }}>Googleマップで見る →</a>}
+                  </div>
                 </div>
               ))}
             </div>
