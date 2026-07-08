@@ -44,9 +44,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
   const siblings = !isBrand ? areaArticleSiblings(p) : [];
-  // エリア記事のデータ駆動化(試験対象slugのみ)。データ不足やブランドはnull→移植HTML
-  const AREA_PILOT = new Set(["yokohama", "shinjuku", "hachioji", "funabashi", "sendai", "kashiwa"]);
-  const areaRaw = !isBrand && AREA_PILOT.has(prm.slug) ? areaArticleData(prm.type, prm.slug) : null;
+  // エリア記事のデータ駆動化(全記事で試行・店舗3未満はnullで移植HTMLにフォールバック)
+  const areaRaw = !isBrand ? areaArticleData(prm.type, prm.slug) : null;
   const brandsMap = areaRaw ? brands() : null;
   const brandName = (slug: string) => (brandsMap ? Object.values(brandsMap).find((b) => b.slug.toLowerCase() === slug.toLowerCase())?.name || "" : "");
   const area = areaRaw ? { ...areaRaw, cards: areaRaw.cards.map((c: any) => ({ ...c, brandName: brandName(c.brand) })) } : null;

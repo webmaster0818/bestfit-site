@@ -190,21 +190,38 @@ function placeReviews(): Record<string, any> {
 }
 
 // エリア記事(type,slug)→ そのエリアの店舗・相場・一覧パス。データ不足ならnull
+function areaNameFromTitle(title: string): string | null {
+  const t = title.replace(/^\u3010[^\u3011]*\u3011/, "");
+  const pats = [/^(.+?)\u306e\u304a\u3059\u3059\u3081\u30d1\u30fc\u30bd\u30ca\u30eb\u30b8\u30e0/, /^(.+?)\u306e\u30d1\u30fc\u30bd\u30ca\u30eb\u30b8\u30e0\u304a\u3059\u3059\u3081/, /^\u30d1\u30fc\u30bd\u30ca\u30eb\u30b8\u30e0(.+?)\u304a\u3059\u3059\u3081/];
+  for (const re of pats) {
+    const m = t.match(re);
+    if (m) { const nm = m[1].trim().split(/[/\uff08(]/)[0].trim(); if (nm) return nm; }
+  }
+  return null;
+}
+
 export function areaArticleData(type: string, slug: string) {
-  const info = areaSlugMap()[slug];
   const tax = taxonomies();
   const all = Object.entries(stores());
+  const _p = `/articles/${type}/${slug}`;
+  const _title = (urlMeta()[_p] as any)?.title || "";
+  const nm = areaNameFromTitle(_title);
+  if (!nm) return null;
   let matched: [string, any][] = [];
-  let areaName = info?.name || slug;
+  let areaName = nm;
   let listPath = "/gyms/list";
-  if (info?.category === "pref") {
-    const codes = Object.keys(tax.pref).filter((k) => tax.pref[k] === info.name || tax.pref[k].replace(/[都道府県]/g, "") === info.name);
+  if (type === "pref") {
+    const codes = Object.keys(tax.pref).filter((k) => tax.pref[k].includes(nm));
     matched = all.filter(([, s]) => codes.includes(s._prefCode));
     if (codes[0]) { listPath = `/gyms/list/pref-${codes[0]}`; areaName = tax.pref[codes[0]]; }
-  } else {
-    const codes = Object.keys(tax.city).filter((k) => tax.city[k].includes(info?.name || " "));
+  } else if (type === "city") {
+    const codes = Object.keys(tax.city).filter((k) => tax.city[k].includes(nm));
     matched = all.filter(([, s]) => codes.includes(s._cityCode));
     if (codes[0]) { listPath = `/gyms/list/pref-${matched[0]?.[1]?._prefCode}/city-${codes[0]}`; areaName = tax.city[codes[0]]; }
+  } else {
+    matched = all.filter(([, s]) => (s.access || "").includes(nm) || (s.address || "").includes(nm));
+    const anchor = matched[0]?.[1];
+    if (anchor?._cityCode) listPath = `/gyms/list/pref-${anchor._prefCode}/city-${anchor._cityCode}`;
   }
   if (matched.length < 3) return null;
   const scored = matched
@@ -276,5 +293,5 @@ export function areaArticleData(type: string, slug: string) {
   const priceRange = perSessions.length
     ? { min: perSessions[0], max: perSessions[perSessions.length - 1], mid: perSessions[Math.floor(perSessions.length / 2)] }
     : null;
-  return { areaName, total: matched.length, cards, priceRange, listPath, category: info?.category || "city" };
+  return { areaName, total: matched.length, cards, priceRange, listPath, category: type };
 }
