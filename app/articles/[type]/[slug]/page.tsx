@@ -49,6 +49,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const curvesStores = prm.type === "brand" && prm.slug === "curves"
     ? JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "curves-stores.json"), "utf-8"))
     : null;
+  const areaArticlesIdx = curvesStores
+    ? JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "area-articles-index.json"), "utf-8"))
+    : null;
   const brandFaqs = bp
     ? [
         { q: `${bp.name}の料金はいくらですか？`, a: `${bp.name}の料金は${bp.price}です${bp.join ? `（${bp.join}）` : ""}（${bp.note}・税込）。月額・入会金を含めた総額で比較するのがおすすめです。最新の料金は公式サイトでご確認ください。` },
@@ -103,7 +106,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           </div>
         </div>
       )}
-      {curvesStores && <CurvesFinder stores={curvesStores} />}
+      {curvesStores && <CurvesFinder stores={curvesStores} areaArticles={areaArticlesIdx} />}
       {brandFaqs.length > 0 && (
         <section className="mb-8">
           <h2 className="bf-h2 mb-3">{bp!.name}の料金・評判 よくある質問</h2>

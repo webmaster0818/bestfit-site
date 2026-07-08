@@ -21,9 +21,13 @@ function dist(a: { lat: number; lng: number }, b: { lat: number; lng: number }) 
   return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
 }
 
-export default function CurvesFinder({ stores }: { stores: Store[] }) {
+type AreaArticle = { url: string; name: string; type: string; pref: string };
+
+export default function CurvesFinder({ stores, areaArticles }: { stores: Store[]; areaArticles?: AreaArticle[] }) {
   const [step, setStep] = useState(1);
   const [goal, setGoal] = useState<typeof GOALS[number] | null>(null);
+  const [malePath, setMalePath] = useState<"" | "casual" | "personal">("");
+  const [malePref, setMalePref] = useState("");
   const [pref, setPref] = useState("");
   const [city, setCity] = useState("");
   const [geo, setGeo] = useState<{ lat: number; lng: number } | null>(null);
@@ -73,18 +77,53 @@ export default function CurvesFinder({ stores }: { stores: Store[] }) {
         </div>
       )}
 
-      {/* 男性: カーブスは女性専用→自社の男性OKパーソナルジムへ誘導(矛盾解消) */}
+      {/* 男性: カーブスは女性専用→タイプ別に自社コンテンツへ誘導 */}
       {step === 2 && goal && goal.id === "male" && (
         <div>
           <div className="rounded-lg p-3 mb-4 text-xs leading-6" style={{ background: "#fff7ed", color: "var(--bf-ink)" }}>
-            <strong>！ カーブスは女性専用です</strong>：{goal.note}
+            <strong>！ カーブスは女性専用です</strong>：男性も通えるジムを、タイプ別にご案内します。
           </div>
-          <div className="rounded-xl p-4 text-center" style={{ background: "var(--bf-primary-soft)" }}>
-            <p className="text-sm font-bold mb-1">男性も通えるパーソナルジムを探す</p>
-            <p className="text-[11px] mb-3" style={{ color: "var(--bf-muted)" }}>BEST-FITでは男性歓迎のパーソナルジムを、エリア・料金・こだわり条件で比較できます。</p>
-            <a href="/gyms/search" className="bf-cta inline-block">男性OKのジムを探す →</a>
-          </div>
-          <button onClick={() => { setStep(1); setGoal(null); }} className="w-full mt-3 text-xs underline" style={{ color: "var(--bf-muted)" }}>最初からやり直す</button>
+          {!malePath && (
+            <div>
+              <p className="text-sm font-bold mb-2">どんなジムをお探しですか？</p>
+              <div className="grid gap-2">
+                <button onClick={() => setMalePath("casual")} className="text-left px-4 py-3 rounded-lg text-sm font-semibold" style={{ background: "var(--bf-primary-soft)", color: "var(--bf-primary)" }}>
+                  ① カーブスのような気軽に通えるジムを探している<span className="block text-[11px] font-normal mt-0.5" style={{ color: "var(--bf-muted)" }}>24時間・低価格のフィットネス</span>
+                </button>
+                <button onClick={() => setMalePath("personal")} className="text-left px-4 py-3 rounded-lg text-sm font-semibold" style={{ background: "var(--bf-primary-soft)", color: "var(--bf-primary)" }}>
+                  ② パーソナルジム（マンツーマン指導）を探している<span className="block text-[11px] font-normal mt-0.5" style={{ color: "var(--bf-muted)" }}>本格的に体を変えたい</span>
+                </button>
+              </div>
+            </div>
+          )}
+          {malePath === "casual" && (
+            <div>
+              <p className="text-sm font-bold mb-2">男性も通える気軽なフィットネス</p>
+              <div className="space-y-2 mb-3">
+                <a href="/articles/brand/chocozap" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>チョコザップ（月3,278円・24時間・男女OK）の詳細を見る →</a>
+                <a href="/articles/brand/fit24" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>Fit24（24時間フィットネス・男女OK）の詳細を見る →</a>
+              </div>
+              <button onClick={() => setMalePath("")} className="w-full text-xs underline" style={{ color: "var(--bf-muted)" }}>← 戻る</button>
+            </div>
+          )}
+          {malePath === "personal" && (
+            <div>
+              <p className="text-sm font-bold mb-2">エリアを選んでください</p>
+              <select value={malePref} onChange={(e) => setMalePref(e.target.value)} className="w-full border rounded-lg px-2 py-2 text-sm mb-3" style={{ borderColor: "var(--bf-line)" }}>
+                <option value="">都道府県を選ぶ</option>
+                {[...new Set((areaArticles || []).map((a) => a.pref))].sort().map((pr) => <option key={pr} value={pr}>{pr}</option>)}
+              </select>
+              {malePref && (
+                <div className="space-y-2 mb-3">
+                  {(areaArticles || []).filter((a) => a.pref === malePref).map((a) => (
+                    <a key={a.url} href={a.url} className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>{a.name}のパーソナルジム比較を見る →</a>
+                  ))}
+                </div>
+              )}
+              <button onClick={() => { setMalePath(""); setMalePref(""); }} className="w-full text-xs underline" style={{ color: "var(--bf-muted)" }}>← 戻る</button>
+            </div>
+          )}
+          <button onClick={() => { setStep(1); setGoal(null); setMalePath(""); setMalePref(""); }} className="w-full mt-3 text-xs underline" style={{ color: "var(--bf-muted)" }}>最初からやり直す</button>
         </div>
       )}
 
