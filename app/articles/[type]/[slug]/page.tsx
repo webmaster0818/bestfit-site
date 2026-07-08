@@ -28,9 +28,11 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const bslug = p.startsWith("/articles/brand/") ? p.split("/").pop()! : null;
   const bp = bslug ? brandPrice(bslug) : null;
   if (!m) return {};
+  // 料金intentが最大流入(curves料金67k imp等)→titleに実額を前出しでCTR回収
+  const brandTitle = bp ? `${bp.name}の料金【${bp.price}】口コミ・評判も徹底比較｜BEST-FIT` : m.title;
   return {
-    title: { absolute: m.title },
-    description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。口コミ・評判、他社との料金比較、向いている人まで、実際に払う総額ベースで解説します。` : m?.desc,
+    title: { absolute: brandTitle },
+    description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。` : m?.desc,
     alternates: m.canonical ? { canonical: m.canonical } : undefined,
   };
 }
@@ -43,6 +45,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
+  const brandFaqs = bp
+    ? [
+        { q: `${bp.name}の料金はいくらですか？`, a: `${bp.name}の料金は${bp.price}です${bp.join ? `（${bp.join}）` : ""}（${bp.note}・税込）。月額・入会金を含めた総額で比較するのがおすすめです。最新の料金は公式サイトでご確認ください。` },
+        { q: `${bp.name}に入会金はかかりますか？`, a: bp.join ? `${bp.name}は${bp.join}です（${bp.note}）。時期によって入会金無料キャンペーンが実施される場合があるため、公式サイトの最新情報もあわせてご確認ください。` : `${bp.name}の入会金は公式サイトで金額の明記が確認できませんでした（${bp.note}）。カウンセリング時や公式サイトで確認するのが確実です。` },
+        { q: `${bp.name}の口コミ・評判はどうですか？`, a: `本記事では${bp.name}の口コミ・評判の傾向と、料金・特徴・向いている人を中立的にまとめています。良い評判・気になる点の両面と、他社との料金比較を確認したうえで、無料カウンセリングで実際の雰囲気を確かめるのがおすすめです。` },
+      ]
+    : [];
+  const brandFaqLd = bp
+    ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: brandFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
+    : null;
   const siblings = !isBrand ? areaArticleSiblings(p) : [];
   // エリア記事のデータ駆動化(全記事で試行・店舗3未満はnullで移植HTMLにフォールバック)
   const areaRaw = !isBrand ? areaArticleData(prm.type, prm.slug) : null;
@@ -63,6 +75,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   return (
     <article>
       {areaFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqLd) }} />}
+      {brandFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
       <PageHero eyebrow={isBrand ? "BRAND REVIEW" : "AREA FEATURE"} title={m?.title.split("｜")[0] || ""} />
       <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
@@ -76,6 +89,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           {bp.join && <p className="text-sm mt-1" style={{ color: "var(--bf-ink)" }}>{bp.join}</p>}
           <p className="text-[11px] mt-2" style={{ color: "var(--bf-muted)" }}>※料金は税込・公式サイトで確認した最新値です。店舗・時期により変わる場合があります。詳細は本文と公式サイトでご確認ください。</p>
         </div>
+      )}
+      {brandFaqs.length > 0 && (
+        <section className="mb-8">
+          <h2 className="bf-h2 mb-3">{bp!.name}の料金・評判 よくある質問</h2>
+          <div className="space-y-2">
+            {brandFaqs.map((f, i) => (
+              <details key={i} className="bf-card group">
+                <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
+                  {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
+                </summary>
+                <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
       )}
       {area ? (
         <>
