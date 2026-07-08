@@ -47,10 +47,17 @@ export default function CurvesFinder({ stores }: { stores: Store[] }) {
   };
 
   return (
-    <section className="bf-card p-5 mb-8" style={{ borderTop: "4px solid var(--bf-primary)" }}>
-      <p className="text-xs font-bold tracking-wider mb-1" style={{ color: "var(--bf-primary)" }}>かんたん診断</p>
-      <h2 className="text-lg font-extrabold mb-1">カーブスがあなたに合うか＆近くの店舗を診断</h2>
-      <p className="text-xs mb-4" style={{ color: "var(--bf-muted)" }}>2つの質問に答えるだけ。目的との相性と、通える店舗が分かります。</p>
+    <section className="mb-8 rounded-2xl overflow-hidden shadow-lg" style={{ background: "linear-gradient(135deg, var(--bf-primary), var(--bf-primary-deep, #0b4fd6))" }}>
+      {/* カラーヘッダー(料金ボックスの白カードと差別化) */}
+      <div className="px-5 pt-5 pb-4 text-white">
+        <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full mb-2" style={{ background: "rgba(255,255,255,0.22)" }}>
+          <span>🎯</span>無料・30秒でわかる
+        </span>
+        <h2 className="text-xl font-extrabold leading-snug drop-shadow-sm">あなたにカーブスは合う？<br />近くの店舗まで まとめて診断</h2>
+        <p className="text-xs mt-1.5 opacity-90">2つの質問に答えるだけ。目的との相性と、通える店舗がすぐ分かります。</p>
+      </div>
+      {/* 白の操作エリア */}
+      <div className="bg-white rounded-t-2xl p-5 -mb-px">
 
       {/* Step1: 目的 */}
       {step === 1 && (
@@ -125,6 +132,7 @@ export default function CurvesFinder({ stores }: { stores: Store[] }) {
         </div>
       )}
       <p className="text-[10px] mt-3" style={{ color: "var(--bf-muted)" }}>※店舗情報・評点はGoogleマップの実データ（{stores.length}店舗掲載）。目的との相性は公式の特徴（女性専用・30分・継続率97.7％等）にもとづく当サイトの整理です。最新の店舗・料金は公式サイトでご確認ください。</p>
+      </div>
     </section>
   );
 }
