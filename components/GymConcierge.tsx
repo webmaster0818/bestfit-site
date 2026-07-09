@@ -40,20 +40,19 @@ function dist(aLat: number, aLng: number, b: Store) {
   return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
 }
 
-// キャラクター(自作SVGアバター:トレーナー風マスコット「フィティ」)
-function Fitty({ size = 40 }: { size?: number }) {
+// キャラクター(女性トレーナー「フィティ」・Nano Banana Pro生成イラスト)
+// variant: "full"=全身(ヘッダー) / "face"=顔アップ(吹き出し・小サイズで視認性◎)
+function Fitty({ size = 40, variant = "face" }: { size?: number; variant?: "full" | "face" }) {
+  const src = variant === "full" ? "/concierge-fitty.png" : "/concierge-fitty-face.png";
   return (
-    <svg width={size} height={size} viewBox="0 0 48 48" className="shrink-0" aria-label="AIコンシェルジュ フィティ">
-      <circle cx="24" cy="24" r="23" fill="var(--bf-primary)" />
-      <circle cx="24" cy="26" r="15" fill="#fff" />
-      <path d="M9 20 Q24 12 39 20 L39 16 Q24 8 9 16 Z" fill="#111827" />
-      <rect x="8" y="17" width="32" height="4" rx="2" fill="#111827" />
-      <circle cx="18" cy="26" r="2.4" fill="#111827" />
-      <circle cx="30" cy="26" r="2.4" fill="#111827" />
-      <path d="M19 32 Q24 36 29 32" stroke="#111827" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <circle cx="13" cy="30" r="2.2" fill="#fca5a5" opacity="0.8" />
-      <circle cx="35" cy="30" r="2.2" fill="#fca5a5" opacity="0.8" />
-    </svg>
+    <img
+      src={src}
+      width={size}
+      height={size}
+      alt="AIジム診断コンシェルジュ フィティ"
+      className="shrink-0 rounded-full object-cover"
+      style={{ width: size, height: size, background: "#dbeafe" }}
+    />
   );
 }
 
@@ -130,7 +129,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
     <section className="rounded-2xl overflow-hidden shadow-lg mb-8" style={{ border: "1px solid var(--bf-line)" }}>
       {/* ヘッダー(キャラ) */}
       <div className="px-4 py-3 flex items-center gap-2.5 text-white" style={{ background: "linear-gradient(135deg, var(--bf-primary), var(--bf-primary-deep))" }}>
-        <Fitty size={38} />
+        <Fitty size={44} variant="full" />
         <div>
           <p className="font-extrabold leading-tight">AIジム診断コンシェルジュ「フィティ」</p>
           <p className="text-[11px] opacity-90">目的・エリア・こだわりから、あなたに合うジムを提案します</p>
