@@ -1,0 +1,415 @@
+{
+ "closed_permanently": [
+  {
+   "path": "/gyms/rizapwoman/mizonokuchi",
+   "name": "RIZAP WOMAN 溝の口店",
+   "google": "ライザップウーマン 溝の口店"
+  },
+  {
+   "path": "/gyms/chicken/nagareyama",
+   "name": "Chicken Gym 流山おおたかの森店",
+   "google": "【パーソナルジム】チキンジム 流山おおたかの森店"
+  },
+  {
+   "path": "/gyms/outline/akabane",
+   "name": "OUTLINE 赤羽店",
+   "google": "OUTLINE(アウトライン)赤羽店"
+  },
+  {
+   "path": "/gyms/fitbeleza/tsujido",
+   "name": "Fit Beleza 辻堂店",
+   "google": "Fit Beleza"
+  },
+  {
+   "path": "/gyms/chicken/matsudo",
+   "name": "Chicken Gym 松戸店",
+   "google": "【パーソナルジム】チキンジム 松戸店"
+  },
+  {
+   "path": "/gyms/chicken/shibuya",
+   "name": "Chicken Gym 渋谷店",
+   "google": "【パーソナルジム】チキンジム 渋谷店"
+  },
+  {
+   "path": "/gyms/rebornmyself/tochigi",
+   "name": "Reborn myself 宇都宮店",
+   "google": "リボーンマイセルフ宇都宮店"
+  },
+  {
+   "path": "/gyms/katagiri/tsurugashima",
+   "name": "かたぎり塾 鶴ヶ島店",
+   "google": "パーソナルジム かたぎり塾 鶴ヶ島店"
+  },
+  {
+   "path": "/gyms/chicken/sapporo",
+   "name": "Chicken Gym 札幌店",
+   "google": "チキンジム 札幌店"
+  },
+  {
+   "path": "/gyms/chicken/nishiazabu",
+   "name": "Chicken Gym 西麻布店",
+   "google": "【パーソナルジム】チキンジム 西麻布店"
+  },
+  {
+   "path": "/gyms/rizap/toyoda",
+   "name": "ライザップ 豊田店",
+   "google": "ライザップ(RIZAP)豊田店"
+  },
+  {
+   "path": "/gyms/outline/machida",
+   "name": "OUTLINE 町田店",
+   "google": "OUTLINE(アウトライン)町田店"
+  },
+  {
+   "path": "/gyms/bconcept/jiyugaoka",
+   "name": "ビーコンセプト 自由が丘店",
+   "google": "ビーコンセプト自由ヶ丘店"
+  },
+  {
+   "path": "/gyms/chicken/tenjin",
+   "name": "Chicken Gym 福岡天神店",
+   "google": "【パーソナルジム】チキンジム 福岡天神店"
+  },
+  {
+   "path": "/gyms/rizap/mishima",
+   "name": "ライザップ 三島店",
+   "google": "ライザップ(RIZAP)三島店"
+  },
+  {
+   "path": "/gyms/exercisecoach/kashiwa",
+   "name": "TheExerciseCoach 柏店",
+   "google": "エクササイズコーチ柏店"
+  },
+  {
+   "path": "/gyms/chicken/hachiouji",
+   "name": "Chicken Gym 八王子店",
+   "google": "【パーソナルジム】チキンジム 八王子店"
+  },
+  {
+   "path": "/gyms/rizap/nerima",
+   "name": "ライザップ 練馬店",
+   "google": "ライザップ(RIZAP)練馬店"
+  },
+  {
+   "path": "/gyms/chicken/esaka",
+   "name": "Chicken Gym 江坂店",
+   "google": "【パーソナルジム】チキンジム 江坂店"
+  },
+  {
+   "path": "/gyms/chicken/sakae",
+   "name": "Chicken Gym 名古屋栄店",
+   "google": "【パーソナルジム】チキンジム 名古屋栄店"
+  },
+  {
+   "path": "/gyms/dbhs/kyoto",
+   "name": "トータル健康スペースDBHS 京都店",
+   "google": "京都市ダイエット 整体 DBHS"
+  },
+  {
+   "path": "/gyms/247workout/asakadai",
+   "name": "24/7Workout 朝霞台店",
+   "google": "24/7ワークアウト 朝霞台店"
+  },
+  {
+   "path": "/gyms/rizap/roppongi",
+   "name": "ライザップ 六本木店",
+   "google": "ライザップ(RIZAP)六本木店"
+  },
+  {
+   "path": "/gyms/247workout/juso",
+   "name": "24/7Workout 十三店",
+   "google": "24/7ワークアウト 十三店"
+  },
+  {
+   "path": "/gyms/palms/shinsaibashi",
+   "name": "PALMS 心斎橋長堀店",
+   "google": "パームス心斎橋長堀橋店"
+  },
+  {
+   "path": "/gyms/rizap/ikebukuroeast",
+   "name": "ライザップ 池袋東口店",
+   "google": "ライザップ(RIZAP)池袋東口店"
+  },
+  {
+   "path": "/gyms/rdcgym/ginza",
+   "name": "RDC GYM 銀座店",
+   "google": "RDC GYM銀座 低酸素ジム パーソナルトレーニング"
+  },
+  {
+   "path": "/gyms/rebornmyself/azamino",
+   "name": "Reborn myself あざみ野・たまプラーザ店",
+   "google": "リボーンマイセルフあざみ野・たまプラーザ店"
+  },
+  {
+   "path": "/gyms/bconcept/sannomiya",
+   "name": "ビーコンセプト 神戸三宮店",
+   "google": "ビーコンセプト神戸三宮店"
+  },
+  {
+   "path": "/gyms/outline/ginza",
+   "name": "OUTLINE 銀座店",
+   "google": "アウトライン銀座店"
+  },
+  {
+   "path": "/gyms/outline/jiyugaoka",
+   "name": "OUTLINE 自由が丘店",
+   "google": "アウトライン自由が丘"
+  },
+  {
+   "path": "/gyms/palms/umeda",
+   "name": "PALMS 梅田店",
+   "google": "パームス梅田店"
+  },
+  {
+   "path": "/gyms/palms/fujisawa",
+   "name": "PALMS 藤沢辻堂店",
+   "google": "パームス"
+  },
+  {
+   "path": "/gyms/outline/koshigaya",
+   "name": "OUTLINE 越谷店",
+   "google": "OUTLINE(アウトライン)越谷店"
+  },
+  {
+   "path": "/gyms/katagiri/akasaka",
+   "name": "かたぎり塾 赤坂店",
+   "google": "パーソナルトレーニングジムかたぎり塾 赤坂店"
+  },
+  {
+   "path": "/gyms/outline/kichijoji",
+   "name": "OUTLINE 吉祥寺店",
+   "google": "OUTLINE(アウトライン)吉祥寺店"
+  },
+  {
+   "path": "/gyms/rebornmyself/nagano",
+   "name": "Reborn myself 長野店",
+   "google": "リボーンマイセルフ長野店"
+  },
+  {
+   "path": "/gyms/chicken/kyoto",
+   "name": "Chicken Gym 京都店",
+   "google": "【パーソナルジム】チキンジム 京都店"
+  },
+  {
+   "path": "/gyms/chicken/kichijoji",
+   "name": "Chicken Gym 吉祥寺店",
+   "google": "【パーソナルジム】チキンジム 吉祥寺店"
+  },
+  {
+   "path": "/gyms/chicken/minatomirai",
+   "name": "Chicken Gym 横浜みなとみらい店",
+   "google": "【パーソナルジム】チキンジム 横浜みなとみらい店"
+  },
+  {
+   "path": "/gyms/rebornmyself/kyobashi",
+   "name": "Reborn myself 京橋店",
+   "google": "女性専用ジム リボーンマイセルフ 京橋店"
+  },
+  {
+   "path": "/gyms/chicken/hakata",
+   "name": "Chicken Gym 博多駅前店",
+   "google": "【パーソナルジム】チキンジム 博多駅前店"
+  },
+  {
+   "path": "/gyms/goodlifegym/machiya",
+   "name": "GOODLIFE GYM 町屋店",
+   "google": "グッドライフジム 町屋店"
+  },
+  {
+   "path": "/gyms/chicken/fukui",
+   "name": "Chicken Gym エルパプラス福井店",
+   "google": "チキンジム エルパプラス福井店"
+  },
+  {
+   "path": "/gyms/rizap/kasukabe",
+   "name": "ライザップ 春日部店",
+   "google": "ライザップ(RIZAP)春日部店"
+  },
+  {
+   "path": "/gyms/chicken/naha",
+   "name": "Chicken Gym 沖縄那覇店",
+   "google": "【パーソナルジム】チキンジム 沖縄那覇店"
+  },
+  {
+   "path": "/gyms/goodlife/kashiwa",
+   "name": "GOODLIFE GYM 柏店",
+   "google": "グッドライフジム柏店"
+  },
+  {
+   "path": "/gyms/rizap/wmizonokuchi",
+   "name": "ライザップ 溝の口女性専用店",
+   "google": "ライザップウーマン 溝の口店"
+  },
+  {
+   "path": "/gyms/chicken/kurashiki",
+   "name": "Chicken Gym さんすて倉敷店",
+   "google": "【パーソナルジム】チキンジム さんすて倉敷店"
+  },
+  {
+   "path": "/gyms/gasy/yoga",
+   "name": "GASY 用賀店",
+   "google": "パーソナルジムGASY用賀店"
+  },
+  {
+   "path": "/gyms/ritastyle/okayama",
+   "name": "RITA-STYLE 岡山駅前店",
+   "google": "RITA-STYLE 岡山駅前店"
+  },
+  {
+   "path": "/gyms/katagiri/hoshigaoka",
+   "name": "かたぎり塾 星ヶ丘店",
+   "google": "パーソナルジム かたぎり塾 星ヶ丘店"
+  },
+  {
+   "path": "/gyms/chicken/takatsuki",
+   "name": "Chicken Gym 高槻店",
+   "google": "【パーソナルジム】チキンジム 高槻店"
+  },
+  {
+   "path": "/gyms/rizap/yokohamawest",
+   "name": "ライザップ 横浜西口店",
+   "google": "ライザップ(RIZAP)横浜西口店"
+  },
+  {
+   "path": "/gyms/crebiq/ginza",
+   "name": "CREBIQ 銀座店",
+   "google": "【女性専用パーソナルトレーニングジム】 CREBIQ（クレビック）銀座店"
+  },
+  {
+   "path": "/gyms/outline/kawasaki",
+   "name": "OUTLINE 川崎店",
+   "google": "OUTLINE(アウトライン)川崎店"
+  },
+  {
+   "path": "/gyms/chicken/shinjuku",
+   "name": "Chicken Gym 新宿東口店",
+   "google": "チキンジム 新宿東口店"
+  },
+  {
+   "path": "/gyms/rizap/urayasu",
+   "name": "ライザップ 葛西店",
+   "google": "ライザップ(RIZAP)葛西店"
+  },
+  {
+   "path": "/gyms/rizap/shiodome",
+   "name": "ライザップ 汐留店",
+   "google": "ライザップ(RIZAP)汐留店"
+  },
+  {
+   "path": "/gyms/rprecious/maebashi",
+   "name": "Rprecious 前橋店",
+   "google": "リプレシャス前橋店"
+  },
+  {
+   "path": "/gyms/chicken/kitakyusyu",
+   "name": "Chicken Gym リバーウォーク北九州店",
+   "google": "チキンジム リバーウォーク北九州店"
+  },
+  {
+   "path": "/gyms/bolche/kyoto",
+   "name": "トータルボディメイク BoLche 京都三条河原町店",
+   "google": "トータルボディメイクBoLche 京都三条河原町店"
+  },
+  {
+   "path": "/gyms/palms/kyobashi",
+   "name": "PALMS 京橋店",
+   "google": "パームス京橋店"
+  },
+  {
+   "path": "/gyms/palms/shinjuku2",
+   "name": "PALMS 新宿店",
+   "google": "パームス新宿店"
+  },
+  {
+   "path": "/gyms/exercisecoach/akabane",
+   "name": "TheExerciseCoach 赤羽店",
+   "google": "エクササイズコーチ赤羽店"
+  },
+  {
+   "path": "/gyms/8proud/kyobashi",
+   "name": "8proud 京橋店",
+   "google": "エイトプラウド 京橋店"
+  },
+  {
+   "path": "/gyms/iroas/kagurazaka",
+   "name": "イロアスジム 神楽坂・江戸川橋店",
+   "google": "イロアスジム神楽坂・江戸川橋店"
+  },
+  {
+   "path": "/gyms/exercisecoach/utsunomiya",
+   "name": "TheExerciseCoach 宇都宮店",
+   "google": "エクササイズコーチ宇都宮店"
+  },
+  {
+   "path": "/gyms/chicken/koiwa",
+   "name": "Chicken Gym 小岩店",
+   "google": "【パーソナルジム】チキンジム 小岩店"
+  },
+  {
+   "path": "/gyms/chicken/sendai",
+   "name": "Chicken Gym 仙台店",
+   "google": "【パーソナルジム】チキンジム 仙台店"
+  },
+  {
+   "path": "/gyms/exercisecoach/hitachinaka",
+   "name": "TheExerciseCoach ひたちなか店",
+   "google": "エクササイズコーチひたちなか店"
+  },
+  {
+   "path": "/gyms/chicken/ebisu",
+   "name": "Chicken Gym 恵比寿店",
+   "google": "【パーソナルジム】チキンジム 恵比寿店"
+  },
+  {
+   "path": "/gyms/xingfu/tsutsujigaoka",
+   "name": "Xingfu つつじヶ丘店",
+   "google": "パーソナルジム Xingfu"
+  },
+  {
+   "path": "/gyms/crebiq/shinagawa",
+   "name": "CREBIQ 田町・三田店",
+   "google": "【女性専用パーソナルトレーニングジム】 CREBIQ（クレビック）田町・三田店"
+  },
+  {
+   "path": "/gyms/rizap/chibanewtown",
+   "name": "ライザップ 千葉ニュータウン店",
+   "google": "ライザップ(RIZAP)千葉ニュータウン店"
+  }
+ ],
+ "closed_temporarily": [
+  {
+   "path": "/gyms/chf/naha",
+   "name": "COCO HACK FITNESS 那覇店"
+  },
+  {
+   "path": "/gyms/iroas/ayase",
+   "name": "イロアスジム 綾瀬店"
+  },
+  {
+   "path": "/gyms/beyond/tokorozawaaki",
+   "name": "ビヨンド 所沢秋津店"
+  },
+  {
+   "path": "/gyms/luana/kawagoe",
+   "name": "luana fitness 川越店"
+  }
+ ],
+ "no_match": [
+  {
+   "path": "/gyms/bellpha/shinjuku",
+   "name": "Bellpha 薬王寺町店"
+  },
+  {
+   "path": "/gyms/miostile/ginza",
+   "name": "MIO STILE GINZA 4th店"
+  },
+  {
+   "path": "/gyms/sinyou/gotanda",
+   "name": "SIN-YOU シンユー"
+  },
+  {
+   "path": "/gyms/palms/shinjuku",
+   "name": "PALMS 新宿三丁目店"
+  }
+ ]
+}

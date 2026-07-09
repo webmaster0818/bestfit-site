@@ -1,0 +1,597 @@
+{
+ "generated": "2026-07-09",
+ "total": 1319,
+ "closed_permanently": [
+  {
+   "path": "/gyms/247workout/juso",
+   "brand": "24/7Workout",
+   "name": "十三店",
+   "addr": "大阪府大阪市淀川区十三東1-20-3ザ・グランドビューオオサカ401",
+   "google": "24/7ワークアウト 十三店"
+  },
+  {
+   "path": "/gyms/247workout/asakadai",
+   "brand": "24/7Workout",
+   "name": "朝霞台店",
+   "addr": "埼玉県朝霞市泉水3-13-23 JUN朝霞台コート201号室",
+   "google": "24/7ワークアウト 朝霞台店"
+  },
+  {
+   "path": "/gyms/8proud/kyobashi",
+   "brand": "8proud",
+   "name": "京橋店",
+   "addr": "大阪府大阪市都島区東野田町2-2-10 都島住宅京橋ビル2F",
+   "google": "エイトプラウド 京橋店"
+  },
+  {
+   "path": "/gyms/crebiq/shinagawa",
+   "brand": "CREBIQ",
+   "name": "田町・三田店",
+   "addr": "東京都港区三田3丁目14番13号CROSS三田8F8B号室",
+   "google": "【女性専用パーソナルトレーニングジム】 CREBIQ（クレビック）田町・三田店"
+  },
+  {
+   "path": "/gyms/crebiq/ginza",
+   "brand": "CREBIQ",
+   "name": "銀座店",
+   "addr": "東京都中央区銀座2-8-18 グランベル銀座ビル601",
+   "google": "【女性専用パーソナルトレーニングジム】 CREBIQ（クレビック）銀座店"
+  },
+  {
+   "path": "/gyms/chicken/kurashiki",
+   "brand": "Chicken Gym",
+   "name": "さんすて倉敷店",
+   "addr": "岡山県倉敷市阿知1-1-1 さんすて倉敷 1F",
+   "google": "【パーソナルジム】チキンジム さんすて倉敷店"
+  },
+  {
+   "path": "/gyms/chicken/fukui",
+   "brand": "Chicken Gym",
+   "name": "エルパプラス福井店",
+   "addr": "福井県福井市大和田2-418 エルパプラス福井2F",
+   "google": "チキンジム エルパプラス福井店"
+  },
+  {
+   "path": "/gyms/chicken/kitakyusyu",
+   "brand": "Chicken Gym",
+   "name": "リバーウォーク北九州店",
+   "addr": "福岡県北九州市小倉北区室町1-1-1 リバーウォーク北九州2F",
+   "google": "チキンジム リバーウォーク北九州店"
+  },
+  {
+   "path": "/gyms/chicken/kyoto",
+   "brand": "Chicken Gym",
+   "name": "京都店",
+   "addr": "京都府京都市中京区奈良屋町299-1 ファーストコート河原町 5F",
+   "google": "【パーソナルジム】チキンジム 京都店"
+  },
+  {
+   "path": "/gyms/chicken/sendai",
+   "brand": "Chicken Gym",
+   "name": "仙台店",
+   "addr": "宮城県仙台市青葉区一番町3丁目8‐8 一番町ステア2F",
+   "google": "【パーソナルジム】チキンジム 仙台店"
+  },
+  {
+   "path": "/gyms/chicken/hachiouji",
+   "brand": "Chicken Gym",
+   "name": "八王子店",
+   "addr": "東京都八王子市東町10-4 HKビルB1F",
+   "google": "【パーソナルジム】チキンジム 八王子店"
+  },
+  {
+   "path": "/gyms/chicken/hakata",
+   "brand": "Chicken Gym",
+   "name": "博多駅前店",
+   "addr": "福岡県福岡市博多区博多駅前2-3-14 マルイト博多ビル5F",
+   "google": "【パーソナルジム】チキンジム 博多駅前店"
+  },
+  {
+   "path": "/gyms/chicken/kichijoji",
+   "brand": "Chicken Gym",
+   "name": "吉祥寺店",
+   "addr": "東京都武蔵野市吉祥寺本町1-11-9 常総ビル2F",
+   "google": "【パーソナルジム】チキンジム 吉祥寺店"
+  },
+  {
+   "path": "/gyms/chicken/sakae",
+   "brand": "Chicken Gym",
+   "name": "名古屋栄店",
+   "addr": "愛知県名古屋市中区栄3-32-6 BECOME SAKAE 9F",
+   "google": "【パーソナルジム】チキンジム 名古屋栄店"
+  },
+  {
+   "path": "/gyms/chicken/koiwa",
+   "brand": "Chicken Gym",
+   "name": "小岩店",
+   "addr": "東京都江戸川区南小岩3-29-8 中川ビルアルモニコンフォール2F",
+   "google": "【パーソナルジム】チキンジム 小岩店"
+  },
+  {
+   "path": "/gyms/chicken/ebisu",
+   "brand": "Chicken Gym",
+   "name": "恵比寿店",
+   "addr": "東京都渋谷区恵比寿南2-3-2 Tナカムラビル4F",
+   "google": "【パーソナルジム】チキンジム 恵比寿店"
+  },
+  {
+   "path": "/gyms/chicken/shinjuku",
+   "brand": "Chicken Gym",
+   "name": "新宿東口店",
+   "addr": "東京都新宿区新宿3-11-6 エクレ新宿703号室",
+   "google": "チキンジム 新宿東口店"
+  },
+  {
+   "path": "/gyms/chicken/sapporo",
+   "brand": "Chicken Gym",
+   "name": "札幌店",
+   "addr": "北海道札幌市北区北6条西1丁目4-2 ファーストプラザビル 1F",
+   "google": "チキンジム 札幌店"
+  },
+  {
+   "path": "/gyms/chicken/matsudo",
+   "brand": "Chicken Gym",
+   "name": "松戸店",
+   "addr": "千葉県松戸市松戸1307-1 キテミテマツド9F",
+   "google": "【パーソナルジム】チキンジム 松戸店"
+  },
+  {
+   "path": "/gyms/chicken/minatomirai",
+   "brand": "Chicken Gym",
+   "name": "横浜みなとみらい店",
+   "addr": "神奈川県横浜市西区みなとみらい5-3-2 オーシャンタワー1F C",
+   "google": "【パーソナルジム】チキンジム 横浜みなとみらい店"
+  },
+  {
+   "path": "/gyms/chicken/esaka",
+   "brand": "Chicken Gym",
+   "name": "江坂店",
+   "addr": "大阪府吹田市豊津町14-31 由谷エムワイビル2F",
+   "google": "【パーソナルジム】チキンジム 江坂店"
+  },
+  {
+   "path": "/gyms/chicken/naha",
+   "brand": "Chicken Gym",
+   "name": "沖縄那覇店",
+   "addr": "沖縄県那覇市銘苅1-19-1 アクロスプラザ古島駅前2F",
+   "google": "【パーソナルジム】チキンジム 沖縄那覇店"
+  },
+  {
+   "path": "/gyms/chicken/nagareyama",
+   "brand": "Chicken Gym",
+   "name": "流山おおたかの森店",
+   "addr": "千葉県流山市おおたかの森西1-2-2 SAKURATERRACE 7F",
+   "google": "【パーソナルジム】チキンジム 流山おおたかの森店"
+  },
+  {
+   "path": "/gyms/chicken/shibuya",
+   "brand": "Chicken Gym",
+   "name": "渋谷店",
+   "addr": "東京都渋谷区神南1丁目20?10 神南興業ビル6F",
+   "google": "【パーソナルジム】チキンジム 渋谷店"
+  },
+  {
+   "path": "/gyms/chicken/tenjin",
+   "brand": "Chicken Gym",
+   "name": "福岡天神店",
+   "addr": "福岡県福岡市中央区大名1-13-25 DAIMYO-113 6F",
+   "google": "【パーソナルジム】チキンジム 福岡天神店"
+  },
+  {
+   "path": "/gyms/chicken/nishiazabu",
+   "brand": "Chicken Gym",
+   "name": "西麻布店",
+   "addr": "東京都港区西麻布3-24-20 霞町ビル2F",
+   "google": "【パーソナルジム】チキンジム 西麻布店"
+  },
+  {
+   "path": "/gyms/chicken/takatsuki",
+   "brand": "Chicken Gym",
+   "name": "高槻店",
+   "addr": "大阪府高槻市北園町12-18 高槻クリスタルビル2F",
+   "google": "【パーソナルジム】チキンジム 高槻店"
+  },
+  {
+   "path": "/gyms/fitbeleza/tsujido",
+   "brand": "Fit Beleza",
+   "name": "辻堂店",
+   "addr": "神奈川県藤沢市辻堂1-1-11 セルザ辻堂",
+   "google": "Fit Beleza"
+  },
+  {
+   "path": "/gyms/gasy/yoga",
+   "brand": "GASY",
+   "name": "用賀店",
+   "addr": "東京都世田谷区用賀二丁目31-14 用賀Symhaus C号室",
+   "google": "パーソナルジムGASY用賀店"
+  },
+  {
+   "path": "/gyms/goodlife/kashiwa",
+   "brand": "GOODLIFE GYM",
+   "name": "柏店",
+   "addr": "千葉県柏市中央2-2-18 MAKE BLDG 203",
+   "google": "グッドライフジム柏店"
+  },
+  {
+   "path": "/gyms/goodlifegym/machiya",
+   "brand": "GOODLIFE GYM",
+   "name": "町屋店",
+   "addr": "東京都荒川区町屋7丁目2?5 プラザ町屋102",
+   "google": "グッドライフジム 町屋店"
+  },
+  {
+   "path": "/gyms/outline/kichijoji",
+   "brand": "OUTLINE",
+   "name": "吉祥寺店",
+   "addr": "東京都武蔵野市吉祥寺本町1-30-4 ウッズ吉祥寺102",
+   "google": "OUTLINE(アウトライン)吉祥寺店"
+  },
+  {
+   "path": "/gyms/outline/kawasaki",
+   "brand": "OUTLINE",
+   "name": "川崎店",
+   "addr": "神奈川県川崎市幸区幸町4-37 幸徳ビル301",
+   "google": "OUTLINE(アウトライン)川崎店"
+  },
+  {
+   "path": "/gyms/outline/machida",
+   "brand": "OUTLINE",
+   "name": "町田店",
+   "addr": "東京都町田市森野2-10-20 ソフィアステージ町田103",
+   "google": "OUTLINE(アウトライン)町田店"
+  },
+  {
+   "path": "/gyms/outline/jiyugaoka",
+   "brand": "OUTLINE",
+   "name": "自由が丘店",
+   "addr": "東京都目黒区自由が丘1-22-3 レピドール自由が丘103号室",
+   "google": "アウトライン自由が丘"
+  },
+  {
+   "path": "/gyms/outline/akabane",
+   "brand": "OUTLINE",
+   "name": "赤羽店",
+   "addr": "東京都北区赤羽西1-3-4 STビル 201号室",
+   "google": "OUTLINE(アウトライン)赤羽店"
+  },
+  {
+   "path": "/gyms/outline/koshigaya",
+   "brand": "OUTLINE",
+   "name": "越谷店",
+   "addr": "埼玉県越谷市南越谷４丁目１１?２ ウエストスクエア ４B",
+   "google": "OUTLINE(アウトライン)越谷店"
+  },
+  {
+   "path": "/gyms/outline/ginza",
+   "brand": "OUTLINE",
+   "name": "銀座店",
+   "addr": "東京都中央区銀座1丁目15-13 VORT銀座residence505",
+   "google": "アウトライン銀座店"
+  },
+  {
+   "path": "/gyms/palms/kyobashi",
+   "brand": "PALMS",
+   "name": "京橋店",
+   "addr": "大阪市都島区東野田町5丁目15-8 川口ビル1階",
+   "google": "パームス京橋店"
+  },
+  {
+   "path": "/gyms/palms/shinsaibashi",
+   "brand": "PALMS",
+   "name": "心斎橋長堀店",
+   "addr": "大阪市中央区南船場1丁目6-13 第二協和ビル１F",
+   "google": "パームス心斎橋長堀橋店"
+  },
+  {
+   "path": "/gyms/palms/shinjuku2",
+   "brand": "PALMS",
+   "name": "新宿店",
+   "addr": "東京都新宿区西新宿7丁目10-19 西新宿ビル2階",
+   "google": "パームス新宿店"
+  },
+  {
+   "path": "/gyms/palms/umeda",
+   "brand": "PALMS",
+   "name": "梅田店",
+   "addr": "大阪市北区中崎西3-3-43 北大阪中崎第2ビル6階",
+   "google": "パームス梅田店"
+  },
+  {
+   "path": "/gyms/palms/fujisawa",
+   "brand": "PALMS",
+   "name": "藤沢辻堂店",
+   "addr": "神奈川県藤沢市辻堂2丁目1-8 エバーズ第11ビル1階",
+   "google": "パームス"
+  },
+  {
+   "path": "/gyms/rdcgym/ginza",
+   "brand": "RDC GYM",
+   "name": "銀座店",
+   "addr": "東京都中央区銀座4-14-6 ウインド銀座8ビル4F",
+   "google": "RDC GYM銀座 低酸素ジム パーソナルトレーニング"
+  },
+  {
+   "path": "/gyms/ritastyle/okayama",
+   "brand": "RITA-STYLE",
+   "name": "岡山駅前店",
+   "addr": "岡山県岡山市北区本町6-30 第一セントラルビル二号館6F",
+   "google": "RITA-STYLE 岡山駅前店"
+  },
+  {
+   "path": "/gyms/rizapwoman/mizonokuchi",
+   "brand": "RIZAP WOMAN",
+   "name": "溝の口店",
+   "addr": "神奈川県川崎市高津区溝口1-13-1 マルヒロビル3 1F/2F",
+   "google": "ライザップウーマン 溝の口店"
+  },
+  {
+   "path": "/gyms/rebornmyself/azamino",
+   "brand": "Reborn myself",
+   "name": "あざみ野・たまプラーザ店",
+   "addr": "神奈川県横浜市青葉区新石川2-13-18 グレイスビーノ111",
+   "google": "リボーンマイセルフあざみ野・たまプラーザ店"
+  },
+  {
+   "path": "/gyms/rebornmyself/kyobashi",
+   "brand": "Reborn myself",
+   "name": "京橋店",
+   "addr": "大阪府大阪市都島区東野田町4丁目９－１７松和京橋第５ビル７階",
+   "google": "女性専用ジム リボーンマイセルフ 京橋店"
+  },
+  {
+   "path": "/gyms/rebornmyself/tochigi",
+   "brand": "Reborn myself",
+   "name": "宇都宮店",
+   "addr": "栃木県宇都宮市駅前通り3-1-8 つちや第2ビル3F",
+   "google": "リボーンマイセルフ宇都宮店"
+  },
+  {
+   "path": "/gyms/rebornmyself/nagano",
+   "brand": "Reborn myself",
+   "name": "長野店",
+   "addr": "長野県長野市南石堂町1340　エスタシオン長野ビル202",
+   "google": "リボーンマイセルフ長野店"
+  },
+  {
+   "path": "/gyms/rprecious/maebashi",
+   "brand": "Rprecious",
+   "name": "前橋店",
+   "addr": "群馬県前橋市天川原町1丁目20番地8ラ・ベル・エキップ2F",
+   "google": "リプレシャス前橋店"
+  },
+  {
+   "path": "/gyms/exercisecoach/hitachinaka",
+   "brand": "TheExerciseCoach",
+   "name": "ひたちなか店",
+   "addr": "茨城県ひたちなか市勝田中央10-5",
+   "google": "エクササイズコーチひたちなか店"
+  },
+  {
+   "path": "/gyms/exercisecoach/utsunomiya",
+   "brand": "TheExerciseCoach",
+   "name": "宇都宮店",
+   "addr": "栃木県宇都宮市江野町9-5",
+   "google": "エクササイズコーチ宇都宮店"
+  },
+  {
+   "path": "/gyms/exercisecoach/kashiwa",
+   "brand": "TheExerciseCoach",
+   "name": "柏店",
+   "addr": "千葉県柏市旭町1-5-4 プラザパスカ3F",
+   "google": "エクササイズコーチ柏店"
+  },
+  {
+   "path": "/gyms/exercisecoach/akabane",
+   "brand": "TheExerciseCoach",
+   "name": "赤羽店",
+   "addr": "東京都北区赤羽南1-4-7小山ビル3階",
+   "google": "エクササイズコーチ赤羽店"
+  },
+  {
+   "path": "/gyms/xingfu/tsutsujigaoka",
+   "brand": "Xingfu",
+   "name": "つつじヶ丘店",
+   "addr": "東京都調布市西つつじヶ丘3丁目29-5 川嶋屋ビル2F",
+   "google": "パーソナルジム Xingfu"
+  },
+  {
+   "path": "/gyms/katagiri/hoshigaoka",
+   "brand": "かたぎり塾",
+   "name": "星ヶ丘店",
+   "addr": "愛知県名古屋市千種区星が丘元町15?16 WIZ１階",
+   "google": "パーソナルジム かたぎり塾 星ヶ丘店"
+  },
+  {
+   "path": "/gyms/katagiri/akasaka",
+   "brand": "かたぎり塾",
+   "name": "赤坂店",
+   "addr": "東京都港区赤坂2-14-7 赤坂栄ビル5F",
+   "google": "パーソナルトレーニングジムかたぎり塾 赤坂店"
+  },
+  {
+   "path": "/gyms/katagiri/tsurugashima",
+   "brand": "かたぎり塾",
+   "name": "鶴ヶ島店",
+   "addr": "埼玉県川越市大字鯨井新田1-20 鶴ヶ島駅前一太郎ビル10-2 2F",
+   "google": "パーソナルジム かたぎり塾 鶴ヶ島店"
+  },
+  {
+   "path": "/gyms/iroas/kagurazaka",
+   "brand": "イロアスジム",
+   "name": "神楽坂・江戸川橋店",
+   "addr": "東京都新宿区天神町68 滝沢68ビル8F",
+   "google": "イロアスジム神楽坂・江戸川橋店"
+  },
+  {
+   "path": "/gyms/bolche/kyoto",
+   "brand": "トータルボディメイク BoLche",
+   "name": "京都三条河原町店",
+   "addr": "京都府京都市中京区丸屋町315 たけうちビル 502号室",
+   "google": "トータルボディメイクBoLche 京都三条河原町店"
+  },
+  {
+   "path": "/gyms/dbhs/kyoto",
+   "brand": "トータル健康スペースDBHS",
+   "name": "京都店",
+   "addr": "京都府京都市左京区下鴨西本町27-4 コーポ下鴨ミカサ１F",
+   "google": "京都市ダイエット 整体 DBHS"
+  },
+  {
+   "path": "/gyms/bconcept/sannomiya",
+   "brand": "ビーコンセプト",
+   "name": "神戸三宮店",
+   "addr": "兵庫県神戸市中央区琴ノ緒町4-5-3　ARPEGGIO 101",
+   "google": "ビーコンセプト神戸三宮店"
+  },
+  {
+   "path": "/gyms/bconcept/jiyugaoka",
+   "brand": "ビーコンセプト",
+   "name": "自由が丘店",
+   "addr": "東京都目黒区自由が丘2丁目13-2 自由ヶ丘TATSUMIビル501",
+   "google": "ビーコンセプト自由ヶ丘店"
+  },
+  {
+   "path": "/gyms/rizap/mishima",
+   "brand": "ライザップ",
+   "name": "三島店",
+   "addr": "静岡県三島市一番町15-19 TGビル 4F",
+   "google": "ライザップ(RIZAP)三島店"
+  },
+  {
+   "path": "/gyms/rizap/roppongi",
+   "brand": "ライザップ",
+   "name": "六本木店",
+   "addr": "東京都港区六本木3-17-10 六本木デュープレックスタワーB1F",
+   "google": "ライザップ(RIZAP)六本木店"
+  },
+  {
+   "path": "/gyms/rizap/chibanewtown",
+   "brand": "ライザップ",
+   "name": "千葉ニュータウン店",
+   "addr": "千葉県印西市牧の原1-3",
+   "google": "ライザップ(RIZAP)千葉ニュータウン店"
+  },
+  {
+   "path": "/gyms/rizap/kasukabe",
+   "brand": "ライザップ",
+   "name": "春日部店",
+   "addr": "埼玉県春日部市粕壁1-7-3 岡安ビル5F",
+   "google": "ライザップ(RIZAP)春日部店"
+  },
+  {
+   "path": "/gyms/rizap/yokohamawest",
+   "brand": "ライザップ",
+   "name": "横浜西口店",
+   "addr": "神奈川県横浜市神奈川区台町17-1 マストビル2F",
+   "google": "ライザップ(RIZAP)横浜西口店"
+  },
+  {
+   "path": "/gyms/rizap/shiodome",
+   "brand": "ライザップ",
+   "name": "汐留店",
+   "addr": "東京都中央区銀座7-13-12サクセス銀座7ビル2階",
+   "google": "ライザップ(RIZAP)汐留店"
+  },
+  {
+   "path": "/gyms/rizap/ikebukuroeast",
+   "brand": "ライザップ",
+   "name": "池袋東口店",
+   "addr": "東京都豊島区南池袋1-19-5Gビル南池袋8F",
+   "google": "ライザップ(RIZAP)池袋東口店"
+  },
+  {
+   "path": "/gyms/rizap/wmizonokuchi",
+   "brand": "ライザップ",
+   "name": "溝の口女性専用店",
+   "addr": "神奈川県川崎市高津区溝口1-13-1 マルヒロビル3 1F/2F",
+   "google": "ライザップウーマン 溝の口店"
+  },
+  {
+   "path": "/gyms/rizap/nerima",
+   "brand": "ライザップ",
+   "name": "練馬店",
+   "addr": "東京都練馬区練馬3丁目-1番4号 SUNCUBE 1F",
+   "google": "ライザップ(RIZAP)練馬店"
+  },
+  {
+   "path": "/gyms/rizap/urayasu",
+   "brand": "ライザップ",
+   "name": "葛西店",
+   "addr": "東京都江戸川区東葛西6-4-17 ELLE PLAN 202",
+   "google": "ライザップ(RIZAP)葛西店"
+  },
+  {
+   "path": "/gyms/rizap/toyoda",
+   "brand": "ライザップ",
+   "name": "豊田店",
+   "addr": "愛知県豊田市小坂本町1-5-5 YAMATO BLDG 3F",
+   "google": "ライザップ(RIZAP)豊田店"
+  }
+ ],
+ "closed_temporarily": [
+  {
+   "path": "/gyms/chf/naha",
+   "brand": "COCO HACK FITNESS",
+   "name": "那覇店",
+   "addr": "沖縄県那覇市国場686-1",
+   "google": "COCO HACK FITNESS"
+  },
+  {
+   "path": "/gyms/iroas/ayase",
+   "brand": "イロアスジム",
+   "name": "綾瀬店",
+   "addr": "東京都足立区綾瀬3-21-13  クラウド綾瀬502",
+   "google": "イロアス綾瀬店"
+  },
+  {
+   "path": "/gyms/beyond/tokorozawaaki",
+   "brand": "ビヨンド",
+   "name": "所沢秋津店",
+   "addr": "東京都東村山市秋津町5-13-14クリアティブプラザ1F",
+   "google": "BEYOND 所沢秋津店"
+  },
+  {
+   "path": "/gyms/luana/kawagoe",
+   "brand": "luana fitness",
+   "name": "川越店",
+   "addr": "埼玉県川越市新富町1-9-3 リジエールエフビル3F2号室",
+   "google": "luana fitness"
+  }
+ ],
+ "no_match": [
+  {
+   "path": "/gyms/bellpha/shinjuku",
+   "brand": "Bellpha",
+   "name": "薬王寺町店",
+   "addr": "東京都新宿区市谷薬王寺町78 KYビルB1",
+   "google": ""
+  },
+  {
+   "path": "/gyms/miostile/ginza",
+   "brand": "MIO STILE GINZA",
+   "name": "4th店",
+   "addr": "※お客様のプライベートをお守りするため、詳細については 初回ご来店予約時にお伝え",
+   "google": ""
+  },
+  {
+   "path": "/gyms/sinyou/gotanda",
+   "brand": "SIN-YOU",
+   "name": "シンユー",
+   "addr": "東京都品川区東五反田1-8-3 ディーウィング島津山702",
+   "google": ""
+  },
+  {
+   "path": "/gyms/palms/shinjuku",
+   "brand": "PALMS",
+   "name": "新宿三丁目店",
+   "addr": "東京都新宿区新宿3丁目3-3 恩田セントラルビル4階",
+   "google": ""
+  }
+ ],
+ "edge_cases": [
+  {
+   "path": "/gyms/chicken/shinsaibashi",
+   "note": "チキンジム心斎橋店: Google=営業中だが公式店舗一覧(池袋/町田/岡山の3店)に非掲載。要目視"
+  }
+ ]
+}
