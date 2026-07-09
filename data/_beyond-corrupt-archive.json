@@ -1,0 +1,8346 @@
+{
+ "date": "2026-07-10",
+ "reason": "ビヨンド20店の破損データ(西宮/国分寺の誤複製)修正前のアーカイブ",
+ "stores": {
+  "/gyms/beyond/kanazawa": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "reviews": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "metadata": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "tags": [],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/fukui": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "reviews": [],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "tags": [],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "metadata": null,
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/yamagata": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "score": null,
+   "tags": [],
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "reviews": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/okayama": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "trainers": [],
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "reviews": [],
+   "tags": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/takamatsu": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "trainers": [],
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "reviews": [],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "tags": [],
+   "metadata": null,
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/kofukokubo": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "reviews": [],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "tags": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/wakayama": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "trainers": [],
+   "metadata": null,
+   "reviews": [],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "tags": [],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/niigata": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "reviews": [],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "tags": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/nara": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "metadata": null,
+   "reviews": [],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "tags": [],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/akita": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "reviews": [],
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "trainers": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "tags": [],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/matsuyama": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "trainers": [],
+   "reviews": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "tags": [],
+   "metadata": null,
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/naha": {
+   "id": "5plI6dvMInjQMd3i",
+   "updatedAt": "2026-02-08T02:12:53.012Z",
+   "createdAt": "2025-12-25T11:16:59.157Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:58.794Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "nishinomiya",
+   "name": "西宮店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "兵庫県西宮市長田町1番27号",
+   "prefectureId": "7JoW35Z6gg2LcWh3",
+   "cityId": "QL3KRYVSv4Ngqdix",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "西宮北口駅から徒歩5分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "eMQ7JN8XXhpPrWWm",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "wAaamcYSNGHTbljo",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "pricePlans": [
+    {
+     "id": "tVfosGdSHYbqS1Id",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "gHdFW6Ih6rTITrCx",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7RQWHxXMgd9ZuoX5",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "7HnhKAmwqDA8U02R",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "tags": [],
+   "reviews": [],
+   "paymentMethods": [
+    {
+     "id": "86qOWiS0kk5Fqh41",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "tlPiWpP4DJxA0JC0",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "TPLCjVYStXw6Diuo",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "5umrwXL6sMJd3CzU",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "pozI6Rdk7Fi55UiA",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "3uHZF5jDwA3Kefg2",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "URLoK655KDlETeku",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "9AIkS2DrqaNdZ0kZ",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/toyama": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "reviews": [],
+   "metadata": null,
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "tags": [],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/hirosima": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "reviews": [],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "trainers": [],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "tags": [],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/morioka": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "trainers": [],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "reviews": [],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "tags": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/sendai": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "reviews": [],
+   "tags": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/nagano": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "trainers": [],
+   "reviews": [],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "tags": [],
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "metadata": null,
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/kusatsu": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "trainers": [],
+   "reviews": [],
+   "score": null,
+   "metadata": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "tags": [],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/oita": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "reviews": [],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "tags": [],
+   "trainers": [],
+   "metadata": null,
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "score": null,
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  },
+  "/gyms/beyond/yokkaichi": {
+   "id": "nliV45T3jwBf6JXL",
+   "updatedAt": "2026-02-08T02:13:07.367Z",
+   "createdAt": "2025-12-25T11:17:02.358Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:17:01.486Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "Un8T38clvKsFmEbY",
+   "slug": "kokubunji",
+   "name": "国分寺店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "35",
+   "trialPlan1CounselingTime": "20",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "20",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "カウンセリング：身体の状態・生活についてお伺いします。体験トレーニング：カウンセリング内容に基づいて行います。",
+   "trialTrainingRequiredItems": "手ぶらでもお越しいただけます。",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都国分寺市本町2-9-14 ワイエスビル3F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "Yl7hnIXVyxqgECh2",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "国分\n寺駅から徒歩2分",
+   "openingHours": "10:00~22:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM\" alt=\"\">",
+   "catchcopy": "フィットネスライフの第一歩を、BEYONDで。美しくなり続ける自分へ",
+   "lead": "BEYONDでは、年齢や性別を問わず「美しくなること」を最終目標に掲げています。痩せることはそのための手段のひとつにすぎず、理想のボディラインと健康的なライフスタイルの両立を目指します。お客様一人ひとりの身体や生活習慣の課題を明確にし、効果的なトレーニング方法と持続可能な食事法を丁寧に指導。退会後も自分で美しさを保てる力が身につきます。さらに、通常11,000円の体験トレーニングが今なら無料。まずは実際に体験して、自分の変化を感じてください。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "QwGCBBwVVoaIr3Tn",
+    "male": 30,
+    "female": 30
+   },
+   "ageRatio": {
+    "id": "ttk2VSzvZeByzrhs",
+    "twenties": 30,
+    "thirties": 30,
+    "forties": 30,
+    "fifties": 30
+   },
+   "trainers": [],
+   "pricePlans": [
+    {
+     "id": "7l5aFN03YzjfG5JK",
+     "name": "ACHIEVE20",
+     "membershipFee": 0,
+     "price": 176000,
+     "sessionCount": "20",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "Zo0zovuKm9rR8WZ7",
+     "name": "BEYOND30",
+     "membershipFee": 0,
+     "price": 247500,
+     "sessionCount": "30",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "ssciTkzyXcSO90Rx",
+     "name": "STANDARD10",
+     "membershipFee": 0,
+     "price": 96800,
+     "sessionCount": "10",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": null,
+     "note": "",
+     "isRecommended": false
+    },
+    {
+     "id": "h20A9cY0raKTxia9",
+     "name": "ライフプランニング16/2ヶ月",
+     "membershipFee": 0,
+     "price": 281600,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "パーソナル食事管理2ヶ月がついてきます。 また、トレーナーが厳選したプロテインをトレーニング後に提供いたします。",
+     "isRecommended": false
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "MoAydrzjEtJris02",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "qLk4HoMOwDnEjIm9",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "FFM9qjEbnuG6tzoP",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "reviews": [],
+   "tags": [],
+   "features": [
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": null
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": null
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": null
+    },
+    {
+     "id": "4eR7Qb99zZqMsRBk",
+     "name": null
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": null
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": null
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": null
+    },
+    {
+     "id": "hSvoqkFkXCCDRqDt",
+     "name": null
+    },
+    {
+     "id": "5Xdw8OmlLhakG0u2",
+     "name": null
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": null
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": null
+    },
+    {
+     "id": "K89P6oZN8FaAOQD9",
+     "name": null
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": null
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": null
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": null
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": null
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": null
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": null
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": null
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": null
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": null
+    },
+    {
+     "id": "3Vh6aOkenFWcpwnk",
+     "name": null
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": null
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": null
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": null
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": null
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": null
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": null
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": null
+    }
+   ],
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "v7Z2R5LRAPmInb5M",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE"
+    },
+    {
+     "id": "k2vnDwWsrSpsrMVl",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD"
+    },
+    {
+     "id": "kGZNnYxh3fbkzwGK",
+     "paymentMethodId": "5fuCKRICT7xSbfS8"
+    },
+    {
+     "id": "rv2GhJAgc9T3n2Hf",
+     "paymentMethodId": "YbI9wqLGnkaXom73"
+    },
+    {
+     "id": "txl6ewgJRgwrIRgB",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD"
+    }
+   ],
+   "metadata": null,
+   "brand": {
+    "id": "Un8T38clvKsFmEbY",
+    "updatedAt": "2025-09-17T04:05:23.576Z",
+    "createdAt": "2025-09-17T04:05:23.576Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-09-17T04:05:23.570Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "name": "ビヨンド",
+    "nameKana": null,
+    "slug": "beyond",
+    "logo": {},
+    "url": null,
+    "basicInformation": null,
+    "plans": null,
+    "recommendedFor": null,
+    "training": null,
+    "dietaryGuidance": null,
+    "serviceArea": null,
+    "score": null
+   },
+   "_prefCode": null,
+   "_prefName": null,
+   "_cityCode": null,
+   "_cityName": null,
+   "_wardCode": null,
+   "_wardName": null,
+   "city": {
+    "code": null,
+    "type": null,
+    "name": null,
+    "prefCode": null,
+    "prefName": null,
+    "cityCode": null,
+    "cityName": null,
+    "wardName": null
+   },
+   "_tagKeys": []
+  }
+ }
+}
