@@ -1,0 +1,1616 @@
+{
+ "date": "2026-07-10",
+ "reason": "公式ロスターになし=閉店候補(施主承認削除)",
+ "stores": {
+  "/gyms/247workout/kyoudo": {
+   "id": "JvXqwH4IVHAOKJYe",
+   "updatedAt": "2026-03-15T13:16:30.940Z",
+   "createdAt": "2025-12-25T11:16:45.156Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:44.530Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "bdNO7SgBdiDt0icx",
+   "slug": "kyoudo",
+   "name": "経堂店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "30",
+   "trialPlan1CounselingTime": "60",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "60",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "期間限定で体験トレーニング**無料**！ 2025年9月末まで",
+   "trialPlanSupplement": "無料カウンセリング：今までの食事や生活習慣をお聞きし、あなたに最適なダイエットプランをご提案",
+   "trialTrainingRequiredItems": "",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都世田谷区経堂1丁目19-7 セントラル経堂 220",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "cV8njFyf1G7we8L3",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "小田急小田原線経堂駅から徒歩1分",
+   "openingHours": "7:00~24:00",
+   "url": null,
+   "affiliateLink": "https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L",
+   "affiliateLinkCvTag": "<img src=\"https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L\" width=\"1\" height=\"1\" alt=\"\" style=\"border:none;\" />",
+   "catchcopy": "厳選された一流トレーナーが専属指導！完全個室のパーソナルトレーニングジム",
+   "lead": "24/7Workoutは、全国のプロトレーナーの中から独自の基準で選び抜かれた精鋭が指導を行う、完全個室型のパーソナルトレーニングジムです。トレーナーの質に徹底的にこだわっています。豊富な知識と経験を持つトレーナーが、一人ひとりの目標や体質に合わせて丁寧にサポートします。完全個室空間のため、周囲を気にせずトレーニングに集中できるのも魅力。二人三脚で理想の身体づくりを実現する、信頼と実績のパーソナルジムです。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "ageRatio": {
+    "id": "7AQ2ljY3CgYlQdJ0",
+    "twenties": 31.3,
+    "thirties": 28.7,
+    "forties": 24.2,
+    "fifties": 15.7
+   },
+   "score": null,
+   "genderRatio": {
+    "id": "Jx6XdgkWUKFndnEh",
+    "male": 31.5,
+    "female": 68.5
+   },
+   "reviews": [],
+   "nearbyStores": [],
+   "pricePlans": [
+    {
+     "id": "i5mDKs5cEAyGWbhK",
+     "name": "【マンツーマン】フリープランゴールド",
+     "membershipFee": 0,
+     "price": 71632,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。\n・【マンツーマン】フリープランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "bc4GalxHNibto6vr",
+     "name": "【マンツーマン】固定プランゴールド",
+     "membershipFee": 0,
+     "price": 65120,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・固定プランは毎週固定の日時に予約・セッションをするプランになります。\n・【マンツーマン】固定プランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "vMV0sjP3HgxngXEt",
+     "name": "【マンツーマン】フリープラン一括",
+     "membershipFee": 0,
+     "price": 195800,
+     "sessionCount": "20",
+     "numberOfTimes": 20,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。",
+     "isRecommended": false
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "FCdSJTYcAIrIu38g",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE",
+     "paymentMethod": {
+      "id": "TqdlDpJk3zDkfuKE",
+      "updatedAt": "2025-08-14T02:29:18.061Z",
+      "createdAt": "2025-08-14T02:29:18.061Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:18.055Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "銀行",
+      "name": "銀行振込"
+     }
+    },
+    {
+     "id": "hObGJFSv1NkyX0q8",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD",
+     "paymentMethod": {
+      "id": "MA4G7zMEOHh7OWRD",
+      "updatedAt": "2025-08-14T02:29:19.430Z",
+      "createdAt": "2025-08-14T02:29:19.430Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.420Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "VISA"
+     }
+    },
+    {
+     "id": "1ksRlg4kyXgELudJ",
+     "paymentMethodId": "5fuCKRICT7xSbfS8",
+     "paymentMethod": {
+      "id": "5fuCKRICT7xSbfS8",
+      "updatedAt": "2025-08-14T02:29:19.807Z",
+      "createdAt": "2025-08-14T02:29:19.807Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.802Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "JCB"
+     }
+    },
+    {
+     "id": "tcElrXtei6rYggiv",
+     "paymentMethodId": "YbI9wqLGnkaXom73",
+     "paymentMethod": {
+      "id": "YbI9wqLGnkaXom73",
+      "updatedAt": "2025-08-14T02:29:20.532Z",
+      "createdAt": "2025-08-14T02:29:20.532Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:20.528Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "American Express"
+     }
+    }
+   ],
+   "trainers": [],
+   "tags": [
+    {
+     "key": "002",
+     "name": "食事指導"
+    },
+    {
+     "key": "034",
+     "name": "産後ダイエット"
+    },
+    {
+     "key": "031",
+     "name": "健康・体型維持"
+    },
+    {
+     "key": "019",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "key": "014",
+     "name": "手ぶらOK"
+    },
+    {
+     "key": "012",
+     "name": "シャワー"
+    },
+    {
+     "key": "010",
+     "name": "完全個室"
+    },
+    {
+     "key": "009",
+     "name": "月額制"
+    }
+   ],
+   "features": [
+    {
+     "id": "sGSCtxosyziST0Qi",
+     "name": "月額制"
+    },
+    {
+     "id": "j2ceJHDYVIJAMV13",
+     "name": "施設"
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": "トレーナー変動制"
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": "LINE"
+    },
+    {
+     "id": "owcdygZEPEGSEvOQ",
+     "name": "食事報告自由"
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": "食事指導"
+    },
+    {
+     "id": "qW52olWvgbex8Hyq",
+     "name": "完全個室"
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": "シャワー"
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": "手ぶらOK"
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": "姿勢改善"
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": "アンチエイジング"
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": "健康診断の数値改善"
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": "健康・体型維持"
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": "運動不足解消"
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": "ストレス発散"
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": "産後ダイエット"
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": "マシン"
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": "自重"
+    },
+    {
+     "id": "HSeX50Qlr0q6aAyz",
+     "name": "有酸素マシン"
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": "カロリー計算"
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": "メニューアドバイス"
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": "レシピ提供"
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "2I2Z90gxsM3wxHtA",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "Dv0P2JoeKOTF1r1P",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "X9gSA6kTpz96E10K",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "metadata": null,
+   "prefecture": {
+    "id": "738pdVp3oSDvqoNF",
+    "updatedAt": "2025-10-23T06:06:17.201Z",
+    "createdAt": "2025-10-23T06:06:17.201Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-10-23T06:06:17.195Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "code": "130001",
+    "type": "pref",
+    "name": "東京都",
+    "kana": "ﾄｳｷｮｳﾄ",
+    "prefCode": "130001",
+    "prefKana": "ﾄｳｷｮｳﾄ",
+    "prefName": "東京都",
+    "cityCode": null,
+    "cityName": null,
+    "cityKana": null,
+    "wardName": null,
+    "wardKana": null
+   },
+   "city": {
+    "code": "131121",
+    "type": "city",
+    "name": "東京都世田谷区",
+    "prefCode": "130001",
+    "prefName": "東京都",
+    "cityCode": "131121",
+    "cityName": "世田谷区",
+    "wardName": null
+   },
+   "_prefCode": "130001",
+   "_prefName": "東京都",
+   "_cityCode": "131121",
+   "_cityName": "世田谷区",
+   "_wardCode": null,
+   "_wardName": null,
+   "_tagKeys": [
+    "002",
+    "034",
+    "031",
+    "019",
+    "014",
+    "012",
+    "010",
+    "009"
+   ]
+  },
+  "/gyms/247workout/honatsugi": {
+   "id": "opguhYL9GoEbP4U8",
+   "updatedAt": "2026-03-15T13:16:30.844Z",
+   "createdAt": "2025-12-25T11:16:46.082Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:45.720Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "bdNO7SgBdiDt0icx",
+   "slug": "honatsugi",
+   "name": "本厚木店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "30",
+   "trialPlan1CounselingTime": "60",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "60",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "期間限定で体験トレーニング**無料**！ 2025年9月末まで",
+   "trialPlanSupplement": "無料カウンセリング：今までの食事や生活習慣をお聞きし、あなたに最適なダイエットプランをご提案",
+   "trialTrainingRequiredItems": "",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "神奈川県厚木市中町3丁目10-15アメニティ中町 501号室",
+   "prefectureId": "vuyMulPMeW7aRDh5",
+   "cityId": "obaU6aXxBqfbceJO",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "小田急線本厚木駅から徒歩5分",
+   "openingHours": "7:00~24:00",
+   "url": null,
+   "affiliateLink": "https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L",
+   "affiliateLinkCvTag": "<img src=\"https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L\" width=\"1\" height=\"1\" alt=\"\" style=\"border:none;\" />",
+   "catchcopy": "厳選された一流トレーナーが専属指導！完全個室のパーソナルトレーニングジム",
+   "lead": "24/7Workoutは、全国のプロトレーナーの中から独自の基準で選び抜かれた精鋭が指導を行う、完全個室型のパーソナルトレーニングジムです。トレーナーの質に徹底的にこだわっています。豊富な知識と経験を持つトレーナーが、一人ひとりの目標や体質に合わせて丁寧にサポートします。完全個室空間のため、周囲を気にせずトレーニングに集中できるのも魅力。二人三脚で理想の身体づくりを実現する、信頼と実績のパーソナルジムです。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "83TQHWcmTXJ3kWXy",
+    "male": 31.5,
+    "female": 68.5
+   },
+   "trainers": [],
+   "rentalItems": [
+    {
+     "id": "fz77e4JtwMmmHxAs",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "AAhsGfDewiACZRab",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "owKyBM2jNNkujey6",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "rbuind7XWeY89K7G",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE",
+     "paymentMethod": {
+      "id": "TqdlDpJk3zDkfuKE",
+      "updatedAt": "2025-08-14T02:29:18.061Z",
+      "createdAt": "2025-08-14T02:29:18.061Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:18.055Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "銀行",
+      "name": "銀行振込"
+     }
+    },
+    {
+     "id": "kQABV3g5HJNIEazM",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD",
+     "paymentMethod": {
+      "id": "MA4G7zMEOHh7OWRD",
+      "updatedAt": "2025-08-14T02:29:19.430Z",
+      "createdAt": "2025-08-14T02:29:19.430Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.420Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "VISA"
+     }
+    },
+    {
+     "id": "fowlXWMcosH8IKvG",
+     "paymentMethodId": "5fuCKRICT7xSbfS8",
+     "paymentMethod": {
+      "id": "5fuCKRICT7xSbfS8",
+      "updatedAt": "2025-08-14T02:29:19.807Z",
+      "createdAt": "2025-08-14T02:29:19.807Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.802Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "JCB"
+     }
+    },
+    {
+     "id": "QG0EjTjvqtqCyHDR",
+     "paymentMethodId": "YbI9wqLGnkaXom73",
+     "paymentMethod": {
+      "id": "YbI9wqLGnkaXom73",
+      "updatedAt": "2025-08-14T02:29:20.532Z",
+      "createdAt": "2025-08-14T02:29:20.532Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:20.528Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "American Express"
+     }
+    }
+   ],
+   "ageRatio": {
+    "id": "n2Iufk65065scSIR",
+    "twenties": 31.3,
+    "thirties": 28.7,
+    "forties": 24.2,
+    "fifties": 15.7
+   },
+   "nearbyStores": [],
+   "reviews": [],
+   "pricePlans": [
+    {
+     "id": "8NGevTqIhBDNQkd2",
+     "name": "【マンツーマン】フリープランゴールド",
+     "membershipFee": 0,
+     "price": 71632,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。\n・【マンツーマン】フリープランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "86TPq6m1fU8LQEsR",
+     "name": "【マンツーマン】固定プランゴールド",
+     "membershipFee": 0,
+     "price": 65120,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・固定プランは毎週固定の日時に予約・セッションをするプランになります。\n・【マンツーマン】固定プランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "WU1EHjbuTNe80jLx",
+     "name": "【マンツーマン】フリープラン一括",
+     "membershipFee": 0,
+     "price": 195800,
+     "sessionCount": "20",
+     "numberOfTimes": 20,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。",
+     "isRecommended": false
+    }
+   ],
+   "tags": [
+    {
+     "key": "002",
+     "name": "食事指導"
+    },
+    {
+     "key": "034",
+     "name": "産後ダイエット"
+    },
+    {
+     "key": "031",
+     "name": "健康・体型維持"
+    },
+    {
+     "key": "019",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "key": "014",
+     "name": "手ぶらOK"
+    },
+    {
+     "key": "012",
+     "name": "シャワー"
+    },
+    {
+     "key": "010",
+     "name": "完全個室"
+    },
+    {
+     "key": "009",
+     "name": "月額制"
+    }
+   ],
+   "features": [
+    {
+     "id": "sGSCtxosyziST0Qi",
+     "name": "月額制"
+    },
+    {
+     "id": "j2ceJHDYVIJAMV13",
+     "name": "施設"
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": "トレーナー変動制"
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": "LINE"
+    },
+    {
+     "id": "owcdygZEPEGSEvOQ",
+     "name": "食事報告自由"
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": "食事指導"
+    },
+    {
+     "id": "qW52olWvgbex8Hyq",
+     "name": "完全個室"
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": "シャワー"
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": "手ぶらOK"
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": "姿勢改善"
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": "アンチエイジング"
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": "健康診断の数値改善"
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": "健康・体型維持"
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": "運動不足解消"
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": "ストレス発散"
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": "産後ダイエット"
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": "マシン"
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": "自重"
+    },
+    {
+     "id": "HSeX50Qlr0q6aAyz",
+     "name": "有酸素マシン"
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": "カロリー計算"
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": "メニューアドバイス"
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": "レシピ提供"
+    }
+   ],
+   "metadata": null,
+   "prefecture": {
+    "id": "vuyMulPMeW7aRDh5",
+    "updatedAt": "2025-10-23T06:06:17.273Z",
+    "createdAt": "2025-10-23T06:06:17.273Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-10-23T06:06:17.265Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "code": "140007",
+    "type": "pref",
+    "name": "神奈川県",
+    "kana": "ｶﾅｶﾞﾜｹﾝ",
+    "prefCode": "140007",
+    "prefKana": "ｶﾅｶﾞﾜｹﾝ",
+    "prefName": "神奈川県",
+    "cityCode": null,
+    "cityName": null,
+    "cityKana": null,
+    "wardName": null,
+    "wardKana": null
+   },
+   "city": {
+    "code": "142123",
+    "type": "city",
+    "name": "神奈川県厚木市",
+    "prefCode": "140007",
+    "prefName": "神奈川県",
+    "cityCode": "142123",
+    "cityName": "厚木市",
+    "wardName": null
+   },
+   "_prefCode": "140007",
+   "_prefName": "神奈川県",
+   "_cityCode": "142123",
+   "_cityName": "厚木市",
+   "_wardCode": null,
+   "_wardName": null,
+   "_tagKeys": [
+    "002",
+    "034",
+    "031",
+    "019",
+    "014",
+    "012",
+    "010",
+    "009"
+   ]
+  },
+  "/gyms/247workout/meidaimae": {
+   "id": "GzzMhuLQdBEvSq5k",
+   "updatedAt": "2026-03-15T13:16:29.242Z",
+   "createdAt": "2025-12-25T11:16:34.456Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:16:34.178Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "bdNO7SgBdiDt0icx",
+   "slug": "meidaimae",
+   "name": "明大前店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "30",
+   "trialPlan1CounselingTime": "60",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "60",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "期間限定で体験トレーニング**無料**！ 2025年9月末まで",
+   "trialPlanSupplement": "無料カウンセリング：今までの食事や生活習慣をお聞きし、あなたに最適なダイエットプランをご提案",
+   "trialTrainingRequiredItems": "",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都世田谷区松原2丁目46-9 第一力蔵ビル707号室",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "cV8njFyf1G7we8L3",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "京王線明大前駅から徒歩2分",
+   "openingHours": "7:00~24:00 定休日なし",
+   "url": null,
+   "affiliateLink": "https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L",
+   "affiliateLinkCvTag": "<img src=\"https://t.felmat.net/fmcl?ak=X16244.1.Y158674U.A132329L\" width=\"1\" height=\"1\" alt=\"\" style=\"border:none;\" />",
+   "catchcopy": "厳選された一流トレーナーが専属指導！完全個室のパーソナルトレーニングジム",
+   "lead": "24/7Workoutは、全国のプロトレーナーの中から独自の基準で選び抜かれた精鋭が指導を行う、完全個室型のパーソナルトレーニングジムです。トレーナーの質に徹底的にこだわっています。豊富な知識と経験を持つトレーナーが、一人ひとりの目標や体質に合わせて丁寧にサポートします。完全個室空間のため、周囲を気にせずトレーニングに集中できるのも魅力。二人三脚で理想の身体づくりを実現する、信頼と実績のパーソナルジムです。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "genderRatio": {
+    "id": "UZjDODMzXWR1FWSq",
+    "male": 31.5,
+    "female": 68.5
+   },
+   "ageRatio": {
+    "id": "qNK5TmuVVup6rsyf",
+    "twenties": 31.3,
+    "thirties": 28.7,
+    "forties": 24.2,
+    "fifties": 15.7
+   },
+   "pricePlans": [
+    {
+     "id": "v4a1SK9J1Y2hcWwx",
+     "name": "【マンツーマン】フリープランゴールド",
+     "membershipFee": 0,
+     "price": 71632,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。\n・【マンツーマン】フリープランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "QuhhyaR4ZKg9ocST",
+     "name": "【マンツーマン】固定プランゴールド",
+     "membershipFee": 0,
+     "price": 65120,
+     "sessionCount": "8",
+     "numberOfTimes": 8,
+     "minutes": 50,
+     "days": 30,
+     "note": "・固定プランは毎週固定の日時に予約・セッションをするプランになります。\n・【マンツーマン】固定プランはゴールド以外にも月の回数と料金が異なる4つのコースがございます。 詳細はご来店時にご質問ください。",
+     "isRecommended": false
+    },
+    {
+     "id": "tE4PYKXG3ucfeo0w",
+     "name": "【マンツーマン】フリープラン一括",
+     "membershipFee": 0,
+     "price": 195800,
+     "sessionCount": "20",
+     "numberOfTimes": 20,
+     "minutes": 50,
+     "days": 30,
+     "note": "・フリープランは希望の時間に予約・セッションをすることが可能です。",
+     "isRecommended": false
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "ATXKPImbReBVIzzm",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "V4N2nXOPvDyZjUiW",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "free"
+    },
+    {
+     "id": "8I8WuFNVaqpbxciY",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "metadata": null,
+   "features": [
+    {
+     "id": "sGSCtxosyziST0Qi",
+     "name": "月額制"
+    },
+    {
+     "id": "j2ceJHDYVIJAMV13",
+     "name": "施設"
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "id": "8S6DfFb8q0zbli9Y",
+     "name": "トレーナー変動制"
+    },
+    {
+     "id": "lUFxdRPqHpyQ2nTN",
+     "name": "LINE"
+    },
+    {
+     "id": "owcdygZEPEGSEvOQ",
+     "name": "食事報告自由"
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": "食事指導"
+    },
+    {
+     "id": "qW52olWvgbex8Hyq",
+     "name": "完全個室"
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": "シャワー"
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": "手ぶらOK"
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": "姿勢改善"
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": "アンチエイジング"
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": "健康診断の数値改善"
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": "健康・体型維持"
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": "運動不足解消"
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": "ストレス発散"
+    },
+    {
+     "id": "JkAKV67tH6dRdOGq",
+     "name": "産後ダイエット"
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": "マシン"
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": "自重"
+    },
+    {
+     "id": "HSeX50Qlr0q6aAyz",
+     "name": "有酸素マシン"
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": "カロリー計算"
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": "メニューアドバイス"
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": "レシピ提供"
+    }
+   ],
+   "trainers": [],
+   "paymentMethods": [
+    {
+     "id": "o5iJ8fs8DdOyku2G",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE",
+     "paymentMethod": {
+      "id": "TqdlDpJk3zDkfuKE",
+      "updatedAt": "2025-08-14T02:29:18.061Z",
+      "createdAt": "2025-08-14T02:29:18.061Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:18.055Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "銀行",
+      "name": "銀行振込"
+     }
+    },
+    {
+     "id": "lTV3xTuTLQkUvGRM",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD",
+     "paymentMethod": {
+      "id": "MA4G7zMEOHh7OWRD",
+      "updatedAt": "2025-08-14T02:29:19.430Z",
+      "createdAt": "2025-08-14T02:29:19.430Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.420Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "VISA"
+     }
+    },
+    {
+     "id": "l6eVBg2i1o59bk4O",
+     "paymentMethodId": "5fuCKRICT7xSbfS8",
+     "paymentMethod": {
+      "id": "5fuCKRICT7xSbfS8",
+      "updatedAt": "2025-08-14T02:29:19.807Z",
+      "createdAt": "2025-08-14T02:29:19.807Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.802Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "JCB"
+     }
+    },
+    {
+     "id": "8oaPDXo96A3jAtjb",
+     "paymentMethodId": "YbI9wqLGnkaXom73",
+     "paymentMethod": {
+      "id": "YbI9wqLGnkaXom73",
+      "updatedAt": "2025-08-14T02:29:20.532Z",
+      "createdAt": "2025-08-14T02:29:20.532Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:20.528Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "American Express"
+     }
+    }
+   ],
+   "tags": [
+    {
+     "key": "002",
+     "name": "食事指導"
+    },
+    {
+     "key": "034",
+     "name": "産後ダイエット"
+    },
+    {
+     "key": "031",
+     "name": "健康・体型維持"
+    },
+    {
+     "key": "019",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "key": "014",
+     "name": "手ぶらOK"
+    },
+    {
+     "key": "012",
+     "name": "シャワー"
+    },
+    {
+     "key": "010",
+     "name": "完全個室"
+    },
+    {
+     "key": "009",
+     "name": "月額制"
+    }
+   ],
+   "reviews": [],
+   "nearbyStores": [],
+   "prefecture": {
+    "id": "738pdVp3oSDvqoNF",
+    "updatedAt": "2025-10-23T06:06:17.201Z",
+    "createdAt": "2025-10-23T06:06:17.201Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-10-23T06:06:17.195Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "code": "130001",
+    "type": "pref",
+    "name": "東京都",
+    "kana": "ﾄｳｷｮｳﾄ",
+    "prefCode": "130001",
+    "prefKana": "ﾄｳｷｮｳﾄ",
+    "prefName": "東京都",
+    "cityCode": null,
+    "cityName": null,
+    "cityKana": null,
+    "wardName": null,
+    "wardKana": null
+   },
+   "city": {
+    "code": "131121",
+    "type": "city",
+    "name": "東京都世田谷区",
+    "prefCode": "130001",
+    "prefName": "東京都",
+    "cityCode": "131121",
+    "cityName": "世田谷区",
+    "wardName": null
+   },
+   "_prefCode": "130001",
+   "_prefName": "東京都",
+   "_cityCode": "131121",
+   "_cityName": "世田谷区",
+   "_wardCode": null,
+   "_wardName": null,
+   "_tagKeys": [
+    "002",
+    "034",
+    "031",
+    "019",
+    "014",
+    "012",
+    "010",
+    "009"
+   ]
+  },
+  "/gyms/rizap/wikebukuro": {
+   "id": "kAK5vFWgjbbGLJvY",
+   "updatedAt": "2026-02-08T02:11:32.011Z",
+   "createdAt": "2025-12-25T11:14:34.983Z",
+   "group": null,
+   "_draft": null,
+   "_published": true,
+   "publishedAt": "2025-12-25T11:14:34.359Z",
+   "scheduledPublishAt": null,
+   "scheduledUnpublishAt": null,
+   "brandId": "9cBue3OZVMuPArpb",
+   "slug": "wikebukuro",
+   "name": "池袋西口女性専用店",
+   "basicInformation": null,
+   "trialPlan1TrainingTime": "",
+   "trialPlan1CounselingTime": "60",
+   "trialPlan1Price": "0",
+   "trialPlan2CounselingTime": "60",
+   "trialPlan2Price": "0",
+   "trialDiscountInfo": "",
+   "trialPlanSupplement": "",
+   "trialTrainingRequiredItems": "",
+   "addressPrefecture": null,
+   "addressMunicipalities": null,
+   "addressStreet": null,
+   "address": "東京都豊島区池袋2-40-13  池袋デュープレックスビズ 10F",
+   "prefectureId": "738pdVp3oSDvqoNF",
+   "cityId": "dXMCtiM5hRpTDfwD",
+   "wardId": null,
+   "telephoneNumber": null,
+   "access": "池袋駅（JR）から徒歩5分",
+   "openingHours": "7:00~23:00",
+   "url": null,
+   "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+EF60AA+3D3Q+62ENM",
+   "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=45E3Q1+EF60AA+3D3Q+62ENM\" alt=\"\">",
+   "catchcopy": "RIZAP会員限定！24時間ジム「chocozap（チョコザップ）」が無料で通い放題",
+   "lead": "現在RIZAPに入会すると、プログラム期間中は24時間ジム「chocozap（チョコザップ）」に月会費無料で通い放題になります。RIZAPで学んだトレーニング内容をchocozapで自主的に実践できるため、セッションのない日でも運動を継続可能。24時間営業だから、忙しい方でも自分のペースで通えます。さらに一部店舗には、無料で使えるセルフエステやセルフ脱毛マシンを完備。フィットネスも美容も同時にケアできる、お得で充実したサポートが魅力です。",
+   "featuredImage": {},
+   "featuredImageAlt": null,
+   "featuredImageCite": null,
+   "recommendedFor": null,
+   "exposeToConsumerFlag": true,
+   "score": null,
+   "ageRatio": {
+    "id": "8N7ce3ee749UhDth",
+    "twenties": 10,
+    "thirties": 30,
+    "forties": 40,
+    "fifties": 20
+   },
+   "pricePlans": [
+    {
+     "id": "L8DgdfRl1HPamz6G",
+     "name": "美ボディメイクコース",
+     "membershipFee": 55000,
+     "price": 327800,
+     "sessionCount": "16",
+     "numberOfTimes": null,
+     "minutes": 50,
+     "days": 60,
+     "note": "",
+     "isRecommended": false
+    }
+   ],
+   "trainers": [],
+   "genderRatio": {
+    "id": "LoyXiHaDy8pP5npo",
+    "male": 0,
+    "female": 100
+   },
+   "features": [
+    {
+     "id": "j2ceJHDYVIJAMV13",
+     "name": "施設"
+    },
+    {
+     "id": "1kCwLQbLh12rgQoe",
+     "name": "駐車場"
+    },
+    {
+     "id": "6zdj3YfuB4n4u0Tt",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "id": "Zv2NMCiMcVmi004t",
+     "name": "トレーナー担当制"
+    },
+    {
+     "id": "2QXooMFohdFJsYK1",
+     "name": "ダイエット"
+    },
+    {
+     "id": "eRU0YicppbCLy4yg",
+     "name": "毎日"
+    },
+    {
+     "id": "mBt29zJ4mzvSfHHD",
+     "name": "専用アプリ"
+    },
+    {
+     "id": "Run8chbSV5svsIYQ",
+     "name": "食事報告必須"
+    },
+    {
+     "id": "Uf5IgeJ23zTSyQUi",
+     "name": "食事制限管理"
+    },
+    {
+     "id": "4JsEjXzikuOX5CIA",
+     "name": "女性専用"
+    },
+    {
+     "id": "lV7bwsP4oRNlgcKh",
+     "name": "食事指導"
+    },
+    {
+     "id": "UVLIEY5LG6OxUfpI",
+     "name": "ウォーターサーバー"
+    },
+    {
+     "id": "ZKS5zbvLiS84AC1j",
+     "name": "早朝深夜"
+    },
+    {
+     "id": "qW52olWvgbex8Hyq",
+     "name": "完全個室"
+    },
+    {
+     "id": "jIvw9PJp2YTGI8os",
+     "name": "シャワー"
+    },
+    {
+     "id": "M7GgfIjNaIXXbU1i",
+     "name": "パウダールーム"
+    },
+    {
+     "id": "59LjqHB6raw2Edfz",
+     "name": "手ぶらOK"
+    },
+    {
+     "id": "xTUmb5OjOwC9iZVv",
+     "name": "脱・リバウンド"
+    },
+    {
+     "id": "403vA5xN3ljygtXt",
+     "name": "姿勢改善"
+    },
+    {
+     "id": "oylaxmMOwY6ixkNg",
+     "name": "アンチエイジング"
+    },
+    {
+     "id": "rRtmQaAfI4BBCk09",
+     "name": "健康診断の数値改善"
+    },
+    {
+     "id": "YaZpHT0bvjTrrmI8",
+     "name": "健康・体型維持"
+    },
+    {
+     "id": "bQwY8HlcHG0GMlZK",
+     "name": "運動不足解消"
+    },
+    {
+     "id": "XiHMVM7pVpJdyt0e",
+     "name": "ストレス発散"
+    },
+    {
+     "id": "wY89aXviG7QpF4cf",
+     "name": "フリーウエイト"
+    },
+    {
+     "id": "josLUtWiR7R3bD0u",
+     "name": "マシン"
+    },
+    {
+     "id": "9hzcvkuZ6z7tPjUL",
+     "name": "自重"
+    },
+    {
+     "id": "aq3LnWORV4Tn6t6p",
+     "name": "EMS"
+    },
+    {
+     "id": "8AU9qejj8RgxYJZU",
+     "name": "加圧"
+    },
+    {
+     "id": "HSeX50Qlr0q6aAyz",
+     "name": "有酸素マシン"
+    },
+    {
+     "id": "fkVox7ThTaU1R3sy",
+     "name": "HIIT"
+    },
+    {
+     "id": "ZFZmxowrn6Aurtnr",
+     "name": "管理栄養士"
+    },
+    {
+     "id": "8xj3NofQO8iEPcpD",
+     "name": "カロリー計算"
+    },
+    {
+     "id": "Tc8Nyy0driIKLQfN",
+     "name": "メニューアドバイス"
+    },
+    {
+     "id": "mNUvTRDzbJQG5jhl",
+     "name": "レシピ提供"
+    }
+   ],
+   "rentalItems": [
+    {
+     "id": "bd2M7ORyWl7P6tB9",
+     "itemId": "8CMxu7D9N8vxonZd",
+     "type": "free"
+    },
+    {
+     "id": "lYcVzVLdfFoY0VHI",
+     "itemId": "6yWXeMc7LMI1deai",
+     "type": "unavailable"
+    },
+    {
+     "id": "GVbA2EJaEf5gcKcH",
+     "itemId": "rmNeHCFxvd5Sf6Jt",
+     "type": "free"
+    }
+   ],
+   "paymentMethods": [
+    {
+     "id": "sZ8B7vPRrP1qbQiy",
+     "paymentMethodId": "TqdlDpJk3zDkfuKE",
+     "paymentMethod": {
+      "id": "TqdlDpJk3zDkfuKE",
+      "updatedAt": "2025-08-14T02:29:18.061Z",
+      "createdAt": "2025-08-14T02:29:18.061Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:18.055Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "銀行",
+      "name": "銀行振込"
+     }
+    },
+    {
+     "id": "7Bw3Yi27sNS2sENE",
+     "paymentMethodId": "MA4G7zMEOHh7OWRD",
+     "paymentMethod": {
+      "id": "MA4G7zMEOHh7OWRD",
+      "updatedAt": "2025-08-14T02:29:19.430Z",
+      "createdAt": "2025-08-14T02:29:19.430Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.420Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "VISA"
+     }
+    },
+    {
+     "id": "xZ9ijUHxfEvYDbg8",
+     "paymentMethodId": "5fuCKRICT7xSbfS8",
+     "paymentMethod": {
+      "id": "5fuCKRICT7xSbfS8",
+      "updatedAt": "2025-08-14T02:29:19.807Z",
+      "createdAt": "2025-08-14T02:29:19.807Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:19.802Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "JCB"
+     }
+    },
+    {
+     "id": "0yVbgEqYlltLaoSh",
+     "paymentMethodId": "YbI9wqLGnkaXom73",
+     "paymentMethod": {
+      "id": "YbI9wqLGnkaXom73",
+      "updatedAt": "2025-08-14T02:29:20.532Z",
+      "createdAt": "2025-08-14T02:29:20.532Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:20.528Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "American Express"
+     }
+    },
+    {
+     "id": "30Au64k2B5joXqDU",
+     "paymentMethodId": "ckK1HkEvy1ppFMkD",
+     "paymentMethod": {
+      "id": "ckK1HkEvy1ppFMkD",
+      "updatedAt": "2025-08-14T02:29:21.205Z",
+      "createdAt": "2025-08-14T02:29:21.205Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-08-14T02:29:21.198Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "category": "クレジットカード",
+      "name": "Diners Club"
+     }
+    }
+   ],
+   "reviews": [],
+   "metadata": null,
+   "nearbyStores": [
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    },
+    {
+     "slug": null,
+     "name": null,
+     "brandId": null
+    }
+   ],
+   "tags": [
+    {
+     "key": "001",
+     "name": "女性専用"
+    },
+    {
+     "key": "002",
+     "name": "食事指導"
+    },
+    {
+     "key": "031",
+     "name": "健康・体型維持"
+    },
+    {
+     "key": "023",
+     "name": "ダイエット"
+    },
+    {
+     "key": "019",
+     "name": "女性トレーナー在籍"
+    },
+    {
+     "key": "014",
+     "name": "手ぶらOK"
+    },
+    {
+     "key": "012",
+     "name": "シャワー"
+    },
+    {
+     "key": "010",
+     "name": "完全個室"
+    }
+   ],
+   "prefecture": {
+    "id": "738pdVp3oSDvqoNF",
+    "updatedAt": "2025-10-23T06:06:17.201Z",
+    "createdAt": "2025-10-23T06:06:17.201Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2025-10-23T06:06:17.195Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "code": "130001",
+    "type": "pref",
+    "name": "東京都",
+    "kana": "ﾄｳｷｮｳﾄ",
+    "prefCode": "130001",
+    "prefKana": "ﾄｳｷｮｳﾄ",
+    "prefName": "東京都",
+    "cityCode": null,
+    "cityName": null,
+    "cityKana": null,
+    "wardName": null,
+    "wardKana": null
+   },
+   "city": {
+    "code": "131164",
+    "type": "city",
+    "name": "東京都豊島区",
+    "prefCode": "130001",
+    "prefName": "東京都",
+    "cityCode": "131164",
+    "cityName": "豊島区",
+    "wardName": null
+   },
+   "_prefCode": "130001",
+   "_prefName": "東京都",
+   "_cityCode": "131164",
+   "_cityName": "豊島区",
+   "_wardCode": null,
+   "_wardName": null,
+   "_tagKeys": [
+    "001",
+    "002",
+    "031",
+    "023",
+    "019",
+    "014",
+    "012",
+    "010"
+   ]
+  }
+ }
+}
