@@ -8,6 +8,10 @@ import { planPriceLabel } from "@/lib/data";
 
 export const dynamicParams = false;
 
+// 薄い絞り込み一覧(解決後の実店舗数がこの値未満)はnoindex,follow:true。
+// リンク評価は価値ページへ流しつつ、クロールバジェットの浪費を防ぐ(承認済みSEO対策)。
+const NOINDEX_STORE_THRESHOLD = 5;
+
 export function generateStaticParams() {
   return listPaths()
     .filter((p) => p !== "/gyms/list")
@@ -23,6 +27,15 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
   const p = pagePath(segs);
   const m = metaFor(p);
   const { labels, stores: hits } = resolveListPage(segs);
+  // 「エリア×こだわり条件(feature/tag)」の絞り込み一覧のうち、解決後の実店舗数が5店未満
+  // (4店以下)の薄いページのみ noindex,follow。エリアのみの一覧(pref/city/ward)や、5店以上の
+  // 一覧はindex許可(robotsフィールドを付けない)。条件付きの薄いページはパーソナルジム固有条件を
+  // 満たす実店舗が少なく価値化しにくいため、専門性・エリア需要を保ちつつ薄さだけを抑える。
+  const hasCondition = Boolean(labels.feature || labels.tag);
+  const robotsField =
+    hasCondition && hits.length < NOINDEX_STORE_THRESHOLD
+      ? { robots: { index: false, follow: true } }
+      : {};
   // 地域ラベルは最深のもの（ward/city）が上位（県名）を内包するため最深のみ採用
   const area = labels.ward || labels.city || labels.pref || "";
   const cond = [labels.feature, labels.tag].filter(Boolean).join("・");
@@ -32,11 +45,11 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
     const canonUrl = listCanonicalMap()[p] ? `https://dunlopsportsclub.jp${listCanonicalMap()[p]}` : p;
     const title = `${head}${hits.length >= 2 ? `おすすめ${hits.length}選` : ""}｜料金比較・口コミ｜BEST-FIT`;
     const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もひと目でチェック。あなたに合う一軒が見つかるBEST-FITの検索結果です。`;
-    return { title: { absolute: title }, description: desc, alternates: { canonical: canonUrl } };
+    return { title: { absolute: title }, description: desc, alternates: { canonical: canonUrl }, ...robotsField };
   }
-  if (!m) return {};
+  if (!m) return { ...robotsField };
   const canonUrl2 = listCanonicalMap()[p] ? `https://dunlopsportsclub.jp${listCanonicalMap()[p]}` : p;
-  return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: canonUrl2 } };
+  return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: canonUrl2 }, ...robotsField };
 }
 
 export default async function ListPage({ params }: { params: Promise<{ segs: string[] }> }) {
