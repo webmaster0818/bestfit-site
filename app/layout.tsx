@@ -42,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-5xl mx-auto px-4 space-y-2">
             <p className="font-bold text-gray-700">BEST-FIT｜パーソナルジム専門の比較・口コミサイト</p>
             <nav className="flex gap-4 flex-wrap">
+              <Link href="/contact" className="hover:underline">掲載に関するお問い合わせ</Link>
               <Link href="/privacy-policy" className="hover:underline">プライバシーポリシー</Link>
               <Link href="/terms-of-service" className="hover:underline">利用規約</Link>
               <Link href="/content-policy" className="hover:underline">コンテンツポリシー</Link>
