@@ -33,22 +33,17 @@ export default function SearchPanel({ areas, features }: { areas: AreaTree; feat
 
   const search = () => {
     const feats = [...checked];
-    // 単一条件は既存の静的一覧URLへ、複数条件はクライアント検索ページへ
-    if (feats.length <= 1) {
-      const segs: string[] = [];
-      if (pref) segs.push(`pref-${pref}`);
-      if (city) segs.push(`city-${city}`);
-      if (ward) segs.push(`ward-${ward}`);
-      if (feats.length === 1) segs.push(`feature-${feats[0]}`);
-      router.push(segs.length ? `/gyms/list/${segs.join("/")}` : "/gyms/list");
-      return;
-    }
+    // 静的一覧(/gyms/list/*)は組合せを全網羅で生成していない(市区・駅を含む複合や
+    // pref+市区+駅+こだわりの4条件などは未生成)。dynamicParams=false のため未生成URLへ
+    // 遷移すると404になる。検索窓からは常にクライアント検索(/gyms/search)へ渡して
+    // 全条件を安全に処理する（静的一覧ページはSEO用に別途リンクで存続）。
     const q = new URLSearchParams();
     if (pref) q.set("pref", pref);
     if (city) q.set("city", city);
     if (ward) q.set("ward", ward);
-    q.set("f", feats.join(","));
-    router.push(`/gyms/search?${q.toString()}`);
+    if (feats.length) q.set("f", feats.join(","));
+    const qs = q.toString();
+    router.push(qs ? `/gyms/search?${qs}` : "/gyms/list");
   };
 
   const selectCls = "w-full rounded-lg border border-white/30 bg-white/95 px-3 py-2.5 text-sm font-semibold text-slate-800";
