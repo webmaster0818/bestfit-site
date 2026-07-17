@@ -62,7 +62,7 @@ export default function Home() {
               料金・特徴・口コミで比較して、無料カウンセリングから始めよう。
             </p>
           </div>
-          <div className="md:order-1"><SearchPanel areas={areas} features={featuresCatalog} /></div>
+          <div id="search" className="md:order-1 scroll-mt-24"><SearchPanel areas={areas} features={featuresCatalog} /></div>
         </div>
       </section>
 

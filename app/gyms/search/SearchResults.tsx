@@ -63,8 +63,17 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
           </Link>
         ))}
         {hits.length === 0 && (
-          <div className="bf-card p-8 text-center text-sm" style={{ color: "var(--bf-muted)" }}>
-            条件に一致するジムが見つかりませんでした。条件を減らして再検索してみてください。
+          <div className="bf-card p-8 text-center">
+            <p className="text-sm mb-5" style={{ color: "var(--bf-muted)" }}>
+              条件に一致するジムが見つかりませんでした。条件を減らして再検索してみてください。
+            </p>
+            <Link
+              href="/#search"
+              className="inline-block rounded-lg px-6 py-3 text-sm font-bold text-white transition-colors"
+              style={{ background: "var(--bf-primary)" }}
+            >
+              条件選択画面に戻る
+            </Link>
           </div>
         )}
       </div>
