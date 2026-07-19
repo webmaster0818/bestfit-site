@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { stores, metaFor, brands } from "@/lib/data";
+import { stores, metaFor, brands, storeReviews } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
@@ -49,10 +49,15 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   const prefName = s._prefName as string | undefined;
   const cityName = s._cityName as string | undefined;
 
+  // S4: geo(Places API実測座標)とurl補完
+  const placeRev = storeReviews()[p];
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["ExerciseGym", "LocalBusiness"],
     name: `${brand?.name || ""} ${s.name}`.trim(),
+    ...(placeRev && typeof placeRev.lat === "number" && typeof placeRev.lng === "number"
+      ? { geo: { "@type": "GeoCoordinates", latitude: placeRev.lat, longitude: placeRev.lng } }
+      : {}),
     ...(s.catchcopy ? { description: s.catchcopy } : {}),
     ...(s.address
       ? {

@@ -20,6 +20,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "WebSite",
               name: "BEST-FIT",
               url: "https://dunlopsportsclub.jp",
+              publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://dunlopsportsclub.jp/gyms/search?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://dunlopsportsclub.jp/#organization",
+              name: "BEST-FIT",
+              url: "https://dunlopsportsclub.jp",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://dunlopsportsclub.jp/images/logo.png",
+              },
             }),
           }}
         />

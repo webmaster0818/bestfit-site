@@ -78,9 +78,25 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const areaFaqLd = area
     ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: areaFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
     : null;
+  // S1: Article schema(鮮度・E-E-A-T)。dateModifiedは記事の実質更新日=直近の全記事一括改修日。個別更新時はここを更新すること
+  const ARTICLE_DATE_MODIFIED = "2026-07-19";
+  const canonicalUrl = `https://dunlopsportsclub.jp${m?.canonical || p}`;
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: (bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】` : m?.title.split("｜")[0]) || "",
+    ...(m?.desc ? { description: m.desc } : {}),
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+    url: canonicalUrl,
+    dateModified: ARTICLE_DATE_MODIFIED,
+    author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://dunlopsportsclub.jp" },
+    publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
+    inLanguage: "ja",
+  };
 
   return (
     <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       {areaFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqLd) }} />}
       {brandFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
       <PageHero eyebrow={isBrand ? "BRAND REVIEW" : "AREA FEATURE"} title={m?.title.split("｜")[0] || ""} />

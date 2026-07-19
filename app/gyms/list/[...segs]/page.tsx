@@ -61,9 +61,27 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
     ],
   };
 
+  // S3: ItemList schema(一覧のリッチリザルト機会)
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${labelText}のパーソナルジム一覧`,
+    numberOfItems: hits.length,
+    itemListElement: hits.map(([path, s]: [string, any], i: number) => {
+      const b = brandMap.find((x) => x.brandId === s.brandId);
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name: `${b?.name || ""} ${s.name}`.trim(),
+        url: `https://dunlopsportsclub.jp${path}`,
+      };
+    }),
+  };
+
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {hits.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />}
       <PageHero
         eyebrow="PERSONAL GYM SEARCH"
         title={`「${labelText}」のパーソナルジム検索結果`}

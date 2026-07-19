@@ -16,6 +16,7 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
   const city = params.get("city") || "";
   const ward = params.get("ward") || "";
   const feats = (params.get("f") || "").split(",").filter(Boolean);
+  const q = (params.get("q") || "").trim().toLowerCase();
   const fname = (id: string) => features.find((x) => x.id === id)?.name || "";
 
   const hits = useMemo(
@@ -24,9 +25,10 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
         if (pref && r.pr !== pref) return false;
         if (city && r.ct !== city) return false;
         if (ward && r.wd !== ward) return false;
+        if (q && !`${r.b} ${r.n}`.toLowerCase().includes(q)) return false;
         return feats.every((f) => r.f.includes(f));
       }),
-    [index, pref, city, ward, feats.join(",")]
+    [index, pref, city, ward, feats.join(","), q]
   );
 
   const areaLabel = [pref && areas[pref]?.name, city && areas[pref]?.cities[city]?.name, ward && areas[pref]?.cities[city]?.wards[ward]]
