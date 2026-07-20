@@ -10,7 +10,18 @@ type Row = { p: string; n: string; b: string; pr?: string; ct?: string; wd?: str
 type Feature = { id: string; name: string; category: string };
 type AreaTree = Record<string, { name: string; cities: Record<string, { name: string; wards: Record<string, string> }> }>;
 
-export default function SearchResults({ index, features, areas }: { index: Row[]; features: Feature[]; areas: AreaTree }) {
+export default function SearchResults({ features, areas }: { features: Feature[]; areas: AreaTree }) {
+  // モバイル最適化: 検索インデックス(約840KB)はHTML同梱をやめfetchで取得(機能・見た目は不変)
+  const [index, setIndex] = useState<Row[]>([]);
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    fetch("/data/search-index.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d) => { if (alive) { if (Array.isArray(d)) setIndex(d); setLoaded(true); } })
+      .catch(() => { if (alive) setLoaded(true); });
+    return () => { alive = false; };
+  }, []);
   const params = useSearchParams();
   const pref = params.get("pref") || "";
   const city = params.get("city") || "";
@@ -41,7 +52,7 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
       <PageHero
         eyebrow="PERSONAL GYM SEARCH"
         title={`${[areaLabel, condLabel].filter(Boolean).join("×") || "すべて"}のパーソナルジム検索結果`}
-        subtitle={`${hits.length}件が条件に一致しました（複数条件の絞り込み結果）`}
+        subtitle={loaded ? `${hits.length}件が条件に一致しました（複数条件の絞り込み結果）` : "検索結果を読み込んでいます…"}
       />
       <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="space-y-4">
@@ -64,7 +75,7 @@ export default function SearchResults({ index, features, areas }: { index: Row[]
             <span className="absolute bottom-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-white text-sm group-hover:translate-x-0.5 transition-transform" style={{ background: "var(--bf-primary)" }}><IcoChevron /></span>
           </Link>
         ))}
-        {hits.length === 0 && (
+        {loaded && hits.length === 0 && (
           <div className="bf-card p-8 text-center">
             <p className="text-sm mb-5" style={{ color: "var(--bf-muted)" }}>
               条件に一致するジムが見つかりませんでした。条件を減らして再検索してみてください。

@@ -36,7 +36,17 @@ export default function Home() {
   const articleCards = topArticles
     .filter((a) => meta[a.href])
     .slice(0, 6)
-    .map((a) => ({ href: a.href, title: meta[a.href].title.split("｜")[0], img: imageMap[a.img] ? `/cms-images/${imageMap[a.img]}` : null }));
+    .map((a) => {
+      // モバイル最適化: カード実表示(約360px)に対し原寸1920pxを配信していたため640pxサムネを使用
+      const orig = imageMap[a.img];
+      let img: string | null = null;
+      if (orig) {
+        const thumbName = orig.replace(/\.(jpg|jpeg|png)$/i, ".jpg");
+        const thumbAbs = path.join(process.cwd(), "public", "cms-images", "thumb-640", thumbName);
+        img = fs.existsSync(thumbAbs) ? `/cms-images/thumb-640/${thumbName}` : `/cms-images/${orig}`;
+      }
+      return { href: a.href, title: meta[a.href].title.split("｜")[0], img };
+    });
   const newsItems = Object.entries(meta)
     .filter(([p]) => /^\/news\/[^/]+$/.test(p))
     .map(([p, m]) => ({ href: p, title: m.title.split("｜")[0] }));
@@ -46,8 +56,11 @@ export default function Home() {
       {/* ===== ファーストビュー: 現行KV画像 + 検索パネル ===== */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/kv.png" alt="" fill priority className="object-cover object-[70%_top] hidden md:block" />
-          <Image src="/images/kv-sp.png" alt="" fill priority className="object-cover object-top md:hidden" />
+          {/* モバイル最適化: PC用KV(2880px)がSPでも非表示DLされるのを防ぐためpicture化(表示は不変) */}
+          <picture>
+            <source media="(min-width: 768px)" srcSet="/images/kv.png" />
+            <img src="/images/kv-sp.png" alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-top md:object-[70%_top]" />
+          </picture>
           <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(15,18,24,0.30) 0%, rgba(15,18,24,0.38) 55%, rgba(15,18,24,0.66) 100%)" }} />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">

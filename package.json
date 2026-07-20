@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "python3 scripts/check-data.py && next build && bash scripts/postbuild.sh",
+    "build": "python3 scripts/check-data.py && node scripts/sync-client-data.mjs && next build && bash scripts/postbuild.sh",
     "start": "next start",
     "lint": "eslint"
   },

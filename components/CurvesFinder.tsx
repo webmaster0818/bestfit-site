@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 type Store = { name: string; address: string; lat: number; lng: number; rating?: number; count?: number; hours?: string[]; mapsUri?: string; pref: string; city: string };
 
@@ -23,7 +23,17 @@ function dist(a: { lat: number; lng: number }, b: { lat: number; lng: number }) 
 
 type AreaArticle = { url: string; name: string; type: string; pref: string };
 
-export default function CurvesFinder({ stores, areaArticles }: { stores: Store[]; areaArticles?: AreaArticle[] }) {
+export default function CurvesFinder({ areaArticles }: { areaArticles?: AreaArticle[] }) {
+  // モバイル最適化: 全国店舗データ(約820KB)はHTML同梱をやめ、表示後にfetch(機能・見た目は不変)
+  const [stores, setStores] = useState<Store[]>([]);
+  useEffect(() => {
+    let alive = true;
+    fetch("/data/curves-stores.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d) => { if (alive && Array.isArray(d)) setStores(d); })
+      .catch(() => {});
+    return () => { alive = false; };
+  }, []);
   const [step, setStep] = useState(1);
   const [goal, setGoal] = useState<typeof GOALS[number] | null>(null);
   const [malePath, setMalePath] = useState<"" | "casual" | "personal">("");
@@ -185,7 +195,7 @@ export default function CurvesFinder({ stores, areaArticles }: { stores: Store[]
           <button onClick={() => { setStep(1); setGoal(null); setPref(""); setCity(""); setGeo(null); }} className="w-full mt-3 text-xs underline" style={{ color: "var(--bf-muted)" }}>最初からやり直す</button>
         </div>
       )}
-      <p className="text-[10px] mt-3" style={{ color: "var(--bf-muted)" }}>※店舗情報・評点はGoogleマップの実データ（{stores.length}店舗掲載）。目的との相性は公式の特徴（女性専用・30分・継続率97.7％等）にもとづく当サイトの整理です。最新の店舗・料金は公式サイトでご確認ください。</p>
+      <p className="text-[10px] mt-3" style={{ color: "var(--bf-muted)" }}>※店舗情報・評点はGoogleマップの実データ{stores.length > 0 ? `（${stores.length}店舗掲載）` : ""}。目的との相性は公式の特徴（女性専用・30分・継続率97.7％等）にもとづく当サイトの整理です。最新の店舗・料金は公式サイトでご確認ください。</p>
       </div>
     </section>
   );

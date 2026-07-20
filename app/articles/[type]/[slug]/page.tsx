@@ -46,10 +46,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
-  const curvesStores = prm.type === "brand" && prm.slug === "curves"
-    ? JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "curves-stores.json"), "utf-8"))
-    : null;
-  const areaArticlesIdx = curvesStores
+  // モバイル最適化: 診断用の全国店舗データ(約820KB)はHTML同梱をやめCurvesFinder側でfetch
+  const isCurvesArticle = prm.type === "brand" && prm.slug === "curves";
+  const areaArticlesIdx = isCurvesArticle
     ? JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "area-articles-index.json"), "utf-8"))
     : null;
   const brandFaqs = bp
@@ -122,7 +121,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           </div>
         </div>
       )}
-      {curvesStores && <CurvesFinder stores={curvesStores} areaArticles={areaArticlesIdx} />}
+      {isCurvesArticle && <CurvesFinder areaArticles={areaArticlesIdx} />}
       {brandFaqs.length > 0 && (
         <section className="mb-8">
           <h2 className="bf-h2 mb-3">{bp!.name}の料金・評判 よくある質問</h2>

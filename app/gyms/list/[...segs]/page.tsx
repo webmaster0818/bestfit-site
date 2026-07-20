@@ -170,13 +170,13 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
                   <div className="shrink-0 text-right rounded-lg px-3 py-1.5" style={{ background: "var(--bf-primary-soft)" }}>
                     {minPer ? (
                       <>
-                        <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>1回あたり（{minPer.sc}回換算）</p>
-                        <p className="bf-price text-base leading-tight">{minPer.per.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                        <p className="text-[11px] font-bold" style={{ color: "var(--bf-muted)" }}>1回あたり（{minPer.sc}回換算）</p>
+                        <p className="bf-price text-base leading-tight">{minPer.per.toLocaleString()}<span className="text-[11px]">円〜</span></p>
                       </>
                     ) : (
                       <>
-                        <p className="text-[10px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
-                        <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[10px]">円〜</span></p>
+                        <p className="text-[11px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
+                        <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[11px]">円〜</span></p>
                       </>
                     )}
                   </div>

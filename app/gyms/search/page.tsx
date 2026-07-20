@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 export default function SearchPage() {
   const dataDir = path.join(process.cwd(), "data");
-  const index = JSON.parse(fs.readFileSync(path.join(dataDir, "search-index.json"), "utf-8"));
+  // モバイル最適化: 検索インデックス(約840KB)はHTML同梱をやめSearchResults側でfetch
   const features = JSON.parse(fs.readFileSync(path.join(dataDir, "features-catalog.json"), "utf-8"));
   const areas = JSON.parse(fs.readFileSync(path.join(dataDir, "areas-tree.json"), "utf-8"));
   return (
     <Suspense>
-      <SearchResults index={index} features={features} areas={areas} />
+      <SearchResults features={features} areas={areas} />
     </Suspense>
   );
 }

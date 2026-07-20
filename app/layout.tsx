@@ -52,13 +52,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-gray-200 bg-white">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-            <Link href="/" className="flex items-center">
+            {/* タップ領域拡大(推奨48px): p-3 -m-3 で見た目を変えず当たり判定のみ拡大 */}
+            <Link href="/" className="flex items-center p-3 -m-3">
               <img src="/images/logo.png" alt="BEST-FIT" className="h-5 md:h-7 w-auto" />
             </Link>
             <nav className="text-sm font-bold flex gap-4" style={{ color: "var(--bf-ink)" }}>
-              <Link href="/gyms/list" className="hover:underline">ジムを探す</Link>
-              <Link href="/articles" className="hover:underline">エリア記事</Link>
-              <Link href="/news" className="hover:underline">お知らせ</Link>
+              <Link href="/gyms/list" className="hover:underline py-3 px-1.5 -my-3 -mx-1.5">ジムを探す</Link>
+              <Link href="/articles" className="hover:underline py-3 px-1.5 -my-3 -mx-1.5">エリア記事</Link>
+              <Link href="/news" className="hover:underline py-3 px-1.5 -my-3 -mx-1.5">お知らせ</Link>
             </nav>
           </div>
         </header>
