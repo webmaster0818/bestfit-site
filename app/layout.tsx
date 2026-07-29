@@ -12,6 +12,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <head>
+        {/* Google Analytics 4 — 現行本番と同一の測定ID(移行監査B1) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-80HEY6EZC2" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-80HEY6EZC2');",
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
