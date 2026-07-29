@@ -7,6 +7,8 @@ import { metaFor, taxonomies, brands, stores, urlMeta } from "@/lib/data";
 import SearchPanel from "@/components/SearchPanel";
 import FeatureIcons from "@/components/FeatureIcons";
 import GymConcierge from "@/components/GymConcierge";
+import HeroParallax from "@/components/HeroParallax";
+import ScrollFx from "@/components/ScrollFx";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/");
@@ -53,14 +55,18 @@ export default function Home() {
 
   return (
     <div>
+      <ScrollFx />
       {/* ===== ファーストビュー: 現行KV画像 + 検索パネル ===== */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           {/* モバイル最適化: PC用KV(2880px)がSPでも非表示DLされるのを防ぐためpicture化(表示は不変) */}
-          <picture>
-            <source media="(min-width: 768px)" srcSet="/images/kv.png" />
-            <img src="/images/kv-sp.png" alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-top md:object-[70%_top]" />
-          </picture>
+          {/* スクロール連動: KVのみパララックス(オーバーレイは静止) */}
+          <HeroParallax>
+            <picture>
+              <source media="(min-width: 768px)" srcSet="/images/kv.png" />
+              <img src="/images/kv-sp.png" alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-top md:object-[70%_top]" />
+            </picture>
+          </HeroParallax>
           <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(15,18,24,0.30) 0%, rgba(15,18,24,0.38) 55%, rgba(15,18,24,0.66) 100%)" }} />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
@@ -87,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* ===== 主要エリア ===== */}
-      <section className="py-12">
+      <section className="py-12" data-reveal>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">主要エリアから探す</h2>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2 mt-2">
@@ -111,7 +117,7 @@ export default function Home() {
       <div className="bf-divider" />
 
       {/* ===== こだわり条件 ===== */}
-      <section className="py-12" style={{ background: "linear-gradient(180deg, rgba(14,95,168,0.06), rgba(14,95,168,0.02))" }}>
+      <section className="py-12" data-reveal style={{ background: "linear-gradient(180deg, rgba(14,95,168,0.06), rgba(14,95,168,0.02))" }}>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">こだわり条件から探す</h2>
           <ul className="flex flex-wrap gap-2 mt-2">
@@ -125,7 +131,7 @@ export default function Home() {
       <div className="bf-divider" />
 
       {/* ===== エリア記事(県別アコーディオン) ===== */}
-      <section className="py-12">
+      <section className="py-12" data-reveal>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">エリア特集から探す</h2>
           <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-2">
@@ -155,7 +161,7 @@ export default function Home() {
       <div className="bf-divider" />
 
       {/* ===== 新着記事 ===== */}
-      <section className="py-12">
+      <section className="py-12" data-reveal>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between mb-4">
             <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg mb-0">パーソナルジム新着記事</h2>
@@ -177,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* ===== 最新ニュース ===== */}
-      <section className="py-12 text-white" style={{ background: "linear-gradient(135deg, var(--bf-primary-deep), #083a68)" }}>
+      <section className="py-12 text-white" data-reveal style={{ background: "linear-gradient(135deg, var(--bf-primary-deep), #083a68)" }}>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-extrabold border-l-4 border-white pl-3">最新ニュース</h2>
@@ -197,7 +203,7 @@ export default function Home() {
       <div className="bf-divider" />
 
       {/* ===== 使い方 ===== */}
-      <section className="py-12">
+      <section className="py-12" data-reveal>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">BEST-FITの使い方</h2>
           <div className="grid md:grid-cols-3 gap-4 mt-2">
