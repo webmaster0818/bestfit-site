@@ -85,13 +85,13 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
   const [geo, setGeo] = useState<{ lat: number; lng: number } | null>(null);
   const [conds, setConds] = useState<string[]>([]);
   const [typingDone, setTypingDone] = useState(false);
-  const endRef = useRef<HTMLDivElement>(null);
+  const boxRef = useRef<HTMLDivElement>(null);
 
   const say = (text: string) => { setTypingDone(false); setMsgs((m) => [...m, { role: "bot", text }]); };
   const user = (text: string) => setMsgs((m) => [...m, { role: "user", text }]);
 
   useEffect(() => { if (msgs.length === 0) say("こんにちは！AIコンシェルジュのフィティです💪 あなたにぴったりのパーソナルジムを一緒に探します。まず、目的を教えてください！"); /* eslint-disable-next-line */ }, []);
-  useEffect(() => { endRef.current?.scrollIntoView({ block: "nearest" }); }, [msgs, typingDone]);
+  useEffect(() => { const b = boxRef.current; if (b) b.scrollTop = b.scrollHeight; }, [msgs, typingDone]);
 
   const prefs = useMemo(() => [...new Set(stores.map((s) => s.pref).filter(Boolean))].sort(), [stores]);
   const cities = useMemo(() => [...new Set(stores.filter((s) => s.pref === pref).map((s) => s.city).filter(Boolean))].sort(), [stores, pref]);
@@ -137,7 +137,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
       </div>
 
       {/* チャット */}
-      <div className="p-4 max-h-[420px] overflow-y-auto" style={{ background: "#f8fafd" }}>
+      <div ref={boxRef} className="p-4 max-h-[420px] overflow-y-auto" style={{ background: "#f8fafd" }}>
         {msgs.map((m, i) => (
           <div key={i} className={`flex gap-2 mb-3 ${m.role === "user" ? "justify-end" : ""}`}>
             {m.role === "bot" && <Fitty size={30} />}
@@ -146,7 +146,6 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
             </div>
           </div>
         ))}
-        <div ref={endRef} />
       </div>
 
       {/* 操作エリア */}
