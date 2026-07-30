@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, brands } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, brands, stores, taxonomies } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -46,6 +46,27 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
+  // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
+  const STORE_BRAND_MAP: Record<string, string> = { katagirijuku: "katagiri", "miyazaki-gym": "miyazakigym", "b-concept": "bconcept", "the-personal-gym": "tpg" };
+  const storeBrandSlug = isBrand ? (STORE_BRAND_MAP[prm.slug] || prm.slug) : null;
+  const brandStores = (() => {
+    if (!storeBrandSlug) return [] as { path: string; name: string; pref: string; prefCode: string; rating?: number; freeJoin: boolean }[];
+    const all = stores() as Record<string, any>;
+    const tax = taxonomies() as any;
+    const reviews = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "place-reviews.json"), "utf-8"));
+    const list: { path: string; name: string; pref: string; prefCode: string; rating?: number; freeJoin: boolean }[] = [];
+    for (const [sp, st] of Object.entries(all)) {
+      if (!sp.startsWith(`/gyms/${storeBrandSlug}/`)) continue;
+      const plans = (Array.isArray(st.pricePlans) ? st.pricePlans : []).filter((pl: any) => typeof pl.price === "number" && pl.price > 0);
+      const joinFees = plans.map((pl: any) => pl.membershipFee).filter((n: any) => typeof n === "number");
+      const prefCode = st._prefCode || "";
+      list.push({ path: sp, name: st.name || "", pref: (tax.pref || {})[prefCode] || "その他", prefCode, rating: typeof reviews[sp]?.rating === "number" ? reviews[sp].rating : undefined, freeJoin: joinFees.length > 0 && Math.min(...joinFees) === 0 });
+    }
+    return list;
+  })();
+  const bsRated = brandStores.filter((s) => typeof s.rating === "number");
+  const bsAvg = bsRated.length >= 3 ? bsRated.reduce((a, s) => a + (s.rating || 0), 0) / bsRated.length : null;
+  const showStores = isBrand && brandStores.length >= 2;
   // モバイル最適化: 診断用の全国店舗データ(約820KB)はHTML同梱をやめCurvesFinder側でfetch
   const isCurvesArticle = prm.type === "brand" && prm.slug === "curves";
   const areaArticlesIdx = isCurvesArticle
@@ -162,6 +183,39 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       ) : (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
       )}
+
+      {showStores && (() => {
+        const byPref: Record<string, typeof brandStores> = {};
+        for (const st of brandStores) (byPref[st.pref] ||= []).push(st);
+        const prefOrder = Object.keys(byPref).sort((a, b) => (byPref[a][0].prefCode || "z").localeCompare(byPref[b][0].prefCode || "z"));
+        return (
+          <section className="mt-12" id="stores">
+            <h2 className="bf-h2 mb-3">{bp!.name}の店舗一覧・実データ（当サイト集計）</h2>
+            <div className="bf-card p-5 mb-4">
+              <div className="grid grid-cols-3 gap-3 text-center">
+                <div><p className="text-2xl font-extrabold" style={{ color: "var(--bf-primary)" }}>{brandStores.length}</p><p className="text-xs text-gray-500 mt-0.5">掲載店舗数</p></div>
+                <div><p className="text-2xl font-extrabold" style={{ color: "var(--bf-primary)" }}>{brandStores.filter((s) => s.freeJoin).length}</p><p className="text-xs text-gray-500 mt-0.5">入会金0円プランあり</p></div>
+                <div><p className="text-2xl font-extrabold" style={{ color: "var(--bf-primary)" }}>{bsAvg ? `★${bsAvg.toFixed(2)}` : "—"}</p><p className="text-xs text-gray-500 mt-0.5">Google口コミ平均{bsRated.length > 0 ? `（${bsRated.length}店）` : ""}</p></div>
+              </div>
+              <p className="text-[11px] text-gray-400 mt-3">※当サイト掲載の{bp!.name}店舗データベースと、Googleマップの実測評点（2026年7月取得）を集計した値です。店舗ごとの料金プラン・アクセス・口コミは各店舗ページでご確認ください。</p>
+            </div>
+            <div className="space-y-2">
+              {prefOrder.map((pref) => (
+                <details key={pref} className="bf-card" open={prefOrder.length <= 4}>
+                  <summary className="cursor-pointer px-4 py-3 font-bold text-sm">{pref}（{byPref[pref].length}店）</summary>
+                  <ul className="px-4 pb-4 flex flex-wrap gap-2">
+                    {byPref[pref].map((st) => (
+                      <li key={st.path}>
+                        <Link href={st.path} className="bf-chip-link">{st.name}{typeof st.rating === "number" ? ` ★${st.rating.toFixed(1)}` : ""}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       {siblings.length > 0 && (
         <section className="mt-12 bf-card p-5">

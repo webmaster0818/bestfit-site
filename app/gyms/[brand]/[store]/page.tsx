@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { stores, metaFor, brands, storeReviews } from "@/lib/data";
+import { stores, metaFor, brands, storeReviews, brandPrice } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
@@ -37,6 +37,10 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   const s = stores()[p];
   const m = metaFor(p);
   const brand = Object.values(brands()).find((b) => b.slug.toLowerCase() === prm.brand.toLowerCase());
+  // ブランド記事への逆リンク(双方向ハブ化・2026-07-31)。店舗ブランドslug→記事slugの差異を吸収
+  const ARTICLE_SLUG_MAP: Record<string, string> = { katagiri: "katagirijuku", miyazakigym: "miyazaki-gym", bconcept: "b-concept", tpg: "the-personal-gym" };
+  const articleSlug = ARTICLE_SLUG_MAP[prm.brand.toLowerCase()] || prm.brand.toLowerCase();
+  const brandArticleHref = brandPrice(articleSlug) ? `/articles/brand/${articleSlug}` : null;
   const plans: any[] = Array.isArray(s.pricePlans) ? s.pricePlans : [];
   const features: any[] = Array.isArray(s.features) ? s.features : [];
   const nearby: any[] = Array.isArray(s.nearbyStores) ? s.nearbyStores : [];
@@ -242,6 +246,15 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {brandArticleHref && (
+        <section className="mt-8">
+          <Link href={brandArticleHref} className="bf-card bf-card-hover block p-5" style={{ borderTop: "4px solid var(--bf-primary)" }}>
+            <p className="text-xs font-bold mb-1" style={{ color: "var(--bf-muted)" }}>ブランド徹底ガイド</p>
+            <p className="font-extrabold" style={{ color: "var(--bf-primary)" }}>{brand?.name}の料金・口コミ・評判まとめを読む →</p>
+          </Link>
         </section>
       )}
       </div>
