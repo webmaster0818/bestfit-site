@@ -149,6 +149,7 @@ export default function Home() {
               ))}
             </ul>
           </details>
+          <p className="text-[11px] text-gray-400 mt-2">※料金は確認日時点の目安です。カーブスなど一部ブランドは店舗・地域により月会費が異なります。最新は各ガイド・公式サイトでご確認ください。</p>
         </div>
       </section>
 
