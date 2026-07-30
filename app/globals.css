@@ -189,7 +189,9 @@ body {
   background: var(--bf-primary-soft);
   font-weight: 700;
   color: var(--bf-primary-deep);
-  white-space: nowrap;
+  /* nowrapだと長いジム名(THE PERSONAL GYM等)が隣列にはみ出すため折り返し許可 */
+  white-space: normal;
+  overflow-wrap: anywhere;
   width: 1%;
   min-width: 7em;
 }
