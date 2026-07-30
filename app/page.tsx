@@ -53,6 +53,18 @@ export default function Home() {
     .filter(([p]) => /^\/news\/[^/]+$/.test(p))
     .map(([p, m]) => ({ href: p, title: m.title.split("｜")[0] }));
 
+  // ジムブランドから探す(ブランド記事26本への導線・主要12は料金つきカード)
+  const brandPrice: Record<string, { name: string; price?: string }> = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "data", "brand-price.json"), "utf8")
+  );
+  const brandOrder = ["curves", "chocozap", "fit24", "rizap", "beyond", "247workout", "drtraining", "the-personal-gym", "b-concept", "katagirijuku", "undeux", "chicken"];
+  const brandArticles = [
+    ...brandOrder.map((slug) => ({ slug, ...brandPrice[slug] })),
+    ...Object.entries(brandPrice)
+      .filter(([slug]) => !brandOrder.includes(slug))
+      .map(([slug, v]) => ({ slug, ...v })),
+  ].filter((b) => b.name);
+
   return (
     <div>
       <ScrollFx />
@@ -115,6 +127,30 @@ export default function Home() {
       </section>
 
       <div className="bf-divider" />
+
+      {/* ===== ジムブランドから探す ===== */}
+      <section className="py-12" data-reveal>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">ジムブランドから探す</h2>
+          <p className="text-sm text-gray-500 mt-1 mb-1">料金・口コミ・向いている人まで、ブランド別の徹底ガイドをチェック。</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
+            {brandArticles.slice(0, 12).map((b) => (
+              <Link key={b.slug} href={`/articles/brand/${b.slug}`} className="bf-card bf-card-hover px-3 py-3 block">
+                <p className="text-sm font-bold" style={{ color: "var(--bf-primary)" }}>{b.name}</p>
+                {b.price && <p className="text-[11px] text-gray-500 mt-0.5 truncate">{b.price}</p>}
+              </Link>
+            ))}
+          </div>
+          <details className="mt-3 bf-card p-4">
+            <summary className="text-sm cursor-pointer font-bold" style={{ color: "var(--bf-primary)" }}>その他のブランドを表示 ▼</summary>
+            <ul className="flex flex-wrap gap-2 mt-3">
+              {brandArticles.slice(12).map((b) => (
+                <li key={b.slug}><Link href={`/articles/brand/${b.slug}`} className="bf-chip-link">{b.name}</Link></li>
+              ))}
+            </ul>
+          </details>
+        </div>
+      </section>
 
       {/* ===== こだわり条件 ===== */}
       <section className="py-12" data-reveal style={{ background: "linear-gradient(180deg, rgba(14,95,168,0.06), rgba(14,95,168,0.02))" }}>
