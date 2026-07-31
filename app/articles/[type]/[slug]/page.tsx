@@ -43,7 +43,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const p = pagePath(prm);
   const m = metaFor(p);
   const bodyRaw = articleHtml(p);
-  const body = bodyRaw ? bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "") : null;
+  // CMS移植HTMLに残る「中身が空のBoxブロック」はカード化CSSで謎の白枠になるため描画前に除去(全記事656個・原本は不変)
+  const stripEmptyBoxes = (html: string) => {
+    const pat = /<div class="[^"]*" data-orizm-block-id="[^"]+" data-orizm-block-type="Box"><div class="[^"]*">\s*(?:<div data-orizm-slot-id="children">\s*<\/div>)?\s*<\/div><\/div>/g;
+    let prev = "";
+    let cur = html;
+    while (cur !== prev) { prev = cur; cur = cur.replace(pat, ""); }
+    return cur;
+  };
+  const body = bodyRaw ? stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")) : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
   // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
