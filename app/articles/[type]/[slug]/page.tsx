@@ -166,28 +166,50 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           </div>
         </section>
       )}
-      {area ? (
+      {body ? (
         <>
-          <p className="text-sm leading-7 mb-8" style={{ color: "var(--bf-ink)" }}>
-            {area.areaName}のパーソナルジムを、料金・アクセス・こだわり条件で比較できるようまとめました。当サイト掲載の{area.total}件から、料金プランや特徴が明確な店舗を厳選し、最安プラン・アクセス・特徴を一覧で確認できます。各ジムの詳細ページで口コミや全プランもチェックできます。
-          </p>
-          <DataAreaArticle areaName={area.areaName} total={area.total} cards={area.cards} priceRange={area.priceRange} listPath={area.listPath} />
-          <section className="mt-4 mb-8">
-            <h2 className="bf-h2 mb-3">よくある質問</h2>
-            <div className="space-y-2">
-              {areaFaqs.map((f, i) => (
-                <details key={i} className="bf-card group">
-                  <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
-                    {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
-                  </summary>
-                  <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
-                </details>
-              ))}
+          <ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+          {area && (
+            <div className="mt-12">
+              {area.priceRange && (
+                <section className="mb-10">
+                  <h2 className="bf-h2 mb-4">{area.areaName}のパーソナルジム料金相場（1回あたり換算・当サイト集計）</h2>
+                  <div className="overflow-x-auto">
+                    <table className="bf-table w-full text-sm">
+                      <tbody>
+                        <tr><th className="text-left px-4 py-3">最安クラス</th><td className="px-4 py-3 font-bold">1回あたり {area.priceRange.min.toLocaleString()}円〜</td></tr>
+                        <tr><th className="text-left px-4 py-3">中央値の目安</th><td className="px-4 py-3">1回あたり {area.priceRange.mid.toLocaleString()}円前後</td></tr>
+                        <tr><th className="text-left px-4 py-3">高価格帯</th><td className="px-4 py-3">1回あたり 〜{area.priceRange.max.toLocaleString()}円</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="text-[11px] mt-2" style={{ color: "var(--bf-muted)" }}>※<strong>1回あたり＝コース総額÷回数</strong>で換算した値（税込）です。当サイト掲載の{area.areaName}のパーソナルジム{area.total}件のコースプランの分布から算出した目安で、入会金は含みません。回数の異なるプランを公平に比較するための指標です。最新の料金は各公式サイトでご確認ください。</p>
+                </section>
+              )}
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">{area.areaName}のジムを条件で絞り込む</h2>
+                <div className="flex flex-wrap gap-2">
+                  <Link href={area.listPath} className="bf-chip-link">すべての{area.areaName}のジムを見る（{area.total}件）</Link>
+                </div>
+              </section>
+              <section className="mb-8">
+                <h2 className="bf-h2 mb-3">よくある質問</h2>
+                <div className="space-y-2">
+                  {areaFaqs.map((f, i) => (
+                    <details key={i} className="bf-card group">
+                      <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
+                        {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
+                      </summary>
+                      <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
             </div>
-          </section>
+          )}
         </>
-      ) : body ? (
-        <><ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} /></>
+      ) : area ? (
+        <DataAreaArticle areaName={area.areaName} total={area.total} cards={area.cards} priceRange={area.priceRange} listPath={area.listPath} />
       ) : (
         <p className="text-sm text-gray-500">本文の移行処理中です。</p>
       )}

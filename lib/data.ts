@@ -220,7 +220,9 @@ export function areaArticleData(type: string, slug: string) {
     matched = all.filter(([, s]) => codes.includes(s._cityCode));
     if (codes[0]) { listPath = `/gyms/list/pref-${matched[0]?.[1]?._prefCode}/city-${codes[0]}`; areaName = tax.city[codes[0]]; }
   } else {
-    matched = all.filter(([, s]) => (s.access || "").includes(nm) || (s.address || "").includes(nm));
+    // 「銀座線」「西武池袋線」等の路線名だけでの誤マッチを除外(駅名としての出現のみ許可)
+    const nmNotLine = new RegExp(nm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?!線)");
+    matched = all.filter(([, s]) => nmNotLine.test(s.access || "") || nmNotLine.test(s.address || ""));
     const anchor = matched[0]?.[1];
     if (anchor?._cityCode) listPath = `/gyms/list/pref-${anchor._prefCode}/city-${anchor._cityCode}`;
   }
