@@ -87,6 +87,25 @@ body {
   border-radius: 9999px;
   padding: 0.3rem 0.8rem;
 }
+/* 記事掲載ジムの見出し直下に注入する詳細ページ導線 */
+.bf-gym-detail-link {
+  margin: 0.75rem 0 0.25rem;
+}
+.bf-gym-detail-link a {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--bf-primary);
+  background: var(--bf-primary-soft);
+  border: 1px solid var(--bf-primary);
+  border-radius: 9999px;
+  padding: 0.45rem 1.1rem;
+  transition: all 0.15s;
+}
+.bf-gym-detail-link a:hover {
+  background: var(--bf-primary);
+  color: #fff;
+}
 .bf-chip-link {
   display: inline-block;
   font-size: 0.8rem;

@@ -37,6 +37,14 @@ export function listPaths() {
   return _listPaths!;
 }
 
+// エリア記事由来のジムデータ(記事掲載ジムの詳細ページ化・scripts/extract_article_gyms.py 生成)
+export type ArticleGym = { name: string; access: string; official: string; block: string; articles: string[] };
+let _articleGyms: { listed: Record<string, ArticleGym>; perArticle: Record<string, { heading: string; href: string; name: string }[]> } | null = null;
+export function articleGyms() {
+  if (!_articleGyms) _articleGyms = loadJson("article-gyms.json");
+  return _articleGyms!;
+}
+
 export function metaFor(pathname: string): UrlMeta | undefined {
   return urlMeta()[pathname];
 }

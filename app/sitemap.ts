@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { urlMeta } from "@/lib/data";
+import { articleGyms, urlMeta } from "@/lib/data";
 
 // ローンチ後の本番ドメイン基準でサイトマップを生成（urls-meta.json＝全公開ページ）。
 // robotsがnoindexのものは除外（現状noindexは/gyms/searchの動的ルートのみでurls-meta外のため実質全件index）。
@@ -28,6 +28,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
               ? 0.7
               : 0.6,
     });
+  }
+  // エリア記事掲載ジムの詳細ページ(記事由来・/gyms/listed/)
+  for (const slug of Object.keys(articleGyms().listed)) {
+    entries.push({ url: `${BASE}/gyms/listed/${slug}`, changeFrequency: "weekly", priority: 0.5 });
   }
   return entries;
 }

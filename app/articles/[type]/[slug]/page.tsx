@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, brands, stores, taxonomies } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -51,7 +51,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     while (cur !== prev) { prev = cur; cur = cur.replace(pat, ""); }
     return cur;
   };
-  const body = bodyRaw ? stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")) : null;
+  // 記事掲載ジムの見出し直下に詳細ページへのリンクを注入(既存店舗ページ or 記事由来のlistedページ)
+  const injectGymLinks = (html: string, rows: { heading: string; href: string; name: string }[]) => {
+    if (!rows.length) return html;
+    const normTxt = (s: string) => s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    const escHtml = (s: string) => s.replace(/&(?!#?\w+;)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const map = new Map(rows.map((r) => [r.heading, r]));
+    const re = /<h3[^>]*>([\s\S]*?)<\/h3>/g;
+    let out = "";
+    let last = 0;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(html))) {
+      out += html.slice(last, re.lastIndex);
+      const r = map.get(normTxt(m[1]));
+      if (r) out += `<p class="bf-gym-detail-link"><a href="${r.href}">📋 ${escHtml(r.name)}の料金・詳細ページを見る →</a></p>`;
+      last = re.lastIndex;
+    }
+    return out + html.slice(last);
+  };
+  const gymLinkRows = articleGyms().perArticle[p] || [];
+  const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows) : null;
   const isBrand = prm.type === "brand";
   const bp = isBrand ? brandPrice(prm.slug) : null;
   // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
