@@ -34,6 +34,13 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const brandTitle = bslug === "fit24"
     ? `FIT24の料金はいくら？全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
     : bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】｜BEST-FIT` : m.title;
+  if (bslug === "chocozap") {
+    return {
+      title: { absolute: "チョコザップの料金はいくら？月額3,278円(税込)・入会金0円【2026年8月】年額プランの注意点・解約方法まで｜BEST-FIT" },
+      description: "チョコザップ(chocoZAP)の料金は月額3,278円(税込)。入会金・事務手数料は2025年4月1日から無料です(公式FAQ確認)。年額プラン32,780円の注意点(休会不可・再入会金3,000円)、初月日割り、清掃協力で安くなるフレンドリー会員、解約・休会の手順まで2026年8月2日の公式確認情報で解説します。",
+      alternates: m.canonical ? { canonical: m.canonical } : undefined,
+    };
+  }
   if (bslug === "fit24") {
     return {
       title: { absolute: brandTitle },
@@ -98,6 +105,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     : [];
   const f24FaqLd = f24
     ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: f24Faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
+    : null;
+  // chocoZAP専用: 公式FAQ一次検証サプリメント(2026-08-02・chocozap_facts.md)
+  const isChoco = isBrand && prm.slug === "chocozap";
+  const chocoFaqs = isChoco
+    ? [
+        { q: "チョコザップの入会金・事務手数料はいくらですか？", a: "2025年4月1日から入会金・事務手数料は無料です(公式FAQで日付まで確認・2026年8月2日時点)。初回は初月会費の日割り分+翌月会費3,278円(税込)を入会時に決済します。" },
+        { q: "チョコザップの年額プランはお得ですか？注意点は？", a: "年額一括32,780円(税込)で、月額プラン12ヶ月分(39,336円)より2ヶ月分お得です。ただし①プラン適用中の休会は不可、②途中解約は返金がありますが手数料1,100円が控除され、10ヶ月目以降の解約は返金なし、③解約後の再入会には再入会金3,000円がかかる、④友達紹介・フレンドリー会員などの割引と併用不可、という公式規定があります(2026年8月2日公式FAQ・利用規約確認)。" },
+        { q: "チョコザップの料金を安くする方法はありますか？", a: "店舗の清掃に協力する「フレンドリー会員」制度があり、月4回の清掃で1,000円引き、月8回で2,000円引きになります(公式FAQ確認)。なお2026年8月2日時点で、会費割引系のキャンペーンは公式サイトに掲出されていません。" },
+        { q: "月の途中で入会した場合は日割りになりますか？", a: "初月会費は日割り計算です(1日利用開始の場合は満額)。入会時に「初月の日割り分+翌月会費1ヶ月分」をまとめて決済します。一方、退会時の日割り返金は月額・年額ともありません(公式FAQ確認)。" },
+        { q: "チョコザップの解約・退会はどうやりますか？", a: "アプリの【メニュー>退会の手続き】またはマイページから行います(電話・メールでは不可)。締め日は毎月10日で、1〜10日の手続きなら当月末、11日以降なら翌月末での解約になります(公式FAQ・利用規約確認)。" },
+        { q: "チョコザップに休会制度はありますか？", a: "月額プランにはあります。アプリからプラン変更(休会)を選び、1・2・3ヶ月から選択します(月単位・延長不可)。手続き料・休会中の会費はいずれも無料です。年額プランは休会できません(公式FAQ確認)。" },
+      ]
+    : [];
+  const chocoFaqLd = isChoco
+    ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: chocoFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
     : null;
   const bp = isBrand ? brandPrice(prm.slug) : null;
   // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
@@ -172,8 +194,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       {areaFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqLd) }} />}
-      {brandFaqLd && !isFit24 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
+      {brandFaqLd && !isFit24 && !isChoco && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
       {f24FaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(f24FaqLd) }} />}
+      {chocoFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(chocoFaqLd) }} />}
       <PageHero eyebrow={isBrand ? "BRAND REVIEW" : "AREA FEATURE"} title={m?.title.split("｜")[0] || ""} />
       <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
@@ -216,6 +239,56 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       {body ? (
         <>
           <ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+          {isChoco && (
+            <div className="mt-12">
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">入会金・事務手数料は2025年4月1日から無料(公式FAQ確認)</h2>
+                <p className="text-sm leading-8 mb-3" style={{ color: "var(--bf-muted)" }}>
+                  chocoZAPの<strong>入会金・事務手数料は2025年4月1日から無料</strong>になっています(公式FAQで日付まで確認・2026年8月2日時点)。初回は「初月会費の日割り分+翌月会費3,278円(税込)」を入会時にまとめて決済します(1日利用開始の場合、初月は満額)。退会時の日割り返金は月額・年額ともありません。
+                </p>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">年額プラン32,780円の「お得」と注意点(公式規定)</h2>
+                <div className="bf-card p-5">
+                  <p className="text-sm leading-7 mb-2" style={{ color: "var(--bf-muted)" }}>年額一括<strong>32,780円(税込)</strong>は月額12ヶ月分(39,336円)より<strong>2ヶ月分お得</strong>ですが、公式規定に次の注意点があります(2026年8月2日・公式FAQ/利用規約確認)。</p>
+                  <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                    <li>・<strong>休会不可</strong>(「年額プランの会員様は休会いただく事ができません」と公式明記)</li>
+                    <li>・途中解約は返金あり、ただし<strong>手数料1,100円が控除</strong>。<strong>10ヶ月目以降の解約は返金なし</strong>(最後の2ヶ月が実質無料分のため)</li>
+                    <li>・解約後の再入会は<strong>再入会金3,000円</strong>(月額→年額への切替時は不要)</li>
+                    <li>・年額プラン中は友達紹介・フレンドリー会員などの<strong>割引と併用不可</strong>・12ヶ月ごと自動更新</li>
+                  </ul>
+                </div>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">料金を安くする方法: フレンドリー会員(清掃協力割引)</h2>
+                <p className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                  店舗の清掃に協力する<strong>フレンドリー会員</strong>になると、<strong>月4回の清掃で1,000円引き・月8回で2,000円引き</strong>になります(公式FAQ確認)。なお<strong>2026年8月2日時点で、会費割引系のキャンペーンは公式サイトに掲出されていません</strong>(美容機器系の企画のみ)。最新のキャンペーンは公式サイトでご確認ください。
+                </p>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">解約・休会の方法(アプリで完結・締め日は毎月10日)</h2>
+                <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                  <li>・<strong>解約</strong>: アプリ【メニュー&gt;退会の手続き】またはマイページから(電話・メール不可)。<strong>1〜10日の手続き=当月末解約/11日以降=翌月末解約</strong></li>
+                  <li>・<strong>休会(月額プランのみ)</strong>: アプリからプラン変更で1・2・3ヶ月を選択(月単位・延長不可)。<strong>手続き料・休会中会費とも無料</strong></li>
+                  <li>・支払い済み契約期間中の解約や、未納がある場合のアプリ退会手続きはできません</li>
+                </ul>
+              </section>
+              <section className="mb-8">
+                <h2 className="bf-h2 mb-3">チョコザップの料金でよくある質問</h2>
+                <div className="space-y-2">
+                  {chocoFaqs.map((f, i) => (
+                    <details key={i} className="bf-card group">
+                      <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
+                        {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
+                      </summary>
+                      <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+                <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※本セクションの料金・規定はchocoZAP公式サイト・公式FAQ・利用規約で2026年8月2日に確認した情報です。変更される場合があるため、申込前に公式サイトでご確認ください。</p>
+              </section>
+            </div>
+          )}
           {f24 && (
             <div className="mt-12">
               <section className="mb-10">
