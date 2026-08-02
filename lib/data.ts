@@ -45,6 +45,13 @@ export function articleGyms() {
   return _articleGyms!;
 }
 
+// FIT24 全118店舗の料金実査データ(2026-08-02・公式店舗ページ全数実測)
+let _fit24: { surveyedAt: string; stores: { name: string; pref: string; regular: string; regularTax: string; golf: boolean }[]; uniform: Record<string, string>; exceptions: string[] } | null = null;
+export function fit24Stores() {
+  if (!_fit24) _fit24 = loadJson("fit24-stores.json");
+  return _fit24!;
+}
+
 export function metaFor(pathname: string): UrlMeta | undefined {
   return urlMeta()[pathname];
 }

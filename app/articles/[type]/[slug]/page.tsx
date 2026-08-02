@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -30,7 +30,17 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   const bp = bslug ? brandPrice(bslug) : null;
   if (!m) return {};
   // 料金intentが最大流入(curves料金67k imp等)→titleに実額を前出しでCTR回収
-  const brandTitle = bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】｜BEST-FIT` : m.title;
+  // fit24=全118店舗実査(2026-08-02)を訴求(「fit24 料金」pos5.3のtop3奪取・公式が一覧を出していない空白)
+  const brandTitle = bslug === "fit24"
+    ? `FIT24の料金はいくら？全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
+    : bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】｜BEST-FIT` : m.title;
+  if (bslug === "fit24") {
+    return {
+      title: { absolute: brandTitle },
+      description: `FIT24の月会費を全118店舗の公式ページで実査(2026年8月2日)。111店舗は月6,980円(税込7,678円)・7店舗のみ7,480円。家族3,980円・U22 4,980円・高校生は親権者会員なら0円。入会金なし(事務手数料2,200円)・割引・退会/休会方法まで一覧で解説します。`,
+      alternates: m.canonical ? { canonical: m.canonical } : undefined,
+    };
+  }
   return {
     title: { absolute: brandTitle },
     description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。` : m?.desc,
@@ -72,6 +82,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const gymLinkRows = articleGyms().perArticle[p] || [];
   const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows) : null;
   const isBrand = prm.type === "brand";
+  // FIT24専用: 全118店舗の料金実査サプリメント(2026-08-02・公式が一覧を出していない情報の一次集約)
+  const isFit24 = isBrand && prm.slug === "fit24";
+  const f24 = isFit24 ? fit24Stores() : null;
+  const f24Prefs: Record<string, { name: string; regular: string; golf: boolean }[]> = {};
+  if (f24) for (const s of f24.stores) (f24Prefs[s.pref] ||= []).push({ name: s.name, regular: s.regular, golf: s.golf });
+  const f24Faqs = f24
+    ? [
+        { q: "FIT24の月会費は店舗によって違いますか？", a: "全118店舗を公式ページで実査した結果(2026年8月2日)、通常プランは111店舗が月6,980円(税込7,678円)、7店舗(BiVi仙台駅東口・長野若槻・長野南バイパス・長野昭和通り・千曲屋代・西宮丸橋・夙川)のみ7,480円(税込8,228円)の2パターンです。家族プラン3,980円・U22プラン4,980円は全店一律です。" },
+        { q: "FIT24に入会金はかかりますか？", a: "入会金の徴収は公式に記載がなく、初期費用は事務手数料2,000円(税込2,200円)のみです。新規契約時は事務手数料+月会費2ヶ月分(初月は日割り)をまとめて決済します。支払いはクレジットカードのみで現金は使えません。" },
+        { q: "高校生は本当に月0円で通えますか？", a: "親権者がFIT24会員(休会・高校生プラン以外)であれば高校生プランの月会費は0円です(事務手数料2,200円は必要)。高校生だけで契約する場合は月2,980円(税込3,278円)。利用可能時間は7時〜20時(19時以降入館不可)で、手続きは店頭のみ・親権者同伴です。" },
+        { q: "FIT24の退会・休会はどうやりますか？", a: "退会はマイページの『契約管理』→『退会』から手続きでき、店頭に行く必要はありません。休会もマイページから休会プランへ変更する方式で、毎月10日までの手続きで翌月から適用、休会中は管理費として月1,100円(税込)がかかります(利用開始2ヶ月以内やキャンペーン在籍条件中は休会不可)。" },
+        { q: "FIT24の割引にはどんなものがありますか？", a: "家族プラン(2人目以降3,980円)・U22プラン(4,980円)・高校生プラン(親権者会員なら0円)のほか、紹介割、店舗限定の乗りかえ割、契約ロッカー最大2ヶ月無料キャンペーン(一部店舗)があります。なお退会後6ヶ月間は入会キャンペーン特典が適用されません(いずれも2026年8月2日公式確認)。" },
+      ]
+    : [];
+  const f24FaqLd = f24
+    ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: f24Faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
+    : null;
   const bp = isBrand ? brandPrice(prm.slug) : null;
   // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
   const STORE_BRAND_MAP: Record<string, string> = { katagirijuku: "katagiri", "miyazaki-gym": "miyazakigym", "b-concept": "bconcept", "the-personal-gym": "tpg" };
@@ -145,7 +172,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       {areaFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqLd) }} />}
-      {brandFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
+      {brandFaqLd && !isFit24 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
+      {f24FaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(f24FaqLd) }} />}
       <PageHero eyebrow={isBrand ? "BRAND REVIEW" : "AREA FEATURE"} title={m?.title.split("｜")[0] || ""} />
       <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
@@ -188,6 +216,89 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       {body ? (
         <>
           <ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+          {f24 && (
+            <div className="mt-12">
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">FIT24の料金は店舗でいくら違う？【全118店舗を実査・{f24.surveyedAt.replace(/-/g, "/")}】</h2>
+                <div className="bf-card p-5 mb-5" style={{ borderLeft: "4px solid var(--bf-primary)" }}>
+                  <p className="font-bold mb-2">結論: 月会費は実質2パターンだけです</p>
+                  <ul className="text-sm leading-7 space-y-1" style={{ color: "var(--bf-muted)" }}>
+                    <li>・<strong>111店舗 = 月6,980円(税込7,678円)</strong>/<strong>7店舗のみ 月7,480円(税込8,228円)</strong></li>
+                    <li>・家族プラン3,980円(税込4,378円)・U22プラン4,980円(税込5,478円)・高校生プラン(親権者が会員なら<strong>0円</strong>)は<strong>全店一律</strong></li>
+                    <li>・公式店舗ページの大きな価格表示は<strong>税抜</strong>です(税込=×1.1)</li>
+                  </ul>
+                </div>
+                <h3 className="font-bold mb-2">通常プランが7,480円の7店舗(それ以外は全て6,980円)</h3>
+                <div className="overflow-x-auto mb-5">
+                  <table className="bf-table w-full text-sm">
+                    <thead><tr><th className="px-3 py-2.5 text-left">店舗</th><th className="px-3 py-2.5 text-left">都道府県</th><th className="px-3 py-2.5 text-left">通常プラン</th></tr></thead>
+                    <tbody>
+                      {f24.stores.filter((s) => s.regular === "7,480").map((s) => (
+                        <tr key={s.name}><td className="px-3 py-2.5 font-bold">{s.name}</td><td className="px-3 py-2.5">{s.pref}</td><td className="px-3 py-2.5">7,480円(税込8,228円)</td></tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <details className="bf-card">
+                  <summary className="cursor-pointer px-4 py-3 font-bold text-sm">全118店舗の月会費一覧を開く(都道府県別・公式店舗ページ全数実査)</summary>
+                  <div className="px-4 pb-4">
+                    {Object.entries(f24Prefs).map(([pref, list]) => (
+                      <div key={pref} className="mt-3">
+                        <p className="font-bold text-sm mb-1">{pref}({list.length}店)</p>
+                        <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs" style={{ color: "var(--bf-muted)" }}>
+                          {list.map((s) => (
+                            <li key={s.name}>{s.name} {s.regular}円{s.golf ? "・ゴルフ併設" : ""}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※税抜表示(税込=×1.1)。家族3,980円・U22 4,980円・高校生(親権者会員0円/単独2,980円)は全店一律のため省略。{f24.surveyedAt.replace(/-/g, "/")}に公式各店舗ページで実査。</p>
+                  </div>
+                </details>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">初期費用と支払い方法</h2>
+                <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                  <li>・<strong>入会金なし</strong>(公式に徴収の記載なし)。初期費用は<strong>事務手数料2,000円(税込2,200円)のみ</strong></li>
+                  <li>・新規契約時は「事務手数料+月会費2ヶ月分(初月は日割り)」を一括決済。月会費は前月20日に翌月分を決済</li>
+                  <li>・支払いは<strong>クレジットカードのみ</strong>(現金不可。Visa/Master/JCB/AmEx等・デビット/プリペイド可)</li>
+                </ul>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">割引・お得なプラン(公式確認{f24.surveyedAt.replace(/-/g, "/")})</h2>
+                <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                  <li>・<strong>高校生プラン: 親権者が会員なら月0円</strong>(単独契約は2,980円。利用は7時〜20時・手続きは店頭で親権者同伴)</li>
+                  <li>・<strong>家族プラン3,980円</strong>: 2人目以降何人でも。家族1名が通常等のプラン契約を維持していることが条件(同居/家族の証明書類が必要)</li>
+                  <li>・<strong>紹介割</strong>(マイページ申込・1ヶ月以内に2名以上紹介なら人数分の月数が割引)/<strong>乗りかえ割</strong>(店舗限定・月額制ジムの在籍証明が必要)</li>
+                  <li>・<strong>契約ロッカー最大2ヶ月無料</strong>(一部店舗・満室次第終了)/<strong>ジム&ゴルフ会員</strong>(対象16店舗・月12,000〜18,000円税抜)</li>
+                  <li>・注意: <strong>退会後6ヶ月間は入会キャンペーン特典が使えません</strong>(公式QA)</li>
+                </ul>
+              </section>
+              <section className="mb-10">
+                <h2 className="bf-h2 mb-4">退会・休会の方法(店頭に行かずマイページで完結)</h2>
+                <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                  <li>・<strong>退会</strong>: マイページ『契約管理』→『退会』で完結。最終支払いは退会前月の20日決済分</li>
+                  <li>・<strong>休会</strong>: マイページから休会プランへ変更。毎月10日までの手続きで翌月から適用・期間無期限。<strong>休会中は管理費 月1,100円(税込)</strong></li>
+                  <li>・休会できないケース: 利用開始2ヶ月以内/キャンペーン在籍条件中/退会手続き済み 等</li>
+                  <li>・解約金・違約金の記載はなし(キャンペーン利用時は在籍条件あり)</li>
+                </ul>
+              </section>
+              <section className="mb-8">
+                <h2 className="bf-h2 mb-3">FIT24の料金でよくある質問</h2>
+                <div className="space-y-2">
+                  {f24Faqs.map((f, i) => (
+                    <details key={i} className="bf-card group">
+                      <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
+                        {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
+                      </summary>
+                      <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+                <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※本セクションの料金・規定はすべて当サイトがFIT24公式サイト(全店舗ページ・プランページ・公式QA)で{f24.surveyedAt.replace(/-/g, "/")}に確認した情報です。変更される場合があるため、申込前に公式サイトでご確認ください。</p>
+              </section>
+            </div>
+          )}
           {area && (
             <div className="mt-12">
               {area.priceRange && (
