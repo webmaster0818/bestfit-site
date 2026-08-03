@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -118,6 +118,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
         { q: "チョコザップに休会制度はありますか？", a: "月額プランにはあります。アプリからプラン変更(休会)を選び、1・2・3ヶ月から選択します(月単位・延長不可)。手続き料・休会中の会費はいずれも無料です。年額プランは休会できません(公式FAQ確認)。" },
       ]
     : [];
+  // 汎用ブランドサプリメント(④横展開: 解約/休会/支払/保証+FAQ)
+  const bsup = isBrand && !isFit24 && !isChoco ? (brandSupplements() as any)[prm.slug] || null : null;
+  const bsupFaqLd = bsup && bsup.faqs.length
+    ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: bsup.faqs.map((f: any) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
+    : null;
   const chocoFaqLd = isChoco
     ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: chocoFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }
     : null;
@@ -194,9 +199,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       {areaFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqLd) }} />}
-      {brandFaqLd && !isFit24 && !isChoco && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
+      {brandFaqLd && !isFit24 && !isChoco && !bsupFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandFaqLd) }} />}
       {f24FaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(f24FaqLd) }} />}
       {chocoFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(chocoFaqLd) }} />}
+      {bsupFaqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bsupFaqLd) }} />}
       <PageHero eyebrow={isBrand ? "BRAND REVIEW" : "AREA FEATURE"} title={m?.title.split("｜")[0] || ""} />
       <div className="max-w-3xl mx-auto px-4 py-8">
       <nav className="text-xs text-gray-500 mb-4">
@@ -239,6 +245,36 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       {body ? (
         <>
           <ArticleEnhancer /><div className="article-body" dangerouslySetInnerHTML={{ __html: body }} />
+          {bsup && (
+            <div className="mt-12">
+              {bsup.sections.map((sec: any) => (
+                <section key={sec.title} className="mb-10">
+                  <h2 className="bf-h2 mb-4">{sec.title}</h2>
+                  <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
+                    {sec.items.map((it: string, i: number) => (
+                      <li key={i} dangerouslySetInnerHTML={{ __html: "・" + it }} />
+                    ))}
+                  </ul>
+                </section>
+              ))}
+              {bsup.faqs.length > 0 && (
+                <section className="mb-8">
+                  <h2 className="bf-h2 mb-3">よくある質問(解約・支払い)</h2>
+                  <div className="space-y-2">
+                    {bsup.faqs.map((f: any, i: number) => (
+                      <details key={i} className="bf-card group">
+                        <summary className="cursor-pointer px-4 py-3 font-bold text-sm flex justify-between items-center">
+                          {f.q}<span className="group-open:rotate-45 transition-transform text-lg shrink-0 ml-3" style={{ color: "var(--bf-primary)" }}>＋</span>
+                        </summary>
+                        <p className="px-4 pb-4 text-sm leading-7" style={{ color: "var(--bf-muted)" }}>{f.a}</p>
+                      </details>
+                    ))}
+                  </div>
+                  <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※本セクションは各ブランド公式サイト・公式FAQで{bsup.surveyedAt}に確認した情報です。変更される場合があるため、申込前に公式サイトでご確認ください。</p>
+                </section>
+              )}
+            </div>
+          )}
           {isChoco && (
             <div className="mt-12">
               <section className="mb-10">

@@ -47,6 +47,14 @@ export function articleGyms() {
 
 // FIT24 全118店舗の料金実査データ(2026-08-02・公式店舗ページ全数実測)
 let _fit24: { surveyedAt: string; stores: { name: string; pref: string; regular: string; regularTax: string; golf: boolean }[]; uniform: Record<string, string>; exceptions: string[] } | null = null;
+// ブランド別の実務情報サプリメント(解約/休会/支払/保証+FAQ・公式検証値のみ・scripts不要のJSON手管理)
+export type BrandSupplement = { surveyedAt: string; sections: { title: string; items: string[] }[]; faqs: { q: string; a: string }[] };
+let _brandSup: Record<string, BrandSupplement> | null = null;
+export function brandSupplements() {
+  if (!_brandSup) _brandSup = loadJson("brand-supplements.json");
+  return _brandSup!;
+}
+
 export function fit24Stores() {
   if (!_fit24) _fit24 = loadJson("fit24-stores.json");
   return _fit24!;
