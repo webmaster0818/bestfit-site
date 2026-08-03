@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
               ))}
               {bsup.faqs.length > 0 && (
                 <section className="mb-8">
-                  <h2 className="bf-h2 mb-3">よくある質問(解約・支払い)</h2>
+                  <h2 className="bf-h2 mb-3">入会前に知っておくと安心なQ&A</h2>
                   <div className="space-y-2">
                     {bsup.faqs.map((f: any, i: number) => (
                       <details key={i} className="bf-card group">
