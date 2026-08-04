@@ -59,6 +59,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <div style={{ background: "rgba(0,0,0,0.04)", borderBottom: "1px solid rgba(0,0,0,0.06)" }}>
+          <p style={{ maxWidth: 1152, margin: "0 auto", padding: "4px 16px", fontSize: 11, color: "#6b7280" }}>本サイトはプロモーション(PR)を含みます。</p>
+        </div>
+
         <header className="border-b border-gray-200 bg-white">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             {/* タップ領域拡大(推奨48px): p-3 -m-3 で見た目を変えず当たり判定のみ拡大 */}
