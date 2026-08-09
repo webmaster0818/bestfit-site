@@ -15,6 +15,22 @@ const FEATURE_CATEGORIES: { en: string; ja: string; items: string[] }[] = [
   { en: "Purpose", ja: "トレーニング目的", items: ["ダイエット", "筋力アップ(バルクアップ)", "ボディシェイプ", "脱・リバウンド", "肩こり改善", "姿勢改善", "アンチエイジング", "健康診断の数値改善", "健康・体型維持", "運動不足解消", "ストレス発散", "産後ダイエット"] },
 ];
 const RENTAL_ITEM_MAP: Record<string, string> = { "8CMxu7D9N8vxonZd": "ウェア", "6yWXeMc7LMI1deai": "シューズ", "rmNeHCFxvd5Sf6Jt": "タオル" };
+// 行ごとの個数を揃えるための均等分割(例: 9個→3+3+3、12個→4+4+4、7個→4+3)
+function balancedRows<T>(items: T[], maxPerRow = 4): T[][] {
+  if (items.length === 0) return [];
+  const rows = Math.ceil(items.length / maxPerRow);
+  const base = Math.floor(items.length / rows);
+  const extra = items.length % rows;
+  const out: T[][] = [];
+  let i = 0;
+  for (let r = 0; r < rows; r++) {
+    const size = base + (r < extra ? 1 : 0);
+    out.push(items.slice(i, i + size));
+    i += size;
+  }
+  return out;
+}
+
 const RENTAL_TYPES: { key: string; label: string }[] = [
   { key: "free", label: "無料" },
   { key: "paid", label: "有料" },
@@ -221,9 +237,13 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                 <div key={cat.en}>
                   <p className="text-center text-[10px] font-bold tracking-widest" style={{ color: "var(--bf-primary)" }}>{cat.en}</p>
                   <p className="text-center font-bold mb-3" style={{ color: "var(--bf-ink)" }}>{cat.ja}</p>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {cat.items.map((it) => (
-                      <span key={it} className="rounded px-3 py-1.5 text-xs font-semibold" style={has.has(it) ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{it}</span>
+                  <div className="space-y-2">
+                    {balancedRows(cat.items).map((row, ri) => (
+                      <div key={ri} className="flex justify-center gap-2">
+                        {row.map((it) => (
+                          <span key={it} className="rounded px-3 py-1.5 text-xs font-semibold text-center" style={has.has(it) ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{it}</span>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 </div>
