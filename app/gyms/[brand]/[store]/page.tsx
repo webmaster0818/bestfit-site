@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { stores, metaFor, brands, storeReviews, brandPrice } from "@/lib/data";
@@ -75,7 +77,40 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   const brandArticleHref = brandPrice(articleSlug) ? `/articles/brand/${articleSlug}` : null;
   const plans: any[] = Array.isArray(s.pricePlans) ? s.pricePlans : [];
   const features: any[] = Array.isArray(s.features) ? s.features : [];
-  const nearby: any[] = Array.isArray(s.nearbyStores) ? s.nearbyStores : [];
+  // 近隣店舗: CMSのnearbyStoresは全nullのため、concierge座標DBから実距離で算出(ブランド不問・4件)
+  const nearby: { path: string; label: string; access: string; km: number | null }[] = (() => {
+    try {
+      const cs = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "concierge-stores.json"), "utf-8")) as any[];
+      const byPath = new Map(cs.map((x) => [x.path, x]));
+      const meC = byPath.get(p);
+      const validTargets = cs.filter((x) => x.path !== p && (stores() as Record<string, any>)[x.path]);
+      if (meC && typeof meC.lat === "number" && typeof meC.lng === "number") {
+        const R = 6371;
+        const dist = (a: any, b: any) => {
+          const dLat = ((b.lat - a.lat) * Math.PI) / 180, dLng = ((b.lng - a.lng) * Math.PI) / 180;
+          const s2 = Math.sin(dLat / 2) ** 2 + Math.cos((a.lat * Math.PI) / 180) * Math.cos((b.lat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+          return R * 2 * Math.atan2(Math.sqrt(s2), Math.sqrt(1 - s2));
+        };
+        return validTargets
+          .filter((x) => typeof x.lat === "number" && typeof x.lng === "number")
+          .map((x) => ({ path: x.path, label: `${x.brand || ""} ${x.name || ""}`.trim(), access: x.access || "", km: Math.round(dist(meC, x) * 10) / 10 }))
+          .sort((a, b) => (a.km ?? 999) - (b.km ?? 999))
+          .slice(0, 4);
+      }
+      // 座標なし店舗: 同市区の店舗から4件
+      const all = stores() as Record<string, any>;
+      const sameArea = Object.entries(all)
+        .filter(([sp, st2]) => sp !== p && (st2._wardCode ? st2._wardCode === s._wardCode : st2._cityCode === s._cityCode))
+        .slice(0, 4)
+        .map(([sp, st2]) => {
+          const b2 = Object.values(brands()).find((x) => x.brandId === st2.brandId);
+          return { path: sp, label: `${b2?.name || ""} ${st2.name || ""}`.trim(), access: st2.access || "", km: null };
+        });
+      return sameArea;
+    } catch {
+      return [];
+    }
+  })();
   const allStores = stores();
   const sameBrand = Object.entries(allStores)
     .filter(([path]) => path.split("/")[2] === prm.brand.toLowerCase() && path !== p)
@@ -311,17 +346,16 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         <section>
           <h2 className="bf-h2">近くの店舗もチェック</h2>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm">
-            {nearby.slice(0, 10).map((n, i) => {
-              const b = Object.values(brands()).find((x) => x.brandId === n.brandId);
-              if (!b || !n.slug) return null;
-              return (
-                <li key={i} className="bf-card bf-card-hover">
-                  <Link href={`/gyms/${b.slug}/${n.slug}`} className="flex items-center justify-between px-4 py-3 font-semibold" style={{ color: "var(--bf-primary)" }}>
-                    <span>{b.name} {n.name}</span><IcoChevron className="text-xs shrink-0" />
-                  </Link>
-                </li>
-              );
-            })}
+            {nearby.map((n) => (
+              <li key={n.path} className="bf-card bf-card-hover">
+                <Link href={n.path} className="block px-4 py-3">
+                  <span className="flex items-center justify-between font-semibold" style={{ color: "var(--bf-primary)" }}>
+                    <span>{n.label}</span><IcoChevron className="text-xs shrink-0" />
+                  </span>
+                  <span className="block text-xs mt-0.5" style={{ color: "var(--bf-muted)" }}>{n.access}{n.km != null ? `　約${n.km}km` : ""}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
       )}
