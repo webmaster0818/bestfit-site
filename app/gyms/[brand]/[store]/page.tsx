@@ -5,6 +5,22 @@ import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } fr
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
 
+// 現行サイト踏襲: カテゴリ別の全項目マスタ(該当=青・非該当=薄グレー表示)
+const FEATURE_CATEGORIES: { en: string; ja: string; items: string[] }[] = [
+  { en: "Service", ja: "サービス", items: ["月額制", "女性専用", "食事指導", "入会金不要", "通い放題", "ウォーターサーバー", "早朝深夜", "トライアルプラン", "モニタープラン"] },
+  { en: "Trainer", ja: "トレーナー", items: ["女性トレーナー在籍", "トレーナー担当制", "トレーナー変動制", "トレーナー指名あり(有料)"] },
+  { en: "Facility", ja: "施設", items: ["施設", "子連れOK", "駐車場", "完全個室", "半個室", "シャワー", "パウダールーム", "手ぶらOK", "シューズ預かり"] },
+  { en: "Machine", ja: "トレーニング種類・器具", items: ["フリーウエイト", "チューブ", "マシン", "自重", "EMS", "加圧", "キックボクシング", "有酸素マシン", "HIIT"] },
+  { en: "Nutrition coaching", ja: "食事指導", items: ["毎日", "毎食", "LINE", "専用アプリ", "食事報告必須", "食事報告自由", "食事制限管理", "厳しい制限無し", "管理栄養士", "カロリー計算", "メニューアドバイス", "レシピ提供"] },
+  { en: "Purpose", ja: "トレーニング目的", items: ["ダイエット", "筋力アップ(バルクアップ)", "ボディシェイプ", "脱・リバウンド", "肩こり改善", "姿勢改善", "アンチエイジング", "健康診断の数値改善", "健康・体型維持", "運動不足解消", "ストレス発散", "産後ダイエット"] },
+];
+const RENTAL_ITEM_MAP: Record<string, string> = { "8CMxu7D9N8vxonZd": "ウェア", "6yWXeMc7LMI1deai": "シューズ", "rmNeHCFxvd5Sf6Jt": "タオル" };
+const RENTAL_TYPES: { key: string; label: string }[] = [
+  { key: "free", label: "無料" },
+  { key: "paid", label: "有料" },
+  { key: "unavailable", label: "レンタル不可" },
+];
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -171,6 +187,16 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
               </table>
             </div>
           </div>
+          {plans.some((pl) => pl.note) && (
+            <div className="mt-3 space-y-3">
+              {plans.filter((pl) => pl.note).map((pl) => (
+                <div key={`note-${pl.id}`} className="rounded-lg border p-4 text-sm leading-relaxed" style={{ borderColor: "var(--bf-line)", background: "var(--bf-primary-soft)" }}>
+                  <p className="font-bold mb-1" style={{ color: "var(--bf-primary)" }}>プラン補足{plans.filter((x) => x.note).length > 1 ? `（${pl.name}）` : ""}</p>
+                  <p className="whitespace-pre-line" style={{ color: "#334155" }}>{pl.note}</p>
+                </div>
+              ))}
+            </div>
+          )}
           <p className="text-xs mt-2" style={{ color: "var(--bf-muted)" }}>※料金は税込表示・変更される場合があります。最新は公式サイトでご確認ください。</p>
           {s.affiliateLink && (
             <div className="text-center mt-4">
@@ -179,6 +205,52 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
           )}
         </section>
       )}
+
+      <section className="mb-10">
+        <h2 className="bf-h2">サービス・設備・特徴（該当項目）</h2>
+        {(() => {
+          const has = new Set(features.map((f) => f?.name).filter(Boolean));
+          const rentals: Record<string, string> = {};
+          for (const r of (Array.isArray(s.rentalItems) ? s.rentalItems : [])) {
+            const nm = RENTAL_ITEM_MAP[r.itemId];
+            if (nm) rentals[nm] = r.type;
+          }
+          return (
+            <div className="bf-card p-5 space-y-6">
+              {FEATURE_CATEGORIES.map((cat) => (
+                <div key={cat.en}>
+                  <p className="text-center text-[10px] font-bold tracking-widest" style={{ color: "var(--bf-primary)" }}>{cat.en}</p>
+                  <p className="text-center font-bold mb-3" style={{ color: "var(--bf-ink)" }}>{cat.ja}</p>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {cat.items.map((it) => (
+                      <span key={it} className="rounded px-3 py-1.5 text-xs font-semibold" style={has.has(it) ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{it}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {Object.keys(rentals).length > 0 && (
+                <div>
+                  <p className="text-center text-[10px] font-bold tracking-widest" style={{ color: "var(--bf-primary)" }}>Rental & Sales</p>
+                  <p className="text-center font-bold mb-3" style={{ color: "var(--bf-ink)" }}>レンタル・販売</p>
+                  <div className="space-y-2 max-w-md mx-auto">
+                    {["ウェア", "シューズ", "タオル"].map((nm) => (
+                      <div key={nm} className="flex items-center gap-2">
+                        <span className="w-16 shrink-0 text-xs font-bold" style={{ color: "var(--bf-ink)" }}>{nm}</span>
+                        <div className="flex gap-2 flex-1">
+                          {RENTAL_TYPES.map((rt) => (
+                            <span key={rt.key} className="flex-1 rounded px-2 py-1.5 text-center text-xs font-semibold" style={rentals[nm] === rt.key ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{rt.label}</span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <p className="text-center text-[11px]" style={{ color: "var(--bf-muted)" }}>青色=この店舗で該当するサービス・特徴です（当サイト掲載データ時点）。最新は公式サイトでご確認ください。</p>
+            </div>
+          );
+        })()}
+      </section>
 
       <section className="mb-10">
         <h2 className="bf-h2">基本情報</h2>
