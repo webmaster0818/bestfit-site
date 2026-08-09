@@ -148,6 +148,17 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
     url: `https://dunlopsportsclub.jp${p}`,
   };
 
+  const brandCrumbLd = brandArticleHref
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
+          { "@type": "ListItem", position: 2, name: `${brand?.name || ""}の料金・口コミ解説`, item: `https://dunlopsportsclub.jp${brandArticleHref}` },
+          { "@type": "ListItem", position: 3, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://dunlopsportsclub.jp${p}` },
+        ],
+      }
+    : null;
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -162,6 +173,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {brandCrumbLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(brandCrumbLd) }} />}
       <PageHero
         eyebrow="PERSONAL GYM"
         title={`${brand?.name || ""} ${s.name}`.trim()}
@@ -175,6 +187,15 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         {s._prefCode && s._cityCode && <><Link href={`/gyms/list/pref-${s._prefCode}/city-${s._cityCode}`} className="hover:underline">{cityName}</Link><span className="mx-1">›</span></>}
         <span>{brand?.name} {s.name}</span>
       </nav>
+      {brandArticleHref && (
+        <nav className="text-xs -mt-3 mb-5" style={{ color: "var(--bf-muted)" }}>
+          <Link href="/" className="hover:underline">ホーム</Link>
+          <span className="mx-1">›</span>
+          <Link href={brandArticleHref} className="hover:underline">{brand?.name}の料金・口コミ解説</Link>
+          <span className="mx-1">›</span>
+          <span>{brand?.name} {s.name}</span>
+        </nav>
+      )}
 
       {/* ヒーローカード: 結論ファースト */}
       <div className="bf-card p-6 md:p-8 mb-8" style={{ borderTop: "4px solid var(--bf-primary)" }}>
