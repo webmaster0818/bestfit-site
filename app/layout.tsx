@@ -7,6 +7,9 @@ import BgParallax from "@/components/BgParallax";
 export const metadata: Metadata = {
   metadataBase: new URL("https://dunlopsportsclub.jp"),
   title: "パーソナルジム専門の比較・口コミサイト｜BEST-FIT",
+  openGraph: {
+    siteName: "BEST-FIT パーソナルジム比較",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -27,7 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "BEST-FIT",
+              name: "BEST-FIT パーソナルジム比較",
+              alternateName: "BEST-FIT",
               url: "https://dunlopsportsclub.jp",
               publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
               potentialAction: {
