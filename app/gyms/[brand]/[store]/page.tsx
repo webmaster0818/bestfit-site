@@ -222,7 +222,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
           <div className="text-center sm:text-left">
             {s.affiliateLinkCvTag ? <span aria-hidden="true" dangerouslySetInnerHTML={{ __html: s.affiliateLinkCvTag }} /> : null}
             <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta w-full sm:w-auto">
-              公式サイトで無料カウンセリングを予約する
+              無料カウンセリングを申し込む
             </a>
             <p className="text-[10px] mt-2" style={{ color: "var(--bf-muted)" }}>※広告リンクを含みます</p>
           </div>
@@ -358,7 +358,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
           <p className="font-extrabold text-lg mb-1">{brand?.name} {s.name} が気になったら</p>
           <p className="text-sm opacity-80 mb-5">多くのパーソナルジムは無料カウンセリング・体験から始められます</p>
           <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta">
-            公式サイトで詳細を見る
+            無料カウンセリング・体験の申込はこちら
           </a>
           <p className="text-[10px] mt-3 opacity-60">※広告リンクを含みます</p>
         </div>
