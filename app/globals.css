@@ -52,7 +52,9 @@ body {
   display: inline-block;
   overflow: hidden;
   background: #111111;
-  color: #ffffff;
+  /* 記事HTML内のリンク色・下線指定より優先させる */
+  color: #ffffff !important;
+  text-decoration: none !important;
   font-weight: 800;
   border-radius: 9999px;
   padding: 1rem 2.5rem;
