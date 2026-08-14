@@ -220,6 +220,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         )}
         {s.affiliateLink && (
           <div className="text-center sm:text-left">
+            {s.affiliateLinkCvTag ? <span aria-hidden="true" dangerouslySetInnerHTML={{ __html: s.affiliateLinkCvTag }} /> : null}
             <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta w-full sm:w-auto">
               公式サイトで無料カウンセリングを予約する
             </a>
