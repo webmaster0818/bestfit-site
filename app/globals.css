@@ -340,3 +340,15 @@ body {
     transform: none;
   }
 }
+
+/* ===== デザイン刷新(2026-08-14 施主承認): フォント=Zen Kaku Gothic New / 角=完全スクエア ===== */
+body {
+  font-family: var(--font-bf), "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+/* 全要素の角丸を撤廃(カード・チップ・ボタン・バッジ・画像を含む) */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}

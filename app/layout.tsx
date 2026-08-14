@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Zen_Kaku_Gothic_New } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import "./orizm-ui.css";
 import BgParallax from "@/components/BgParallax";
+
+const bfFont = Zen_Kaku_Gothic_New({ weight: ["400", "500", "700", "900"], subsets: ["latin"], variable: "--font-bf", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dunlopsportsclub.jp"),
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={bfFont.variable}>
       <head>
         {/* Google Analytics 4 — 現行本番と同一の測定ID(移行監査B1) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-80HEY6EZC2" />
