@@ -24,14 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja" className={bfFont.variable}>
       <head>
-        {/* Google Analytics 4 — 現行本番と同一の測定ID(移行監査B1) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-80HEY6EZC2" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-80HEY6EZC2');",
-          }}
-        />
+        {/* GA4は一旦撤去(2026-10-02 施主指示)。
+            旧サイトと同じ測定ID G-80HEY6EZC2 が入っており、新旧のデータが
+            同一プロパティに混ざる状態だった。新ドメイン用のプロパティを別に作る方針のため、
+            測定IDの支給を受けてから改めて設置する。それまで計測は行わない。 */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
