@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "BEST-FIT パーソナルジム比較",
   },
+  // Search Console の所有権確認(2026-10-02)。サイト移転の進行を新ドメイン側でも
+  // 計測するために登録する。サイトマップ送信・インデックス促進は施主指示によりまだ行わない。
+  verification: {
+    google: "QLDfs9L6rK3N4KNRKJvfq_lx3WrgMxsnL5zZBIHLfro",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
