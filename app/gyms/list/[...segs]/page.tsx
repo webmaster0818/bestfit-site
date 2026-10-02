@@ -29,13 +29,13 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
   const label = [area, cond].filter(Boolean).join("・");
   if (label && hits.length > 0) {
     const head = cond && area ? `${area}の${cond}パーソナルジム` : cond ? `${cond}のパーソナルジム` : `${area}のパーソナルジム`;
-    const canonUrl = listCanonicalMap()[p] ? `https://dunlopsportsclub.jp${listCanonicalMap()[p]}` : p;
+    const canonUrl = listCanonicalMap()[p] ? `https://fit-best.com${listCanonicalMap()[p]}` : p;
     const title = `${head}${hits.length >= 2 ? `おすすめ${hits.length}選` : ""}｜料金比較・口コミ｜BEST-FIT`;
     const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もひと目でチェック。あなたに合う一軒が見つかるBEST-FITの検索結果です。`;
     return { title: { absolute: title }, description: desc, alternates: { canonical: canonUrl } };
   }
   if (!m) return {};
-  const canonUrl2 = listCanonicalMap()[p] ? `https://dunlopsportsclub.jp${listCanonicalMap()[p]}` : p;
+  const canonUrl2 = listCanonicalMap()[p] ? `https://fit-best.com${listCanonicalMap()[p]}` : p;
   return { title: { absolute: m.title }, description: m.desc, alternates: { canonical: canonUrl2 } };
 }
 
@@ -55,9 +55,9 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
-      { "@type": "ListItem", position: 2, name: "ジムを探す", item: "https://dunlopsportsclub.jp/gyms/list" },
-      { "@type": "ListItem", position: 3, name: labelText, item: `https://dunlopsportsclub.jp${p}` },
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://fit-best.com" },
+      { "@type": "ListItem", position: 2, name: "ジムを探す", item: "https://fit-best.com/gyms/list" },
+      { "@type": "ListItem", position: 3, name: labelText, item: `https://fit-best.com${p}` },
     ],
   };
 
@@ -73,7 +73,7 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         "@type": "ListItem",
         position: i + 1,
         name: `${b?.name || ""} ${s.name}`.trim(),
-        url: `https://dunlopsportsclub.jp${path}`,
+        url: `https://fit-best.com${path}`,
       };
     }),
   };

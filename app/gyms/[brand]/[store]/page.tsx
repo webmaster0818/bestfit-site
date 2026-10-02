@@ -145,7 +145,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
     ...(s.openingHours ? { openingHours: s.openingHours } : {}),
     ...(minPlan ? { priceRange: `¥${minPlan.price.toLocaleString()}〜` } : {}),
     ...(cityName ? { areaServed: cityName } : {}),
-    url: `https://dunlopsportsclub.jp${p}`,
+    url: `https://fit-best.com${p}`,
   };
 
   const brandCrumbLd = brandArticleHref
@@ -153,9 +153,9 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
-          { "@type": "ListItem", position: 2, name: `${brand?.name || ""}の料金・口コミ解説`, item: `https://dunlopsportsclub.jp${brandArticleHref}` },
-          { "@type": "ListItem", position: 3, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://dunlopsportsclub.jp${p}` },
+          { "@type": "ListItem", position: 1, name: "ホーム", item: "https://fit-best.com" },
+          { "@type": "ListItem", position: 2, name: `${brand?.name || ""}の料金・口コミ解説`, item: `https://fit-best.com${brandArticleHref}` },
+          { "@type": "ListItem", position: 3, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://fit-best.com${p}` },
         ],
       }
     : null;
@@ -163,9 +163,9 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://dunlopsportsclub.jp" },
-      ...(s._prefCode ? [{ "@type": "ListItem", position: 2, name: prefName, item: `https://dunlopsportsclub.jp/gyms/list/pref-${s._prefCode}` }] : []),
-      { "@type": "ListItem", position: s._prefCode ? 3 : 2, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://dunlopsportsclub.jp${p}` },
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://fit-best.com" },
+      ...(s._prefCode ? [{ "@type": "ListItem", position: 2, name: prefName, item: `https://fit-best.com/gyms/list/pref-${s._prefCode}` }] : []),
+      { "@type": "ListItem", position: s._prefCode ? 3 : 2, name: `${brand?.name || ""} ${s.name}`.trim(), item: `https://fit-best.com${p}` },
     ],
   };
 

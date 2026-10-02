@@ -8,7 +8,7 @@ import BgParallax from "@/components/BgParallax";
 const bfFont = Zen_Kaku_Gothic_New({ weight: ["400", "500", "700", "900"], subsets: ["latin"], variable: "--font-bf", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dunlopsportsclub.jp"),
+  metadataBase: new URL("https://fit-best.com"),
   title: "パーソナルジム専門の比較・口コミサイト｜BEST-FIT",
   openGraph: {
     siteName: "BEST-FIT パーソナルジム比較",
@@ -35,13 +35,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "WebSite",
               name: "BEST-FIT パーソナルジム比較",
               alternateName: "BEST-FIT",
-              url: "https://dunlopsportsclub.jp",
-              publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
+              url: "https://fit-best.com",
+              publisher: { "@id": "https://fit-best.com/#organization" },
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://dunlopsportsclub.jp/gyms/search?q={search_term_string}",
+                  urlTemplate: "https://fit-best.com/gyms/search?q={search_term_string}",
                 },
                 "query-input": "required name=search_term_string",
               },
@@ -54,12 +54,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://dunlopsportsclub.jp/#organization",
+              "@id": "https://fit-best.com/#organization",
               name: "BEST-FIT",
-              url: "https://dunlopsportsclub.jp",
+              url: "https://fit-best.com",
               logo: {
                 "@type": "ImageObject",
-                url: "https://dunlopsportsclub.jp/images/logo.png",
+                url: "https://fit-best.com/images/logo.png",
               },
             }),
           }}

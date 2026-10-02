@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/" }],
-    sitemap: "https://dunlopsportsclub.jp/sitemap.xml",
-    host: "https://dunlopsportsclub.jp",
+    sitemap: "https://fit-best.com/sitemap.xml",
+    host: "https://fit-best.com",
   };
 }

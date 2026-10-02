@@ -5,7 +5,7 @@ import { articleGyms, urlMeta } from "@/lib/data";
 // robotsがnoindexのものは除外（現状noindexは/gyms/searchの動的ルートのみでurls-meta外のため実質全件index）。
 export const dynamic = "force-static";
 
-const BASE = "https://dunlopsportsclub.jp";
+const BASE = "https://fit-best.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const um = urlMeta() as Record<string, { canonical?: string; robots?: string }>;

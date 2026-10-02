@@ -43,9 +43,9 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${g.name}の料金・特徴・アクセス`,
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://dunlopsportsclub.jp/gyms/listed/${prm.slug}` },
-    author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://dunlopsportsclub.jp" },
-    publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://fit-best.com/gyms/listed/${prm.slug}` },
+    author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://fit-best.com" },
+    publisher: { "@id": "https://fit-best.com/#organization" },
     inLanguage: "ja",
   };
   return (

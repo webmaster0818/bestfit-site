@@ -181,7 +181,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     : null;
   // S1: Article schema(鮮度・E-E-A-T)。dateModifiedは記事の実質更新日=直近の全記事一括改修日。個別更新時はここを更新すること
   const ARTICLE_DATE_MODIFIED = "2026-07-19";
-  const canonicalUrl = `https://dunlopsportsclub.jp${m?.canonical || p}`;
+  const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -190,8 +190,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
     url: canonicalUrl,
     dateModified: ARTICLE_DATE_MODIFIED,
-    author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://dunlopsportsclub.jp" },
-    publisher: { "@id": "https://dunlopsportsclub.jp/#organization" },
+    author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://fit-best.com" },
+    publisher: { "@id": "https://fit-best.com/#organization" },
     inLanguage: "ja",
   };
 
