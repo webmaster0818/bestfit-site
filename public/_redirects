@@ -80,3 +80,9 @@
 /gyms/rprecious/maebashi /articles/brand/rprecious 301
 /gyms/xingfu/tsutsujigaoka /gyms/list/pref-130001 301
 /news/newwebsite-launch /news/website-launch 301
+# 2026-10-09 エクササイズコーチ: 公式サイトに掲載が無い(店舗一覧・直URLともに404)店舗を除外。施主指示
+/gyms/exercisecoach/omiya /gyms/list/pref-110001 301
+/gyms/exercisecoach/kanayama /gyms/list/pref-230006 301
+/gyms/exercisecoach/nagoyaeast /gyms/list/pref-230006 301
+/gyms/listed/exercise-coach-2 /gyms/list/pref-090000 301
+/gyms/listed/exercise-coach-3 /gyms/list/pref-120006 301
