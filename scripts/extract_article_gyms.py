@@ -20,6 +20,9 @@ ALIAS = {
     'ライザップ': 'rizap', 'ライザップウーマン': 'rizap-woman', 'アスピ': 'aspi', 'ビヨンド': 'beyond',
     'ビーコンセプト': 'b-concept', 'チキンジム': 'chicken-gym', 'エレメント': 'element', 'カーブス': 'curves',
     'リボーンマイセルフ': 'reborn-myself', 'アップルジム': 'apple-gym', 'ドクタートレーニング': 'dr-training',
+    # 2026-10-09: 記事側の表記を「エクササイズコーチ(The Exercise Coach)」に統一したため、
+    # brands.json の 'TheExerciseCoach' では前方一致しなくなる。別名を足して既存店舗ページへのマッチを維持する。
+    'エクササイズコーチ': 'exercisecoach',
 }
 
 store_keys = {}
@@ -105,8 +108,24 @@ for key, g in all_gyms.items():
     g['storePath'] = path
 
 # --- 新規(listed)スラッグ生成 ---
+# 2026-10-09: 記事側の表記統一(「エクササイズコーチ(The Exercise Coach)」)で name が変わり、
+# 公開済みの /gyms/listed/<slug> が the-exercise-coach* に改名されてしまうため、現行slugをピン留めする。
+# 併せて ALIAS に 'エクササイズコーチ' を追加済み。再生成すると
+#   /gyms/listed/gym-680cd6d5 (リンクス梅田店) / gym-95995bf8 (新宿西口店)
+# の2本は既存のブランド店舗ページ(/gyms/exercisecoach/...)にマッチするようになり、listedからは消える。
+# 再生成する場合はこの2URLの301リダイレクトを用意すること。
+SLUG_PIN = {
+    'エクササイズコーチ(The Exercise Coach) 池袋東口店': 'exercise-coach',
+    'エクササイズコーチ(The Exercise Coach) 宇都宮店': 'exercise-coach-2',
+    'エクササイズコーチ(The Exercise Coach) 柏店': 'exercise-coach-3',
+    'エクササイズコーチ(The Exercise Coach) 川崎DICE店': 'exercise-coach-dice',
+}
 used = set()
 def make_slug(name, key):
+    if name in SLUG_PIN:
+        s = SLUG_PIN[name]
+        used.add(s)
+        return s
     s = unicodedata.normalize('NFKC', name).lower()
     s = re.sub(r"[&'’]", '', s)
     s = re.sub(r'[^a-z0-9]+', '-', s).strip('-')
