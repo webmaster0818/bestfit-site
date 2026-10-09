@@ -181,6 +181,30 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     : null;
   // S1: Article schema(鮮度・E-E-A-T)。dateModifiedは記事の実質更新日=直近の全記事一括改修日。個別更新時はここを更新すること
   const ARTICLE_DATE_MODIFIED = "2026-07-19";
+  // 個別に改修した記事はこちらで上書きする。触っていない記事に新しい日付を出さないため、
+  // 一括の定数は変えずに記事単位で持つ(2026-10-09: エクササイズコーチの表記・営業時間・料金を公式実査で修正した20本)
+  const ARTICLE_DATE_MODIFIED_BY_PATH: Record<string, string> = {
+    "/articles/city/kawasaki": "2026-10-09",
+    "/articles/city/kobe": "2026-10-09",
+    "/articles/city/tachikawa": "2026-10-09",
+    "/articles/pref/chiba": "2026-10-09",
+    "/articles/pref/fukuoka": "2026-10-09",
+    "/articles/pref/hiroshima": "2026-10-09",
+    "/articles/pref/kyoto": "2026-10-09",
+    "/articles/pref/oita": "2026-10-09",
+    "/articles/pref/okinawa": "2026-10-09",
+    "/articles/station/funabashi": "2026-10-09",
+    "/articles/station/ginza": "2026-10-09",
+    "/articles/station/hakata": "2026-10-09",
+    "/articles/station/ikebukuro": "2026-10-09",
+    "/articles/station/jiyugaoka": "2026-10-09",
+    "/articles/station/kashiwa": "2026-10-09",
+    "/articles/station/nishishinjuku": "2026-10-09",
+    "/articles/station/omiya": "2026-10-09",
+    "/articles/station/sakae": "2026-10-09",
+    "/articles/station/umeda": "2026-10-09",
+    "/articles/station/utsunomiya": "2026-10-09",
+  };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
     "@context": "https://schema.org",
@@ -189,7 +213,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     ...(m?.desc ? { description: m.desc } : {}),
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
     url: canonicalUrl,
-    dateModified: ARTICLE_DATE_MODIFIED,
+    dateModified: ARTICLE_DATE_MODIFIED_BY_PATH[p] || ARTICLE_DATE_MODIFIED,
     author: { "@type": "Organization", name: "BEST-FIT編集部", url: "https://fit-best.com" },
     publisher: { "@id": "https://fit-best.com/#organization" },
     inLanguage: "ja",
