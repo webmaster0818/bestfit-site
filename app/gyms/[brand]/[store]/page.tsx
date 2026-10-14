@@ -51,13 +51,24 @@ function pagePath(params: { brand: string; store: string }) {
   return `/gyms/${params.brand}/${params.store}`;
 }
 
+// urls-meta に description が無い店舗(約1,250件)は、店舗データの店名・住所だけで作る(推測の文言は入れない)
+function storeDesc(p: string, brandSlug: string) {
+  const s = stores()[p];
+  if (!s) return undefined;
+  const brand = Object.values(brands()).find((b) => b.slug.toLowerCase() === brandSlug.toLowerCase());
+  const name = `${brand?.name || ""} ${s.name}`.trim();
+  const addr = typeof s.address === "string" && s.address.trim() ? `（${s.address.trim()}）` : "";
+  return `${name}${addr}の料金プラン・体験・アクセス・設備をまとめた店舗ページです。近くのパーソナルジムとも比較できます。`;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ brand: string; store: string }> }): Promise<Metadata> {
-  const p = pagePath(await params);
+  const prm = await params;
+  const p = pagePath(prm);
   const m = metaFor(p);
   if (!m) return {};
   return {
     title: { absolute: m.title },
-    description: m.desc,
+    description: m.desc || storeDesc(p, prm.brand),
     alternates: m.canonical ? { canonical: m.canonical } : undefined,
   };
 }
@@ -220,7 +231,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         )}
         {s.affiliateLink && (
           <div className="text-center sm:text-left">
-            {s.affiliateLinkCvTag ? <span aria-hidden="true" dangerouslySetInnerHTML={{ __html: s.affiliateLinkCvTag }} /> : null}
+            {s.affiliateLinkCvTag ? <span aria-hidden="true" dangerouslySetInnerHTML={{ __html: String(s.affiliateLinkCvTag).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') }} /> : null}
             <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta w-full sm:w-auto">
               無料カウンセリングを申し込む
             </a>

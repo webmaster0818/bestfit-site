@@ -101,7 +101,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     return out + html.slice(last);
   };
   const gymLinkRows = articleGyms().perArticle[p] || [];
-  const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows) : null;
+  // CMS移植HTMLの広告バナー・計測ピクセルに alt が無いため空 alt を補う(2026-10-14)
+  const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') : null;
   const isBrand = prm.type === "brand";
   // FIT24専用: 全118店舗の料金実査サプリメント(2026-08-02・公式が一覧を出していない情報の一次集約)
   const isFit24 = isBrand && prm.slug === "fit24";

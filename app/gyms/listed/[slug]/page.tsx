@@ -56,7 +56,7 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
         {g.access && (
           <p className="text-sm mt-6 mb-2" style={{ color: "var(--bf-muted)" }}>アクセス: {g.access}</p>
         )}
-        <div className="article-body" dangerouslySetInnerHTML={{ __html: stripEmptyBoxes(g.block) }} />
+        <div className="article-body" dangerouslySetInnerHTML={{ __html: stripEmptyBoxes(g.block).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') }} />
         <section className="mt-10 mb-6">
           <h2 className="bf-h2 mb-3">このジムが掲載されている特集記事</h2>
           <ul className="space-y-2 text-sm">
