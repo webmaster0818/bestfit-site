@@ -61,7 +61,30 @@ export function fit24Stores() {
 }
 
 export function metaFor(pathname: string): UrlMeta | undefined {
-  return urlMeta()[pathname];
+  const m = urlMeta()[pathname];
+  if (!m) return fallbackMeta(pathname);
+  // 後から足したブランド記事は canonical が空のまま入っている(plume・mmm 等)。記事と店舗ページに限って自URLで補う
+  if (!m.canonical && !(m.robots || "").includes("noindex") && /^\/(articles\/[^/]+|gyms\/[^/]+)\/[^/]+$/.test(pathname)) {
+    return { ...m, canonical: pathname };
+  }
+  return m;
+}
+
+// urls-meta.json に無いページ(後から足した店舗・ブランド記事など)も、既存と同じ形の title と canonical を出す(2026-10-14)
+function fallbackMeta(pathname: string): UrlMeta | undefined {
+  let name: string | undefined;
+  const s = stores()[pathname];
+  if (s) {
+    const slug = pathname.split("/")[2]?.toLowerCase();
+    const b = Object.values(brands()).find((x) => x.slug.toLowerCase() === slug);
+    name = `${b?.name || ""} ${s.name}`.trim();
+  } else if (pathname.startsWith("/articles/brand/")) {
+    name = brandPrice(pathname.split("/").pop()!)?.name;
+  } else if (pathname === "/gyms/list") {
+    name = "パーソナルジムを探す";
+  }
+  if (!name) return undefined;
+  return { title: `${name}｜パーソナルジム専門の比較・口コミサイト｜BEST-FIT`, desc: "", canonical: pathname, h1: "", robots: "index, follow" };
 }
 
 export function articleFor(pathname: string): { path: string; entity: any; sections: { name: string; content: string }[]; reviews: any[] } | null {

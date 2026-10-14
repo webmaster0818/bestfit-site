@@ -23,6 +23,20 @@ function pagePath(prm: { type: string; slug: string }) {
   return `/articles/${prm.type}/${prm.slug}`;
 }
 
+// description は160字以内に収める。長い順に「定型の後半文→note の括弧書き→入会金」を外す(料金と確認日は必ず残す)
+function brandDesc(bp: { name: string; price: string; join?: string; note: string }) {
+  const noteShort = bp.note.split(/[（(]/)[0].trim();
+  const joinPart = bp.join ? "・" + bp.join : "";
+  const head = (note: string, join: string) => `${bp.name}の料金は${bp.price}${join}（${note}）。`;
+  const cands = [
+    head(bp.note, joinPart) + "月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。",
+    head(bp.note, joinPart),
+    head(noteShort, joinPart),
+    head(noteShort, ""),
+  ];
+  return cands.find((d) => d.length <= 160) ?? cands[cands.length - 1];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ type: string; slug: string }> }): Promise<Metadata> {
   const p = pagePath(await params);
   const m = metaFor(p);
@@ -50,7 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   }
   return {
     title: { absolute: brandTitle },
-    description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。` : m?.desc,
+    description: bp ? brandDesc(bp) : m?.desc,
     alternates: m.canonical ? { canonical: m.canonical } : undefined,
   };
 }
