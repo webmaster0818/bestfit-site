@@ -32,8 +32,21 @@ export function brands() {
   if (!_brands) _brands = loadJson("brands.json");
   return _brands!;
 }
+// 旧CMSの tag-XXX 一覧は、同じ条件の feature-<id> 一覧と中身が重なる(title重複1,910件の原因)。
+// tag は features-catalog の key と1対1で、店舗は feature 側が包含するので、tag 一覧は生成せず feature へ301(public/_redirects)。2026-10-15
+let _tagToFeature: Record<string, string> | null = null;
+export function tagToFeature(): Record<string, string> {
+  if (!_tagToFeature) {
+    _tagToFeature = {};
+    for (const f of loadJson("features-catalog.json") as { id: string; key?: string }[]) if (f.key) _tagToFeature[f.key] = f.id;
+  }
+  return _tagToFeature;
+}
+export function featurePathForTag(href: string): string {
+  return href.replace(/\/tag-(\w+)$/, (m, k) => (tagToFeature()[k] ? `/feature-${tagToFeature()[k]}` : m));
+}
 export function listPaths() {
-  if (!_listPaths) _listPaths = loadJson("list-paths.json");
+  if (!_listPaths) _listPaths = (loadJson("list-paths.json") as string[]).filter((p) => !/\/tag-\w+$/.test(p) || featurePathForTag(p) === p);
   return _listPaths!;
 }
 
@@ -61,7 +74,30 @@ export function fit24Stores() {
 }
 
 export function metaFor(pathname: string): UrlMeta | undefined {
-  return urlMeta()[pathname];
+  const m = urlMeta()[pathname];
+  if (!m) return fallbackMeta(pathname);
+  // 後から足したブランド記事は canonical が空のまま入っている(plume・mmm 等)。記事と店舗ページに限って自URLで補う
+  if (!m.canonical && !(m.robots || "").includes("noindex") && /^\/(articles\/[^/]+|gyms\/[^/]+)\/[^/]+$/.test(pathname)) {
+    return { ...m, canonical: pathname };
+  }
+  return m;
+}
+
+// urls-meta.json に無いページ(後から足した店舗・ブランド記事など)も、既存と同じ形の title と canonical を出す(2026-10-14)
+function fallbackMeta(pathname: string): UrlMeta | undefined {
+  let name: string | undefined;
+  const s = stores()[pathname];
+  if (s) {
+    const slug = pathname.split("/")[2]?.toLowerCase();
+    const b = Object.values(brands()).find((x) => x.slug.toLowerCase() === slug);
+    name = `${b?.name || ""} ${s.name}`.trim();
+  } else if (pathname.startsWith("/articles/brand/")) {
+    name = brandPrice(pathname.split("/").pop()!)?.name;
+  } else if (pathname === "/gyms/list") {
+    name = "パーソナルジムを探す";
+  }
+  if (!name) return undefined;
+  return { title: `${name}｜パーソナルジム専門の比較・口コミサイト｜BEST-FIT`, desc: "", canonical: pathname, h1: "", robots: "index, follow" };
 }
 
 export function articleFor(pathname: string): { path: string; entity: any; sections: { name: string; content: string }[]; reviews: any[] } | null {

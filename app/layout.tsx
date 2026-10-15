@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://fit-best.com"),
   title: "パーソナルジム専門の比較・口コミサイト｜BEST-FIT",
   openGraph: {
+    images: ["/og.jpg"],
     siteName: "BEST-FIT パーソナルジム比較",
   },
   // Search Console の所有権確認(2026-10-02)。サイト移転の進行を新ドメイン側でも

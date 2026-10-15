@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -21,6 +21,20 @@ export function generateStaticParams() {
 
 function pagePath(prm: { type: string; slug: string }) {
   return `/articles/${prm.type}/${prm.slug}`;
+}
+
+// description は160字以内に収める。長い順に「定型の後半文→note の括弧書き→入会金」を外す(料金と確認日は必ず残す)
+function brandDesc(bp: { name: string; price: string; join?: string; note: string }) {
+  const noteShort = bp.note.split(/[（(]/)[0].trim();
+  const joinPart = bp.join ? "・" + bp.join : "";
+  const head = (note: string, join: string) => `${bp.name}の料金は${bp.price}${join}（${note}）。`;
+  const cands = [
+    head(bp.note, joinPart) + "月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。",
+    head(bp.note, joinPart),
+    head(noteShort, joinPart),
+    head(noteShort, ""),
+  ];
+  return cands.find((d) => d.length <= 160) ?? cands[cands.length - 1];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ type: string; slug: string }> }): Promise<Metadata> {
@@ -50,7 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   }
   return {
     title: { absolute: brandTitle },
-    description: bp ? `${bp.name}の料金は${bp.price}${bp.join ? "・" + bp.join : ""}（${bp.note}）。月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。` : m?.desc,
+    description: bp ? brandDesc(bp) : m?.desc,
     alternates: m.canonical ? { canonical: m.canonical } : undefined,
   };
 }
@@ -87,7 +101,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     return out + html.slice(last);
   };
   const gymLinkRows = articleGyms().perArticle[p] || [];
-  const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows) : null;
+  // CMS移植HTMLの広告バナー・計測ピクセルに alt が無いため空 alt を補う(2026-10-14)
+  const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') : null;
   const isBrand = prm.type === "brand";
   // FIT24専用: 全118店舗の料金実査サプリメント(2026-08-02・公式が一覧を出していない情報の一次集約)
   const isFit24 = isBrand && prm.slug === "fit24";
@@ -535,7 +550,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
               <h2 className="bf-h2 mb-3">タグから探す</h2>
               <div className="flex flex-wrap gap-2">
                 {sb.tags.map(([href, label]: [string, string]) => (
-                  <Link key={href} href={href} className="bf-chip-link">{label}</Link>
+                  <Link key={href} href={featurePathForTag(href)} className="bf-chip-link">{label}</Link>
                 ))}
               </div>
             </section>

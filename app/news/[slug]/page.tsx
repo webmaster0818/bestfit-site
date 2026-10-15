@@ -23,7 +23,8 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   return (
     <article>
       <div className="max-w-3xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-extrabold mb-6">{m?.h1 || m?.title.split("｜")[0]}</h1>
+        {/* 本文(旧CMSの移植HTML)に h1 があるときは出さない。旧CMSの h1 文言「日本最大級の…掲載数」は根拠が無いので使わない(2026-10-15) */}
+      {body && /<h1[\s>]/.test(body) ? null : <h1 className="text-2xl font-extrabold mb-6">{m?.title.split("｜")[0]}</h1>}
         {body ? <div className="article-body" dangerouslySetInnerHTML={{ __html: body }} /> : <p className="text-sm text-gray-500">本文の移行処理中です。</p>}
       </div>
     </article>

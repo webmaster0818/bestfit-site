@@ -7,7 +7,7 @@ import GymConcierge from "@/components/GymConcierge";
 
 export function generateMetadata(): Metadata {
   const m = metaFor("/gyms/list");
-  return m ? { title: { absolute: m.title }, description: m.desc } : {};
+  return m ? { title: { absolute: m.title }, description: m.desc || "都道府県・市区町村・こだわり条件から、BEST-FITに掲載中のパーソナルジムを探せます。料金プラン・アクセス・設備を比較して、あなたに合う一軒を見つけてください。", alternates: { canonical: "/gyms/list" } } : {};
 }
 
 export default function ListTop() {
