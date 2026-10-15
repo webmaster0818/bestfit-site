@@ -219,6 +219,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/station/sakae": "2026-10-09",
     "/articles/station/umeda": "2026-10-09",
     "/articles/station/utsunomiya": "2026-10-09",
+    // 2026-10-14: TRYVEの料金・体験料金・紹介文を運営会社の依頼と公式サイトで更新
+    "/articles/city/sendai": "2026-10-14",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
