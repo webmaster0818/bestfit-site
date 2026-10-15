@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -550,7 +550,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
               <h2 className="bf-h2 mb-3">タグから探す</h2>
               <div className="flex flex-wrap gap-2">
                 {sb.tags.map(([href, label]: [string, string]) => (
-                  <Link key={href} href={href} className="bf-chip-link">{label}</Link>
+                  <Link key={href} href={featurePathForTag(href)} className="bf-chip-link">{label}</Link>
                 ))}
               </div>
             </section>

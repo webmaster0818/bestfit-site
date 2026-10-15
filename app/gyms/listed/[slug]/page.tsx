@@ -39,6 +39,21 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
     href: p,
     label: (um[p]?.title || p).split("｜")[0],
   }));
+  // 同じ特集記事に載っている他のジム(記事の掲載順)。記事からの1本だけだと実質孤立になるため相互に結ぶ(2026-10-15)
+  // 記事内の自分の位置から後ろ向きに循環して最大12件(どのジムも誰かから張られるように)
+  const self = `/gyms/listed/${prm.slug}`;
+  const seen = new Set<string>([self]);
+  const siblings: { href: string; name: string }[] = [];
+  for (const a of g.articles) {
+    const all = (articleGyms().perArticle[a] || []).filter((x) => x.href.startsWith("/gyms/listed/") && articleGyms().listed[x.href.split("/").pop()!]);
+    const at = all.findIndex((x) => x.href === self);
+    for (let i = 1; i < all.length; i++) {
+      const x = all[(Math.max(at, 0) + i) % all.length];
+      if (seen.has(x.href)) continue;
+      seen.add(x.href);
+      siblings.push({ href: x.href, name: x.name });
+    }
+  }
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -67,6 +82,18 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
             ))}
           </ul>
         </section>
+        {siblings.length > 0 && (
+          <section className="mt-8 mb-6">
+            <h2 className="bf-h2 mb-3">同じ特集記事に掲載しているジム</h2>
+            <ul className="flex flex-wrap gap-2">
+              {siblings.slice(0, 12).map((x) => (
+                <li key={x.href}>
+                  <Link href={x.href} className="bf-chip-link">{x.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         <p className="text-[11px] mb-12" style={{ color: "var(--bf-muted)" }}>
           ※本ページの紹介内容は、BEST-FIT編集部のエリア特集記事に掲載している情報にもとづきます。料金・営業時間等は変更される場合があるため、最新の情報は公式サイトでご確認ください。
         </p>

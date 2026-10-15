@@ -86,3 +86,55 @@
 /gyms/exercisecoach/nagoyaeast /gyms/list/pref-230006 301
 /gyms/listed/exercise-coach-2 /gyms/list/pref-090000 301
 /gyms/listed/exercise-coach-3 /gyms/list/pref-120006 301
+
+# 2026-10-15 kofukokubo は旧CMSの破損複製(中身は春日後楽園店=korakuen と同一・titleだけ甲府国母店)。削除し本物の甲府国母店へ
+/gyms/beyond/kofukokubo /gyms/beyond/kofukombo 301
+# 2026-10-15 大文字違いの重複(同じ吉祥寺店ANNEX店の旧データ)。macOSでは書き出しが片方しか残らず sitemap と食い違っていた
+/gyms/Drtraining/kichijoji /gyms/drtraining/kichijoji 301
+
+# 旧CMSの tag 一覧 → 同条件の feature 一覧へ統合(title重複の解消・2026-10-15)。tag は feature の部分集合
+/gyms/list/tag-001 /gyms/list/feature-4JsEjXzikuOX5CIA 301
+/gyms/list/:pref/tag-001 /gyms/list/:pref/feature-4JsEjXzikuOX5CIA 301
+/gyms/list/:pref/:city/tag-001 /gyms/list/:pref/:city/feature-4JsEjXzikuOX5CIA 301
+/gyms/list/tag-002 /gyms/list/feature-lV7bwsP4oRNlgcKh 301
+/gyms/list/:pref/tag-002 /gyms/list/:pref/feature-lV7bwsP4oRNlgcKh 301
+/gyms/list/:pref/:city/tag-002 /gyms/list/:pref/:city/feature-lV7bwsP4oRNlgcKh 301
+/gyms/list/tag-003 /gyms/list/feature-hSvoqkFkXCCDRqDt 301
+/gyms/list/:pref/tag-003 /gyms/list/:pref/feature-hSvoqkFkXCCDRqDt 301
+/gyms/list/:pref/:city/tag-003 /gyms/list/:pref/:city/feature-hSvoqkFkXCCDRqDt 301
+/gyms/list/tag-007 /gyms/list/feature-BqZK5B9M6HOYg36x 301
+/gyms/list/:pref/tag-007 /gyms/list/:pref/feature-BqZK5B9M6HOYg36x 301
+/gyms/list/:pref/:city/tag-007 /gyms/list/:pref/:city/feature-BqZK5B9M6HOYg36x 301
+/gyms/list/tag-009 /gyms/list/feature-sGSCtxosyziST0Qi 301
+/gyms/list/:pref/tag-009 /gyms/list/:pref/feature-sGSCtxosyziST0Qi 301
+/gyms/list/:pref/:city/tag-009 /gyms/list/:pref/:city/feature-sGSCtxosyziST0Qi 301
+/gyms/list/tag-010 /gyms/list/feature-qW52olWvgbex8Hyq 301
+/gyms/list/:pref/tag-010 /gyms/list/:pref/feature-qW52olWvgbex8Hyq 301
+/gyms/list/:pref/:city/tag-010 /gyms/list/:pref/:city/feature-qW52olWvgbex8Hyq 301
+/gyms/list/tag-012 /gyms/list/feature-jIvw9PJp2YTGI8os 301
+/gyms/list/:pref/tag-012 /gyms/list/:pref/feature-jIvw9PJp2YTGI8os 301
+/gyms/list/:pref/:city/tag-012 /gyms/list/:pref/:city/feature-jIvw9PJp2YTGI8os 301
+/gyms/list/tag-014 /gyms/list/feature-59LjqHB6raw2Edfz 301
+/gyms/list/:pref/tag-014 /gyms/list/:pref/feature-59LjqHB6raw2Edfz 301
+/gyms/list/:pref/:city/tag-014 /gyms/list/:pref/:city/feature-59LjqHB6raw2Edfz 301
+/gyms/list/tag-017 /gyms/list/feature-BFC4ZaxemKF5aWTo 301
+/gyms/list/:pref/tag-017 /gyms/list/:pref/feature-BFC4ZaxemKF5aWTo 301
+/gyms/list/:pref/:city/tag-017 /gyms/list/:pref/:city/feature-BFC4ZaxemKF5aWTo 301
+/gyms/list/tag-019 /gyms/list/feature-6zdj3YfuB4n4u0Tt 301
+/gyms/list/:pref/tag-019 /gyms/list/:pref/feature-6zdj3YfuB4n4u0Tt 301
+/gyms/list/:pref/:city/tag-019 /gyms/list/:pref/:city/feature-6zdj3YfuB4n4u0Tt 301
+/gyms/list/tag-023 /gyms/list/feature-2QXooMFohdFJsYK1 301
+/gyms/list/:pref/tag-023 /gyms/list/:pref/feature-2QXooMFohdFJsYK1 301
+/gyms/list/:pref/:city/tag-023 /gyms/list/:pref/:city/feature-2QXooMFohdFJsYK1 301
+/gyms/list/tag-024 /gyms/list/feature-9vXTMYlGLAhlxdYf 301
+/gyms/list/:pref/tag-024 /gyms/list/:pref/feature-9vXTMYlGLAhlxdYf 301
+/gyms/list/:pref/:city/tag-024 /gyms/list/:pref/:city/feature-9vXTMYlGLAhlxdYf 301
+/gyms/list/tag-025 /gyms/list/feature-2oBS6TpcnxuMKrPw 301
+/gyms/list/:pref/tag-025 /gyms/list/:pref/feature-2oBS6TpcnxuMKrPw 301
+/gyms/list/:pref/:city/tag-025 /gyms/list/:pref/:city/feature-2oBS6TpcnxuMKrPw 301
+/gyms/list/tag-031 /gyms/list/feature-YaZpHT0bvjTrrmI8 301
+/gyms/list/:pref/tag-031 /gyms/list/:pref/feature-YaZpHT0bvjTrrmI8 301
+/gyms/list/:pref/:city/tag-031 /gyms/list/:pref/:city/feature-YaZpHT0bvjTrrmI8 301
+/gyms/list/tag-034 /gyms/list/feature-JkAKV67tH6dRdOGq 301
+/gyms/list/:pref/tag-034 /gyms/list/:pref/feature-JkAKV67tH6dRdOGq 301
+/gyms/list/:pref/:city/tag-034 /gyms/list/:pref/:city/feature-JkAKV67tH6dRdOGq 301

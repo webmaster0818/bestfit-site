@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { stores, metaFor, brands, storeReviews, brandPrice } from "@/lib/data";
+import { stores, metaFor, brands, storeReviews, brandPrice, listPaths } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
@@ -196,6 +196,8 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         <span className="mx-1">›</span>
         {s._prefCode && <><Link href={`/gyms/list/pref-${s._prefCode}`} className="hover:underline">{prefName}</Link><span className="mx-1">›</span></>}
         {s._prefCode && s._cityCode && <><Link href={`/gyms/list/pref-${s._prefCode}/city-${s._cityCode}`} className="hover:underline">{cityName}</Link><span className="mx-1">›</span></>}
+        {/* 区の一覧ページがあれば区まで辿れるようにする(区ページが市ページからしか張られていなかった・2026-10-15) */}
+        {s._prefCode && s._cityCode && s._wardCode && listPaths().includes(`/gyms/list/pref-${s._prefCode}/city-${s._cityCode}/ward-${s._wardCode}`) && <><Link href={`/gyms/list/pref-${s._prefCode}/city-${s._cityCode}/ward-${s._wardCode}`} className="hover:underline">{s._wardName}</Link><span className="mx-1">›</span></>}
         <span>{brand?.name} {s.name}</span>
       </nav>
       {brandArticleHref && (

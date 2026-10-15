@@ -32,8 +32,21 @@ export function brands() {
   if (!_brands) _brands = loadJson("brands.json");
   return _brands!;
 }
+// 旧CMSの tag-XXX 一覧は、同じ条件の feature-<id> 一覧と中身が重なる(title重複1,910件の原因)。
+// tag は features-catalog の key と1対1で、店舗は feature 側が包含するので、tag 一覧は生成せず feature へ301(public/_redirects)。2026-10-15
+let _tagToFeature: Record<string, string> | null = null;
+export function tagToFeature(): Record<string, string> {
+  if (!_tagToFeature) {
+    _tagToFeature = {};
+    for (const f of loadJson("features-catalog.json") as { id: string; key?: string }[]) if (f.key) _tagToFeature[f.key] = f.id;
+  }
+  return _tagToFeature;
+}
+export function featurePathForTag(href: string): string {
+  return href.replace(/\/tag-(\w+)$/, (m, k) => (tagToFeature()[k] ? `/feature-${tagToFeature()[k]}` : m));
+}
 export function listPaths() {
-  if (!_listPaths) _listPaths = loadJson("list-paths.json");
+  if (!_listPaths) _listPaths = (loadJson("list-paths.json") as string[]).filter((p) => !/\/tag-\w+$/.test(p) || featurePathForTag(p) === p);
   return _listPaths!;
 }
 

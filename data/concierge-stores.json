@@ -9480,22 +9480,6 @@
   "join0": false
  },
  {
-  "path": "/gyms/beyond/kofukokubo",
-  "brand": "ビヨンド",
-  "name": "春日後楽園店",
-  "pref": "東京都",
-  "city": "東京都文京区",
-  "access": "",
-  "feat": [],
-  "aff": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1FSQEQ+4AOW+5YJRM",
-  "per": 8250,
-  "rating": 5,
-  "count": 38,
-  "lat": 34.7476608,
-  "lng": 135.3602641,
-  "join0": true
- },
- {
   "path": "/gyms/miyazakigym/gotanda2",
   "brand": "MIYAZAKI GYM",
   "name": "五反田2号店",
@@ -30974,22 +30958,6 @@
   "lat": 35.342321999999996,
   "lng": 139.4825563,
   "join0": true
- },
- {
-  "path": "/gyms/Drtraining/kichijoji",
-  "brand": "Dr.トレーニング",
-  "name": "吉祥寺店ANNEX店",
-  "pref": "東京都",
-  "city": "東京都武蔵野市",
-  "access": "吉祥寺駅徒歩5分",
-  "feat": [],
-  "aff": "https://af.moshimo.com/af/c/click?a_id=5176390&p_id=2298&pc_id=4928&pl_id=30390",
-  "per": 7700,
-  "rating": null,
-  "count": null,
-  "lat": 35.701935899999995,
-  "lng": 139.57656509999998,
-  "join0": false
  },
  {
   "path": "/gyms/beyond/kurashiki",
