@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
-import { articleGyms, urlMeta } from "@/lib/data";
+import { articleGyms, urlMeta, brandArticleForGymName } from "@/lib/data";
 
 // エリア記事に掲載されているが店舗DBに詳細ページが無いジムの詳細ページ。
 // 本文は現行サイトのエリア記事に掲載されている紹介ブロックをそのまま使用(記事原文由来・創作なし)。
@@ -35,6 +35,7 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
   const g = articleGyms().listed[prm.slug];
   if (!g) return null;
   const um = urlMeta() as Record<string, { title?: string }>;
+  const brandArticle = brandArticleForGymName(g.name);
   const articleLinks = g.articles.map((p) => ({
     href: p,
     label: (um[p]?.title || p).split("｜")[0],
@@ -72,6 +73,14 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
           <p className="text-sm mt-6 mb-2" style={{ color: "var(--bf-muted)" }}>アクセス: {g.access}</p>
         )}
         <div className="article-body" dangerouslySetInnerHTML={{ __html: stripEmptyBoxes(g.block).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') }} />
+        {brandArticle && (
+          <section className="mt-10 mb-6">
+            <h2 className="bf-h2 mb-3">{brandArticle.name}の口コミ・評判と料金</h2>
+            <p className="text-sm">
+              <Link href={brandArticle.href} className="hover:underline" style={{ color: "var(--bf-primary)" }}>{brandArticle.name}の口コミ・評判・料金・解約方法をまとめた記事を見る →</Link>
+            </p>
+          </section>
+        )}
         <section className="mt-10 mb-6">
           <h2 className="bf-h2 mb-3">このジムが掲載されている特集記事</h2>
           <ul className="space-y-2 text-sm">

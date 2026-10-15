@@ -195,6 +195,23 @@ export function articleHtml(pathname: string): string | null {
   return fs.readFileSync(f, "utf-8");
 }
 
+// 店舗名 → ブランド記事（口コミ・評判の受け皿）。エリア記事の掲載ジムと /gyms/listed/ からブランド記事へ内部リンクを張る（2026-10-15・提携8ブランド）
+const BRAND_ARTICLE_BY_NAME: [RegExp, string, string][] = [
+  [/^(FÜRDI|FURDI|ファディー)/i, "/articles/brand/furdi", "FURDI（ファディー）"],
+  [/^Amazones/i, "/articles/brand/amazones", "Amazones（アマゾネス）"],
+  [/^(駅前|街ナカ)筋肉留学(GO|ＧＯ)/, "/articles/brand/ekimaego-go", "駅前筋肉留学GO"],
+  [/^(BBB|トリプルB)/, "/articles/brand/bbb", "BBB（トリプルビー）"],
+  [/^TOKIEL/i, "/articles/brand/tokiel", "TOKIEL（トキエル）"],
+  [/^Dee GYM/i, "/articles/brand/dee-gym", "Dee GYM（ディージム）"],
+  [/^HPER/i, "/articles/brand/hper", "HPER（ハイパー）"],
+  [/^MY BODY LABO/i, "/articles/brand/mybodylabo", "MY BODY LABO（マイボディラボ）"],
+];
+export function brandArticleForGymName(name: string): { href: string; name: string } | null {
+  const n = (name || "").trim();
+  const hit = BRAND_ARTICLE_BY_NAME.find(([re]) => re.test(n));
+  return hit ? { href: hit[1], name: hit[2] } : null;
+}
+
 // ブランド記事の検証済み料金（メタ・料金早見ボックス用・2026-07-07公式確認）
 let _brandPrice: Record<string, { name: string; price: string; join: string; note: string }> | null = null;
 export function brandPrice(slug: string) {

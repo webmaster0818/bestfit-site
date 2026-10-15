@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag, brandArticleForGymName } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -95,12 +95,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     while ((m = re.exec(html))) {
       out += html.slice(last, re.lastIndex);
       const r = map.get(normTxt(m[1]));
-      if (r) out += `<p class="bf-gym-detail-link"><a href="${r.href}">📋 ${escHtml(r.name)}の料金・詳細ページを見る →</a></p>`;
+      if (r) {
+        out += `<p class="bf-gym-detail-link"><a href="${r.href}">📋 ${escHtml(r.name)}の料金・詳細ページを見る →</a></p>`;
+        const ba = isBrandPage ? null : brandArticleForGymName(r.name);
+        if (ba) out += `<p class="bf-gym-detail-link"><a href="${ba.href}">💬 ${escHtml(ba.name)}の口コミ・評判を見る →</a></p>`;
+      }
       last = re.lastIndex;
     }
     return out + html.slice(last);
   };
   const gymLinkRows = articleGyms().perArticle[p] || [];
+  const isBrandPage = prm.type === "brand";
   // CMS移植HTMLの広告バナー・計測ピクセルに alt が無いため空 alt を補う(2026-10-14)
   const body = bodyRaw ? injectGymLinks(stripEmptyBoxes(bodyRaw.replace(/<h1[\s\S]*?<\/h1>/, "")), gymLinkRows).replace(/<img(?![^>]*\salt=)/g, '<img alt=""') : null;
   const isBrand = prm.type === "brand";
@@ -221,6 +226,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/station/utsunomiya": "2026-10-09",
     // 2026-10-14: TRYVEの料金・体験料金・紹介文を運営会社の依頼と公式サイトで更新
     "/articles/city/sendai": "2026-10-14",
+    // 2026-10-15: 提携8ブランドの口コミ・評判記事を新設（公式確認）
+    "/articles/brand/furdi": "2026-10-15",
+    "/articles/brand/amazones": "2026-10-15",
+    "/articles/brand/ekimaego-go": "2026-10-15",
+    "/articles/brand/bbb": "2026-10-15",
+    "/articles/brand/tokiel": "2026-10-15",
+    "/articles/brand/dee-gym": "2026-10-15",
+    "/articles/brand/hper": "2026-10-15",
+    "/articles/brand/mybodylabo": "2026-10-15",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
