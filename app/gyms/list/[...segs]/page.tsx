@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ segs: str
     const head = cond && area ? `${area}の${cond}パーソナルジム` : cond ? `${cond}のパーソナルジム` : `${area}のパーソナルジム`;
     const canonUrl = listCanonicalMap()[p] ? `https://fit-best.com${listCanonicalMap()[p]}` : p;
     const title = `${head}${hits.length >= 2 ? `おすすめ${hits.length}選` : ""}｜料金比較・口コミ｜BEST-FIT`;
-    const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もひと目でチェック。あなたに合う一軒が見つかるBEST-FITの検索結果です。`;
+    const desc = `${label}で探せるパーソナルジム${hits.length}件を、料金プラン・アクセス・こだわり条件で比較できます。最安プランや無料カウンセリングの有無もあわせてご確認いただけます。`;
     return { title: { absolute: title }, description: desc, alternates: { canonical: canonUrl } };
   }
   // 閉店の除外で掲載0件になった一覧は、中身が無いので検索に出さない(2026-10-15)

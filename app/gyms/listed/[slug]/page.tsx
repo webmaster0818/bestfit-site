@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!g) return {};
   return {
     title: `${g.name}の料金・特徴・アクセス｜パーソナルジム紹介 | BEST-FIT`,
-    description: `${g.name}（${g.access || "パーソナルジム"}）の特徴・料金・コース内容を紹介。BEST-FIT編集部のエリア特集記事に掲載しているパーソナルジムです。`,
+    description: `${g.name}（${g.access || "パーソナルジム"}）の特徴・料金・コース内容をご紹介します。BEST-FIT編集部のエリア特集記事に掲載しているパーソナルジムです。`,
     alternates: { canonical: `/gyms/listed/${prm.slug}` },
   };
 }
@@ -104,7 +104,7 @@ export default async function ListedGymPage({ params }: { params: Promise<{ slug
           </section>
         )}
         <p className="text-[11px] mb-12" style={{ color: "var(--bf-muted)" }}>
-          ※本ページの紹介内容は、BEST-FIT編集部のエリア特集記事に掲載している情報にもとづきます。料金・営業時間等は変更される場合があるため、最新の情報は公式サイトでご確認ください。
+          ※本ページの紹介内容は、BEST-FIT編集部のエリア特集記事に掲載している情報にもとづきます。料金・営業時間等は変更される場合があるため、ご利用前に、公式サイトにて最新情報をご確認ください。
         </p>
       </div>
     </article>

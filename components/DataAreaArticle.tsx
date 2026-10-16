@@ -23,9 +23,9 @@ export default function DataAreaArticle({
         <h2 className="bf-h2 mb-4">{areaName}のパーソナルジムの選び方</h2>
         <div className="grid sm:grid-cols-3 gap-3">
           {[
-            { t: "1回あたりの料金で比べる", d: "コース総額は回数で割った「1回あたり」で比べると、回数の違うプラン同士も公平に比較できます。入会金も忘れず確認を。" },
-            { t: "アクセスと通いやすさ", d: "駅からの距離・営業時間は継続率に直結します。仕事帰りや土日に通える立地かを確認しましょう。" },
-            { t: "目的に合う特徴で絞る", d: "女性専用・完全個室・食事指導など、こだわり条件で候補を絞ると相性の良い一軒に出会えます。" },
+            { t: "1回あたりの料金で比べる", d: "コース総額は回数で割った「1回あたり」で比べると、回数の違うプラン同士も公平に比較できます。入会金もあわせてご確認ください。" },
+            { t: "アクセスと通いやすさ", d: "駅からの距離・営業時間は継続率に直結します。仕事帰りや土日に通える立地かどうかをご確認ください。" },
+            { t: "目的に合う特徴で絞る", d: "女性専用・完全個室・食事指導など、こだわり条件で候補を絞ると、相性の良いジムを見つけやすくなります。" },
           ].map((p, i) => (
             <div key={i} className="bf-card p-4">
               <p className="font-bold text-sm mb-1" style={{ color: "var(--bf-primary)" }}>{i + 1}. {p.t}</p>
@@ -74,7 +74,7 @@ export default function DataAreaArticle({
                         <span className="bf-price whitespace-nowrap">{c.minPerSession.perSession!.toLocaleString()}円〜</span>
                         <span className="block text-[10px] whitespace-nowrap" style={{ color: "var(--bf-muted)" }}>{c.minPerSession.sessionCount}回コース換算</span>
                       </span>
-                    ) : "要問合せ"}
+                    ) : "要問い合わせ"}
                   </td>
                   <td className="px-3 py-2.5 text-xs" style={{ minWidth: "8em" }}>{c.access || "—"}</td>
                 </tr>
@@ -88,7 +88,7 @@ export default function DataAreaArticle({
         <div className="space-y-4">
           {cards.map((c, i) => <AreaGymCard key={c.path} card={c} index={i} />)}
         </div>
-        <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※料金・店舗情報は当サイト掲載の公開情報にもとづきます。口コミは各ジムのGoogleマップでご確認いただけます（当サイトは口コミの創作をしません）。「公式サイト」ボタンは広告リンク（アフィリエイト）を含みます。</p>
+        <p className="text-[11px] mt-3" style={{ color: "var(--bf-muted)" }}>※料金・店舗情報は当サイト掲載の公開情報にもとづきます。口コミは各ジムのGoogleマップでご確認いただけます（当サイトでは口コミの創作は行っていません）。「公式サイト」ボタンは広告リンク（アフィリエイト）を含みます。</p>
       </section>
 
       {/* 絞り込み導線 */}

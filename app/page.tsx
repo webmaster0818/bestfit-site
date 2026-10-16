@@ -85,12 +85,12 @@ export default function Home() {
           <div className="text-white md:order-2">
             <p className="text-xs font-bold tracking-[0.25em] opacity-90 mb-3">PERSONAL GYM SEARCH &amp; REVIEW</p>
             <h1 className="text-3xl md:text-[2.6rem] font-extrabold leading-tight mb-4 drop-shadow">
-              理想のカラダへ、<br />あなたに合う<span style={{ color: "#ffb45e" }}>パーソナルジム</span>が見つかる
+              目的に合った<span style={{ color: "#ffb45e" }}>パーソナルジム</span>を<br />比較・検索できる専門サイト
             </h1>
             <p className="text-sm md:text-base opacity-95 leading-relaxed drop-shadow">
               全国<strong className="text-2xl mx-1" style={{ color: "#ffb45e" }}>{brandCount}</strong>ブランド・
-              <strong className="text-2xl mx-1" style={{ color: "#ffb45e" }}>{storeCount.toLocaleString()}</strong>店舗を掲載。
-              料金・特徴・口コミで比較して、無料カウンセリングから始めよう。
+              <strong className="text-2xl mx-1" style={{ color: "#ffb45e" }}>{storeCount.toLocaleString()}</strong>店舗を掲載しています。
+              料金・特徴・口コミを比較し、無料カウンセリングからお気軽にお始めください。
             </p>
           </div>
           <div id="search" className="md:order-1 scroll-mt-24"><SearchPanel areas={areas} features={featuresCatalog} /></div>
@@ -132,7 +132,7 @@ export default function Home() {
       <section className="py-12" data-reveal>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="bf-h2 bg-white/80 inline-block pr-4 rounded-r-lg">ジムブランドから探す</h2>
-          <p className="text-sm text-gray-500 mt-1 mb-1">料金・口コミ・向いている人まで、ブランド別の徹底ガイドをチェック。</p>
+          <p className="text-sm text-gray-500 mt-1 mb-1">料金・口コミ・おすすめの方まで、ブランド別に詳しくご紹介しています。</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
             {brandArticles.slice(0, 12).map((b) => (
               <Link key={b.slug} href={`/articles/brand/${b.slug}`} className="bf-card bf-card-hover px-3 py-3 block">
@@ -149,7 +149,7 @@ export default function Home() {
               ))}
             </ul>
           </details>
-          <p className="text-[11px] text-gray-400 mt-2">※料金は確認日時点の目安です。カーブスなど一部ブランドは店舗・地域により月会費が異なります。最新は各ガイド・公式サイトでご確認ください。</p>
+          <p className="text-[11px] text-gray-400 mt-2">※料金は確認日時点の目安です。カーブスなど一部ブランドは店舗・地域により月会費が異なります。ご利用前に、各ガイドまたは公式サイトにて最新情報をご確認ください。</p>
         </div>
       </section>
 
@@ -247,7 +247,7 @@ export default function Home() {
             {[
               ["1", "エリア・条件で絞り込む", "都道府県・市区・駅、月額制や女性専用などのこだわり条件で複数選択して絞り込めます。"],
               ["2", "料金と特徴を見比べる", "店舗ページでは料金プラン・アクセス・営業時間・特徴を統一フォーマットで確認できます。"],
-              ["3", "無料カウンセリングへ", "気になったジムは公式サイトから無料カウンセリング・体験を予約。合うかどうかは行って確かめるのが確実です。"],
+              ["3", "無料カウンセリングへ", "気になるジムは、公式サイトから無料カウンセリング・体験を予約できます。ご自身に合うかどうかは、カウンセリング・体験でご確認いただくのが確実です。"],
             ].map(([n, t, d]) => (
               <div key={n} className="bf-card p-5">
                 <div className="w-9 h-9 rounded-full text-white font-extrabold flex items-center justify-center mb-3" style={{ background: "var(--bf-primary)" }}>{n}</div>

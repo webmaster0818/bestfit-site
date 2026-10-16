@@ -78,7 +78,7 @@ export default function SearchResults({ features, areas }: { features: Feature[]
         {loaded && hits.length === 0 && (
           <div className="bf-card p-8 text-center">
             <p className="text-sm mb-5" style={{ color: "var(--bf-muted)" }}>
-              条件に一致するジムが見つかりませんでした。条件を減らして再検索してみてください。
+              条件に一致するジムが見つかりませんでした。条件を減らして再度検索してください。
             </p>
             <Link
               href="/#search"

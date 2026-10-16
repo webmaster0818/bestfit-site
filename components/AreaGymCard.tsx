@@ -113,7 +113,7 @@ export default function AreaGymCard({ card, index }: { card: AreaCard; index: nu
             {card.personas.map((p) => (
               <li key={p} className="flex gap-2"><span style={{ color: "var(--bf-primary)" }} className="shrink-0">✓</span><span>{p}</span></li>
             ))}
-            <li className="text-[10px] pt-1" style={{ color: "var(--bf-muted)" }}>※このジムのこだわり条件（設備・サービス）から向いている方を整理したものです。</li>
+            <li className="text-[10px] pt-1" style={{ color: "var(--bf-muted)" }}>※このジムのこだわり条件（設備・サービス）をもとに、おすすめの方を整理したものです。</li>
           </ul>
         )}
         {tab === "info" && (
@@ -150,7 +150,7 @@ export default function AreaGymCard({ card, index }: { card: AreaCard; index: nu
                 </div>
               ))}
             </div>
-            <p className="text-[10px] mt-2" style={{ color: "var(--bf-muted)" }}>※Googleマップの口コミ（実際の投稿）を表示しています。</p>
+            <p className="text-[10px] mt-2" style={{ color: "var(--bf-muted)" }}>※Googleマップの口コミ（実際の投稿）を掲載しています。</p>
             <a href={card.reviews.mapsUri || mapUrl} target="_blank" rel="noopener noreferrer" className="text-xs underline mt-1 inline-block" style={{ color: "var(--bf-primary)" }}>出典: Google Mapsで口コミを見る →</a>
           </div>
         )}

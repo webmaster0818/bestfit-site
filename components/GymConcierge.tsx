@@ -90,7 +90,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
   const say = (text: string) => { setTypingDone(false); setMsgs((m) => [...m, { role: "bot", text }]); };
   const user = (text: string) => setMsgs((m) => [...m, { role: "user", text }]);
 
-  useEffect(() => { if (msgs.length === 0) say("こんにちは！AIコンシェルジュのフィティです💪 あなたにぴったりのパーソナルジムを一緒に探します。まず、目的を教えてください！"); /* eslint-disable-next-line */ }, []);
+  useEffect(() => { if (msgs.length === 0) say("AIコンシェルジュのフィティです。目的・エリア・こだわり条件から、あなたに合うパーソナルジムをご提案します。はじめに、目的をお選びください。"); /* eslint-disable-next-line */ }, []);
   useEffect(() => { const b = boxRef.current; if (b) b.scrollTop = b.scrollHeight; }, [msgs, typingDone]);
 
   const prefs = useMemo(() => [...new Set(stores.map((s) => s.pref).filter(Boolean))].sort(), [stores]);
@@ -107,7 +107,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
     return list.slice(0, 8);
   }, [stores, goal, pref, city, conds, geo]);
 
-  const goResult = () => { setStep("result"); say(`条件に合うジムを${results.length > 0 ? `${results.length}件` : ""}お探ししました！気になる店舗の「公式サイト」から無料カウンセリングを予約できますよ。`); };
+  const goResult = () => { setStep("result"); say(`条件に合うジムを${results.length > 0 ? `${results.length}件` : ""}表示しています。気になる店舗の「公式サイト」から無料カウンセリングを予約できます。`); };
 
   const back = () => {
     if (step === "city") { setStep("pref"); setCity(""); }
@@ -115,13 +115,13 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
     else if (step === "result") { setStep("cond"); }
     else if (step === "pref") { setStep("goal"); setPref(""); }
   };
-  const restart = () => { setMsgs([]); setStep("goal"); setGoal(null); setPref(""); setCity(""); setGeo(null); setConds([]); setTimeout(() => say("もう一度、目的から一緒に探しましょう！"), 50); };
+  const restart = () => { setMsgs([]); setStep("goal"); setGoal(null); setPref(""); setCity(""); setGeo(null); setConds([]); setTimeout(() => say("もう一度、目的からお探しいただけます。"), 50); };
 
   const useGeo = () => {
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(
-      (p) => { setGeo({ lat: p.coords.latitude, lng: p.coords.longitude }); user("現在地の近くで探す"); say("現在地を確認しました！こだわり条件はありますか？（複数選べます・なければスキップOK）"); setStep("cond"); },
-      () => { say("現在地を取得できませんでした。エリアを選んでくださいね。"); }
+      (p) => { setGeo({ lat: p.coords.latitude, lng: p.coords.longitude }); user("現在地の近くで探す"); say("現在地を確認しました。こだわり条件があればお選びください（複数選択可。条件がない場合は「この条件で見る」を押してください）。"); setStep("cond"); },
+      () => { say("現在地を取得できませんでした。エリアをお選びください。"); }
     );
   };
 
@@ -132,7 +132,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
         <Fitty size={44} variant="full" />
         <div>
           <p className="font-extrabold leading-tight">AIジム診断コンシェルジュ「フィティ」</p>
-          <p className="text-[11px] opacity-90">目的・エリア・こだわりから、あなたに合うジムを提案します</p>
+          <p className="text-[11px] opacity-90">目的・エリア・こだわり条件から、あなたに合うジムをご提案します</p>
         </div>
       </div>
 
@@ -154,7 +154,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
         {step === "goal" && typingDone && (
           <div className="grid gap-2">
             {GOALS.map((g) => (
-              <button key={g.id} onClick={() => { setGoal(g); user(g.label); say("いいですね！次は、どのあたりで通いたいですか？現在地から探すか、エリアを選んでください。"); setStep("pref"); }} className="text-left px-4 py-2.5 rounded-lg text-sm font-semibold" style={{ background: "var(--bf-primary-soft)", color: "var(--bf-primary)" }}>
+              <button key={g.id} onClick={() => { setGoal(g); user(g.label); say("承知しました。次に、通いたいエリアをお選びください。現在地から探すこともできます。"); setStep("pref"); }} className="text-left px-4 py-2.5 rounded-lg text-sm font-semibold" style={{ background: "var(--bf-primary-soft)", color: "var(--bf-primary)" }}>
                 <span className="mr-1.5">{g.emoji}</span>{g.label}
               </button>
             ))}
@@ -167,7 +167,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
             <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>またはエリアを選ぶ</p>
             <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto">
               {prefs.map((pr) => (
-                <button key={pr} onClick={() => { setPref(pr); user(pr); say(`${pr}ですね！市区町村を選ぶとさらに絞り込めます（「この地域で探す」で全域もOK）。`); setStep("city"); }} className="bf-chip-link">{pr}</button>
+                <button key={pr} onClick={() => { setPref(pr); user(pr); say(`${pr}ですね。市区町村を選ぶと、さらに絞り込めます（「${pr}全域で探す」を押すと全域が対象になります）。`); setStep("city"); }} className="bf-chip-link">{pr}</button>
               ))}
             </div>
             <div className="mt-3"><button onClick={back} className="text-xs underline" style={{ color: "var(--bf-muted)" }}>← 目的を選び直す</button></div>
@@ -177,9 +177,9 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
         {step === "city" && (
           <div>
             <div className="flex flex-wrap gap-1.5 mb-3">
-              <button onClick={() => { user(`${pref}全域`); say("こだわり条件はありますか？（複数選べます・なければ「この条件で見る」でOK）"); setStep("cond"); }} className="bf-chip" style={{ background: "var(--bf-primary)", color: "#fff" }}>{pref}全域で探す</button>
+              <button onClick={() => { user(`${pref}全域`); say("こだわり条件があればお選びください（複数選択可。条件がない場合は「この条件で見る」を押してください）。"); setStep("cond"); }} className="bf-chip" style={{ background: "var(--bf-primary)", color: "#fff" }}>{pref}全域で探す</button>
               {cities.map((c) => (
-                <button key={c} onClick={() => { setCity(c); user(c); say("こだわり条件はありますか？（複数選べます・なければ「この条件で見る」でOK）"); setStep("cond"); }} className="bf-chip-link">{c.replace(pref, "")}</button>
+                <button key={c} onClick={() => { setCity(c); user(c); say("こだわり条件があればお選びください（複数選択可。条件がない場合は「この条件で見る」を押してください）。"); setStep("cond"); }} className="bf-chip-link">{c.replace(pref, "")}</button>
               ))}
             </div>
             <button onClick={back} className="text-xs underline" style={{ color: "var(--bf-muted)" }}>← 都道府県を選び直す</button>
@@ -188,7 +188,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
         {/* Step: こだわり(複数) */}
         {step === "cond" && (
           <div>
-            <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>こだわり条件（複数選択OK）</p>
+            <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>こだわり条件（複数選択可）</p>
             <div className="flex flex-wrap gap-1.5 mb-3">
               {CONDS.map((c) => {
                 const on = conds.includes(c.feat);
@@ -203,7 +203,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
         {step === "result" && (
           <div>
             {results.length === 0 ? (
-              <p className="text-sm mb-3" style={{ color: "var(--bf-muted)" }}>条件に合うジムが見つかりませんでした。こだわり条件を減らすか、エリアを広げてみてください。</p>
+              <p className="text-sm mb-3" style={{ color: "var(--bf-muted)" }}>条件に合うジムが見つかりませんでした。こだわり条件を減らすか、エリアを広げて再度お試しください。</p>
             ) : (
               <div className="space-y-2.5 mb-3">
                 {results.map((s) => (
@@ -225,7 +225,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
               </div>
             )}
             <div className="flex flex-wrap gap-2">
-              <button onClick={() => { setStep("cond"); say("こだわり条件を追加・変更して、さらに絞り込みましょう！"); }} className="bf-cta-sub">🔎 さらに条件で絞り込む</button>
+              <button onClick={() => { setStep("cond"); say("こだわり条件を追加・変更して、さらに絞り込めます。"); }} className="bf-cta-sub">🔎 さらに条件で絞り込む</button>
               <button onClick={restart} className="bf-cta-sub">最初からやり直す</button>
             </div>
           </div>

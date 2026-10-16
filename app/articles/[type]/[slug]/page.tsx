@@ -29,7 +29,7 @@ function brandDesc(bp: { name: string; price: string; join?: string; note: strin
   const joinPart = bp.join ? "・" + bp.join : "";
   const head = (note: string, join: string) => `${bp.name}の料金は${bp.price}${join}（${note}）。`;
   const cands = [
-    head(bp.note, joinPart) + "月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで実際に払う総額ベースで解説します。",
+    head(bp.note, joinPart) + "月額・入会金の一覧、口コミ・評判、他社との料金比較、キャンペーン情報まで、実際にお支払いいただく総額をもとに解説します。",
     head(bp.note, joinPart),
     head(noteShort, joinPart),
     head(noteShort, ""),
@@ -46,11 +46,11 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   // 料金intentが最大流入(curves料金67k imp等)→titleに実額を前出しでCTR回収
   // fit24=全118店舗実査(2026-08-02)を訴求(「fit24 料金」pos5.3のtop3奪取・公式が一覧を出していない空白)
   const brandTitle = bslug === "fit24"
-    ? `FIT24の料金はいくら？全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
-    : bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】｜BEST-FIT` : m.title;
+    ? `FIT24の料金｜全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
+    : bp ? `${bp.name}の料金｜月額・入会金・口コミ・評判を比較【2026年】｜BEST-FIT` : m.title;
   if (bslug === "chocozap") {
     return {
-      title: { absolute: "チョコザップの料金はいくら？月額3,278円(税込)・入会金0円【2026年8月】年額プランの注意点・解約方法まで｜BEST-FIT" },
+      title: { absolute: "チョコザップの料金｜月額3,278円(税込)・入会金0円【2026年8月】年額プランの注意点・解約方法まで｜BEST-FIT" },
       description: "チョコザップ(chocoZAP)の料金は月額3,278円(税込)。入会金・事務手数料は2025年4月1日から無料です(公式FAQ確認)。年額プラン32,780円の注意点(休会不可・再入会金3,000円)、初月日割り、清掃協力で安くなるフレンドリー会員、解約・休会の手順まで2026年8月2日の公式確認情報で解説します。",
       alternates: m.canonical ? { canonical: m.canonical } : undefined,
     };
@@ -118,8 +118,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     ? [
         { q: "FIT24の月会費は店舗によって違いますか？", a: "全118店舗を公式ページで実査した結果(2026年8月2日)、通常プランは111店舗が月6,980円(税込7,678円)、7店舗(BiVi仙台駅東口・長野若槻・長野南バイパス・長野昭和通り・千曲屋代・西宮丸橋・夙川)のみ7,480円(税込8,228円)の2パターンです。家族プラン3,980円・U22プラン4,980円は全店一律です。" },
         { q: "FIT24に入会金はかかりますか？", a: "入会金の徴収は公式に記載がなく、初期費用は事務手数料2,000円(税込2,200円)のみです。新規契約時は事務手数料+月会費2ヶ月分(初月は日割り)をまとめて決済します。支払いはクレジットカードのみで現金は使えません。" },
-        { q: "高校生は本当に月0円で通えますか？", a: "親権者がFIT24会員(休会・高校生プラン以外)であれば高校生プランの月会費は0円です(事務手数料2,200円は必要)。高校生だけで契約する場合は月2,980円(税込3,278円)。利用可能時間は7時〜20時(19時以降入館不可)で、手続きは店頭のみ・親権者同伴です。" },
-        { q: "FIT24の退会・休会はどうやりますか？", a: "退会はマイページの『契約管理』→『退会』から手続きでき、店頭に行く必要はありません。休会もマイページから休会プランへ変更する方式で、毎月10日までの手続きで翌月から適用、休会中は管理費として月1,100円(税込)がかかります(利用開始2ヶ月以内やキャンペーン在籍条件中は休会不可)。" },
+        { q: "高校生は月0円で通えますか？", a: "親権者がFIT24会員(休会・高校生プラン以外)であれば高校生プランの月会費は0円です(事務手数料2,200円は必要)。高校生だけで契約する場合は月2,980円(税込3,278円)。利用可能時間は7時〜20時(19時以降入館不可)で、手続きは店頭のみ・親権者同伴です。" },
+        { q: "FIT24の退会・休会はどのように手続きしますか？", a: "退会はマイページの『契約管理』→『退会』から手続きでき、店頭に行く必要はありません。休会もマイページから休会プランへ変更する方式で、毎月10日までの手続きで翌月から適用、休会中は管理費として月1,100円(税込)がかかります(利用開始2ヶ月以内やキャンペーン在籍条件中は休会不可)。" },
         { q: "FIT24の割引にはどんなものがありますか？", a: "家族プラン(2人目以降3,980円)・U22プラン(4,980円)・高校生プラン(親権者会員なら0円)のほか、紹介割、店舗限定の乗りかえ割、契約ロッカー最大2ヶ月無料キャンペーン(一部店舗)があります。なお退会後6ヶ月間は入会キャンペーン特典が適用されません(いずれも2026年8月2日公式確認)。" },
       ]
     : [];
@@ -131,10 +131,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const chocoFaqs = isChoco
     ? [
         { q: "チョコザップの入会金・事務手数料はいくらですか？", a: "2025年4月1日から入会金・事務手数料は無料です(公式FAQで日付まで確認・2026年8月2日時点)。初回は初月会費の日割り分+翌月会費3,278円(税込)を入会時に決済します。" },
-        { q: "チョコザップの年額プランはお得ですか？注意点は？", a: "年額一括32,780円(税込)で、月額プラン12ヶ月分(39,336円)より2ヶ月分お得です。ただし①プラン適用中の休会は不可、②途中解約は返金がありますが手数料1,100円が控除され、10ヶ月目以降の解約は返金なし、③解約後の再入会には再入会金3,000円がかかる、④友達紹介・フレンドリー会員などの割引と併用不可、という公式規定があります(2026年8月2日公式FAQ・利用規約確認)。" },
+        { q: "チョコザップの年額プランのメリットと注意点は何ですか？", a: "年額一括32,780円(税込)で、月額プラン12ヶ月分(39,336円)より2ヶ月分お得です。なお、①プラン適用中の休会は不可、②途中解約は返金がありますが手数料1,100円が控除され、10ヶ月目以降の解約は返金なし、③解約後の再入会には再入会金3,000円がかかる、④友達紹介・フレンドリー会員などの割引と併用不可、という公式規定があります(2026年8月2日公式FAQ・利用規約確認)。" },
         { q: "チョコザップの料金を安くする方法はありますか？", a: "店舗の清掃に協力する「フレンドリー会員」制度があり、月4回の清掃で1,000円引き、月8回で2,000円引きになります(公式FAQ確認)。なお2026年8月2日時点で、会費割引系のキャンペーンは公式サイトに掲出されていません。" },
         { q: "月の途中で入会した場合は日割りになりますか？", a: "初月会費は日割り計算です(1日利用開始の場合は満額)。入会時に「初月の日割り分+翌月会費1ヶ月分」をまとめて決済します。一方、退会時の日割り返金は月額・年額ともありません(公式FAQ確認)。" },
-        { q: "チョコザップの解約・退会はどうやりますか？", a: "アプリの【メニュー>退会の手続き】またはマイページから行います(電話・メールでは不可)。締め日は毎月10日で、1〜10日の手続きなら当月末、11日以降なら翌月末での解約になります(公式FAQ・利用規約確認)。" },
+        { q: "チョコザップの解約・退会はどのように手続きしますか？", a: "アプリの【メニュー>退会の手続き】またはマイページから行います(電話・メールでは不可)。締め日は毎月10日で、1〜10日の手続きなら当月末、11日以降なら翌月末での解約になります(公式FAQ・利用規約確認)。" },
         { q: "チョコザップに休会制度はありますか？", a: "月額プランにはあります。アプリからプラン変更(休会)を選び、1・2・3ヶ月から選択します(月単位・延長不可)。手続き料・休会中の会費はいずれも無料です。年額プランは休会できません(公式FAQ確認)。" },
       ]
     : [];
@@ -175,9 +175,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     : null;
   const brandFaqs = bp
     ? [
-        { q: `${bp.name}の料金はいくらですか？`, a: `${bp.name}の料金は${bp.price}です${bp.join ? `（${bp.join}）` : ""}（${bp.note}・税込）。月額・入会金を含めた総額で比較するのがおすすめです。最新の料金は公式サイトでご確認ください。` },
-        { q: `${bp.name}に入会金はかかりますか？`, a: bp.join ? `${bp.name}は${bp.join}です（${bp.note}）。時期によって入会金無料キャンペーンが実施される場合があるため、公式サイトの最新情報もあわせてご確認ください。` : `${bp.name}の入会金は公式サイトで金額の明記が確認できませんでした（${bp.note}）。カウンセリング時や公式サイトで確認するのが確実です。` },
-        { q: `${bp.name}の口コミ・評判はどうですか？`, a: `本記事では${bp.name}の口コミ・評判の傾向と、料金・特徴・向いている人を中立的にまとめています。良い評判・気になる点の両面と、他社との料金比較を確認したうえで、無料カウンセリングで実際の雰囲気を確かめるのがおすすめです。` },
+        { q: `${bp.name}の料金はいくらですか？`, a: `${bp.name}の料金は${bp.price}です${bp.join && !bp.price.includes(bp.join) ? `（${bp.join}）` : ""}（${bp.note}・税込）。月額・入会金を含めた総額での比較をおすすめします。ご利用前に、公式サイトにて最新情報をご確認ください。` },
+        { q: `${bp.name}に入会金はかかりますか？`, a: bp.join ? `${bp.name}は${bp.join}です（${bp.note}）。時期によって入会金無料キャンペーンが実施される場合があるため、公式サイトの最新情報もあわせてご確認ください。` : `${bp.name}の入会金は公式サイトで金額の明記が確認できませんでした（${bp.note}）。カウンセリング時または公式サイトにてご確認ください。` },
+        { q: `${bp.name}の口コミ・評判はどのような内容ですか？`, a: `本記事では${bp.name}の口コミ・評判の傾向と、料金・特徴・おすすめの方を中立的にまとめています。良い評判・気になる点の両面と、他社との料金比較をご確認のうえ、無料カウンセリングで実際の雰囲気をお確かめいただくことをおすすめします。` },
       ]
     : [];
   const brandFaqLd = bp
@@ -191,9 +191,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const area = areaRaw ? { ...areaRaw, cards: areaRaw.cards.map((c: any) => ({ ...c, brandName: brandName(c.brand) })) } : null;
   const areaFaqs = area
     ? [
-        { q: `${area.areaName}のパーソナルジムの料金相場はいくらですか？`, a: area.priceRange ? `1回あたり（コース総額÷回数）に換算すると、最安クラスで${area.priceRange.min.toLocaleString()}円〜、中央値の目安は${area.priceRange.mid.toLocaleString()}円前後、高価格帯で${area.priceRange.max.toLocaleString()}円ほどです（税込・当サイト集計・入会金別）。回数の違うプランを公平に比べるための指標です。` : `店舗により幅があります。無料カウンセリングで総額の見積もりを取るのが確実です。` },
+        { q: `${area.areaName}のパーソナルジムの料金相場はいくらですか？`, a: area.priceRange ? `1回あたり（コース総額÷回数）に換算すると、最安クラスで${area.priceRange.min.toLocaleString()}円〜、中央値の目安は${area.priceRange.mid.toLocaleString()}円前後、高価格帯で${area.priceRange.max.toLocaleString()}円ほどです（税込・当サイト集計・入会金別）。回数の違うプランを公平に比べるための指標です。` : `店舗により幅があります。無料カウンセリングで総額の見積もりをご確認いただくのが確実です。` },
         { q: `${area.areaName}で女性専用や完全個室のジムはありますか？`, a: `あります。${area.areaName}のパーソナルジムはこだわり条件で絞り込めます。女性専用・完全個室・食事指導などの条件別一覧から、目的に合う店舗を探せます。` },
-        { q: `${area.areaName}のパーソナルジムは体験・カウンセリングを受けられますか？`, a: `多くの店舗が無料カウンセリングや体験トレーニングを用意しています。料金や雰囲気は店舗ごとに異なるため、各ジムの詳細ページと公式サイトで確認のうえ、複数を比較して決めるのがおすすめです。` },
+        { q: `${area.areaName}のパーソナルジムは体験・カウンセリングを受けられますか？`, a: `多くの店舗が無料カウンセリングや体験トレーニングを用意しています。料金や雰囲気は店舗ごとに異なるため、各ジムの詳細ページと公式サイトでご確認のうえ、複数のジムを比較してお決めいただくことをおすすめします。` },
       ]
     : [];
   const areaFaqLd = area
@@ -240,7 +240,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: (bp ? `${bp.name}の料金はいくら？月額・入会金・口コミ・評判を徹底比較【2026年】` : m?.title.split("｜")[0]) || "",
+    headline: (bp ? `${bp.name}の料金｜月額・入会金・口コミ・評判を比較【2026年】` : m?.title.split("｜")[0]) || "",
     ...(m?.desc ? { description: m.desc } : {}),
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
     url: canonicalUrl,
@@ -269,13 +269,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>料金の目安（{bp.note}）</p>
           <p className="text-lg font-extrabold" style={{ color: "var(--bf-primary)" }}>{bp.price}</p>
           {bp.join && <p className="text-sm mt-1" style={{ color: "var(--bf-ink)" }}>{bp.join}</p>}
-          <p className="text-[11px] mt-2 mb-3" style={{ color: "var(--bf-muted)" }}>※税込・{bp.note}の目安。<strong>入会金無料などのキャンペーンや店舗で変わる</strong>ため、実際に払う総額は記事内の詳細と公式サイトでご確認ください。</p>
+          <p className="text-[11px] mt-2 mb-3" style={{ color: "var(--bf-muted)" }}>※税込・{bp.note}の目安です。<strong>入会金無料などのキャンペーンや店舗により変わる</strong>ため、実際にお支払いいただく総額は記事内の詳細と公式サイトでご確認ください。</p>
           <div className="border-t pt-3" style={{ borderColor: "var(--bf-line)" }}>
             <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-ink)" }}>この記事でわかること</p>
             <div className="flex flex-wrap gap-2">
               <span className="bf-chip">料金プランの内訳と総額</span>
               <span className="bf-chip">入会金無料キャンペーンの有無</span>
-              <span className="bf-chip">リアルな口コミ・評判</span>
+              <span className="bf-chip">口コミ・評判の傾向</span>
               <span className="bf-chip">他ジムとの料金比較</span>
             </div>
           </div>
@@ -284,7 +284,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       {isCurvesArticle && <CurvesFinder areaArticles={areaArticlesIdx} />}
       {brandFaqs.length > 0 && (
         <section className="mb-8">
-          <h2 className="bf-h2 mb-3">{bp!.name}の料金・評判 よくある質問</h2>
+          <h2 className="bf-h2 mb-3">{bp!.name}の料金・評判に関するよくある質問</h2>
           <div className="space-y-2">
             {brandFaqs.map((f, i) => (
               <details key={i} className="bf-card group">
@@ -339,7 +339,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                 </p>
               </section>
               <section className="mb-10">
-                <h2 className="bf-h2 mb-4">年額プラン32,780円の「お得」と注意点(公式規定)</h2>
+                <h2 className="bf-h2 mb-4">年額プラン32,780円のメリットと注意点(公式規定)</h2>
                 <div className="bf-card p-5">
                   <p className="text-sm leading-7 mb-2" style={{ color: "var(--bf-muted)" }}>年額一括<strong>32,780円(税込)</strong>は月額12ヶ月分(39,336円)より<strong>2ヶ月分お得</strong>ですが、公式規定に次の注意点があります(2026年8月2日・公式FAQ/利用規約確認)。</p>
                   <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
@@ -383,16 +383,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           {f24 && (
             <div className="mt-12">
               <section className="mb-10">
-                <h2 className="bf-h2 mb-4">FIT24の料金は店舗でいくら違う？【全118店舗を実査・{f24.surveyedAt.replace(/-/g, "/")}】</h2>
+                <h2 className="bf-h2 mb-4">FIT24の店舗別の料金【全118店舗を実査・{f24.surveyedAt.replace(/-/g, "/")}】</h2>
                 <div className="bf-card p-5 mb-5" style={{ borderLeft: "4px solid var(--bf-primary)" }}>
-                  <p className="font-bold mb-2">結論: 月会費は実質2パターンだけです</p>
+                  <p className="font-bold mb-2">月会費は実質2パターンです</p>
                   <ul className="text-sm leading-7 space-y-1" style={{ color: "var(--bf-muted)" }}>
                     <li>・<strong>111店舗 = 月6,980円(税込7,678円)</strong>/<strong>7店舗のみ 月7,480円(税込8,228円)</strong></li>
                     <li>・家族プラン3,980円(税込4,378円)・U22プラン4,980円(税込5,478円)・高校生プラン(親権者が会員なら<strong>0円</strong>)は<strong>全店一律</strong></li>
                     <li>・公式店舗ページの大きな価格表示は<strong>税抜</strong>です(税込=×1.1)</li>
                   </ul>
                 </div>
-                <h3 className="font-bold mb-2">通常プランが7,480円の7店舗(それ以外は全て6,980円)</h3>
+                <h3 className="font-bold mb-2">通常プランが7,480円の7店舗(それ以外はすべて6,980円)</h3>
                 <div className="overflow-x-auto mb-5">
                   <table className="bf-table w-full text-sm">
                     <thead><tr><th className="px-3 py-2.5 text-left">店舗</th><th className="px-3 py-2.5 text-left">都道府県</th><th className="px-3 py-2.5 text-left">通常プラン</th></tr></thead>
@@ -432,10 +432,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                 <h2 className="bf-h2 mb-4">割引・お得なプラン(公式確認{f24.surveyedAt.replace(/-/g, "/")})</h2>
                 <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
                   <li>・<strong>高校生プラン: 親権者が会員なら月0円</strong>(単独契約は2,980円。利用は7時〜20時・手続きは店頭で親権者同伴)</li>
-                  <li>・<strong>家族プラン3,980円</strong>: 2人目以降何人でも。家族1名が通常等のプラン契約を維持していることが条件(同居/家族の証明書類が必要)</li>
+                  <li>・<strong>家族プラン3,980円</strong>: 2人目以降は人数の上限なし。家族1名が通常等のプラン契約を維持していることが条件(同居/家族の証明書類が必要)</li>
                   <li>・<strong>紹介割</strong>(マイページ申込・1ヶ月以内に2名以上紹介なら人数分の月数が割引)/<strong>乗りかえ割</strong>(店舗限定・月額制ジムの在籍証明が必要)</li>
                   <li>・<strong>契約ロッカー最大2ヶ月無料</strong>(一部店舗・満室次第終了)/<strong>ジム&ゴルフ会員</strong>(対象16店舗・月12,000〜18,000円税抜)</li>
-                  <li>・注意: <strong>退会後6ヶ月間は入会キャンペーン特典が使えません</strong>(公式QA)</li>
+                  <li>・<strong>退会後6ヶ月間は入会キャンペーン特典の対象外</strong>となります(公式QA)</li>
                 </ul>
               </section>
               <section className="mb-10">
@@ -444,7 +444,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                   <li>・<strong>退会</strong>: マイページ『契約管理』→『退会』で完結。最終支払いは退会前月の20日決済分</li>
                   <li>・<strong>休会</strong>: マイページから休会プランへ変更。毎月10日までの手続きで翌月から適用・期間無期限。<strong>休会中は管理費 月1,100円(税込)</strong></li>
                   <li>・休会できないケース: 利用開始2ヶ月以内/キャンペーン在籍条件中/退会手続き済み 等</li>
-                  <li>・解約金・違約金の記載はなし(キャンペーン利用時は在籍条件あり)</li>
+                  <li>・解約金・違約金の記載はありません(キャンペーン利用時は在籍条件があります)</li>
                 </ul>
               </section>
               <section className="mb-8">

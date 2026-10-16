@@ -9,7 +9,7 @@ const AFF = "https://t.felmat.net/fmcl?ak=G10564N.1.1149440N.A132329L";
 // 目的→カーブスが合うか(公式検証済みの事実ベース・捏造なし)
 const GOALS: { id: string; label: string; fit: "high" | "mid"; note: string }[] = [
   { id: "health", label: "健康維持・運動不足解消", fit: "high", note: "1回30分の有酸素＋筋トレ＋ストレッチを丸ごと行える設計で、運動習慣づくりに向いています。予約不要で好きな時間に通えます。" },
-  { id: "diet", label: "無理なく体型維持・ダイエット", fit: "high", note: "筋力アップで代謝を上げる方針。短時間でも継続しやすく、継続率97.7％（公式公表）が示すとおり「続けやすさ」で結果を狙うタイプです。" },
+  { id: "diet", label: "無理なく体型維持・ダイエット", fit: "high", note: "筋力アップで代謝を上げる方針。短時間でも継続しやすく、継続率97.7％（公式公表）が示すとおり、続けやすさを重視したプログラムです。" },
   { id: "senior", label: "シニア・久しぶりの運動", fit: "high", note: "女性専用・30分完結・スタッフのサポートありで、体力に自信がない方や年齢が気になる方でも始めやすい環境です。" },
   { id: "hardbody", label: "短期集中で大きく体を変えたい", fit: "mid", note: "カーブスは「継続で健康的に」が軸のため、2〜3ヶ月で劇的なボディメイクを目指すなら、マンツーマンのパーソナルジムのほうが向く場合があります。" },
   { id: "male", label: "男性も通いたい", fit: "mid", note: "カーブスは女性専用のため男性は対象外です。男性は他のジムをご検討ください。" },
@@ -67,8 +67,8 @@ export default function CurvesFinder({ areaArticles }: { areaArticles?: AreaArti
         <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-full mb-2" style={{ background: "rgba(255,255,255,0.22)" }}>
           <span>🎯</span>無料・30秒でわかる
         </span>
-        <h2 className="text-xl font-extrabold leading-snug drop-shadow-sm">あなたにカーブスは合う？<br />近くの店舗まで まとめて診断</h2>
-        <p className="text-xs mt-1.5 opacity-90">2つの質問に答えるだけ。目的との相性と、通える店舗がすぐ分かります。</p>
+        <h2 className="text-xl font-extrabold leading-snug drop-shadow-sm">カーブスとの相性と<br />近くの店舗を診断</h2>
+        <p className="text-xs mt-1.5 opacity-90">2つの質問にお答えいただくと、目的との相性と通える店舗をご確認いただけます。</p>
       </div>
       {/* 白の操作エリア */}
       <div className="bg-white rounded-t-2xl p-5 -mb-px">
@@ -110,8 +110,8 @@ export default function CurvesFinder({ areaArticles }: { areaArticles?: AreaArti
             <div>
               <p className="text-sm font-bold mb-2">男性も通える気軽なフィットネス</p>
               <div className="space-y-2 mb-3">
-                <a href="/articles/brand/chocozap" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>チョコザップ（月3,278円・24時間・男女OK）の詳細を見る →</a>
-                <a href="/articles/brand/fit24" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>Fit24（24時間フィットネス・男女OK）の詳細を見る →</a>
+                <a href="/articles/brand/chocozap" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>チョコザップ（月3,278円・24時間・男女利用可）の詳細を見る →</a>
+                <a href="/articles/brand/fit24" className="block rounded-lg p-3 font-bold text-sm hover:underline" style={{ border: "1px solid var(--bf-line)", color: "var(--bf-primary)" }}>Fit24（24時間フィットネス・男女利用可）の詳細を見る →</a>
               </div>
               <button onClick={() => setMalePath("")} className="w-full text-xs underline" style={{ color: "var(--bf-muted)" }}>← 戻る</button>
             </div>
@@ -141,7 +141,7 @@ export default function CurvesFinder({ areaArticles }: { areaArticles?: AreaArti
       {step === 2 && goal && goal.id !== "male" && (
         <div>
           <div className="rounded-lg p-3 mb-4 text-xs leading-6" style={{ background: goal.fit === "high" ? "#ecfdf5" : "#fff7ed", color: "var(--bf-ink)" }}>
-            <strong>{goal.fit === "high" ? "✓ カーブス向きです" : "！ 一度ご確認を"}</strong>：{goal.note}
+            <strong>{goal.fit === "high" ? "✓ カーブス向きです" : "！ ご確認ください"}</strong>：{goal.note}
           </div>
           <p className="text-sm font-bold mb-2">Q2. どのあたりで通いたいですか？</p>
           <button onClick={useLocation} className="w-full mb-3 px-4 py-2.5 rounded-lg text-sm font-bold" style={{ background: "#111827", color: "#fff" }}>📍 現在地の近くで探す</button>
@@ -188,14 +188,14 @@ export default function CurvesFinder({ areaArticles }: { areaArticles?: AreaArti
           )}
           <div className="rounded-xl p-4 text-center" style={{ background: "var(--bf-primary-soft)" }}>
             <p className="text-sm font-bold mb-1">気になる店舗が見つかったら</p>
-            <p className="text-[11px] mb-3" style={{ color: "var(--bf-muted)" }}>入会金無料などのキャンペーンや無料体験は公式サイトで確認・予約できます</p>
+            <p className="text-[11px] mb-3" style={{ color: "var(--bf-muted)" }}>入会金無料などのキャンペーンや無料体験は、公式サイトで確認・予約できます</p>
             <a href={AFF} rel="sponsored nofollow" target="_blank" className="bf-cta inline-block">カーブス公式で無料体験を予約する</a>
             <p className="text-[10px] mt-2" style={{ color: "var(--bf-muted)" }}>※広告リンク（アフィリエイト）を含みます</p>
           </div>
           <button onClick={() => { setStep(1); setGoal(null); setPref(""); setCity(""); setGeo(null); }} className="w-full mt-3 text-xs underline" style={{ color: "var(--bf-muted)" }}>最初からやり直す</button>
         </div>
       )}
-      <p className="text-[10px] mt-3" style={{ color: "var(--bf-muted)" }}>※店舗情報・評点はGoogleマップの実データ{stores.length > 0 ? `（${stores.length}店舗掲載）` : ""}。目的との相性は公式の特徴（女性専用・30分・継続率97.7％等）にもとづく当サイトの整理です。最新の店舗・料金は公式サイトでご確認ください。</p>
+      <p className="text-[10px] mt-3" style={{ color: "var(--bf-muted)" }}>※店舗情報・評点はGoogleマップの実データです{stores.length > 0 ? `（${stores.length}店舗掲載）` : ""}。目的との相性は、公式の特徴（女性専用・30分・継続率97.7％等）にもとづき当サイトが整理したものです。ご利用前に、公式サイトにて最新の店舗・料金をご確認ください。</p>
       </div>
     </section>
   );

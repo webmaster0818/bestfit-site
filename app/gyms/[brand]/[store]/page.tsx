@@ -215,7 +215,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
         <div className="grid sm:grid-cols-3 gap-3 mb-5 text-sm">
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
             <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoYen className="text-xs" />最安プラン{minPlan ? `（${planPriceLabel(minPlan)}）` : ""}</p>
-            <p className="font-bold">{minPlan ? <span className="bf-price">{yen(minPlan.price)}</span> : "要問合せ"}{minPlan?.sessionCount ? <span className="text-xs font-normal">（{minPlan.sessionCount}回）</span> : null}</p>
+            <p className="font-bold">{minPlan ? <span className="bf-price">{yen(minPlan.price)}</span> : "要問い合わせ"}{minPlan?.sessionCount ? <span className="text-xs font-normal">（{minPlan.sessionCount}回）</span> : null}</p>
           </div>
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
             <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoPin className="text-xs" />エリア</p>
@@ -223,7 +223,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
           </div>
           <div className="rounded-lg p-3" style={{ background: "var(--bf-bg)" }}>
             <p className="text-xs mb-0.5 flex items-center gap-1" style={{ color: "var(--bf-muted)" }}><IcoClock className="text-xs" />営業時間</p>
-            <p className="font-bold text-xs leading-relaxed">{s.openingHours || "公式サイトで確認"}</p>
+            <p className="font-bold text-xs leading-relaxed">{s.openingHours || "公式サイトでご確認ください"}</p>
           </div>
         </div>
         {features.length > 0 && (
@@ -283,7 +283,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
               ))}
             </div>
           )}
-          <p className="text-xs mt-2" style={{ color: "var(--bf-muted)" }}>※料金は税込表示・変更される場合があります。最新は公式サイトでご確認ください。</p>
+          <p className="text-xs mt-2" style={{ color: "var(--bf-muted)" }}>※料金は税込表示です。変更される場合がありますので、ご利用前に、公式サイトにて最新情報をご確認ください。</p>
           {s.affiliateLink && (
             <div className="text-center mt-4">
               <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta-sub">料金の詳細を公式サイトで見る</a>
@@ -311,7 +311,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                     {balancedRows(cat.items).map((row, ri) => (
                       <div key={ri} className="flex justify-center gap-2">
                         {row.map((it) => (
-                          <span key={it} className="rounded px-3 py-1.5 text-xs font-semibold text-center" style={has.has(it) ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{it}</span>
+                          <span key={it} className="rounded px-3 py-1.5 text-xs font-semibold text-center" style={has.has(it) ? { background: "var(--bf-primary)", color: "#fff" } : { background: "#F1F5F9", color: "#B6C2D0" }}>{it.replace("無し", "なし")}</span>
                         ))}
                       </div>
                     ))}
@@ -336,7 +336,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                   </div>
                 </div>
               )}
-              <p className="text-center text-[11px]" style={{ color: "var(--bf-muted)" }}>青色=この店舗で該当するサービス・特徴です（当サイト掲載データ時点）。最新は公式サイトでご確認ください。</p>
+              <p className="text-center text-[11px]" style={{ color: "var(--bf-muted)" }}>青色の項目は、この店舗で該当するサービス・特徴です（当サイト掲載データ時点）。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
             </div>
           );
         })()}
@@ -368,8 +368,8 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
 
       {s.affiliateLink && (
         <div className="rounded-2xl p-8 text-center mb-10 text-white" style={{ background: "linear-gradient(135deg, var(--bf-primary), var(--bf-primary-deep))" }}>
-          <p className="font-extrabold text-lg mb-1">{brand?.name} {s.name} が気になったら</p>
-          <p className="text-sm opacity-80 mb-5">多くのパーソナルジムは無料カウンセリング・体験から始められます</p>
+          <p className="font-extrabold text-lg mb-1">{brand?.name} {s.name}の無料カウンセリング・体験</p>
+          <p className="text-sm opacity-80 mb-5">多くのパーソナルジムでは、無料カウンセリング・体験からお始めいただけます</p>
           <a href={s.affiliateLink} rel="sponsored nofollow" target="_blank" className="bf-cta">
             無料カウンセリング・体験の申込はこちら
           </a>
@@ -379,7 +379,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
 
       {nearby.length > 0 && (
         <section>
-          <h2 className="bf-h2">近くの店舗もチェック</h2>
+          <h2 className="bf-h2">近隣の店舗</h2>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm">
             {nearby.map((n) => (
               <li key={n.path} className="bf-card bf-card-hover">
@@ -413,7 +413,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
       {brandArticleHref && (
         <section className="mt-8">
           <Link href={brandArticleHref} className="bf-card bf-card-hover block p-5" style={{ borderTop: "4px solid var(--bf-primary)" }}>
-            <p className="text-xs font-bold mb-1" style={{ color: "var(--bf-muted)" }}>ブランド徹底ガイド</p>
+            <p className="text-xs font-bold mb-1" style={{ color: "var(--bf-muted)" }}>ブランドガイド</p>
             <p className="font-extrabold" style={{ color: "var(--bf-primary)" }}>{brand?.name}の料金・口コミ・評判まとめを読む →</p>
           </Link>
         </section>

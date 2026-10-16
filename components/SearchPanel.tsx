@@ -77,7 +77,7 @@ export default function SearchPanel({ areas, features }: { areas: AreaTree; feat
         onClick={() => setOpen(!open)}
         className="w-full text-center text-white/90 text-xs font-bold py-2 rounded-lg border border-white/25 hover:bg-white/10 transition-colors mb-3"
       >
-        {open ? "こだわり条件を閉じる ▲" : `こだわり条件で絞り込む（複数選択OK）${checked.size ? ` ✓${checked.size}件選択中` : ""} ▼`}
+        {open ? "こだわり条件を閉じる ▲" : `こだわり条件で絞り込む（複数選択可）${checked.size ? ` ✓${checked.size}件選択中` : ""} ▼`}
       </button>
 
       {open && (
