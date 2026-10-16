@@ -361,7 +361,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                 <ul className="text-sm leading-8" style={{ color: "var(--bf-muted)" }}>
                   <li>・<strong>解約</strong>: アプリ【メニュー&gt;退会の手続き】またはマイページから(電話・メール不可)。<strong>1〜10日の手続き=当月末解約/11日以降=翌月末解約</strong></li>
                   <li>・<strong>休会(月額プランのみ)</strong>: アプリからプラン変更で1・2・3ヶ月を選択(月単位・延長不可)。<strong>手続き料・休会中会費とも無料</strong></li>
-                  <li>・支払い済み契約期間中の解約や、未納がある場合のアプリ退会手続きはできません</li>
+                  <li>・支払い済み契約期間中の解約や、未納がある場合のアプリ退会手続きは不可</li>
                 </ul>
               </section>
               <section className="mb-8">
@@ -389,7 +389,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                   <ul className="text-sm leading-7 space-y-1" style={{ color: "var(--bf-muted)" }}>
                     <li>・<strong>111店舗 = 月6,980円(税込7,678円)</strong>/<strong>7店舗のみ 月7,480円(税込8,228円)</strong></li>
                     <li>・家族プラン3,980円(税込4,378円)・U22プラン4,980円(税込5,478円)・高校生プラン(親権者が会員なら<strong>0円</strong>)は<strong>全店一律</strong></li>
-                    <li>・公式店舗ページの大きな価格表示は<strong>税抜</strong>です(税込=×1.1)</li>
+                    <li>・公式店舗ページの大きな価格表示は<strong>税抜</strong>(税込=×1.1)</li>
                   </ul>
                 </div>
                 <h3 className="font-bold mb-2">通常プランが7,480円の7店舗(それ以外はすべて6,980円)</h3>
@@ -435,7 +435,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                   <li>・<strong>家族プラン3,980円</strong>: 2人目以降は人数の上限なし。家族1名が通常等のプラン契約を維持していることが条件(同居/家族の証明書類が必要)</li>
                   <li>・<strong>紹介割</strong>(マイページ申込・1ヶ月以内に2名以上紹介なら人数分の月数が割引)/<strong>乗りかえ割</strong>(店舗限定・月額制ジムの在籍証明が必要)</li>
                   <li>・<strong>契約ロッカー最大2ヶ月無料</strong>(一部店舗・満室次第終了)/<strong>ジム&ゴルフ会員</strong>(対象16店舗・月12,000〜18,000円税抜)</li>
-                  <li>・<strong>退会後6ヶ月間は入会キャンペーン特典の対象外</strong>となります(公式QA)</li>
+                  <li>・<strong>退会後6ヶ月間は入会キャンペーン特典の対象外</strong>(公式QA)</li>
                 </ul>
               </section>
               <section className="mb-10">
@@ -444,7 +444,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                   <li>・<strong>退会</strong>: マイページ『契約管理』→『退会』で完結。最終支払いは退会前月の20日決済分</li>
                   <li>・<strong>休会</strong>: マイページから休会プランへ変更。毎月10日までの手続きで翌月から適用・期間無期限。<strong>休会中は管理費 月1,100円(税込)</strong></li>
                   <li>・休会できないケース: 利用開始2ヶ月以内/キャンペーン在籍条件中/退会手続き済み 等</li>
-                  <li>・解約金・違約金の記載はありません(キャンペーン利用時は在籍条件があります)</li>
+                  <li>・解約金・違約金の記載なし(キャンペーン利用時は在籍条件あり)</li>
                 </ul>
               </section>
               <section className="mb-8">
