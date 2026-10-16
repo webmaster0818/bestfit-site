@@ -16,8 +16,23 @@ let _tax: { pref: Record<string, string>; city: Record<string, string>; ward: Re
 let _brands: Record<string, { brandId: string; slug: string; name: string }> | null = null;
 let _listPaths: string[] | null = null;
 
+// 店舗提供のキャッチコピーのうち、公式サイトに同じ文言がなく当サイトの文と区別できないものを、
+// 公式サイトで確認できる事実の文に置き換える(stores.json の原文は保持)。
+// ELEMENT: 公式トップ https://element-gym.com/ の「ELEMENTは、1回30分・月額定額・通い放題のパーソナルジムです」「完全マンツーマン」で確認(2026-10-17)
+const CATCHCOPY_OVERRIDE: Record<string, string> = {
+  "月額38,280円で通い放題！続けやすさ抜群のパーソナルトレーニングジム":
+    "ELEMENTは、完全マンツーマン・1回30分・月額定額で通い放題のパーソナルジムです",
+};
+
 export function stores() {
-  if (!_stores) _stores = loadJson("stores.json");
+  if (!_stores) {
+    const raw = loadJson<Record<string, StoreEntity>>("stores.json");
+    for (const s of Object.values(raw)) {
+      const o = s && typeof s.catchcopy === "string" ? CATCHCOPY_OVERRIDE[s.catchcopy] : undefined;
+      if (o) s.catchcopy = o;
+    }
+    _stores = raw;
+  }
   return _stores!;
 }
 export function urlMeta() {
