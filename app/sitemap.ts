@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articleGyms, listCanonicalMap, resolveListPage, stores, urlMeta } from "@/lib/data";
+// 記事の本文データの最終コミット日(scripts/gen-article-lastmod.py で生成・2026-10-17)
+import articleLastmod from "@/data/article-lastmod.json";
 
 // ローンチ後の本番ドメイン基準でサイトマップを生成（urls-meta.json＝全公開ページ）。
 // robotsがnoindexのものは除外（現状noindexは/gyms/searchの動的ルートのみでurls-meta外のため実質全件index）。
@@ -19,8 +21,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       v?.canonical && v.canonical.startsWith("http")
         ? v.canonical
         : `${BASE}${p === "/" ? "" : p}`;
+    const lastmod = (articleLastmod as Record<string, string>)[p];
     entries.push({
       url,
+      ...(lastmod ? { lastModified: lastmod } : {}),
       changeFrequency: p === "/" ? "daily" : "weekly",
       priority:
         p === "/"
