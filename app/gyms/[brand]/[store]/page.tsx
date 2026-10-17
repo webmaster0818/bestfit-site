@@ -263,7 +263,7 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                   {plans.map((pl) => (
                     <tr key={pl.id} style={pl.isRecommended ? { background: "var(--bf-primary-soft)" } : undefined}>
                       <td className="font-bold min-w-[10em]">{pl.name}{pl.isRecommended && <span className="ml-1 text-xs" style={{ color: "var(--bf-gold)" }}>★おすすめ</span>}</td>
-                      <td className="bf-price whitespace-nowrap">{yen(pl.price)}</td>
+                      <td className="bf-price whitespace-nowrap">{typeof pl.price === "number" ? yen(pl.price) : "店舗へ直接お問い合わせください"}</td>
                       <td className="whitespace-nowrap">{pl.sessionCount ? `${pl.sessionCount}回` : "—"}</td>
                       <td className="whitespace-nowrap">{pl.minutes ? `${pl.minutes}分` : "—"}</td>
                       <td className="whitespace-nowrap">{yen(pl.membershipFee)}</td>
