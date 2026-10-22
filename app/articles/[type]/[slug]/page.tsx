@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { articleHtml, metaFor, urlMeta, brandPrice, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag, brandArticleForGymName } from "@/lib/data";
+import { articleHtml, metaFor, urlMeta, brandPrice, brandPriceSlugs, areaArticleSiblings, areaArticleData, articleGyms, brands, stores, taxonomies, fit24Stores, brandSupplements, featurePathForTag, brandArticleForGymName } from "@/lib/data";
+
+// brand-price.json に料金データの無い 2026-10-15 新設のブランド記事
+const EXTRA_BRAND_ARTICLES = [
+  { slug: "furdi", name: "FÜRDI" },
+  { slug: "amazones", name: "Amazones" },
+  { slug: "ekimaego-go", name: "駅前筋肉留学GO" },
+  { slug: "bbb", name: "トリプルB(BBB)" },
+  { slug: "tokiel", name: "TOKIEL" },
+  { slug: "dee-gym", name: "Dee GYM" },
+  { slug: "hper", name: "HPER" },
+  { slug: "mybodylabo", name: "MY BODY LABO" },
+];
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
 import DataAreaArticle from "@/components/DataAreaArticle";
@@ -542,6 +554,24 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
                 </details>
               ))}
             </div>
+          </section>
+        );
+      })()}
+
+      {isBrand && (() => {
+        // 他ブランド記事への相互リンク(2026-10-22 追加: 登録済みのブランド記事から未クロールの記事へ巡回経路を作る)
+        const list = [
+          ...brandPriceSlugs().map((slug) => ({ slug, name: brandPrice(slug)?.name as string | undefined })),
+          ...EXTRA_BRAND_ARTICLES,
+        ].filter((b) => b.name && b.slug !== prm.slug);
+        return (
+          <section className="mt-12 bf-card p-5">
+            <h2 className="bf-h2 mb-3">ほかのジムブランドの料金・口コミ記事</h2>
+            <ul className="flex flex-wrap gap-2 text-sm">
+              {list.map((b) => (
+                <li key={b.slug}><Link href={`/articles/brand/${b.slug}`} className="bf-chip-link">{b.name}</Link></li>
+              ))}
+            </ul>
           </section>
         );
       })()}

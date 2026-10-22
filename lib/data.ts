@@ -214,6 +214,10 @@ export function brandArticleForGymName(name: string): { href: string; name: stri
 
 // ブランド記事の検証済み料金（メタ・料金早見ボックス用・2026-07-07公式確認）
 let _brandPrice: Record<string, { name: string; price: string; join: string; note: string }> | null = null;
+export function brandPriceSlugs(): string[] {
+  brandPrice("");
+  return Object.keys(_brandPrice || {});
+}
 export function brandPrice(slug: string) {
   if (!_brandPrice) {
     const f = path.join(DATA, "brand-price.json");
