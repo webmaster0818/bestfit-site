@@ -57,7 +57,10 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   if (!m) return {};
   // 料金intentが最大流入(curves料金67k imp等)→titleに実額を前出しでCTR回収
   // fit24=全118店舗実査(2026-08-02)を訴求(「fit24 料金」pos5.3のtop3奪取・公式が一覧を出していない空白)
-  const brandTitle = bslug === "fit24"
+  // curves: 「カーブス 料金 月額」群が10〜13位・0クリック(GSC 10/17〜21)→公式3プランの実額をtitleに前出し(2026-10-24)
+  const brandTitle = bslug === "curves"
+    ? `カーブスの料金は月額いくら？店舗7,150円〜・入会金16,500円(税込)と口コミ・評判【2026年10月】｜BEST-FIT`
+    : bslug === "fit24"
     ? `FIT24の料金｜全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
     : bp ? `${bp.name}の料金｜月額・入会金・口コミ・評判を比較【2026年】｜BEST-FIT` : m.title;
   if (bslug === "chocozap") {
@@ -250,7 +253,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
     "/articles/brand/rizap": "2026-10-17",
     "/articles/brand/247workout": "2026-10-17",
-    "/articles/brand/curves": "2026-10-17",
+    "/articles/brand/curves": "2026-10-24",
     "/articles/brand/b-concept": "2026-10-17",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
@@ -297,6 +300,49 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
             </div>
           </div>
         </div>
+      )}
+      {isCurvesArticle && (
+        <section className="bf-card p-5 mb-6">
+          <h2 className="bf-h2 mb-3">カーブスの月会費・入会金一覧と1年目の総額の目安</h2>
+          <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-muted)" }}>
+            カーブスの月会費は、店舗に通う「店舗プラン」で月7,150円～8,360円（税込）、入会金は通常16,500円（税込）です。下表の月会費・入会金は
+            <a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>の記載（2026年10月24日確認）で、初月・1年目の総額は当サイトがその金額から計算した目安です。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr style={{ background: "var(--bf-line)" }}>
+                  <th className="p-2 text-left">プラン</th>
+                  <th className="p-2 text-right">月会費（税込）</th>
+                  <th className="p-2 text-right">初月の目安<br />（入会金＋1か月分）</th>
+                  <th className="p-2 text-right">1年目の目安<br />（入会金＋12か月分）</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { plan: "店舗プラン（月に何回でも）", min: 7150, max: 8360 },
+                  { plan: "おうちプラン", min: 6050, max: 7260 },
+                  { plan: "Wプラン（店舗＋おうち）", min: 9130, max: 9130 },
+                ].map((r) => {
+                  const yen = (a: number, b: number) => (a === b ? `${a.toLocaleString()}円` : `${a.toLocaleString()}～${b.toLocaleString()}円`);
+                  return (
+                    <tr key={r.plan} className="border-b" style={{ borderColor: "var(--bf-line)" }}>
+                      <td className="p-2">{r.plan}</td>
+                      <td className="p-2 text-right">{yen(r.min, r.max)}</td>
+                      <td className="p-2 text-right">{yen(16500 + r.min, 16500 + r.max)}</td>
+                      <td className="p-2 text-right">{yen(16500 + r.min * 12, 16500 + r.max * 12)}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-[12px] leading-6 mt-3" style={{ color: "var(--bf-muted)" }}>
+            <li>・公式サイトには「お支払い額はコースによって異なります」とあり、同じプランでも店舗・コースにより月会費が異なります。年契約割引のあるコースを途中で退会した場合は、割引額の差額精算金がかかります（会員規約第15条）。</li>
+            <li>・入会金無料などのキャンペーンを実施している時期は、初月・1年目の総額が上表より下がります。総額には退会時の手数料や物販は含めていません。</li>
+            <li>・店舗プランは月に何回通っても同じ料金です。週2回（月8回）通った場合、1回あたりは約894円～1,045円です（月会費÷8回で当サイトが計算）。</li>
+          </ul>
+        </section>
       )}
       {isCurvesArticle && <CurvesFinder areaArticles={areaArticlesIdx} />}
       {brandFaqs.length > 0 && (
