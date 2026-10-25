@@ -138,3 +138,29 @@
 /gyms/list/tag-034 /gyms/list/feature-JkAKV67tH6dRdOGq 301
 /gyms/list/:pref/tag-034 /gyms/list/:pref/feature-JkAKV67tH6dRdOGq 301
 /gyms/list/:pref/:city/tag-034 /gyms/list/:pref/:city/feature-JkAKV67tH6dRdOGq 301
+
+# 2026-10-25 閉店の疑い（公式ドメイン消滅・公式トップ404・公式店舗一覧に無し）で掲載終了 → 掲載していた記事へ（10/24 宣言の既定案）
+/gyms/listed/real-workout /articles/station/ginza 301
+/gyms/listed/gym-466d9a9b /articles/pref/wakayama 301
+/gyms/listed/personal-gym-sun /articles/station/nishinomiya 301
+/gyms/listed/village /articles/station/utsunomiya 301
+/gyms/listed/body-make-studio-reall /articles/pref/okinawa 301
+/gyms/listed/avitangym /articles/station/kawagoe 301
+/gyms/listed/grit /articles/pref/kyoto 301
+/gyms/listed/fitsteps /articles/city/kokubunji 301
+/gyms/listed/reboa /articles/station/gotanda 301
+/gyms/listed/juriarno /articles/station/sangenjaya 301
+/gyms/listed/karada-besta-2 /articles/station/sangenjaya 301
+/gyms/listed/gym-3049d427 /articles/city/kurashiki 301
+/gyms/listed/bee /articles/pref/gifu 301
+/gyms/listed/body-base /articles/station/himeji 301
+/gyms/listed/773 /articles/station/fujisawa 301
+/gyms/listed/karada-besta-3 /articles/station/kinshicho 301
+/gyms/listed/bveats /articles/station/meguro 301
+/gyms/listed/real-workout-11 /articles/station/akabane 301
+/gyms/listed/all-for-one /articles/station/azabu-juban 301
+/gyms/listed/body-brain /articles/station/tsukuba 301
+/gyms/listed/k-body-design /articles/city/kitakyusyu 301
+/gyms/listed/ideal /articles/city/kitakyusyu 301
+/gyms/listed/challengym /articles/pref/tokushima 301
+/gyms/listed/ally-gym /articles/pref/tokushima 301
