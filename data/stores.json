@@ -582354,5 +582354,416 @@
       "010",
       "009"
     ]
+  },
+  "/gyms/quickpersonal/chiba": {
+    "id": "YaEEYdAvJHdcFXmZ",
+    "updatedAt": "2026-10-27T00:00:00.000Z",
+    "createdAt": "2026-10-27T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "nTV3SmsC9mFilqp5",
+    "slug": "chiba",
+    "name": "千葉駅前店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": "0",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "無料体験あり（体験料金0円）。ウェア・シューズ・タオルは無料でレンタルできます。",
+    "trialTrainingRequiredItems": "",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "千葉県千葉市中央区富士見2丁目14-1 千葉EXビル7F",
+    "prefectureId": "NqmoekVYIG9na8YX",
+    "cityId": "WcRGhfO3HOzKkYN2",
+    "wardId": "lZmq2uV4JnWgzq68",
+    "telephoneNumber": "043-306-7664",
+    "access": "千葉駅から徒歩5分",
+    "openingHours": "平日 10:00〜22:00\n土日祝 10:00〜20:00\nGW・年末年始・施設休館日などは営業時間が変わる場合があります",
+    "url": "https://quick-personal.jp/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "30分4,400円から通える、千葉駅徒歩5分の完全マンツーマンジム",
+    "lead": "QUICK PERSONAL（クイックパーソナル）千葉駅前店は、千葉県内でQUICK GYMを展開する株式会社QUICKGYMが手がけるパーソナルジムです。2026年8月にオープンしました。\n料金は都度利用・回数券・サブスク（月4回／月8回）・通い放題・食事指導付きのコースから選べ、30分4,400円から通えます。一般的なパーソナルジムの約4倍の広さに5種類以上のブランドマシンを備え、ダイエット・ボディメイク・姿勢改善・健康維持まで対応しています。\nウェア・シューズ・タオルのレンタルは無料で、鍵付きの個室更衣室とシャワー室があります。女性トレーナーが在籍し、英語でのトレーニングにも対応しています。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "sGSCtxosyziST0Qi",
+        "name": "月額制"
+      },
+      {
+        "id": "6zdj3YfuB4n4u0Tt",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "id": "jIvw9PJp2YTGI8os",
+        "name": "シャワー"
+      },
+      {
+        "id": "59LjqHB6raw2Edfz",
+        "name": "手ぶらOK"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "9vXTMYlGLAhlxdYf",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "YaZpHT0bvjTrrmI8",
+        "name": "健康・体型維持"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [
+      {
+        "id": "bFNefKDlm0D8HpEJ",
+        "itemId": "8CMxu7D9N8vxonZd",
+        "type": "free"
+      },
+      {
+        "id": "aYb1KkDP2vDcwiOX",
+        "itemId": "6yWXeMc7LMI1deai",
+        "type": "free"
+      },
+      {
+        "id": "egW5PDrcBWZzRcJ8",
+        "itemId": "rmNeHCFxvd5Sf6Jt",
+        "type": "free"
+      }
+    ],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "009",
+        "name": "月額制"
+      },
+      {
+        "key": "019",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "key": "012",
+        "name": "シャワー"
+      },
+      {
+        "key": "014",
+        "name": "手ぶらOK"
+      },
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "024",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      },
+      {
+        "key": "031",
+        "name": "健康・体型維持"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "uSnzIAZ4aMOBH6O4",
+        "name": "都度利用（30分）",
+        "membershipFee": null,
+        "price": 4400,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "1回ごとに支払う料金です（税込）。都度利用・回数券には、別途月会費550円（税込）がかかります。入会金は33,000円（税込）で、現在は無料キャンペーン中です（入会金は店舗からの情報・2026年10月時点）。",
+        "isRecommended": false
+      },
+      {
+        "id": "Ni7xHoiyahovX7x9",
+        "name": "都度利用（60分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Ziw291SJYwHa4aOM",
+        "name": "回数券 30分×4回",
+        "membershipFee": null,
+        "price": 16720,
+        "sessionCount": "4",
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "ompiXX4FtoJ9X8AT",
+        "name": "回数券 30分×8回",
+        "membershipFee": null,
+        "price": 31680,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "5P2p2YAQLKg2PbQF",
+        "name": "回数券 60分×4回",
+        "membershipFee": null,
+        "price": 33440,
+        "sessionCount": "4",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Y5iCmcsejZTzEi12",
+        "name": "回数券 60分×8回",
+        "membershipFee": null,
+        "price": 63360,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Anlgq3by6OaTmfpq",
+        "name": "サブスク 30分 月4回",
+        "membershipFee": null,
+        "price": 16720,
+        "sessionCount": "4",
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "サブスク・通い放題・コースの料金は月会費込みです（税込）。",
+        "isRecommended": false
+      },
+      {
+        "id": "zwRPesvlGzaR2cC9",
+        "name": "サブスク 30分 月8回",
+        "membershipFee": null,
+        "price": 31680,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "6hrfFalx72J1JPpE",
+        "name": "サブスク 60分 月4回",
+        "membershipFee": null,
+        "price": 33440,
+        "sessionCount": "4",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Q7d9FFizTtJEVO6Q",
+        "name": "サブスク 60分 月8回",
+        "membershipFee": null,
+        "price": 63360,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "uHGOGANEqrNVmP1C",
+        "name": "通い放題 30分",
+        "membershipFee": null,
+        "price": 44000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "1日1回まで利用できます。平日10:00〜16:00限定の平日昼割（30分35,200円／60分70,400円）もあります。店舗からの情報では、通い放題は2026年10月時点で満員のため受付を停止しています。",
+        "isRecommended": false
+      },
+      {
+        "id": "qwb9zls51TRlLdFp",
+        "name": "通い放題 60分",
+        "membershipFee": null,
+        "price": 88000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "9UksaqhYfotqTqdh",
+        "name": "2ヶ月コース（食事指導付き）",
+        "membershipFee": null,
+        "price": 159800,
+        "sessionCount": "16",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 60,
+        "note": "2ヶ月・3ヶ月・6ヶ月のコースは、いずれも食事指導付きです（税込・月会費込み）。",
+        "isRecommended": false
+      },
+      {
+        "id": "RkIHc9Mipe2Q6FHf",
+        "name": "3ヶ月コース（食事指導付き）",
+        "membershipFee": null,
+        "price": 229800,
+        "sessionCount": "24",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 90,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Esrs4AE53ZwselT4",
+        "name": "6ヶ月コース（食事指導付き）",
+        "membershipFee": null,
+        "price": 429800,
+        "sessionCount": "48",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 180,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "121002",
+      "type": "city",
+      "name": "千葉県千葉市",
+      "prefCode": "120006",
+      "prefName": "千葉県",
+      "cityCode": "121002",
+      "cityName": "千葉市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "NqmoekVYIG9na8YX",
+      "updatedAt": "2025-10-23T06:06:17.140Z",
+      "createdAt": "2025-10-23T06:06:17.140Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.136Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "120006",
+      "type": "pref",
+      "name": "千葉県",
+      "kana": "ﾁﾊﾞｹﾝ",
+      "prefCode": "120006",
+      "prefKana": "ﾁﾊﾞｹﾝ",
+      "prefName": "千葉県",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": {
+      "id": "lZmq2uV4JnWgzq68",
+      "updatedAt": "2025-10-23T06:09:06.149Z",
+      "createdAt": "2025-10-23T06:09:06.149Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:09:06.145Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "121011",
+      "type": "ward",
+      "name": "千葉県千葉市中央区",
+      "kana": "ﾁﾊﾞｹﾝﾁﾊﾞｼﾁｭｳｵｳｸ",
+      "prefCode": "120006",
+      "prefKana": "ﾁﾊﾞｹﾝ",
+      "prefName": "千葉県",
+      "cityCode": "121002",
+      "cityName": "千葉市",
+      "cityKana": "ﾁﾊﾞｼ",
+      "wardName": "中央区",
+      "wardKana": "ﾁｭｳｵｳｸ"
+    },
+    "_prefCode": "120006",
+    "_prefName": "千葉県",
+    "_cityCode": "121002",
+    "_cityName": "千葉市",
+    "_wardCode": "121011",
+    "_wardName": "中央区",
+    "_tagKeys": [
+      "009",
+      "019",
+      "012",
+      "014",
+      "002",
+      "023",
+      "024",
+      "025",
+      "031"
+    ]
   }
 }

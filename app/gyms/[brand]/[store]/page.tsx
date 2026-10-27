@@ -353,7 +353,9 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
                 ["アクセス", s.access, <IcoTrain key="i" className="text-sm" />],
                 ["営業時間", s.openingHours, <IcoClock key="i" className="text-sm" />],
                 ["電話番号", s.telephoneNumber, <IcoPhone key="i" className="text-sm" />],
-              ] as [string, string, React.ReactNode][])
+                // アフィリエイトリンクの無い掲載店(相互リンクで無料掲載)は公式サイトへのリンクを出す(2026-10-27)
+                ["公式サイト", s.url && !s.affiliateLink ? <a href={s.url} target="_blank" rel="nofollow noopener noreferrer" className="hover:underline break-all" style={{ color: "var(--bf-primary)" }}>{s.url}</a> : null, <IcoStore key="i" className="text-sm" />],
+              ] as [string, React.ReactNode, React.ReactNode][])
                 .filter(([, v]) => v)
                 .map(([k, v, ico]) => (
                   <tr key={k}>
