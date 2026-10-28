@@ -164,3 +164,10 @@
 /gyms/listed/ideal /articles/city/kitakyusyu 301
 /gyms/listed/challengym /articles/pref/tokushima 301
 /gyms/listed/ally-gym /articles/pref/tokushima 301
+
+# 2026-10-28 閉店の疑い（公式の店舗一覧に無し・店舗ページ404）で掲載終了 → 掲載していた記事へ（10/27 宣言の既定案）
+/gyms/listed/gym-f0316cb7 /articles/city/tachikawa 301
+/gyms/listed/firstclass-trainers-30 /articles/station/toyonaka 301
+/gyms/listed/rizap /articles/city/yokohama 301
+/gyms/listed/apple-gym-15 /articles/station/akabane 301
+/gyms/rizap/hachioji /articles/brand/rizap 301
