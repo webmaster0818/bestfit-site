@@ -582182,5 +582182,397 @@
       "025",
       "031"
     ]
+  },
+  "/gyms/rat/nakano": {
+    "id": "Us9DSEIjRFgkilmY",
+    "updatedAt": "2026-10-29T00:00:00.000Z",
+    "createdAt": "2026-10-29T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "Nh3ROehs38l3rsLT",
+    "slug": "nakano",
+    "name": "中野店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": null,
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": "0",
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "無料カウンセリングあり（ヒアリング・目標設定・プログラムの提案）。公式サイトでは、体験トレーニングの料金は店舗によって異なり、実施していない店舗もあるため、店舗に問い合わせるよう案内されています。",
+    "trialTrainingRequiredItems": "",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "東京都中野区新井1-15-15 第3四国ハイム105",
+    "prefectureId": "738pdVp3oSDvqoNF",
+    "cityId": "rMDVI1qnc1eDZFIt",
+    "wardId": null,
+    "telephoneNumber": "070-6511-1803",
+    "access": "中野駅から徒歩10分",
+    "openingHours": "年中無休 7:00〜23:00",
+    "url": "https://ratgym.jp/shop/tokyo/nakano/",
+    "affiliateLink": "https://t.afi-b.com/visit.php?a=b14195L-x466703d&p=z961698w",
+    "affiliateLinkCvTag": "<img src=\"https://t.afi-b.com/lead/b14195L/z961698w/S466702c\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "catchcopy": "中野駅徒歩10分、完全個室のパーソナルジムRatの新店舗",
+    "lead": "Rat（ラット）中野店は、東京・埼玉・神奈川・千葉・愛知・大阪・兵庫などに店舗を展開する完全個室のパーソナルジムRatの新店舗です。運営会社からの案内では、2026年11月1日頃のオープン予定です。中野駅から徒歩10分で、年中無休で営業しています。\nコースは、引き締めを目指すシェイプアップコース、筋肉をつけすぎずに部位を整える美ボディメイクコース、短期間で集中して取り組む短期ダイエット集中コースの3種類で、いずれも1回50分のパーソナルトレーニングです。\nウェア・タオルは無料でレンタルでき、シューズのレンタルもあります。女性トレーナーが在籍し、子連れでの来店にも対応しています。30日間で満足できなかった場合の全額返金保証があります。近くの店舗には新宿三丁目店・新宿南口店・吉祥寺店があります。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "qW52olWvgbex8Hyq",
+        "name": "完全個室"
+      },
+      {
+        "id": "6zdj3YfuB4n4u0Tt",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "Zv2NMCiMcVmi004t",
+        "name": "トレーナー担当制"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [
+      {
+        "id": "VmKuwJRO5VBtiS3R",
+        "itemId": "8CMxu7D9N8vxonZd",
+        "type": "free"
+      },
+      {
+        "id": "wOMilv8e66SGAWsQ",
+        "itemId": "rmNeHCFxvd5Sf6Jt",
+        "type": "free"
+      }
+    ],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "010",
+        "name": "完全個室"
+      },
+      {
+        "key": "019",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "uTiqJBaEryTUORAA",
+        "name": "シェイプアップコース（8回）",
+        "membershipFee": 29800,
+        "price": 131150,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": "料金は公式の店舗ページの表示です（税込）。入会金29,800円は現在無料、当日入会で全コース10%OFFのキャンペーン中です（2026年10月29日時点）。一部コースは店舗により料金が異なるため、詳細はカウンセリング時に案内されます。",
+        "isRecommended": false
+      },
+      {
+        "id": "fWXf891Q26SJoAIc",
+        "name": "美ボディメイクコース（8回）",
+        "membershipFee": 29800,
+        "price": 131150,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "mVVRL6mYFURRPfVW",
+        "name": "短期ダイエット集中コース（8回）",
+        "membershipFee": 29800,
+        "price": 147780,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "131148",
+      "type": "city",
+      "name": "東京都中野区",
+      "prefCode": "130001",
+      "prefName": "東京都",
+      "cityCode": "131148",
+      "cityName": "中野区",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "738pdVp3oSDvqoNF",
+      "updatedAt": "2025-10-23T06:06:17.201Z",
+      "createdAt": "2025-10-23T06:06:17.201Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.195Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "130001",
+      "type": "pref",
+      "name": "東京都",
+      "kana": "ﾄｳｷｮｳﾄ",
+      "prefCode": "130001",
+      "prefKana": "ﾄｳｷｮｳﾄ",
+      "prefName": "東京都",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": null,
+    "_prefCode": "130001",
+    "_prefName": "東京都",
+    "_cityCode": "131148",
+    "_cityName": "中野区",
+    "_wardCode": null,
+    "_wardName": null,
+    "_tagKeys": [
+      "010",
+      "019",
+      "017",
+      "023",
+      "025"
+    ]
+  },
+  "/gyms/rat/kasukabe": {
+    "id": "8keIopUy8Xgbt5o1",
+    "updatedAt": "2026-10-29T00:00:00.000Z",
+    "createdAt": "2026-10-29T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "Nh3ROehs38l3rsLT",
+    "slug": "kasukabe",
+    "name": "春日部店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": null,
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": "0",
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "無料カウンセリングあり（ヒアリング・目標設定・プログラムの提案）。公式サイトでは、体験トレーニングの料金は店舗によって異なり、実施していない店舗もあるため、店舗に問い合わせるよう案内されています。",
+    "trialTrainingRequiredItems": "",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "埼玉県春日部市中央1-56-9 ライフピア春日部第二302",
+    "prefectureId": "NjziBlbNhXVA1oyt",
+    "cityId": "2LqR0bYY6HeaXZpM",
+    "wardId": null,
+    "telephoneNumber": "070-6511-1752",
+    "access": "春日部駅から徒歩7分",
+    "openingHours": "年中無休 7:00〜22:00",
+    "url": "https://ratgym.jp/shop/saitama/kasukabe/",
+    "affiliateLink": "https://t.afi-b.com/visit.php?a=b14195L-x466703d&p=z961698w",
+    "affiliateLinkCvTag": "<img src=\"https://t.afi-b.com/lead/b14195L/z961698w/S466702c\" width=\"1\" height=\"1\" style=\"border:none;\" />",
+    "catchcopy": "春日部駅徒歩7分、完全個室のパーソナルジムRatの新店舗",
+    "lead": "Rat（ラット）春日部店は、東京・埼玉・神奈川・千葉・愛知・大阪・兵庫などに店舗を展開する完全個室のパーソナルジムRatの新店舗です。運営会社からの案内では、2026年11月1日頃のオープン予定です。春日部駅から徒歩7分で、年中無休で営業しています。\nコースは、引き締めを目指すシェイプアップコース、筋肉をつけすぎずに部位を整える美ボディメイクコース、短期間で集中して取り組む短期ダイエット集中コースの3種類で、いずれも1回50分のパーソナルトレーニングです。\nウェア・タオルは無料でレンタルでき、シューズのレンタルもあります。女性トレーナーが在籍し、子連れでの来店にも対応しています。30日間で満足できなかった場合の全額返金保証があります。近くの店舗には大宮店・上尾店・川口店があります。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "qW52olWvgbex8Hyq",
+        "name": "完全個室"
+      },
+      {
+        "id": "6zdj3YfuB4n4u0Tt",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "Zv2NMCiMcVmi004t",
+        "name": "トレーナー担当制"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [
+      {
+        "id": "yKAeIVf8XxCt3NW3",
+        "itemId": "8CMxu7D9N8vxonZd",
+        "type": "free"
+      },
+      {
+        "id": "LlukRgvRJiPCyQOQ",
+        "itemId": "rmNeHCFxvd5Sf6Jt",
+        "type": "free"
+      }
+    ],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "010",
+        "name": "完全個室"
+      },
+      {
+        "key": "019",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "OY4tiJF9jGe4Opf9",
+        "name": "シェイプアップコース（8回）",
+        "membershipFee": 29800,
+        "price": 131150,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": "料金は公式の店舗ページの表示です（税込）。入会金29,800円は現在無料、当日入会で全コース10%OFFのキャンペーン中です（2026年10月29日時点）。一部コースは店舗により料金が異なるため、詳細はカウンセリング時に案内されます。",
+        "isRecommended": false
+      },
+      {
+        "id": "frS73jTqPeydsb2h",
+        "name": "美ボディメイクコース（8回）",
+        "membershipFee": 29800,
+        "price": 131150,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "DQEQ2hzPVeiwcyrE",
+        "name": "短期ダイエット集中コース（8回）",
+        "membershipFee": 29800,
+        "price": 147780,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 50,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "112143",
+      "type": "city",
+      "name": "埼玉県春日部市",
+      "prefCode": "110001",
+      "prefName": "埼玉県",
+      "cityCode": "112143",
+      "cityName": "春日部市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "NjziBlbNhXVA1oyt",
+      "updatedAt": "2025-10-23T06:06:17.083Z",
+      "createdAt": "2025-10-23T06:06:17.083Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.077Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "110001",
+      "type": "pref",
+      "name": "埼玉県",
+      "kana": "ｻｲﾀﾏｹﾝ",
+      "prefCode": "110001",
+      "prefKana": "ｻｲﾀﾏｹﾝ",
+      "prefName": "埼玉県",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": null,
+    "_prefCode": "110001",
+    "_prefName": "埼玉県",
+    "_cityCode": "112143",
+    "_cityName": "春日部市",
+    "_wardCode": null,
+    "_wardName": null,
+    "_tagKeys": [
+      "010",
+      "019",
+      "017",
+      "023",
+      "025"
+    ]
   }
 }
