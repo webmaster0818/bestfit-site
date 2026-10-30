@@ -171,3 +171,6 @@
 /gyms/listed/rizap /articles/city/yokohama 301
 /gyms/listed/apple-gym-15 /articles/station/akabane 301
 /gyms/rizap/hachioji /articles/brand/rizap 301
+
+# 2026-10-30 2026年12月末閉店（afb の告知・施主指示）で掲載終了 → 掲載していた記事へ（ブランド記事なし）
+/gyms/exercisecoach/tokihawasada /articles/pref/oita 301
