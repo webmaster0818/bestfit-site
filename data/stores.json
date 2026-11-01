@@ -319813,22 +319813,22 @@
     "basicInformation": null,
     "trialPlan1TrainingTime": "45~60",
     "trialPlan1CounselingTime": "30~45",
-    "trialPlan1Price": "5000",
+    "trialPlan1Price": "10500",
     "trialPlan2CounselingTime": "30~45",
     "trialPlan2Price": "0",
-    "trialDiscountInfo": "",
+    "trialDiscountInfo": "初回体験の料金・適用条件は、公式予約ページの最新案内をご確認ください（通常10,500円・税込）",
     "trialPlanSupplement": "無料カウンセリングのみは受け付けておりません。トレーニングはカウンセリング込み90分になります。",
-    "trialTrainingRequiredItems": "持ち物無し",
+    "trialTrainingRequiredItems": "着替え（貸しウェアあり）",
     "addressPrefecture": null,
     "addressMunicipalities": null,
     "addressStreet": null,
-    "address": "東京都立川市柴崎町2-1-6 エルタワータチ501",
+    "address": "東京都立川市柴崎町3-14-21 マル井ビル立川203",
     "prefectureId": "738pdVp3oSDvqoNF",
     "cityId": "H0gIijx3aIX4vD99",
     "wardId": null,
     "telephoneNumber": null,
-    "access": "立川駅（JR中央線）から徒歩3分\n立川南駅（多摩モノレール）から徒歩3分\n立川駅（JR南武線）から徒歩3分",
-    "openingHours": "平日:9:00~21:00\n土祝:9:00~18:00\n定休日:日曜日",
+    "access": "立川駅（JR青梅線・中央線・南武線）から徒歩7分\n立川南駅（多摩モノレール）から徒歩5分",
+    "openingHours": "平日:9:00~21:00\n土日祝:9:00~18:00\n定休日:年末年始など",
     "url": null,
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
@@ -319855,50 +319855,14 @@
     "pricePlans": [
       {
         "id": "UH7H6EYu7XXrOXuF",
-        "name": "週1回4か月コース",
-        "membershipFee": 10000,
-        "price": 247000,
-        "sessionCount": "16",
+        "name": "3か月・12回コース",
+        "membershipFee": 0,
+        "price": 150000,
+        "sessionCount": "12",
         "numberOfTimes": null,
-        "minutes": 45,
-        "days": 120,
-        "note": "",
-        "isRecommended": false
-      },
-      {
-        "id": "wpf0pZy4Pea8bOr3",
-        "name": "週2回3か月コース",
-        "membershipFee": 10000,
-        "price": 370500,
-        "sessionCount": "24",
-        "numberOfTimes": null,
-        "minutes": 45,
+        "minutes": 40,
         "days": 90,
-        "note": "",
-        "isRecommended": false
-      },
-      {
-        "id": "kXW8SE8QJSL6HiR8",
-        "name": "月2回コース",
-        "membershipFee": null,
-        "price": 21000,
-        "sessionCount": "2",
-        "numberOfTimes": null,
-        "minutes": 45,
-        "days": 30,
-        "note": "",
-        "isRecommended": false
-      },
-      {
-        "id": "JTT7U2G2RPdIoKXN",
-        "name": "月4回コース",
-        "membershipFee": null,
-        "price": 42000,
-        "sessionCount": "4",
-        "numberOfTimes": null,
-        "minutes": 45,
-        "days": 30,
-        "note": "",
+        "note": "週1回40分・食事サポート・LINE相談つき（税込）。4か月目以降は継続プランあり",
         "isRecommended": false
       }
     ],
@@ -319922,10 +319886,6 @@
       {
         "id": "owcdygZEPEGSEvOQ",
         "name": "食事報告自由"
-      },
-      {
-        "id": "4JsEjXzikuOX5CIA",
-        "name": "女性専用"
       },
       {
         "id": "lV7bwsP4oRNlgcKh",
@@ -320054,10 +320014,6 @@
     "reviews": [],
     "tags": [
       {
-        "key": "001",
-        "name": "女性専用"
-      },
-      {
         "key": "002",
         "name": "食事指導"
       },
@@ -320121,7 +320077,6 @@
     "_wardCode": null,
     "_wardName": null,
     "_tagKeys": [
-      "001",
       "002",
       "017",
       "014",
