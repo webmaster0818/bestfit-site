@@ -174,3 +174,8 @@
 
 # 2026-10-30 2026年12月末閉店（afb の告知・施主指示）で掲載終了 → 掲載していた記事へ（ブランド記事なし）
 /gyms/exercisecoach/tokihawasada /articles/pref/oita 301
+
+# 2026-11-03 閉店の疑い（公式の店舗一覧に無し・11/3確認）で掲載終了 → 掲載していた記事へ（11/2 宣言の既定案）
+/gyms/listed/e-stretchgym /articles/station/shibuya 301
+/gyms/listed/reborn-myself-2 /articles/station/utsunomiya 301
+/gyms/rebornmyself/fujisawa /articles/station/fujisawa 301
