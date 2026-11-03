@@ -6,6 +6,9 @@ import PageHero from "@/components/PageHero";
 import DistanceSort from "@/components/DistanceSort";
 import { planPriceLabel } from "@/lib/data";
 
+// data/place-reviews.json の評点・件数は Places API で 2026-07-08 に取得(02d673b)。再取得したらここも更新
+const PLACE_REVIEWS_FETCHED = "2026年7月8日";
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -160,10 +163,11 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
                     {b?.name || ""} {s.name}
                   </h2>
                   {rev?.rating != null && (
-                    <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "#f59e0b" }}>
+                    <p className="text-xs mt-1 flex flex-wrap items-center gap-x-1" style={{ color: "#f59e0b" }}>
+                      <span className="font-bold" style={{ color: "var(--bf-muted)" }}>Googleマップ</span>
                       <span>{"★".repeat(Math.round(rev.rating))}<span style={{ color: "#d1d5db" }}>{"★".repeat(5 - Math.round(rev.rating))}</span></span>
                       <span className="font-bold" style={{ color: "var(--bf-ink)" }}>{rev.rating.toFixed(1)}</span>
-                      {rev.count != null && <span style={{ color: "var(--bf-muted)" }}>（{rev.count}件）</span>}
+                      <span style={{ color: "var(--bf-muted)" }}>（{rev.count != null ? `${rev.count}件・` : ""}{PLACE_REVIEWS_FETCHED}取得）</span>
                     </p>
                   )}
                   {s.catchcopy && <p className="text-xs mt-1 line-clamp-1" style={{ color: "var(--bf-muted)" }}>{s.catchcopy}</p>}
