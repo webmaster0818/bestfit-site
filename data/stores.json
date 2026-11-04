@@ -581096,7 +581096,7 @@
   },
   "/gyms/quickpersonal/chiba": {
     "id": "YaEEYdAvJHdcFXmZ",
-    "updatedAt": "2026-10-27T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z",
     "createdAt": "2026-10-27T00:00:00.000Z",
     "group": null,
     "_draft": null,
@@ -581186,6 +581186,66 @@
       {
         "id": "bQwY8HlcHG0GMlZK",
         "name": "運動不足解消"
+      },
+      {
+        "id": "vvlAReyeCjuE8LLS",
+        "name": "通い放題"
+      },
+      {
+        "id": "UVLIEY5LG6OxUfpI",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "id": "wY89aXviG7QpF4cf",
+        "name": "フリーウエイト"
+      },
+      {
+        "id": "eRU0YicppbCLy4yg",
+        "name": "毎日"
+      },
+      {
+        "id": "4eR7Qb99zZqMsRBk",
+        "name": "毎食"
+      },
+      {
+        "id": "lUFxdRPqHpyQ2nTN",
+        "name": "LINE"
+      },
+      {
+        "id": "8xj3NofQO8iEPcpD",
+        "name": "カロリー計算"
+      },
+      {
+        "id": "t2WmLnGQV2bmveyJ",
+        "name": "厳しい制限無し"
+      },
+      {
+        "id": "Tc8Nyy0driIKLQfN",
+        "name": "メニューアドバイス"
+      },
+      {
+        "id": "xTUmb5OjOwC9iZVv",
+        "name": "脱・リバウンド"
+      },
+      {
+        "id": "FeIlEspAbk3LOee2",
+        "name": "肩こり改善"
+      },
+      {
+        "id": "oylaxmMOwY6ixkNg",
+        "name": "アンチエイジング"
+      },
+      {
+        "id": "rRtmQaAfI4BBCk09",
+        "name": "健康診断の数値改善"
+      },
+      {
+        "id": "XiHMVM7pVpJdyt0e",
+        "name": "ストレス発散"
+      },
+      {
+        "id": "JkAKV67tH6dRdOGq",
+        "name": "産後ダイエット"
       }
     ],
     "trainers": [],
@@ -581244,6 +581304,74 @@
       {
         "key": "031",
         "name": "健康・体型維持"
+      },
+      {
+        "key": "004",
+        "name": "通い放題"
+      },
+      {
+        "key": "005",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "key": "035",
+        "name": "フリーウエイト"
+      },
+      {
+        "key": "048",
+        "name": "毎日"
+      },
+      {
+        "key": "049",
+        "name": "毎食"
+      },
+      {
+        "key": "050",
+        "name": "LINE"
+      },
+      {
+        "key": "045",
+        "name": "カロリー計算"
+      },
+      {
+        "key": "055",
+        "name": "厳しい制限無し"
+      },
+      {
+        "key": "046",
+        "name": "メニューアドバイス"
+      },
+      {
+        "key": "026",
+        "name": "脱・リバウンド"
+      },
+      {
+        "key": "027",
+        "name": "肩こり改善"
+      },
+      {
+        "key": "028",
+        "name": "姿勢改善"
+      },
+      {
+        "key": "029",
+        "name": "アンチエイジング"
+      },
+      {
+        "key": "030",
+        "name": "健康診断の数値改善"
+      },
+      {
+        "key": "032",
+        "name": "運動不足解消"
+      },
+      {
+        "key": "033",
+        "name": "ストレス発散"
+      },
+      {
+        "key": "034",
+        "name": "産後ダイエット"
       }
     ],
     "nearbyStores": [],
