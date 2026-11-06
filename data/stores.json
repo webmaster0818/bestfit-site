@@ -447766,7 +447766,7 @@
   },
   "/gyms/bodyhl/kurume": {
     "id": "K04ziAkfWrxKbQFM",
-    "updatedAt": "2026-02-08T02:13:18.331Z",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:09.555Z",
     "group": null,
     "_draft": null,
@@ -447795,8 +447795,8 @@
     "wardId": null,
     "telephoneNumber": null,
     "access": "西鉄久留米駅から徒歩7分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-kurume/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-kurume/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
@@ -447908,51 +447908,75 @@
     },
     "pricePlans": [
       {
-        "id": "YlcvmvuWpUz6kG7l",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "Jfsp1EjVCoVBjcOx",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月6日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "MkRbClk5PNNZcX65",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "0ZsJlorGQM37lG8G",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "or7s82kHCTb16kbA",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "MnPCCP3eNluiqhFo",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "uTHNHzrudBTFPgUO",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "taZYcNGruz9q716g",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "QaNA30xOAOKpvi6S",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "q1hMi0xEQCwSrkio",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -448057,14 +448081,6 @@
         "name": "食事指導"
       },
       {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
-      },
-      {
         "id": "jIvw9PJp2YTGI8os",
         "name": "シャワー"
       },
@@ -448163,10 +448179,6 @@
       {
         "key": "002",
         "name": "食事指導"
-      },
-      {
-        "key": "003",
-        "name": "入会金不要"
       },
       {
         "key": "031",
