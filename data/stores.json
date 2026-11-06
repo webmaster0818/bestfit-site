@@ -582024,5 +582024,1382 @@
       "023",
       "025"
     ]
+  },
+  "/gyms/fitjaemi/nishikujo": {
+    "id": "5hnr8iktLiv4RapT",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
+    "createdAt": "2026-11-06T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "PdfipaN2uzr4QaPb",
+    "slug": "nishikujo",
+    "name": "西九条店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": "5000",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験トレーニングは5,000円（税込・1時間〜1時間半）。カウンセリング・姿勢のチェック・体験トレーニング・目標と現状の確認・プランの提案を行います。無料カウンセリングも実施しています。",
+    "trialTrainingRequiredItems": "伸縮性のある動きやすい服装・室内用シューズ（無くても可）・飲み物",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "大阪府大阪市此花区梅香3-11-16-101",
+    "prefectureId": "UptLMDM8jjHNX7lf",
+    "cityId": "8k2rlRCQRzIyxI9t",
+    "wardId": null,
+    "telephoneNumber": "050-3628-5677",
+    "access": "阪神千鳥橋駅から徒歩4分／JR西九条駅から徒歩13分",
+    "openingHours": "9:00〜21:00\n定休日：年中無休（完全予約制）",
+    "url": "https://fitjaemi.jp/access/nishikujo/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "会員なら30分3,500円から都度払いで通える、千鳥橋駅徒歩4分のパーソナルジム",
+    "lead": "FIT JAEMI（フィットジェミ）西九条店は、大阪市内で4店舗を展開するパーソナルジムFIT JAEMI（運営：ソウルジャパン株式会社）の店舗です。阪神千鳥橋駅から徒歩4分、JR西九条駅から徒歩13分のマンション1階にあります。\n料金はすべて1回ごとの都度払いで、30分・60分・90分から選べます。会員登録なしのビジター料金は30分4,500円、会費15,000円（支払いは1回のみ）を支払った会員は30分3,500円で利用できます。家族や友人と2人で受けるペアトレーニング（会員30分4,000円＝1人あたり2,000円）にも対応しています。\n営業時間は9:00〜21:00で年中無休（完全予約制）。体験トレーニング（1時間〜1時間半・5,000円）では、カウンセリングと姿勢のチェックを行ったうえでトレーニングを体験できます。子ども連れでの来店ができ、大阪市の習い事・塾代助成カードも利用できます。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "UVLIEY5LG6OxUfpI",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "9vXTMYlGLAhlxdYf",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "005",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "024",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      },
+      {
+        "key": "028",
+        "name": "姿勢改善"
+      },
+      {
+        "key": "032",
+        "name": "運動不足解消"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "XSGaeK69G1UEYHoS",
+        "name": "パーソナルトレーニング 会員（30分）",
+        "membershipFee": null,
+        "price": 3500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "会員料金・ビジター料金とも、1回ごとの都度払いです（税込）。会員料金で利用するには会費15,000円（支払いは1回のみ）が必要で、ビジター（会員登録なし）は会費0円です。公式サイトでは、入会金・事務手数料・継続費用は不要と案内されています。",
+        "isRecommended": false
+      },
+      {
+        "id": "m8e4xTAIBUekYXAf",
+        "name": "パーソナルトレーニング 会員（60分）",
+        "membershipFee": null,
+        "price": 6600,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "KsWlSzBnCouWdncC",
+        "name": "パーソナルトレーニング 会員（90分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "TJNdQimxOBgEsoIb",
+        "name": "パーソナルトレーニング ビジター（30分）",
+        "membershipFee": null,
+        "price": 4500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "zcfxDMbneMEntaEG",
+        "name": "パーソナルトレーニング ビジター（60分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "09rUw5KwwsIb07zC",
+        "name": "パーソナルトレーニング ビジター（90分）",
+        "membershipFee": null,
+        "price": 9900,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "m9gG4NqW5s3UXEwR",
+        "name": "ペアトレーニング 会員（30分・2人分）",
+        "membershipFee": null,
+        "price": 4000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "ペアトレーニングは、家族や友人と2人で受けるトレーニングです。表の料金は2人分で、1人あたりは会員30分2,000円／60分3,850円／90分5,000円、ビジター30分2,500円／60分4,400円／90分5,500円です（税込）。",
+        "isRecommended": false
+      },
+      {
+        "id": "E079xbHCyHxgTPxp",
+        "name": "ペアトレーニング 会員（60分・2人分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "xecPxsDzDSJESCPz",
+        "name": "ペアトレーニング 会員（90分・2人分）",
+        "membershipFee": null,
+        "price": 10000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "AUjpLnMKBV5JuAYk",
+        "name": "ペアトレーニング ビジター（30分・2人分）",
+        "membershipFee": null,
+        "price": 5000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "uHPVXjXxfLZqoYQX",
+        "name": "ペアトレーニング ビジター（60分・2人分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "o8QRUaU0IVKGuXkh",
+        "name": "ペアトレーニング ビジター（90分・2人分）",
+        "membershipFee": null,
+        "price": 11000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": "このほか公式サイトの料金表には、2ヶ月でボディメイクコース（食事サポート付き・会員 週1回計8回83,000円〜）、VIPコース、60歳以上向けのシニアトレーニング、学生向けのキッズトレーニング、指名料（100円〜）が掲載されています。",
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "271004",
+      "type": "city",
+      "name": "大阪府大阪市",
+      "prefCode": "270008",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "UptLMDM8jjHNX7lf",
+      "updatedAt": "2025-10-23T06:06:17.996Z",
+      "createdAt": "2025-10-23T06:06:17.996Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.993Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "270008",
+      "type": "pref",
+      "name": "大阪府",
+      "kana": "ｵｵｻｶﾌ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": {
+      "id": null,
+      "updatedAt": null,
+      "createdAt": null,
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": null,
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "271047",
+      "type": "ward",
+      "name": "大阪府大阪市此花区",
+      "kana": "ｵｵｻｶﾌｵｵｻｶｼｺﾉﾊﾅｸ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "cityKana": "ｵｵｻｶｼ",
+      "wardName": "此花区",
+      "wardKana": "ｺﾉﾊﾅｸ"
+    },
+    "_prefCode": "270008",
+    "_prefName": "大阪府",
+    "_cityCode": "271004",
+    "_cityName": "大阪市",
+    "_wardCode": "271047",
+    "_wardName": "此花区",
+    "_tagKeys": [
+      "017",
+      "005",
+      "002",
+      "023",
+      "024",
+      "025",
+      "028",
+      "032"
+    ]
+  },
+  "/gyms/fitjaemi/tsukamoto": {
+    "id": "d0PbfxR6x7D9XRtW",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
+    "createdAt": "2026-11-06T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "PdfipaN2uzr4QaPb",
+    "slug": "tsukamoto",
+    "name": "塚本店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": "5000",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験トレーニングは5,000円（税込・1時間〜1時間半）。カウンセリング・姿勢のチェック・体験トレーニング・目標と現状の確認・プランの提案を行います。無料カウンセリングも実施しています。",
+    "trialTrainingRequiredItems": "伸縮性のある動きやすい服装・室内用シューズ（無くても可）・飲み物",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "大阪府大阪市淀川区塚本2-24-9 ビルズナカオ4F",
+    "prefectureId": "UptLMDM8jjHNX7lf",
+    "cityId": "8k2rlRCQRzIyxI9t",
+    "wardId": "MT450QE9VlLXKdhu",
+    "telephoneNumber": "050-3628-5677",
+    "access": "JR塚本駅から徒歩30秒",
+    "openingHours": "9:00〜21:00\n定休日：年中無休（完全予約制）",
+    "url": "https://fitjaemi.jp/access/tsukamoto/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "JR塚本駅から徒歩30秒。30分から都度払いで通えるパーソナルジム",
+    "lead": "FIT JAEMI（フィットジェミ）塚本店は、大阪市内で4店舗を展開するパーソナルジムFIT JAEMI（運営：ソウルジャパン株式会社）の店舗です。JR塚本駅から徒歩30秒の駅前にあり、仕事帰りや外出の前後にも立ち寄りやすい立地です。\n料金はすべて1回ごとの都度払いで、30分・60分・90分から選べます。会員登録なしのビジター料金は30分4,500円、会費15,000円（支払いは1回のみ）を支払った会員は30分3,500円で利用できます。家族や友人と2人で受けるペアトレーニング（会員30分4,000円＝1人あたり2,000円）にも対応しています。\n営業時間は9:00〜21:00で年中無休（完全予約制）。体験トレーニング（1時間〜1時間半・5,000円）では、カウンセリングと姿勢のチェックを行ったうえでトレーニングを体験できます。子ども連れでの来店ができ、大阪市の習い事・塾代助成カードも利用できます。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "UVLIEY5LG6OxUfpI",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "9vXTMYlGLAhlxdYf",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "005",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "024",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      },
+      {
+        "key": "028",
+        "name": "姿勢改善"
+      },
+      {
+        "key": "032",
+        "name": "運動不足解消"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "siRwXCEN6EqdAEJ0",
+        "name": "パーソナルトレーニング 会員（30分）",
+        "membershipFee": null,
+        "price": 3500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "会員料金・ビジター料金とも、1回ごとの都度払いです（税込）。会員料金で利用するには会費15,000円（支払いは1回のみ）が必要で、ビジター（会員登録なし）は会費0円です。公式サイトでは、入会金・事務手数料・継続費用は不要と案内されています。",
+        "isRecommended": false
+      },
+      {
+        "id": "iFrAZXuDnlADkVZY",
+        "name": "パーソナルトレーニング 会員（60分）",
+        "membershipFee": null,
+        "price": 6600,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "NO58IsJSrxE7gWvi",
+        "name": "パーソナルトレーニング 会員（90分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "xdPTut4x1ZZusUh1",
+        "name": "パーソナルトレーニング ビジター（30分）",
+        "membershipFee": null,
+        "price": 4500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "NZsHpjmfFxOVtjiP",
+        "name": "パーソナルトレーニング ビジター（60分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "OgO2seaso7Cfxyvk",
+        "name": "パーソナルトレーニング ビジター（90分）",
+        "membershipFee": null,
+        "price": 9900,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "NidMqTSCghoEkTQX",
+        "name": "ペアトレーニング 会員（30分・2人分）",
+        "membershipFee": null,
+        "price": 4000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "ペアトレーニングは、家族や友人と2人で受けるトレーニングです。表の料金は2人分で、1人あたりは会員30分2,000円／60分3,850円／90分5,000円、ビジター30分2,500円／60分4,400円／90分5,500円です（税込）。",
+        "isRecommended": false
+      },
+      {
+        "id": "Gpp7kMUwSDwCB6SS",
+        "name": "ペアトレーニング 会員（60分・2人分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "p7DtUyozIYjzz8x1",
+        "name": "ペアトレーニング 会員（90分・2人分）",
+        "membershipFee": null,
+        "price": 10000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Lj6OmBrXKUJxyV3L",
+        "name": "ペアトレーニング ビジター（30分・2人分）",
+        "membershipFee": null,
+        "price": 5000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "GrFDgQvUIxijDSbz",
+        "name": "ペアトレーニング ビジター（60分・2人分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "tXJYLa4SLmZYAXR2",
+        "name": "ペアトレーニング ビジター（90分・2人分）",
+        "membershipFee": null,
+        "price": 11000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": "このほか公式サイトの料金表には、2ヶ月でボディメイクコース（食事サポート付き・会員 週1回計8回83,000円〜）、VIPコース、60歳以上向けのシニアトレーニング、学生向けのキッズトレーニング、指名料（100円〜）が掲載されています。",
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "271004",
+      "type": "city",
+      "name": "大阪府大阪市",
+      "prefCode": "270008",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "UptLMDM8jjHNX7lf",
+      "updatedAt": "2025-10-23T06:06:17.996Z",
+      "createdAt": "2025-10-23T06:06:17.996Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.993Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "270008",
+      "type": "pref",
+      "name": "大阪府",
+      "kana": "ｵｵｻｶﾌ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": {
+      "id": "MT450QE9VlLXKdhu",
+      "updatedAt": "2025-10-23T06:09:11.914Z",
+      "createdAt": "2025-10-23T06:09:11.914Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:09:11.911Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "271233",
+      "type": "ward",
+      "name": "大阪府大阪市淀川区",
+      "kana": "ｵｵｻｶﾌｵｵｻｶｼﾖﾄﾞｶﾞﾜｸ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "cityKana": "ｵｵｻｶｼ",
+      "wardName": "淀川区",
+      "wardKana": "ﾖﾄﾞｶﾞﾜｸ"
+    },
+    "_prefCode": "270008",
+    "_prefName": "大阪府",
+    "_cityCode": "271004",
+    "_cityName": "大阪市",
+    "_wardCode": "271233",
+    "_wardName": "淀川区",
+    "_tagKeys": [
+      "017",
+      "005",
+      "002",
+      "023",
+      "024",
+      "025",
+      "028",
+      "032"
+    ]
+  },
+  "/gyms/fitjaemi/bententyo": {
+    "id": "NygsrfcJXTSxkHgw",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
+    "createdAt": "2026-11-06T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "PdfipaN2uzr4QaPb",
+    "slug": "bententyo",
+    "name": "弁天町店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": "5000",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験トレーニングは5,000円（税込・1時間〜1時間半）。カウンセリング・姿勢のチェック・体験トレーニング・目標と現状の確認・プランの提案を行います。無料カウンセリングも実施しています。",
+    "trialTrainingRequiredItems": "伸縮性のある動きやすい服装・室内用シューズ（無くても可）・飲み物",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "大阪府大阪市港区磯路3-8-24 藤和市岡ハイタウン206号",
+    "prefectureId": "UptLMDM8jjHNX7lf",
+    "cityId": "8k2rlRCQRzIyxI9t",
+    "wardId": null,
+    "telephoneNumber": "050-3628-5677",
+    "access": "大阪メトロ弁天町駅から徒歩10分",
+    "openingHours": "9:00〜21:00\n定休日：年中無休（完全予約制）",
+    "url": "https://fitjaemi.jp/access/bententyo/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "弁天町駅徒歩10分。ペアトレーニングにも対応した都度払いのパーソナルジム",
+    "lead": "FIT JAEMI（フィットジェミ）弁天町店は、大阪市内で4店舗を展開するパーソナルジムFIT JAEMI（運営：ソウルジャパン株式会社）の店舗です。大阪メトロ弁天町駅から徒歩10分（約600m）の場所にあり、トレーニング用の2ブースのほかに整体ブースがあります。\n料金はすべて1回ごとの都度払いで、30分・60分・90分から選べます。会員登録なしのビジター料金は30分4,500円、会費15,000円（支払いは1回のみ）を支払った会員は30分3,500円で利用できます。家族や友人と2人で受けるペアトレーニング（会員30分4,000円＝1人あたり2,000円）にも対応しています。\n営業時間は9:00〜21:00で年中無休（完全予約制）。体験トレーニング（1時間〜1時間半・5,000円）では、カウンセリングと姿勢のチェックを行ったうえでトレーニングを体験できます。子ども連れでの来店ができ、大阪市の習い事・塾代助成カードも利用できます。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "UVLIEY5LG6OxUfpI",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "9vXTMYlGLAhlxdYf",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "005",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "024",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      },
+      {
+        "key": "028",
+        "name": "姿勢改善"
+      },
+      {
+        "key": "032",
+        "name": "運動不足解消"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "GLvj2DlRxNvn9HDg",
+        "name": "パーソナルトレーニング 会員（30分）",
+        "membershipFee": null,
+        "price": 3500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "会員料金・ビジター料金とも、1回ごとの都度払いです（税込）。会員料金で利用するには会費15,000円（支払いは1回のみ）が必要で、ビジター（会員登録なし）は会費0円です。公式サイトでは、入会金・事務手数料・継続費用は不要と案内されています。",
+        "isRecommended": false
+      },
+      {
+        "id": "j1FW6Lc65AUW3rgA",
+        "name": "パーソナルトレーニング 会員（60分）",
+        "membershipFee": null,
+        "price": 6600,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "mMxNqBY50pz2flkf",
+        "name": "パーソナルトレーニング 会員（90分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Eb7hQwNxzstD3AYI",
+        "name": "パーソナルトレーニング ビジター（30分）",
+        "membershipFee": null,
+        "price": 4500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "cSEAhVDQ73bFEnb7",
+        "name": "パーソナルトレーニング ビジター（60分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "5qHROspoq54Us8J5",
+        "name": "パーソナルトレーニング ビジター（90分）",
+        "membershipFee": null,
+        "price": 9900,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "tveYko79vsObWXuC",
+        "name": "ペアトレーニング 会員（30分・2人分）",
+        "membershipFee": null,
+        "price": 4000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "ペアトレーニングは、家族や友人と2人で受けるトレーニングです。表の料金は2人分で、1人あたりは会員30分2,000円／60分3,850円／90分5,000円、ビジター30分2,500円／60分4,400円／90分5,500円です（税込）。",
+        "isRecommended": false
+      },
+      {
+        "id": "ycTrFGF2VITx43Dh",
+        "name": "ペアトレーニング 会員（60分・2人分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "zEDsfhkEHxFTOHoe",
+        "name": "ペアトレーニング 会員（90分・2人分）",
+        "membershipFee": null,
+        "price": 10000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "7hltyGDlo3TFbkfR",
+        "name": "ペアトレーニング ビジター（30分・2人分）",
+        "membershipFee": null,
+        "price": 5000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "HVOxSWJJU6ajQp7v",
+        "name": "ペアトレーニング ビジター（60分・2人分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "wAQSb8ahA9UQCfMv",
+        "name": "ペアトレーニング ビジター（90分・2人分）",
+        "membershipFee": null,
+        "price": 11000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": "このほか公式サイトの料金表には、2ヶ月でボディメイクコース（食事サポート付き・会員 週1回計8回83,000円〜）、VIPコース、60歳以上向けのシニアトレーニング、学生向けのキッズトレーニング、指名料（100円〜）が掲載されています。",
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "271004",
+      "type": "city",
+      "name": "大阪府大阪市",
+      "prefCode": "270008",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "UptLMDM8jjHNX7lf",
+      "updatedAt": "2025-10-23T06:06:17.996Z",
+      "createdAt": "2025-10-23T06:06:17.996Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.993Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "270008",
+      "type": "pref",
+      "name": "大阪府",
+      "kana": "ｵｵｻｶﾌ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": {
+      "id": null,
+      "updatedAt": null,
+      "createdAt": null,
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": null,
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "271071",
+      "type": "ward",
+      "name": "大阪府大阪市港区",
+      "kana": "ｵｵｻｶﾌｵｵｻｶｼﾐﾅﾄｸ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "cityKana": "ｵｵｻｶｼ",
+      "wardName": "港区",
+      "wardKana": "ﾐﾅﾄｸ"
+    },
+    "_prefCode": "270008",
+    "_prefName": "大阪府",
+    "_cityCode": "271004",
+    "_cityName": "大阪市",
+    "_wardCode": "271071",
+    "_wardName": "港区",
+    "_tagKeys": [
+      "017",
+      "005",
+      "002",
+      "023",
+      "024",
+      "025",
+      "028",
+      "032"
+    ]
+  },
+  "/gyms/fitjaemi/himejima": {
+    "id": "FmgaVIEHwapGQzLW",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
+    "createdAt": "2026-11-06T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "PdfipaN2uzr4QaPb",
+    "slug": "himejima",
+    "name": "姫島店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": "5000",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験トレーニングは5,000円（税込・1時間〜1時間半）。カウンセリング・姿勢のチェック・体験トレーニング・目標と現状の確認・プランの提案を行います。無料カウンセリングも実施しています。",
+    "trialTrainingRequiredItems": "伸縮性のある動きやすい服装・室内用シューズ（無くても可）・飲み物",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "大阪府大阪市西淀川区姫島5-3-17 ストークハウス302号室",
+    "prefectureId": "UptLMDM8jjHNX7lf",
+    "cityId": "8k2rlRCQRzIyxI9t",
+    "wardId": null,
+    "telephoneNumber": "050-3628-5677",
+    "access": "阪神姫島駅から徒歩6分",
+    "openingHours": "9:00〜21:00\n定休日：年中無休（完全予約制）",
+    "url": "https://fitjaemi.jp/access/himejima/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "パーソナルトレーニングとマシンピラティスを受けられる、姫島駅徒歩6分のジム",
+    "lead": "FIT JAEMI（フィットジェミ）姫島店は、大阪市内で4店舗を展開するパーソナルジムFIT JAEMI（運営：ソウルジャパン株式会社）の店舗です。阪神姫島駅から徒歩6分（約500m）の場所にあり、FIT JAEMIで初めてマシンピラティスを導入した店舗です。同じ建物の301号室にマシンピラティススタジオがあり、パーソナルトレーニングとマシンピラティスのどちらも受けられます。\n料金はすべて1回ごとの都度払いで、30分・60分・90分から選べます。会員登録なしのビジター料金は30分4,500円、会費15,000円（支払いは1回のみ）を支払った会員は30分3,500円で利用できます。家族や友人と2人で受けるペアトレーニング（会員30分4,000円＝1人あたり2,000円）にも対応しています。\n営業時間は9:00〜21:00で年中無休（完全予約制）。体験トレーニング（1時間〜1時間半・5,000円）では、カウンセリングと姿勢のチェックを行ったうえでトレーニングを体験できます。子ども連れでの来店もできます。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "UVLIEY5LG6OxUfpI",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "9vXTMYlGLAhlxdYf",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      },
+      {
+        "id": "FeIlEspAbk3LOee2",
+        "name": "肩こり改善"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "005",
+        "name": "ウォーターサーバー"
+      },
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "024",
+        "name": "筋力アップ(バルクアップ)"
+      },
+      {
+        "key": "025",
+        "name": "ボディシェイプ"
+      },
+      {
+        "key": "028",
+        "name": "姿勢改善"
+      },
+      {
+        "key": "032",
+        "name": "運動不足解消"
+      },
+      {
+        "key": "027",
+        "name": "肩こり改善"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "3qgr4wCAt3hMov7F",
+        "name": "パーソナルトレーニング 会員（30分）",
+        "membershipFee": null,
+        "price": 3500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "会員料金・ビジター料金とも、1回ごとの都度払いです（税込）。会員料金で利用するには会費15,000円（支払いは1回のみ）が必要で、ビジター（会員登録なし）は会費0円です。公式サイトでは、入会金・事務手数料・継続費用は不要と案内されています。",
+        "isRecommended": false
+      },
+      {
+        "id": "CUOijS53FepAUSSI",
+        "name": "パーソナルトレーニング 会員（60分）",
+        "membershipFee": null,
+        "price": 6600,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "SP6LfPtLS70nMe4r",
+        "name": "パーソナルトレーニング 会員（90分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "hyOYoDR9bYvqe9fl",
+        "name": "パーソナルトレーニング ビジター（30分）",
+        "membershipFee": null,
+        "price": 4500,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "SzYMrbNIighq1kW7",
+        "name": "パーソナルトレーニング ビジター（60分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "SJrP2CYvwr04DVpu",
+        "name": "パーソナルトレーニング ビジター（90分）",
+        "membershipFee": null,
+        "price": 9900,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "xyxFL0pfEyKp50q5",
+        "name": "ペアトレーニング 会員（30分・2人分）",
+        "membershipFee": null,
+        "price": 4000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": "ペアトレーニングは、家族や友人と2人で受けるトレーニングです。表の料金は2人分で、1人あたりは会員30分2,000円／60分3,850円／90分5,000円、ビジター30分2,500円／60分4,400円／90分5,500円です（税込）。",
+        "isRecommended": false
+      },
+      {
+        "id": "Sju8fySy3jRtH11O",
+        "name": "ペアトレーニング 会員（60分・2人分）",
+        "membershipFee": null,
+        "price": 7700,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "lHbxYq1rwLB1GnF1",
+        "name": "ペアトレーニング 会員（90分・2人分）",
+        "membershipFee": null,
+        "price": 10000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "RNdUK7kgggvxltVC",
+        "name": "ペアトレーニング ビジター（30分・2人分）",
+        "membershipFee": null,
+        "price": 5000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 30,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "1aFNmVjITyhyxvbw",
+        "name": "ペアトレーニング ビジター（60分・2人分）",
+        "membershipFee": null,
+        "price": 8800,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "oFc589qTSvykRHfm",
+        "name": "ペアトレーニング ビジター（90分・2人分）",
+        "membershipFee": null,
+        "price": 11000,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 90,
+        "days": null,
+        "note": "このほか公式サイトの料金表には、2ヶ月でボディメイクコース（食事サポート付き・会員 週1回計8回83,000円〜）、VIPコース、60歳以上向けのシニアトレーニング、学生向けのキッズトレーニング、指名料（100円〜）が掲載されています。\nマシンピラティスの料金は公式サイトに掲載がないため、店舗へお問い合わせください（2026年11月6日時点）。",
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "271004",
+      "type": "city",
+      "name": "大阪府大阪市",
+      "prefCode": "270008",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "UptLMDM8jjHNX7lf",
+      "updatedAt": "2025-10-23T06:06:17.996Z",
+      "createdAt": "2025-10-23T06:06:17.996Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.993Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "270008",
+      "type": "pref",
+      "name": "大阪府",
+      "kana": "ｵｵｻｶﾌ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": {
+      "id": null,
+      "updatedAt": null,
+      "createdAt": null,
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": null,
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "271136",
+      "type": "ward",
+      "name": "大阪府大阪市西淀川区",
+      "kana": "ｵｵｻｶﾌｵｵｻｶｼﾆｼﾖﾄﾞｶﾞﾜｸ",
+      "prefCode": "270008",
+      "prefKana": "ｵｵｻｶﾌ",
+      "prefName": "大阪府",
+      "cityCode": "271004",
+      "cityName": "大阪市",
+      "cityKana": "ｵｵｻｶｼ",
+      "wardName": "西淀川区",
+      "wardKana": "ﾆｼﾖﾄﾞｶﾞﾜｸ"
+    },
+    "_prefCode": "270008",
+    "_prefName": "大阪府",
+    "_cityCode": "271004",
+    "_cityName": "大阪市",
+    "_wardCode": "271136",
+    "_wardName": "西淀川区",
+    "_tagKeys": [
+      "017",
+      "005",
+      "002",
+      "023",
+      "024",
+      "025",
+      "028",
+      "032",
+      "027"
+    ]
   }
 }
