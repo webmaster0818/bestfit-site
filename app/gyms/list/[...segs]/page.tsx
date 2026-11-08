@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listPaths, metaFor, resolveListPage, brands, refineLinks, listCanonicalMap, storeReviews } from "@/lib/data";
-import { IcoPin, IcoTrain, IcoYen, IcoChevron, IcoClock } from "@/components/Ico";
+import { IcoSprite } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import DistanceSort from "@/components/DistanceSort";
 import { planPriceLabel } from "@/lib/data";
@@ -129,6 +129,8 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
         );
       })()}
 
+      {/* 一覧カード用アイコンのSVGスプライト(形状は components/Ico.tsx と同一)。各カードは<use>で参照 */}
+      {hits.length > 0 && <IcoSprite />}
       {hits.length >= 2 && <DistanceSort containerId="gym-list" />}
       <div className="space-y-4" id="gym-list">
         {hits.map(([path, s]) => {
@@ -156,33 +158,34 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
           const activeCond = [labels.feature, labels.tag].filter(Boolean) as string[];
           const sortedFeats = [...featNames].sort((a, b) => (activeCond.includes(b) ? 1 : 0) - (activeCond.includes(a) ? 1 : 0));
           return (
-            <Link key={path} href={path} className="bf-card bf-card-hover p-5 block group relative" data-lat={rev?.lat ?? undefined} data-lng={rev?.lng ?? undefined}>
-              <div className="flex items-start justify-between gap-3">
+            <Link key={path} href={path} className="bf-card bf-card-hover group glc" data-lat={rev?.lat ?? undefined} data-lng={rev?.lng ?? undefined}>
+              {/* 軽量化(2026-11-08): class/styleはglobals.cssの.glc-*に集約・アイコンはSVGスプライト参照(表示内容・見た目は不変) */}
+              <div className="glc-top">
                 <div className="min-w-0">
-                  <h2 className="font-extrabold text-lg leading-snug group-hover:underline" style={{ color: "var(--bf-primary)" }}>
-                    {b?.name || ""} {s.name}
+                  <h2 className="glc-name">
+                    {`${b?.name || ""} ${s.name}`}
                   </h2>
                   {rev?.rating != null && (
-                    <p className="text-xs mt-1 flex flex-wrap items-center gap-x-1" style={{ color: "#f59e0b" }}>
-                      <span className="font-bold" style={{ color: "var(--bf-muted)" }}>Googleマップ</span>
-                      <span>{"★".repeat(Math.round(rev.rating))}<span style={{ color: "#d1d5db" }}>{"★".repeat(5 - Math.round(rev.rating))}</span></span>
-                      <span className="font-bold" style={{ color: "var(--bf-ink)" }}>{rev.rating.toFixed(1)}</span>
-                      <span style={{ color: "var(--bf-muted)" }}>（{rev.count != null ? `${rev.count}件・` : ""}{PLACE_REVIEWS_FETCHED}取得）</span>
+                    <p className="glc-rv">
+                      <span className="glc-rvl">Googleマップ</span>
+                      <span>{"★".repeat(Math.round(rev.rating))}<span className="glc-off">{"★".repeat(5 - Math.round(rev.rating))}</span></span>
+                      <span className="glc-rvn">{rev.rating.toFixed(1)}</span>
+                      <span className="glc-mu">{`（${rev.count != null ? `${rev.count}件・` : ""}${PLACE_REVIEWS_FETCHED}取得）`}</span>
                     </p>
                   )}
-                  {s.catchcopy && <p className="text-xs mt-1 line-clamp-1" style={{ color: "var(--bf-muted)" }}>{s.catchcopy}</p>}
+                  {s.catchcopy && <p className="glc-cc">{s.catchcopy}</p>}
                 </div>
                 {minPlan && (
-                  <div className="shrink-0 text-right rounded-lg px-3 py-1.5" style={{ background: "var(--bf-primary-soft)" }}>
+                  <div className="glc-pr">
                     {minPer ? (
                       <>
-                        <p className="text-[11px] font-bold" style={{ color: "var(--bf-muted)" }}>1回あたり（{minPer.sc}回換算）</p>
-                        <p className="bf-price text-base leading-tight">{minPer.per.toLocaleString()}<span className="text-[11px]">円〜</span></p>
+                        <p className="glc-prl">{`1回あたり（${minPer.sc}回換算）`}</p>
+                        <p className="bf-price glc-prv">{minPer.per.toLocaleString()}<span className="glc-u">円〜</span></p>
                       </>
                     ) : (
                       <>
-                        <p className="text-[11px] font-bold" style={{ color: "var(--bf-muted)" }}>最安プラン（{planPriceLabel(minPlan)}）</p>
-                        <p className="bf-price text-base leading-tight">{minPlan.price.toLocaleString()}<span className="text-[11px]">円〜</span></p>
+                        <p className="glc-prl">{`最安プラン（${planPriceLabel(minPlan)}）`}</p>
+                        <p className="bf-price glc-prv">{minPlan.price.toLocaleString()}<span className="glc-u">円〜</span></p>
                       </>
                     )}
                   </div>
@@ -190,28 +193,28 @@ export default async function ListPage({ params }: { params: Promise<{ segs: str
               </div>
               {/* 訴求バッジ */}
               {(freeJoin || hasTrial || closesLate || opensEarly) && (
-                <div className="flex flex-wrap gap-1.5 mt-2.5">
-                  {freeJoin && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#fef2f2", color: "#dc2626" }}>入会金無料</span>}
-                  {hasTrial && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#ecfdf5", color: "#059669" }}>無料体験あり</span>}
-                  {closesLate && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#eff6ff", color: "#2563eb" }}>夜間OK</span>}
-                  {opensEarly && <span className="text-[11px] font-bold px-2 py-0.5 rounded" style={{ background: "#eff6ff", color: "#2563eb" }}>早朝OK</span>}
+                <div className="glc-bdg">
+                  {freeJoin && <span className="glc-b1">入会金無料</span>}
+                  {hasTrial && <span className="glc-b2">無料体験あり</span>}
+                  {closesLate && <span className="glc-b3">夜間OK</span>}
+                  {opensEarly && <span className="glc-b3">早朝OK</span>}
                 </div>
               )}
-              <div className="text-[13px] mt-3 space-y-1.5" style={{ color: "#475569" }}>
-                {s.access && <p className="flex items-start gap-1.5"><IcoTrain className="mt-1 shrink-0 text-[13px]" /><span>{s.access}<span data-dist className="ml-1 font-bold" style={{ color: "var(--bf-primary)" }} /></span></p>}
-                {s.openingHours && <p className="flex items-start gap-1.5"><IcoClock className="mt-1 shrink-0 text-[13px]" /><span>{s.openingHours.split("\n")[0]}</span></p>}
-                {s.address && <p className="flex items-start gap-1.5"><IcoPin className="mt-1 shrink-0 text-[13px]" /><span className="line-clamp-1">{s.address}</span></p>}
+              <div className="glc-info">
+                {s.access && <p className="glc-row"><svg className="glc-ic" aria-hidden><use href="#bfi-train" /></svg><span>{s.access}<span data-dist className="glc-dist" /></span></p>}
+                {s.openingHours && <p className="glc-row"><svg className="glc-ic" aria-hidden><use href="#bfi-clock" /></svg><span>{s.openingHours.split("\n")[0]}</span></p>}
+                {s.address && <p className="glc-row"><svg className="glc-ic" aria-hidden><use href="#bfi-pin" /></svg><span className="line-clamp-1">{s.address}</span></p>}
               </div>
               {sortedFeats.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mt-3">
+                <div className="glc-chips">
                   {sortedFeats.slice(0, 4).map((name) => (
-                    <span key={name} className="bf-chip" style={activeCond.includes(name) ? { background: "var(--bf-primary)", color: "#fff" } : undefined}>
+                    <span key={name} className={activeCond.includes(name) ? "bf-chip glc-on" : "bf-chip"}>
                       {activeCond.includes(name) ? `✓ ${name}` : name}
                     </span>
                   ))}
                 </div>
               )}
-              <span className="absolute bottom-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-white text-sm group-hover:translate-x-0.5 transition-transform" style={{ background: "var(--bf-primary)" }}><IcoChevron /></span>
+              <span className="glc-arr"><svg className="glc-i" aria-hidden><use href="#bfi-chev" /></svg></span>
             </Link>
           );
         })}

@@ -352,3 +352,33 @@ body {
 *::after {
   border-radius: 0 !important;
 }
+
+/* ===== 軽量化(2026-11-08): ジム一覧カード(/gyms/list/*)の共通クラス =====
+   549件規模の一覧で同じ長いclass/style/SVGが件数分×2(HTML+RSC)重複していたため、
+   以前と同じユーティリティ・同じ色指定をここに集約(見た目は不変)。旧インラインstyle相当なのでlayer外に置く */
+.glc { @apply p-5 block relative; }
+.glc-top { @apply flex items-start justify-between gap-3; }
+.glc-name { @apply font-extrabold text-lg leading-snug group-hover:underline; color: var(--bf-primary); }
+.glc-rv { @apply text-xs mt-1 flex flex-wrap items-center gap-x-1; color: #f59e0b; }
+.glc-rvl { @apply font-bold; color: var(--bf-muted); }
+.glc-off { color: #d1d5db; }
+.glc-rvn { @apply font-bold; color: var(--bf-ink); }
+.glc-mu { color: var(--bf-muted); }
+.glc-cc { @apply text-xs mt-1 line-clamp-1; color: var(--bf-muted); }
+.glc-pr { @apply shrink-0 text-right rounded-lg px-3 py-1.5; background: var(--bf-primary-soft); }
+.glc-prl { @apply text-[11px] font-bold; color: var(--bf-muted); }
+.glc-prv { @apply text-base leading-tight; }
+.glc-u { @apply text-[11px]; }
+.glc-bdg { @apply flex flex-wrap gap-1.5 mt-2.5; }
+.glc-b1, .glc-b2, .glc-b3 { @apply text-[11px] font-bold px-2 py-0.5 rounded; }
+.glc-b1 { background: #fef2f2; color: #dc2626; }
+.glc-b2 { background: #ecfdf5; color: #059669; }
+.glc-b3 { background: #eff6ff; color: #2563eb; }
+.glc-info { @apply text-[13px] mt-3 space-y-1.5; color: #475569; }
+.glc-row { @apply flex items-start gap-1.5; }
+.glc-ic { @apply mt-1 shrink-0 text-[13px]; width: 1em; height: 1em; fill: currentColor; }
+.glc-dist { @apply ml-1 font-bold; color: var(--bf-primary); }
+.glc-chips { @apply flex flex-wrap gap-1.5 mt-3; }
+.glc-on { background: var(--bf-primary); color: #fff; }
+.glc-arr { @apply absolute bottom-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-white text-sm group-hover:translate-x-0.5 transition-transform; background: var(--bf-primary); }
+.glc-i { width: 1em; height: 1em; fill: currentColor; }
