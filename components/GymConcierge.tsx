@@ -76,7 +76,19 @@ function TypingText({ text, onDone }: { text: string; onDone?: () => void }) {
 type Msg = { role: "bot" | "user"; text: string };
 type Step = "goal" | "pref" | "city" | "cond" | "result";
 
-export default function GymConcierge({ stores }: { stores: Store[] }) {
+export default function GymConcierge() {
+  // 軽量化(2026-11-08): 店舗データ(約630KB)はHTML/RSC同梱をやめ、表示後にfetch(機能・見た目は不変)
+  // public/data/concierge-stores.json は scripts/sync-client-data.mjs がビルド時に data/ から生成
+  const [stores, setStores] = useState<Store[]>([]);
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    fetch("/data/concierge-stores.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d) => { if (alive) { if (Array.isArray(d)) setStores(d); setLoaded(true); } })
+      .catch(() => { if (alive) setLoaded(true); });
+    return () => { alive = false; };
+  }, []);
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [step, setStep] = useState<Step>("goal");
   const [goal, setGoal] = useState<typeof GOALS[number] | null>(null);
@@ -166,6 +178,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
             <button onClick={useGeo} className="w-full mb-3 px-4 py-2.5 rounded-lg text-sm font-bold" style={{ background: "#111827", color: "#fff" }}>📍 現在地の近くで探す</button>
             <p className="text-xs font-bold mb-2" style={{ color: "var(--bf-muted)" }}>またはエリアを選ぶ</p>
             <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto">
+              {!loaded && <span className="text-xs" style={{ color: "var(--bf-muted)" }}>エリアを読み込んでいます…</span>}
               {prefs.map((pr) => (
                 <button key={pr} onClick={() => { setPref(pr); user(pr); say(`${pr}ですね。市区町村を選ぶと、さらに絞り込めます（「${pr}全域で探す」を押すと全域が対象になります）。`); setStep("city"); }} className="bf-chip-link">{pr}</button>
               ))}
@@ -195,7 +208,7 @@ export default function GymConcierge({ stores }: { stores: Store[] }) {
                 return <button key={c.feat} onClick={() => setConds((p) => on ? p.filter((x) => x !== c.feat) : [...p, c.feat])} className="bf-chip" style={on ? { background: "var(--bf-primary)", color: "#fff" } : undefined}>{on ? `✓ ${c.label}` : c.label}</button>;
               })}
             </div>
-            <button onClick={() => { user(conds.length ? `条件: ${conds.map((f) => CONDS.find((c) => c.feat === f)?.label).join("・")}` : "こだわりなし"); goResult(); }} className="w-full bf-cta">この条件で見る（{results.length}件）</button>
+            <button onClick={() => { user(conds.length ? `条件: ${conds.map((f) => CONDS.find((c) => c.feat === f)?.label).join("・")}` : "こだわりなし"); goResult(); }} className="w-full bf-cta" disabled={!loaded}>{loaded ? `この条件で見る（${results.length}件）` : "店舗データを読み込んでいます…"}</button>
             <div className="mt-2"><button onClick={back} className="text-xs underline" style={{ color: "var(--bf-muted)" }}>← エリアを選び直す</button></div>
           </div>
         )}

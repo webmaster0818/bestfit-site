@@ -22,7 +22,6 @@ function loadJson(file: string) {
 }
 
 export default function Home() {
-  const conciergeStores = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "concierge-stores.json"), "utf-8"));
   const tax = taxonomies();
   const storeCount = Object.keys(stores()).length;
   const brandCount = Object.keys(brands()).length;
@@ -100,7 +99,7 @@ export default function Home() {
       {/* ===== AI診断コンシェルジュ ===== */}
       <section className="py-8">
         <div className="max-w-3xl mx-auto px-4">
-          <GymConcierge stores={conciergeStores} />
+          <GymConcierge />
         </div>
       </section>
 
