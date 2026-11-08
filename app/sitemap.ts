@@ -8,6 +8,7 @@ import articleLastmod from "@/data/article-lastmod.json";
 export const dynamic = "force-static";
 
 const BASE = "https://fit-best.com";
+const SITEMAP_MIN_LIST_STORES = 5;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const um = urlMeta() as Record<string, { canonical?: string; robots?: string }>;
@@ -15,7 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const [p, v] of Object.entries(um)) {
     if ((v?.robots || "").includes("noindex")) continue;
     if (/^\/gyms\/list\/(.+\/)?tag-\w+$/.test(p)) continue;
-    if (p.startsWith("/gyms/list/") && resolveListPage(p.slice("/gyms/list/".length).split("/")).stores.length === 0) continue; // 掲載0件(noindex)
+    // 掲載0件(noindex)は除外。掲載4件以下の一覧も、クロールの枠を記事・店舗に回すため載せない(ページ自体は残す・MediaXAI 11/8承認)
+    if (p.startsWith("/gyms/list/") && resolveListPage(p.slice("/gyms/list/".length).split("/")).stores.length < SITEMAP_MIN_LIST_STORES) continue;
     if (listCanonicalMap()[p]) continue; // canonical をエリア記事に寄せた一覧は載せない(公開前チェック[6e]) // feature 一覧へ301で統合(lib/data.ts featurePathForTag)
     const url =
       v?.canonical && v.canonical.startsWith("http")
