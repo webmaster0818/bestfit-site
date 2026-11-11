@@ -71908,7 +71908,7 @@
   },
   "/gyms/bodyhl/yakuin": {
     "id": "3PKHTdjceTI2oi6i",
-    "updatedAt": "2026-02-08T02:13:19.876Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.753Z",
     "group": null,
     "_draft": null,
@@ -71937,12 +71937,12 @@
     "wardId": "5PitPlFgCqouAqzx",
     "telephoneNumber": null,
     "access": "薬院大通駅から徒歩1分\n薬院駅から徒歩6分",
-    "openingHours": "年中無休:8:00-23:00 定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/yakuin/）をご確認ください",
+    "url": "https://bodyhackerslab.com/yakuin/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -71994,14 +71994,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "qW52olWvgbex8Hyq",
@@ -72169,51 +72161,75 @@
     "reviews": [],
     "pricePlans": [
       {
-        "id": "WHFbAN63ZBiL3CBS",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "AAoH3Vu534x6NC5I",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "itbcLSA0bwQ0e2s9",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "HBG9ursfjPZm079J",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "vhOvYyqv00Zzlh5r",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "TnwSnKDtpwrJTjPT",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "mQeyy96H93XSAMQs",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "GOOYL5mprFqGlGwW",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "I1cWwME3YDCsGyRB",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "daiCB2TQ38R4Uoge",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -72310,10 +72326,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -72407,7 +72419,6 @@
     "_wardName": "中央区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -87678,7 +87689,7 @@
   },
   "/gyms/bodyhl/fujisaki": {
     "id": "rnx6jcDWCjkJIKX1",
-    "updatedAt": "2026-02-08T02:13:18.764Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.679Z",
     "group": null,
     "_draft": null,
@@ -87706,13 +87717,13 @@
     "cityId": "wNsMjZWgHmX7QTpu",
     "wardId": "4547kw6hFvqAoyka",
     "telephoneNumber": null,
-    "access": "藤崎駅から徒歩6分\n室見駅から徒歩10分\n西新駅から徒歩18分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "access": "藤崎駅から徒歩6分\n室見駅から徒歩10分\n西新駅から徒歩17分",
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-nishijin/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-nishijin/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -87726,51 +87737,75 @@
     },
     "pricePlans": [
       {
-        "id": "AGqh9ZQe7Z1t1Sk4",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "zsq6GLgXf4t9msTn",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "IxgHHkzER7gJC8Wk",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "n2BAicVwHdbxgjBr",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "4vUaRkoclfUvJnPr",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "ZW4YOd8Xpv38bSbY",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "JElAXqNVDEm1Tcfv",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "0j7JWfmSOH0pUrxr",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "qKMV023P70LAiUtX",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "jzmbeBPucbIuXRy8",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -87929,14 +87964,6 @@
         "name": "食事指導"
       },
       {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
-      },
-      {
         "id": "jIvw9PJp2YTGI8os",
         "name": "シャワー"
       },
@@ -88077,10 +88104,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -88169,7 +88192,6 @@
     "_wardName": "早良区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -109446,7 +109468,7 @@
   },
   "/gyms/bodyhl/ohori": {
     "id": "etcqzka5t2vsBOP5",
-    "updatedAt": "2026-02-08T02:11:15.108Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:16:20.248Z",
     "group": null,
     "_draft": null,
@@ -109475,12 +109497,12 @@
     "wardId": "5PitPlFgCqouAqzx",
     "telephoneNumber": null,
     "access": "大濠公園駅から徒歩9分\n赤坂駅から徒歩9分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/ohorikoen-akasaka/）をご確認ください",
+    "url": "https://bodyhackerslab.com/ohorikoen-akasaka/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -109532,14 +109554,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -109616,55 +109630,83 @@
       {
         "id": "mNUvTRDzbJQG5jhl",
         "name": "レシピ提供"
+      },
+      {
+        "id": "4JsEjXzikuOX5CIA",
+        "name": "女性専用"
       }
     ],
     "pricePlans": [
       {
-        "id": "XLw5kE6bjTQRwXas",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "zEfHUVKQN3iLsji9",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "cokaDcVWTKYPeYVr",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "Q80qUff2UnUi4UAV",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "he8Y83Elx0UC1OP3",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "krlLo0hCtsaOstBB",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "1vYwyemQMJ42A2zV",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "6rP6ibeEXT5gVS6f",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "M1gIXkDTKS0yKONL",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "rBkCvJaQxyhwBPHE",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -109845,10 +109887,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -109937,7 +109975,6 @@
     "_wardName": "中央区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -120716,7 +120753,7 @@
   },
   "/gyms/bodyhl/ropponmatsu": {
     "id": "RtODi9dGS9vZOji7",
-    "updatedAt": "2026-02-08T02:11:32.738Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:16:28.857Z",
     "group": null,
     "_draft": null,
@@ -120745,12 +120782,12 @@
     "wardId": "5PitPlFgCqouAqzx",
     "telephoneNumber": null,
     "access": "六本松駅から徒歩3分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし\n24時間自主トレエリアの利用が可能です",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/ropponmatsu/）をご確認ください",
+    "url": "https://bodyhackerslab.com/ropponmatsu/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -120771,51 +120808,75 @@
     },
     "pricePlans": [
       {
-        "id": "X1gknxlVMVg39s0m",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "TWXST7KaWP2VyHT3",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "OLsNGRikNcUurHOn",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "1Cc3h9r8ConYJ4Db",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "3nDSkULwubnOCgLs",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "DVvKWOV4NoOScK93",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "Z3w3kH7iCxFEoQv8",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "h6TN2aIaKdjnP1ok",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "TIDx0qgDnFHBzC6k",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "7AMwVEDSdxRIapc1",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -120859,14 +120920,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -121115,10 +121168,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -121207,7 +121256,6 @@
     "_wardName": "中央区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -124626,7 +124674,7 @@
   },
   "/gyms/bodyhl/kasugahara": {
     "id": "AKdnwr0E3DQJEkkz",
-    "updatedAt": "2026-02-08T02:13:19.044Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.752Z",
     "group": null,
     "_draft": null,
@@ -124654,13 +124702,13 @@
     "cityId": "47SPhhGcaepDJb0m",
     "wardId": null,
     "telephoneNumber": null,
-    "access": "西鉄「春日原」駅より徒歩2分\nJR「春日」駅より徒歩5分\nイオン大野城より徒歩5分\n程度",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし\n24時間自主トレエリアの利用が可能です",
-    "url": null,
+    "access": "西鉄「春日原」駅より徒歩2分\nJR「春日」駅より徒歩5分\nイオン大野城より徒歩5分",
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/kasugabaru-onojou/）をご確認ください",
+    "url": "https://bodyhackerslab.com/kasugabaru-onojou/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -124769,51 +124817,75 @@
     ],
     "pricePlans": [
       {
-        "id": "GSGek4zaRwYPnupM",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "o3bINrMGEQVnUVzx",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "K1FZjRL4kja0c9ZM",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "9XaXfKgf1zkjpqod",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "r2NTMwo5U3rbj41g",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "ze06sdBEJ4hxNNTY",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "98FXi7dCy49iG7Pu",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "g7luUDKbc0q3rRJz",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "E9z8zsrHhgiRBniJ",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "o7SAYbsCtZ4KDPTA",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -124861,14 +124933,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -125029,10 +125093,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -125098,7 +125158,6 @@
     "_wardName": null,
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -127296,7 +127355,7 @@
   },
   "/gyms/bodyhl/takamiya": {
     "id": "5dXGTbXHmjCrj0oX",
-    "updatedAt": "2026-02-08T02:13:19.716Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.574Z",
     "group": null,
     "_draft": null,
@@ -127325,12 +127384,12 @@
     "wardId": "qma5OpTWASiSl6Ij",
     "telephoneNumber": null,
     "access": "高宮駅から徒歩3分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-takamiya/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-takamiya/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -127343,51 +127402,75 @@
     },
     "pricePlans": [
       {
-        "id": "UFgdW7L25gkDhY4D",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "rLMekXFSr1NlJnJ6",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "h8YD5S4kiSJFpVN4",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "yEbxLKOdWNzmCkUq",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "VbpPvdRpFDoTdiC8",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "ppr3GMGNHcxHWkeX",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "FCxaxlnUkqkvPW8Y",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "Msp9fd1wL0Qm6hck",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "UDGqwbGJaYHjqvwl",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "DHgWnO3TjEL66bwn",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -127439,14 +127522,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -127523,6 +127598,14 @@
       {
         "id": "mNUvTRDzbJQG5jhl",
         "name": "レシピ提供"
+      },
+      {
+        "id": "4JsEjXzikuOX5CIA",
+        "name": "女性専用"
+      },
+      {
+        "id": "1kCwLQbLh12rgQoe",
+        "name": "駐車場"
       }
     ],
     "paymentMethods": [
@@ -127633,10 +127716,6 @@
       {
         "key": "002",
         "name": "食事指導"
-      },
-      {
-        "key": "003",
-        "name": "入会金不要"
       },
       {
         "key": "031",
@@ -127787,7 +127866,6 @@
     "_wardName": "南区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -211870,7 +211948,7 @@
   },
   "/gyms/bodyhl/ohashi": {
     "id": "X4CPamjCePBKj8Bp",
-    "updatedAt": "2026-02-08T02:13:19.371Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.574Z",
     "group": null,
     "_draft": null,
@@ -211899,12 +211977,12 @@
     "wardId": "qma5OpTWASiSl6Ij",
     "telephoneNumber": null,
     "access": "大橋駅から徒歩3分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-ohashi/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-ohashi/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -211925,51 +212003,75 @@
     },
     "pricePlans": [
       {
-        "id": "PNmDPOYcnjo8qIQM",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "x9A6wLPbiJzZuoPV",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "jMVEKa0l6r2EjZGu",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "mSmCLfTxoQaCI5Ny",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "18AFwqd6oRZgggF7",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "hzDePyiYhlIIZ0qY",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "lIzgzwOHZ6QdkW6h",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "jvjrHpm4HtQni4a9",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "oyYwdZcXZuRKuvuH",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "jTwPqcDQuCrPX13U",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -212014,14 +212116,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -212098,6 +212192,14 @@
       {
         "id": "mNUvTRDzbJQG5jhl",
         "name": "レシピ提供"
+      },
+      {
+        "id": "4JsEjXzikuOX5CIA",
+        "name": "女性専用"
+      },
+      {
+        "id": "1kCwLQbLh12rgQoe",
+        "name": "駐車場"
       }
     ],
     "rentalItems": [
@@ -212269,10 +212371,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -212361,7 +212459,6 @@
     "_wardName": "南区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -329238,7 +329335,7 @@
   },
   "/gyms/bodyhl/efukuoka": {
     "id": "AQAYTYireoEdtzW6",
-    "updatedAt": "2026-02-08T02:13:18.555Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:09.443Z",
     "group": null,
     "_draft": null,
@@ -329267,12 +329364,12 @@
     "wardId": "Rlv2icwYMVrOQRHD",
     "telephoneNumber": null,
     "access": "箱崎九大前駅から徒歩2分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-higashiku/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-higashiku/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -329311,51 +329408,75 @@
     "trainers": [],
     "pricePlans": [
       {
-        "id": "z7TLWV4uF17sVZLd",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "tO9RQdPEwdpsC1RN",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "tUUo0VU5nUSZ9NYF",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "dhnIhq3emUXjebAj",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "ISrXKV8UisQP6CBE",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "q7zwHVU18DQqXwM0",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "MrwthO0VnTlcwaBP",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "TpawWVuNjUZyMgmc",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "pXeRGFZR6KXE65fx",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "uA9RA0ryCShuEFdL",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -329364,10 +329485,6 @@
       {
         "key": "002",
         "name": "食事指導"
-      },
-      {
-        "key": "003",
-        "name": "入会金不要"
       },
       {
         "key": "031",
@@ -329434,14 +329551,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -329729,7 +329838,6 @@
     "_wardName": "東区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -441020,7 +441128,7 @@
   },
   "/gyms/bodyhl/meinohama": {
     "id": "4lReZVvWNmyg290m",
-    "updatedAt": "2026-02-08T02:13:19.237Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.754Z",
     "group": null,
     "_draft": null,
@@ -441043,18 +441151,18 @@
     "addressPrefecture": null,
     "addressMunicipalities": null,
     "addressStreet": null,
-    "address": "福岡県福岡市西区姪浜4-10-19 エヌ・エイ・エムビル2F",
+    "address": "福岡県福岡市西区姪浜4-10-19 エヌ・エイ・エムビル202号",
     "prefectureId": "axgcJO48Myb4Ei7P",
     "cityId": "wNsMjZWgHmX7QTpu",
     "wardId": "sSn8Npj3yhOIlYJ9",
     "telephoneNumber": null,
     "access": "地下鉄姪浜駅から徒歩2分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし\n24時間自主トレエリアの利用が可能です",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/meinohama/）をご確認ください",
+    "url": "https://bodyhackerslab.com/meinohama/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -441076,51 +441184,75 @@
     "trainers": [],
     "pricePlans": [
       {
-        "id": "oFmSg2JDmvd2STxe",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "yGp20siGeEIj0FaO",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "hOur1M3ijdy9EkFM",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "PHbOwkYR7Q6r4FII",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "yXWT4ni3refdGmzy",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "9VA1wMUlljTVQpwN",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "Lr5UCXB6VppsmhdH",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "rN7w8TiZjpDZgZeO",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "9P7wjz8jhpGEmDa7",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "GP4t2UZjCadYRAMA",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -441234,10 +441366,6 @@
       {
         "key": "002",
         "name": "食事指導"
-      },
-      {
-        "key": "003",
-        "name": "入会金不要"
       },
       {
         "key": "031",
@@ -441365,14 +441493,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -441515,7 +441635,6 @@
     "_wardName": "西区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -447766,7 +447885,7 @@
   },
   "/gyms/bodyhl/kurume": {
     "id": "K04ziAkfWrxKbQFM",
-    "updatedAt": "2026-11-06T00:00:00.000Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:09.555Z",
     "group": null,
     "_draft": null,
@@ -447916,7 +448035,7 @@
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月6日に確認）。",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月6日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
@@ -469693,7 +469812,7 @@
   },
   "/gyms/bodyhl/chihaya": {
     "id": "V6mVONoaeyeQtCHp",
-    "updatedAt": "2026-02-08T02:11:31.471Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:16:28.875Z",
     "group": null,
     "_draft": null,
@@ -469721,13 +469840,13 @@
     "cityId": "wNsMjZWgHmX7QTpu",
     "wardId": "Rlv2icwYMVrOQRHD",
     "telephoneNumber": null,
-    "access": "香椎駅から徒歩7分\n西鉄香椎駅から徒歩4分\n香椎宮前駅から徒歩2分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "access": "香椎宮前駅から徒歩2分\n香椎駅から徒歩4分\n千早駅から徒歩11分",
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/f-chihaya/）をご確認ください",
+    "url": "https://bodyhackerslab.com/f-chihaya/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -469786,14 +469905,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -469874,51 +469985,75 @@
     ],
     "pricePlans": [
       {
-        "id": "2SZbbuYC078kbUUa",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "d6o1aBOtChw9TFAc",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "o4UuNTIgrudoAB7o",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "NCI97jHygnuVNhZ2",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "0DFPyIDT7Lp58JVP",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "971hEU5ztOl7lu8F",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "mvZSw7j6sTafOace",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "xKgCdJDgLKWcEVMa",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "ZwOd6NavqHPG9dC0",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "60zkk2p3hZJzArDC",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -470033,10 +470168,6 @@
       {
         "key": "002",
         "name": "食事指導"
-      },
-      {
-        "key": "003",
-        "name": "入会金不要"
       },
       {
         "key": "031",
@@ -470184,7 +470315,6 @@
     "_wardName": "東区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -505936,7 +506066,7 @@
   },
   "/gyms/bodyhl/sumiyoshi": {
     "id": "foS267FvYc1n7M6v",
-    "updatedAt": "2026-02-08T02:13:19.529Z",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
     "createdAt": "2025-12-25T11:17:10.669Z",
     "group": null,
     "_draft": null,
@@ -505965,12 +506095,12 @@
     "wardId": "iu2VoAakuxpL7xyY",
     "telephoneNumber": null,
     "access": "博多駅から徒歩10分\nバス停住吉4丁目から徒歩2分",
-    "openingHours": "年中無休:0:00〜24:00\n定休日なし",
-    "url": null,
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/hakata-sumiyoshi/）をご確認ください",
+    "url": "https://bodyhackerslab.com/hakata-sumiyoshi/",
     "affiliateLink": "",
     "affiliateLinkCvTag": "",
     "catchcopy": "福岡で「安い×結果」で選ぶなら！ボディハッカーズラボ【全13店舗展開】",
-    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。月額19,800円（税抜）?で通い放題と、コスパの高さも魅力。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
+    "lead": "福岡で圧倒的支持を集めるパーソナルジム、ボディハッカーズラボ。\nマンツーマン指導のパーソナルジムとして福岡県内13店舗を展開（※2025年9月時点）し、店舗数No.1を誇ります。98％の方が「結果」「トレーナーの人柄」「指導の質」に満足しています。\nさらに、広々とした女性専用プライベート空間で、赤ちゃん連れ・子連れでの通学もOK。産後ダイエットにも最適な、ママに優しいパーソナルジムです。",
     "featuredImage": {},
     "featuredImageAlt": null,
     "featuredImageCite": null,
@@ -505980,51 +506110,75 @@
     "trainers": [],
     "pricePlans": [
       {
-        "id": "Hakk14rA1k8wTYY4",
-        "name": "月2回",
-        "membershipFee": 22000,
-        "price": 19250,
-        "sessionCount": "2",
+        "id": "52pGxPC3hwInkV6O",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
         "isRecommended": false
       },
       {
-        "id": "kTQbOJM4JMVcBeNV",
-        "name": "月4回",
-        "membershipFee": 22000,
-        "price": 38280,
-        "sessionCount": "4",
+        "id": "MAW3U4WowxV7ZNlB",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "PZXDYYOnvXRvHRx7",
-        "name": "月8回",
-        "membershipFee": 22000,
-        "price": 76450,
-        "sessionCount": "8",
+        "id": "PoscUKtJL1kkgUBB",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
         "numberOfTimes": null,
         "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
         "isRecommended": false
       },
       {
-        "id": "iGeL3nJaglHQxbhA",
-        "name": "通い放題コース",
-        "membershipFee": 22000,
-        "price": 21780,
-        "sessionCount": "無制限",
+        "id": "93BHrMfcj8XUtDrb",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
         "numberOfTimes": null,
-        "minutes": 30,
+        "minutes": 60,
         "days": 30,
-        "note": "・表記の料金で通う場合、12ヶ月の継続が必要 12ヶ月よりもっと短い期間縛りの場合、金額変更あり\n・初回食事指導つきのコース\n・専属トレーナーがマンツーマンで指導",
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "Di7JGB4GXIs004xk",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "3SKSiOTmHN9OY1Xc",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
         "isRecommended": false
       }
     ],
@@ -506068,14 +506222,6 @@
       {
         "id": "lV7bwsP4oRNlgcKh",
         "name": "食事指導"
-      },
-      {
-        "id": "hSvoqkFkXCCDRqDt",
-        "name": "入会金不要"
-      },
-      {
-        "id": "ZKS5zbvLiS84AC1j",
-        "name": "早朝深夜"
       },
       {
         "id": "jIvw9PJp2YTGI8os",
@@ -506270,10 +506416,6 @@
         "name": "食事指導"
       },
       {
-        "key": "003",
-        "name": "入会金不要"
-      },
-      {
         "key": "031",
         "name": "健康・体型維持"
       },
@@ -506427,7 +506569,6 @@
     "_wardName": "博多区",
     "_tagKeys": [
       "002",
-      "003",
       "031",
       "023",
       "019",
@@ -583413,5 +583554,491 @@
       "032",
       "027"
     ]
+  },
+  "/gyms/bodyhl/fukutsu-fukuma": {
+    "id": "fwhPq2ozZNx65pMK",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
+    "createdAt": "2026-11-11T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-11T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "P9mh7V71alhqyqDx",
+    "slug": "fukutsu-fukuma",
+    "name": "福津・福間店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": 0,
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験3回無料（完全新規のレビューモニター限定・Web/LINE予約のみ・条件あり）。体験の流れは90〜120分で、カウンセリング・身体の状態のチェック・運動の導入を行います。",
+    "trialTrainingRequiredItems": "体験の場合は室内シューズ、運動のできる服装（レンタルの場合は有料）",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "福岡県福津市中央1-19-7 福津中央ビル201号",
+    "prefectureId": "axgcJO48Myb4Ei7P",
+    "cityId": null,
+    "wardId": null,
+    "telephoneNumber": null,
+    "access": "JR福間駅から徒歩11分\nマクドナルド福津店から徒歩1分",
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/fukutsu-fukuma/）をご確認ください",
+    "url": "https://bodyhackerslab.com/fukutsu-fukuma/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "マンツーマン指導・子連れOK・完全予約制のパーソナルジム【ボディハッカーズラボ全14店舗】",
+    "lead": "ボディハッカーズラボ福津・福間店は、福岡・熊本で14店舗を展開するパーソナルジム「ボディハッカーズラボ」（運営：株式会社スマイルアカデミー）の店舗です。JR福間駅から徒歩11分、マクドナルド福津店から徒歩1分の場所にあり、専用駐車場があります。\n1回60分、専属トレーナーによるマンツーマン指導で、トレーニングのほかマシンピラティス・食事・コンディショニングのサポートを受けられます。完全個室で、子連れ・ベビーカーでの来店にも対応しています。\n料金はブランド共通で、プレミアム会員（7ヶ月継続）の週1回コースが月額43,780円（税込）からです。体験3回無料は完全新規のレビューモニター限定（条件あり）のご案内です。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "paymentMethods": [],
+    "ageRatio": null,
+    "pricePlans": [
+      {
+        "id": "8H11ADKsxa5vxfAF",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
+        "isRecommended": false
+      },
+      {
+        "id": "2XNOdRBPvPchfXcw",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "l1qnlb8IAgAAbxZN",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "aP5BHUZS2fx5cevr",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "zjl26Jaq9ywiOYUk",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "bahcos9zjVYzqFe2",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "nearbyStores": [],
+    "trainers": [],
+    "reviews": [],
+    "features": [
+      {
+        "id": "sGSCtxosyziST0Qi",
+        "name": "月額制"
+      },
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "6zdj3YfuB4n4u0Tt",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "id": "Zv2NMCiMcVmi004t",
+        "name": "トレーナー担当制"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "qW52olWvgbex8Hyq",
+        "name": "完全個室"
+      },
+      {
+        "id": "1kCwLQbLh12rgQoe",
+        "name": "駐車場"
+      }
+    ],
+    "rentalItems": [],
+    "metadata": null,
+    "tags": [
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "019",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "010",
+        "name": "完全個室"
+      },
+      {
+        "key": "009",
+        "name": "月額制"
+      }
+    ],
+    "prefecture": {
+      "id": "axgcJO48Myb4Ei7P",
+      "updatedAt": "2025-10-23T06:06:18.744Z",
+      "createdAt": "2025-10-23T06:06:18.744Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:18.738Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "400009",
+      "type": "pref",
+      "name": "福岡県",
+      "kana": "ﾌｸｵｶｹﾝ",
+      "prefCode": "400009",
+      "prefKana": "ﾌｸｵｶｹﾝ",
+      "prefName": "福岡県",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "city": {
+      "code": "402249",
+      "type": "city",
+      "name": "福岡県福津市",
+      "prefCode": "400009",
+      "prefName": "福岡県",
+      "cityCode": "402249",
+      "cityName": "福津市",
+      "wardName": null
+    },
+    "_prefCode": "400009",
+    "_prefName": "福岡県",
+    "_cityCode": "402249",
+    "_cityName": "福津市",
+    "_wardCode": null,
+    "_wardName": null,
+    "_tagKeys": [
+      "002",
+      "023",
+      "019",
+      "017",
+      "010",
+      "009"
+    ],
+    "ward": null
+  },
+  "/gyms/bodyhl/ooe-suizenji": {
+    "id": "n8eu6X8ogiryFJY6",
+    "updatedAt": "2026-11-11T00:00:00.000Z",
+    "createdAt": "2026-11-11T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-11T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "P9mh7V71alhqyqDx",
+    "slug": "ooe-suizenji",
+    "name": "大江・水前寺店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": null,
+    "trialPlan1CounselingTime": null,
+    "trialPlan1Price": 0,
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "",
+    "trialPlanSupplement": "体験3回無料（完全新規のレビューモニター限定・Web/LINE予約のみ・条件あり）。体験の流れは90〜120分で、カウンセリング・身体の状態のチェック・運動の導入を行います。",
+    "trialTrainingRequiredItems": "体験の場合は室内シューズ、運動のできる服装（レンタルの場合は有料）",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "熊本県熊本市中央区大江6丁目20-6 T-areaビル4F",
+    "prefectureId": "Vd9H9wpjULAsqml4",
+    "cityId": "04IWBP5wGNBJqlwH",
+    "wardId": "FYrFRXr0xubHg85A",
+    "telephoneNumber": null,
+    "access": "JR水前寺駅から徒歩4分\n味噌天神前駅から徒歩9分",
+    "openingHours": "完全予約制\n最新の営業時間は公式店舗ページ（https://bodyhackerslab.com/kumamoto-ooe-suizenji/）をご確認ください",
+    "url": "https://bodyhackerslab.com/kumamoto-ooe-suizenji/",
+    "affiliateLink": "",
+    "affiliateLinkCvTag": "",
+    "catchcopy": "マンツーマン指導・子連れOK・完全予約制のパーソナルジム【ボディハッカーズラボ全14店舗】",
+    "lead": "ボディハッカーズラボ大江・水前寺店は、福岡・熊本で14店舗を展開するパーソナルジム「ボディハッカーズラボ」（運営：株式会社スマイルアカデミー）の熊本の店舗です。JR水前寺駅から徒歩4分、味噌天神前駅から徒歩9分の場所にあります。\n1回60分、専属トレーナーによるマンツーマン指導で、トレーニング・食事・コンディショニングのサポートを受けられます。完全個室で、子連れ・ベビーカーでの来店にも対応しています。\n料金はブランド共通で、プレミアム会員（7ヶ月継続）の週1回コースが月額43,780円（税込）からです。体験3回無料は完全新規のレビューモニター限定（条件あり）のご案内です。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "paymentMethods": [],
+    "ageRatio": null,
+    "pricePlans": [
+      {
+        "id": "eTSAyCyR9uH5sHFw",
+        "name": "プレミアム会員 週1回コース",
+        "membershipFee": null,
+        "price": 43780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": "月額料金（税込）。プレミアム会員は7ヶ月、スタンダード会員は3ヶ月の継続が条件で、ライトは継続条件なしです。1回60分・専属トレーナーによるマンツーマン指導で、初回の食事指導が付きます。ペア30%割引・ブライダル10%割引あり。入会金などのその他の費用、最新の料金・利用条件は公式店舗ページをご確認ください（公式サイトの料金表で2026年11月11日に確認）。体験3回無料は、完全新規の方で、体験後のアンケートなどにご協力いただけるレビューモニターの方限定です（Web・LINE予約のみ・その他条件あり。公式サイトで2026年11月11日に確認）。",
+        "isRecommended": false
+      },
+      {
+        "id": "SEUbQVTwDTgWohjs",
+        "name": "プレミアム会員 週2回コース",
+        "membershipFee": null,
+        "price": 87560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "L0h3jP2UDBR9v85O",
+        "name": "スタンダード会員 週1回コース",
+        "membershipFee": null,
+        "price": 52580,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "OsY8tB1UQeMNkPa0",
+        "name": "スタンダード会員 週2回コース",
+        "membershipFee": null,
+        "price": 105160,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "FLNRVZKoBLTLAwOc",
+        "name": "ライト 週1回コース",
+        "membershipFee": null,
+        "price": 65780,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "pXE1B9kAnwKJDwl9",
+        "name": "ライト 週2回コース",
+        "membershipFee": null,
+        "price": 131560,
+        "sessionCount": null,
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 30,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "nearbyStores": [],
+    "trainers": [],
+    "reviews": [],
+    "features": [
+      {
+        "id": "sGSCtxosyziST0Qi",
+        "name": "月額制"
+      },
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "6zdj3YfuB4n4u0Tt",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "id": "Zv2NMCiMcVmi004t",
+        "name": "トレーナー担当制"
+      },
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "qW52olWvgbex8Hyq",
+        "name": "完全個室"
+      }
+    ],
+    "rentalItems": [],
+    "metadata": null,
+    "tags": [
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "019",
+        "name": "女性トレーナー在籍"
+      },
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "010",
+        "name": "完全個室"
+      },
+      {
+        "key": "009",
+        "name": "月額制"
+      }
+    ],
+    "prefecture": {
+      "id": "Vd9H9wpjULAsqml4",
+      "updatedAt": "2025-10-23T06:06:18.898Z",
+      "createdAt": "2025-10-23T06:06:18.898Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:18.892Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "430005",
+      "type": "pref",
+      "name": "熊本県",
+      "kana": "ｸﾏﾓﾄｹﾝ",
+      "prefCode": "430005",
+      "prefKana": "ｸﾏﾓﾄｹﾝ",
+      "prefName": "熊本県",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "city": {
+      "code": "431001",
+      "type": "city",
+      "name": "熊本県熊本市",
+      "prefCode": "430005",
+      "prefName": "熊本県",
+      "cityCode": "431001",
+      "cityName": "熊本市",
+      "wardName": null
+    },
+    "_prefCode": "430005",
+    "_prefName": "熊本県",
+    "_cityCode": "431001",
+    "_cityName": "熊本市",
+    "_wardCode": "431010",
+    "_wardName": "中央区",
+    "_tagKeys": [
+      "002",
+      "023",
+      "019",
+      "017",
+      "010",
+      "009"
+    ],
+    "ward": {
+      "id": "FYrFRXr0xubHg85A",
+      "updatedAt": "2025-10-23T06:09:14.570Z",
+      "createdAt": "2025-10-23T06:09:14.570Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:09:14.566Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "431010",
+      "type": "ward",
+      "name": "熊本県熊本市中央区",
+      "kana": "ｸﾏﾓﾄｹﾝｸﾏﾓﾄｼﾁｭｳｵｳｸ",
+      "prefCode": "430005",
+      "prefKana": "ｸﾏﾓﾄｹﾝ",
+      "prefName": "熊本県",
+      "cityCode": "431001",
+      "cityName": "熊本市",
+      "cityKana": "ｸﾏﾓﾄｼ",
+      "wardName": "中央区",
+      "wardKana": "ﾁｭｳｵｳｸ"
+    }
   }
 }
