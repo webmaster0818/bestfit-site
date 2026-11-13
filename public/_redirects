@@ -179,3 +179,32 @@
 /gyms/listed/e-stretchgym /articles/station/shibuya 301
 /gyms/listed/reborn-myself-2 /articles/station/utsunomiya 301
 /gyms/rebornmyself/fujisawa /articles/station/fujisawa 301
+
+# 2026-11-13 Reborn myself 公式の店舗一覧（梅田・京都駅・大濠公園の3店のみ・11/11・11/13確認）に無い店舗の掲載終了 → 掲載していた記事へ／記事なしは都道府県一覧へ（11/12 宣言の既定案）
+/gyms/rebornmyself/ueno /articles/station/ueno 301
+/gyms/rebornmyself/tokyo /gyms/list/pref-130001 301
+/gyms/rebornmyself/tatikawa /articles/city/tachikawa 301
+/gyms/rebornmyself/hokkaido /articles/city/sapporo 301
+/gyms/rebornmyself/yokohama /articles/city/yokohama 301
+/gyms/rebornmyself/chibashi /articles/pref/chiba 301
+/gyms/rebornmyself/nanba /gyms/list/pref-270008 301
+/gyms/rebornmyself/urawa /articles/station/urawa 301
+/gyms/rebornmyself/machida /gyms/list/pref-130001 301
+/gyms/rebornmyself/gunma /articles/city/takasaki 301
+/gyms/rebornmyself/akabane /articles/station/akabane 301
+/gyms/rebornmyself/kawasaki /articles/city/kawasaki 301
+/gyms/rebornmyself/ziyugaoka /articles/station/jiyugaoka 301
+/gyms/rebornmyself/kashiwa /articles/station/kashiwa 301
+/gyms/rebornmyself/aroundmeieki /articles/city/nagoya 301
+/gyms/rebornmyself/tokorozawa /articles/station/tokorozawa 301
+/gyms/rebornmyself/miyagi /articles/city/sendai 301
+/gyms/rebornmyself/kichijyoji /articles/station/kichijoji 301
+/gyms/rebornmyself/ikebukuro /articles/station/ikebukuro 301
+/gyms/rebornmyself/kanayama /gyms/list/pref-230006 301
+/gyms/rebornmyself/shinjyuku /articles/station/shinjuku 301
+/gyms/rebornmyself/ishikawa /articles/city/kanazawa 301
+/gyms/listed/reborn-myself /articles/city/nagoya 301
+/gyms/listed/reborn-myself-3 /articles/station/kawaguchi 301
+/gyms/listed/gym-0d74a01d /articles/station/tokorozawa 301
+/gyms/listed/gym-f2f92b36 /articles/pref/chiba 301
+/gyms/listed/gym-f16b2892 /articles/station/nishishinjuku 301
