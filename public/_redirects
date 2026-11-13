@@ -1,4 +1,4 @@
-# 閉業により削除した店舗ページ(80)+旧newsスラッグの301。ローンチ前監査(docs/prelaunch-audit-20260729.md) B2対応
+# 由来は docs/redirects-notes.md。静的ルールを先、動的ルール（:pref 等）を後に置く（Cloudflare 推奨）
 /gyms/247workout/asakadai /articles/brand/247workout 301
 /gyms/247workout/honatsugi /articles/brand/247workout 301
 /gyms/247workout/juso /articles/brand/247workout 301
@@ -80,66 +80,28 @@
 /gyms/rprecious/maebashi /articles/brand/rprecious 301
 /gyms/xingfu/tsutsujigaoka /gyms/list/pref-130001 301
 /news/newwebsite-launch /news/website-launch 301
-# 2026-10-09 エクササイズコーチ: 公式サイトに掲載が無い(店舗一覧・直URLともに404)店舗を除外。施主指示
 /gyms/exercisecoach/omiya /gyms/list/pref-110001 301
 /gyms/exercisecoach/kanayama /gyms/list/pref-230006 301
 /gyms/exercisecoach/nagoyaeast /gyms/list/pref-230006 301
 /gyms/listed/exercise-coach-2 /gyms/list/pref-090000 301
 /gyms/listed/exercise-coach-3 /gyms/list/pref-120006 301
-
-# 2026-10-15 kofukokubo は旧CMSの破損複製(中身は春日後楽園店=korakuen と同一・titleだけ甲府国母店)。削除し本物の甲府国母店へ
 /gyms/beyond/kofukokubo /gyms/beyond/kofukombo 301
-# 2026-10-15 大文字違いの重複(同じ吉祥寺店ANNEX店の旧データ)。macOSでは書き出しが片方しか残らず sitemap と食い違っていた
 /gyms/Drtraining/kichijoji /gyms/drtraining/kichijoji 301
-
-# 旧CMSの tag 一覧 → 同条件の feature 一覧へ統合(title重複の解消・2026-10-15)。tag は feature の部分集合
 /gyms/list/tag-001 /gyms/list/feature-4JsEjXzikuOX5CIA 301
-/gyms/list/:pref/tag-001 /gyms/list/:pref/feature-4JsEjXzikuOX5CIA 301
-/gyms/list/:pref/:city/tag-001 /gyms/list/:pref/:city/feature-4JsEjXzikuOX5CIA 301
 /gyms/list/tag-002 /gyms/list/feature-lV7bwsP4oRNlgcKh 301
-/gyms/list/:pref/tag-002 /gyms/list/:pref/feature-lV7bwsP4oRNlgcKh 301
-/gyms/list/:pref/:city/tag-002 /gyms/list/:pref/:city/feature-lV7bwsP4oRNlgcKh 301
 /gyms/list/tag-003 /gyms/list/feature-hSvoqkFkXCCDRqDt 301
-/gyms/list/:pref/tag-003 /gyms/list/:pref/feature-hSvoqkFkXCCDRqDt 301
-/gyms/list/:pref/:city/tag-003 /gyms/list/:pref/:city/feature-hSvoqkFkXCCDRqDt 301
 /gyms/list/tag-007 /gyms/list/feature-BqZK5B9M6HOYg36x 301
-/gyms/list/:pref/tag-007 /gyms/list/:pref/feature-BqZK5B9M6HOYg36x 301
-/gyms/list/:pref/:city/tag-007 /gyms/list/:pref/:city/feature-BqZK5B9M6HOYg36x 301
 /gyms/list/tag-009 /gyms/list/feature-sGSCtxosyziST0Qi 301
-/gyms/list/:pref/tag-009 /gyms/list/:pref/feature-sGSCtxosyziST0Qi 301
-/gyms/list/:pref/:city/tag-009 /gyms/list/:pref/:city/feature-sGSCtxosyziST0Qi 301
 /gyms/list/tag-010 /gyms/list/feature-qW52olWvgbex8Hyq 301
-/gyms/list/:pref/tag-010 /gyms/list/:pref/feature-qW52olWvgbex8Hyq 301
-/gyms/list/:pref/:city/tag-010 /gyms/list/:pref/:city/feature-qW52olWvgbex8Hyq 301
 /gyms/list/tag-012 /gyms/list/feature-jIvw9PJp2YTGI8os 301
-/gyms/list/:pref/tag-012 /gyms/list/:pref/feature-jIvw9PJp2YTGI8os 301
-/gyms/list/:pref/:city/tag-012 /gyms/list/:pref/:city/feature-jIvw9PJp2YTGI8os 301
 /gyms/list/tag-014 /gyms/list/feature-59LjqHB6raw2Edfz 301
-/gyms/list/:pref/tag-014 /gyms/list/:pref/feature-59LjqHB6raw2Edfz 301
-/gyms/list/:pref/:city/tag-014 /gyms/list/:pref/:city/feature-59LjqHB6raw2Edfz 301
 /gyms/list/tag-017 /gyms/list/feature-BFC4ZaxemKF5aWTo 301
-/gyms/list/:pref/tag-017 /gyms/list/:pref/feature-BFC4ZaxemKF5aWTo 301
-/gyms/list/:pref/:city/tag-017 /gyms/list/:pref/:city/feature-BFC4ZaxemKF5aWTo 301
 /gyms/list/tag-019 /gyms/list/feature-6zdj3YfuB4n4u0Tt 301
-/gyms/list/:pref/tag-019 /gyms/list/:pref/feature-6zdj3YfuB4n4u0Tt 301
-/gyms/list/:pref/:city/tag-019 /gyms/list/:pref/:city/feature-6zdj3YfuB4n4u0Tt 301
 /gyms/list/tag-023 /gyms/list/feature-2QXooMFohdFJsYK1 301
-/gyms/list/:pref/tag-023 /gyms/list/:pref/feature-2QXooMFohdFJsYK1 301
-/gyms/list/:pref/:city/tag-023 /gyms/list/:pref/:city/feature-2QXooMFohdFJsYK1 301
 /gyms/list/tag-024 /gyms/list/feature-9vXTMYlGLAhlxdYf 301
-/gyms/list/:pref/tag-024 /gyms/list/:pref/feature-9vXTMYlGLAhlxdYf 301
-/gyms/list/:pref/:city/tag-024 /gyms/list/:pref/:city/feature-9vXTMYlGLAhlxdYf 301
 /gyms/list/tag-025 /gyms/list/feature-2oBS6TpcnxuMKrPw 301
-/gyms/list/:pref/tag-025 /gyms/list/:pref/feature-2oBS6TpcnxuMKrPw 301
-/gyms/list/:pref/:city/tag-025 /gyms/list/:pref/:city/feature-2oBS6TpcnxuMKrPw 301
 /gyms/list/tag-031 /gyms/list/feature-YaZpHT0bvjTrrmI8 301
-/gyms/list/:pref/tag-031 /gyms/list/:pref/feature-YaZpHT0bvjTrrmI8 301
-/gyms/list/:pref/:city/tag-031 /gyms/list/:pref/:city/feature-YaZpHT0bvjTrrmI8 301
 /gyms/list/tag-034 /gyms/list/feature-JkAKV67tH6dRdOGq 301
-/gyms/list/:pref/tag-034 /gyms/list/:pref/feature-JkAKV67tH6dRdOGq 301
-/gyms/list/:pref/:city/tag-034 /gyms/list/:pref/:city/feature-JkAKV67tH6dRdOGq 301
-
-# 2026-10-25 閉店の疑い（公式ドメイン消滅・公式トップ404・公式店舗一覧に無し）で掲載終了 → 掲載していた記事へ（10/24 宣言の既定案）
 /gyms/listed/real-workout /articles/station/ginza 301
 /gyms/listed/gym-466d9a9b /articles/pref/wakayama 301
 /gyms/listed/personal-gym-sun /articles/station/nishinomiya 301
@@ -164,23 +126,15 @@
 /gyms/listed/ideal /articles/city/kitakyusyu 301
 /gyms/listed/challengym /articles/pref/tokushima 301
 /gyms/listed/ally-gym /articles/pref/tokushima 301
-
-# 2026-10-28 閉店の疑い（公式の店舗一覧に無し・店舗ページ404）で掲載終了 → 掲載していた記事へ（10/27 宣言の既定案）
 /gyms/listed/gym-f0316cb7 /articles/city/tachikawa 301
 /gyms/listed/firstclass-trainers-30 /articles/station/toyonaka 301
 /gyms/listed/rizap /articles/city/yokohama 301
 /gyms/listed/apple-gym-15 /articles/station/akabane 301
 /gyms/rizap/hachioji /articles/brand/rizap 301
-
-# 2026-10-30 2026年12月末閉店（afb の告知・施主指示）で掲載終了 → 掲載していた記事へ（ブランド記事なし）
 /gyms/exercisecoach/tokihawasada /articles/pref/oita 301
-
-# 2026-11-03 閉店の疑い（公式の店舗一覧に無し・11/3確認）で掲載終了 → 掲載していた記事へ（11/2 宣言の既定案）
 /gyms/listed/e-stretchgym /articles/station/shibuya 301
 /gyms/listed/reborn-myself-2 /articles/station/utsunomiya 301
 /gyms/rebornmyself/fujisawa /articles/station/fujisawa 301
-
-# 2026-11-13 Reborn myself 公式の店舗一覧（梅田・京都駅・大濠公園の3店のみ・11/11・11/13確認）に無い店舗の掲載終了 → 掲載していた記事へ／記事なしは都道府県一覧へ（11/12 宣言の既定案）
 /gyms/rebornmyself/ueno /articles/station/ueno 301
 /gyms/rebornmyself/tokyo /gyms/list/pref-130001 301
 /gyms/rebornmyself/tatikawa /articles/city/tachikawa 301
@@ -208,3 +162,33 @@
 /gyms/listed/gym-0d74a01d /articles/station/tokorozawa 301
 /gyms/listed/gym-f2f92b36 /articles/pref/chiba 301
 /gyms/listed/gym-f16b2892 /articles/station/nishishinjuku 301
+/gyms/list/:pref/tag-001 /gyms/list/:pref/feature-4JsEjXzikuOX5CIA 301
+/gyms/list/:pref/:city/tag-001 /gyms/list/:pref/:city/feature-4JsEjXzikuOX5CIA 301
+/gyms/list/:pref/tag-002 /gyms/list/:pref/feature-lV7bwsP4oRNlgcKh 301
+/gyms/list/:pref/:city/tag-002 /gyms/list/:pref/:city/feature-lV7bwsP4oRNlgcKh 301
+/gyms/list/:pref/tag-003 /gyms/list/:pref/feature-hSvoqkFkXCCDRqDt 301
+/gyms/list/:pref/:city/tag-003 /gyms/list/:pref/:city/feature-hSvoqkFkXCCDRqDt 301
+/gyms/list/:pref/tag-007 /gyms/list/:pref/feature-BqZK5B9M6HOYg36x 301
+/gyms/list/:pref/:city/tag-007 /gyms/list/:pref/:city/feature-BqZK5B9M6HOYg36x 301
+/gyms/list/:pref/tag-009 /gyms/list/:pref/feature-sGSCtxosyziST0Qi 301
+/gyms/list/:pref/:city/tag-009 /gyms/list/:pref/:city/feature-sGSCtxosyziST0Qi 301
+/gyms/list/:pref/tag-010 /gyms/list/:pref/feature-qW52olWvgbex8Hyq 301
+/gyms/list/:pref/:city/tag-010 /gyms/list/:pref/:city/feature-qW52olWvgbex8Hyq 301
+/gyms/list/:pref/tag-012 /gyms/list/:pref/feature-jIvw9PJp2YTGI8os 301
+/gyms/list/:pref/:city/tag-012 /gyms/list/:pref/:city/feature-jIvw9PJp2YTGI8os 301
+/gyms/list/:pref/tag-014 /gyms/list/:pref/feature-59LjqHB6raw2Edfz 301
+/gyms/list/:pref/:city/tag-014 /gyms/list/:pref/:city/feature-59LjqHB6raw2Edfz 301
+/gyms/list/:pref/tag-017 /gyms/list/:pref/feature-BFC4ZaxemKF5aWTo 301
+/gyms/list/:pref/:city/tag-017 /gyms/list/:pref/:city/feature-BFC4ZaxemKF5aWTo 301
+/gyms/list/:pref/tag-019 /gyms/list/:pref/feature-6zdj3YfuB4n4u0Tt 301
+/gyms/list/:pref/:city/tag-019 /gyms/list/:pref/:city/feature-6zdj3YfuB4n4u0Tt 301
+/gyms/list/:pref/tag-023 /gyms/list/:pref/feature-2QXooMFohdFJsYK1 301
+/gyms/list/:pref/:city/tag-023 /gyms/list/:pref/:city/feature-2QXooMFohdFJsYK1 301
+/gyms/list/:pref/tag-024 /gyms/list/:pref/feature-9vXTMYlGLAhlxdYf 301
+/gyms/list/:pref/:city/tag-024 /gyms/list/:pref/:city/feature-9vXTMYlGLAhlxdYf 301
+/gyms/list/:pref/tag-025 /gyms/list/:pref/feature-2oBS6TpcnxuMKrPw 301
+/gyms/list/:pref/:city/tag-025 /gyms/list/:pref/:city/feature-2oBS6TpcnxuMKrPw 301
+/gyms/list/:pref/tag-031 /gyms/list/:pref/feature-YaZpHT0bvjTrrmI8 301
+/gyms/list/:pref/:city/tag-031 /gyms/list/:pref/:city/feature-YaZpHT0bvjTrrmI8 301
+/gyms/list/:pref/tag-034 /gyms/list/:pref/feature-JkAKV67tH6dRdOGq 301
+/gyms/list/:pref/:city/tag-034 /gyms/list/:pref/:city/feature-JkAKV67tH6dRdOGq 301
