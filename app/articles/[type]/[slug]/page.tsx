@@ -60,6 +60,15 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   // curves: 「カーブス 料金 月額」群が10〜13位・0クリック(GSC 10/17〜21)→公式3プランの実額をtitleに前出し(2026-10-24)
   const brandTitle = bslug === "curves"
     ? `カーブスの料金は月額いくら？店舗7,150円〜・入会金16,500円(税込)と口コミ・評判【2026年10月】｜BEST-FIT`
+    // 口コミ・評判の語で11位以下が続く4ブランド(GSC 10/14〜11/10)→titleの先頭を口コミ・評判に(2026-11-13)
+    : bslug === "rizap"
+    ? `ライザップ(RIZAP)の口コミ・評判｜第三者448件の評価4.5・価格3.07と総額382,800円〜【2026年11月】｜BEST-FIT`
+    : bslug === "247workout"
+    ? `24/7ワークアウトの口コミ・評判｜第三者245件の評価4.43・月4回33,000円〜と返金条件【2026年11月】｜BEST-FIT`
+    : bslug === "drtraining"
+    ? `Dr.トレーニングの口コミ・評判｜マイベスト39サービス中1位・都度払い60分9,900円〜【2026年11月】｜BEST-FIT`
+    : bslug === "b-concept"
+    ? `B-CONCEPTの口コミ・評判｜公式19店舗・太もも総額179,685円と返金制度【2026年11月】｜BEST-FIT`
     : bslug === "fit24"
     ? `FIT24の料金｜全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
     : bp ? `${bp.name}の料金｜月額・入会金・口コミ・評判を比較【2026年】｜BEST-FIT` : m.title;
@@ -219,6 +228,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   // 個別に改修した記事はこちらで上書きする。触っていない記事に新しい日付を出さないため、
   // 一括の定数は変えずに記事単位で持つ(2026-10-09: エクササイズコーチの表記・営業時間・料金を公式実査で修正した20本)
   const ARTICLE_DATE_MODIFIED_BY_PATH: Record<string, string> = {
+    "/articles/brand/drtraining": "2026-11-13",
     "/articles/city/kawasaki": "2026-10-09",
     "/articles/city/kobe": "2026-10-09",
     "/articles/city/tachikawa": "2026-10-09",
@@ -251,10 +261,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/brand/hper": "2026-10-15",
     "/articles/brand/mybodylabo": "2026-10-15",
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
-    "/articles/brand/rizap": "2026-10-17",
-    "/articles/brand/247workout": "2026-10-17",
+    "/articles/brand/rizap": "2026-11-13",
+    "/articles/brand/247workout": "2026-11-13",
     "/articles/brand/curves": "2026-10-24",
-    "/articles/brand/b-concept": "2026-10-17",
+    "/articles/brand/b-concept": "2026-11-13",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
@@ -341,6 +351,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
             <li>・公式サイトには「お支払い額はコースによって異なります」とあり、同じプランでも店舗・コースにより月会費が異なります。年契約割引のあるコースを途中で退会した場合は、割引額の差額精算金がかかります（会員規約第15条）。</li>
             <li>・入会金無料などのキャンペーンを実施している時期は、初月・1年目の総額が上表より下がります。総額には退会時の手数料や物販は含めていません。</li>
             <li>・店舗プランは月に何回通っても同じ料金です。週2回（月8回）通った場合、1回あたりは約894円～1,045円です（月会費÷8回で当サイトが計算）。</li>
+          </ul>
+        </section>
+      )}
+      {bsup?.lead && (
+        <section className="bf-card p-5 mb-6">
+          <h2 className="bf-h2 mb-3">{bsup.lead.title}</h2>
+          <ul className="space-y-2 text-sm leading-7" style={{ color: "var(--bf-ink)" }}>
+            {bsup.lead.items.map((it: string, i: number) => (
+              <li key={i} dangerouslySetInnerHTML={{ __html: "・" + it }} />
+            ))}
           </ul>
         </section>
       )}
