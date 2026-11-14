@@ -69,6 +69,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
     ? `Dr.トレーニングの口コミ・評判｜マイベスト39サービス中1位・都度払い60分9,900円〜【2026年11月】｜BEST-FIT`
     : bslug === "b-concept"
     ? `B-CONCEPTの口コミ・評判｜公式19店舗・太もも総額179,685円と返金制度【2026年11月】｜BEST-FIT`
+    // furdi は brand-price に無いため urls-meta の title を使う(2026-11-14 に口コミ・評判の形へ更新)
     : bslug === "fit24"
     ? `FIT24の料金｜全118店舗の月会費を実査【2026年8月】割引・退会方法まで｜BEST-FIT`
     : bp ? `${bp.name}の料金｜月額・入会金・口コミ・評判を比較【2026年】｜BEST-FIT` : m.title;
@@ -174,14 +175,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   // ブランド記事×店舗DB統合(2026-07-31): 店舗一覧+独自集計(全て自社DB/Googleマップ実測評点から自動生成・捏造なし)
   const STORE_BRAND_MAP: Record<string, string> = { katagirijuku: "katagiri", "miyazaki-gym": "miyazakigym", "b-concept": "bconcept", "the-personal-gym": "tpg" };
   const storeBrandSlug = isBrand ? (STORE_BRAND_MAP[prm.slug] || prm.slug) : null;
+  // 公式の店舗一覧に無い店舗はブランド記事の店舗一覧・集計から外す(2026-11-14 公式確認)
+  // rizap: 公式店舗検索100店に新宿女性専用店・上野女性専用店が無い / b-concept: 公式19店に横浜・蒲田・北千住・神楽坂・銀座・下北沢が無い
+  const ARTICLE_STORE_EXCLUDE: Record<string, string[]> = {
+    rizap: ["/gyms/rizap/wshinjuku", "/gyms/rizap/wueno"],
+    "b-concept": ["/gyms/bconcept/yokohama", "/gyms/bconcept/kamata", "/gyms/bconcept/kitasenjyu", "/gyms/bconcept/kagurazaka", "/gyms/bconcept/ginza", "/gyms/bconcept/shimokita"],
+  };
   const brandStores = (() => {
     if (!storeBrandSlug) return [] as { path: string; name: string; pref: string; prefCode: string; rating?: number; freeJoin: boolean }[];
     const all = stores() as Record<string, any>;
     const tax = taxonomies() as any;
     const reviews = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "place-reviews.json"), "utf-8"));
     const list: { path: string; name: string; pref: string; prefCode: string; rating?: number; freeJoin: boolean }[] = [];
+    const excluded = new Set(ARTICLE_STORE_EXCLUDE[prm.slug] || []);
     for (const [sp, st] of Object.entries(all)) {
       if (!sp.startsWith(`/gyms/${storeBrandSlug}/`)) continue;
+      if (excluded.has(sp)) continue;
       const plans = (Array.isArray(st.pricePlans) ? st.pricePlans : []).filter((pl: any) => typeof pl.price === "number" && pl.price > 0);
       const joinFees = plans.map((pl: any) => pl.membershipFee).filter((n: any) => typeof n === "number");
       const prefCode = st._prefCode || "";
@@ -252,7 +261,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     // 2026-10-14: TRYVEの料金・体験料金・紹介文を運営会社の依頼と公式サイトで更新
     "/articles/city/sendai": "2026-10-14",
     // 2026-10-15: 提携8ブランドの口コミ・評判記事を新設（公式確認）
-    "/articles/brand/furdi": "2026-10-15",
+    "/articles/brand/furdi": "2026-11-14",
     "/articles/brand/amazones": "2026-10-15",
     "/articles/brand/ekimaego-go": "2026-10-15",
     "/articles/brand/bbb": "2026-10-15",
@@ -261,10 +270,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/brand/hper": "2026-10-15",
     "/articles/brand/mybodylabo": "2026-10-15",
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
-    "/articles/brand/rizap": "2026-11-13",
+    "/articles/brand/rizap": "2026-11-14",
     "/articles/brand/247workout": "2026-11-13",
     "/articles/brand/curves": "2026-10-24",
-    "/articles/brand/b-concept": "2026-11-13",
+    "/articles/brand/b-concept": "2026-11-14",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
