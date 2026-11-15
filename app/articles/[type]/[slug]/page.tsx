@@ -366,24 +366,24 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
       )}
       {isCurvesArticle && (
         <section className="bf-card p-5 mb-6">
-          <h2 className="bf-h2 mb-3">カーブスの口コミ・評判の結論（Googleマップ1,053店舗・23,148件を当サイトが集計）</h2>
+          <h2 className="bf-h2 mb-3">カーブスの口コミ・評判の結論（Googleマップ1,044店舗・23,009件を当サイトが集計）</h2>
           <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-ink)" }}>
-            当サイトがGoogleマップ（Google Places API）からカーブス1,070店舗の評点を取得し（2026年7月8日取得）、評点のある1,053店舗・口コミ合計23,148件を集計した結果は次のとおりです。全体としては高い評価が多い一方で、評価は店舗によって差があります。
+            当サイトがGoogleマップ（Google Places API）から取得したカーブスの店舗データ（2026年7月8日取得）のうち、本社（株式会社カーブスジャパン）とメンズ・カーブス10店舗を除いた1,059店舗について、評点のある1,044店舗・口コミ合計23,009件を集計した結果は次のとおりです。全体としては高い評価が多い一方で、評価は店舗によって差があります。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse mb-3">
               <tbody>
                 <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">口コミ件数で重みづけした平均</td><td className="p-2 text-right font-bold">★4.46</td></tr>
                 <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">店舗評点の中央値（1店舗あたりの口コミ件数の中央値）</td><td className="p-2 text-right">★4.5（20件）</td></tr>
-                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.5以上の店舗</td><td className="p-2 text-right">603店舗（57.3%）</td></tr>
-                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.0〜4.4の店舗</td><td className="p-2 text-right">360店舗（34.2%）</td></tr>
-                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5〜3.9の店舗</td><td className="p-2 text-right">70店舗（6.6%）</td></tr>
-                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5未満の店舗</td><td className="p-2 text-right">20店舗（1.9%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.5以上の店舗</td><td className="p-2 text-right">596店舗（57.1%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.0〜4.4の店舗</td><td className="p-2 text-right">359店舗（34.4%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5〜3.9の店舗</td><td className="p-2 text-right">70店舗（6.7%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5未満の店舗</td><td className="p-2 text-right">19店舗（1.8%）</td></tr>
               </tbody>
             </table>
           </div>
           <ul className="text-[12px] leading-6" style={{ color: "var(--bf-muted)" }}>
-            <li>・集計対象は当サイトがGoogleマップで取得できた1,070店舗で、公式サイトが案内する全国約2,000店舗の約半数です。取得後に評点が変わっている場合があります。</li>
+            <li>・集計対象は当サイトがGoogleマップで取得できた店舗（女性向けのカーブス1,059店舗）で、公式サイトが案内する全国約2,000店舗の約半数です。公式の店舗一覧との1店舗ずつの照合はしていません。取得後に評点が変わっている場合があります。</li>
             <li>・Googleマップの評点は投稿者が任意に付けたもので、カーブス以外の要因（立地・駐車場など）を含む場合があります。口コミ件数が少ない店舗は1件で評点が大きく動くため、件数もあわせてご確認ください。</li>
             <li>・通う予定の店舗の評点と件数は、下の「カーブスとの相性と近くの店舗を診断」で確認できます。</li>
             <li>・公式サイトには年代別の<a href="https://www.curves.co.jp/voice/" target="_blank" rel="noopener" className="underline">お客様の声</a>が掲載されています（2026年11月15日確認）。口コミサイト「みん評」にもカーブスのページがありますが、当サイトの環境からは閲覧できなかったため、件数・点数は掲載しておりません。</li>
