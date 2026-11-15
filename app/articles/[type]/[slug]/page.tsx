@@ -59,7 +59,8 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   // fit24=全118店舗実査(2026-08-02)を訴求(「fit24 料金」pos5.3のtop3奪取・公式が一覧を出していない空白)
   // curves: 「カーブス 料金 月額」群が10〜13位・0クリック(GSC 10/17〜21)→公式3プランの実額をtitleに前出し(2026-10-24)
   const brandTitle = bslug === "curves"
-    ? `カーブスの料金は月額いくら？店舗7,150円〜・入会金16,500円(税込)と口コミ・評判【2026年10月】｜BEST-FIT`
+    // 2026-11-15: 「カーブス 口コミ」147表示・14.2位(GSC 10/16〜11/12)。上位はみん評(件数・平均点)→自社のGoogleマップ集計をtitleに追加
+    ? `カーブスの料金は月額いくら？店舗7,150円〜・入会金16,500円(税込)｜口コミはGoogle2.3万件で平均4.46【2026年11月】｜BEST-FIT`
     // 口コミ・評判の語で11位以下が続く4ブランド(GSC 10/14〜11/10)→titleの先頭を口コミ・評判に(2026-11-13)
     : bslug === "rizap"
     ? `ライザップ(RIZAP)の口コミ・評判｜第三者448件の評価4.5・価格3.07と総額382,800円〜【2026年11月】｜BEST-FIT`
@@ -272,7 +273,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
     "/articles/brand/rizap": "2026-11-14",
     "/articles/brand/247workout": "2026-11-13",
-    "/articles/brand/curves": "2026-10-24",
+    "/articles/brand/curves": "2026-11-15",
     "/articles/brand/b-concept": "2026-11-14",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
@@ -325,7 +326,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           <h2 className="bf-h2 mb-3">カーブスの月会費・入会金一覧と1年目の総額の目安</h2>
           <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-muted)" }}>
             カーブスの月会費は、店舗に通う「店舗プラン」で月7,150円～8,360円（税込）、入会金は通常16,500円（税込）です。下表の月会費・入会金は
-            <a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>の記載（2026年10月24日確認）で、初月・1年目の総額は当サイトがその金額から計算した目安です。
+            <a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>の記載（2026年10月24日確認・2026年11月15日再確認）で、初月・1年目の総額は当サイトがその金額から計算した目安です。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -360,6 +361,32 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
             <li>・公式サイトには「お支払い額はコースによって異なります」とあり、同じプランでも店舗・コースにより月会費が異なります。年契約割引のあるコースを途中で退会した場合は、割引額の差額精算金がかかります（会員規約第15条）。</li>
             <li>・入会金無料などのキャンペーンを実施している時期は、初月・1年目の総額が上表より下がります。総額には退会時の手数料や物販は含めていません。</li>
             <li>・店舗プランは月に何回通っても同じ料金です。週2回（月8回）通った場合、1回あたりは約894円～1,045円です（月会費÷8回で当サイトが計算）。</li>
+          </ul>
+        </section>
+      )}
+      {isCurvesArticle && (
+        <section className="bf-card p-5 mb-6">
+          <h2 className="bf-h2 mb-3">カーブスの口コミ・評判の結論（Googleマップ1,053店舗・23,148件を当サイトが集計）</h2>
+          <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-ink)" }}>
+            当サイトがGoogleマップ（Google Places API）からカーブス1,070店舗の評点を取得し（2026年7月8日取得）、評点のある1,053店舗・口コミ合計23,148件を集計した結果は次のとおりです。全体としては高い評価が多い一方で、評価は店舗によって差があります。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse mb-3">
+              <tbody>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">口コミ件数で重みづけした平均</td><td className="p-2 text-right font-bold">★4.46</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">店舗評点の中央値（1店舗あたりの口コミ件数の中央値）</td><td className="p-2 text-right">★4.5（20件）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.5以上の店舗</td><td className="p-2 text-right">603店舗（57.3%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★4.0〜4.4の店舗</td><td className="p-2 text-right">360店舗（34.2%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5〜3.9の店舗</td><td className="p-2 text-right">70店舗（6.6%）</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">★3.5未満の店舗</td><td className="p-2 text-right">20店舗（1.9%）</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-[12px] leading-6" style={{ color: "var(--bf-muted)" }}>
+            <li>・集計対象は当サイトがGoogleマップで取得できた1,070店舗で、公式サイトが案内する全国約2,000店舗の約半数です。取得後に評点が変わっている場合があります。</li>
+            <li>・Googleマップの評点は投稿者が任意に付けたもので、カーブス以外の要因（立地・駐車場など）を含む場合があります。口コミ件数が少ない店舗は1件で評点が大きく動くため、件数もあわせてご確認ください。</li>
+            <li>・通う予定の店舗の評点と件数は、下の「カーブスとの相性と近くの店舗を診断」で確認できます。</li>
+            <li>・公式サイトには年代別の<a href="https://www.curves.co.jp/voice/" target="_blank" rel="noopener" className="underline">お客様の声</a>が掲載されています（2026年11月15日確認）。口コミサイト「みん評」にもカーブスのページがありますが、当サイトの環境からは閲覧できなかったため、件数・点数は掲載しておりません。</li>
           </ul>
         </section>
       )}
