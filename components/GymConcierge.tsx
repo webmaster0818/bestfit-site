@@ -5,7 +5,7 @@ import Link from "next/link";
 
 type Store = {
   path: string; brand: string; name: string; pref: string; city: string; access: string;
-  feat: string[]; aff: string; per: number | null; rating: number | null; count: number | null;
+  feat: string[]; aff: string | null; per: number | null; rating: number | null; count: number | null;
   lat: number | null; lng: number | null; join0: boolean;
 };
 
@@ -230,7 +230,7 @@ export default function GymConcierge() {
                     </p>
                     <div className="flex gap-2 mt-1.5">
                       <Link href={s.path} className="text-[11px] underline" style={{ color: "var(--bf-muted)" }}>詳細を見る</Link>
-                      <a href={s.aff} rel="sponsored nofollow" target="_blank" className="text-[11px] font-bold underline" style={{ color: "var(--bf-primary)" }}>公式サイトで無料カウンセリング予約 →</a>
+                      {s.aff && <a href={s.aff} rel="sponsored nofollow" target="_blank" className="text-[11px] font-bold underline" style={{ color: "var(--bf-primary)" }}>公式サイトで無料カウンセリング予約 →</a>}
                     </div>
                   </div>
                 ))}
