@@ -6471,3 +6471,14 @@
 /gyms/list/pref-130001/city-132039/feature-2QXooMFohdFJsYK1
 /gyms/list/pref-140007/city-141305/feature-4JsEjXzikuOX5CIA
 /gyms/list/pref-230006/city-231002/feature-2QXooMFohdFJsYK1
+# 11/21 追加: 公式一覧外の8店舗（B-CONCEPT 6・RIZAP 女性専用2）の取り下げで掲載が4件以下になり、11/8 の基準（掲載4件以下は sitemap 外）で外れた10件（新宿区1・台東区5・足立区4）。11/13 追加分と同じ扱い（回答B）
+/gyms/list/pref-130001/city-131041/feature-2QXooMFohdFJsYK1
+/gyms/list/pref-130001/city-131067/feature-HSeX50Qlr0q6aAyz
+/gyms/list/pref-130001/city-131067/feature-Run8chbSV5svsIYQ
+/gyms/list/pref-130001/city-131067/feature-ZFZmxowrn6Aurtnr
+/gyms/list/pref-130001/city-131067/feature-ZKS5zbvLiS84AC1j
+/gyms/list/pref-130001/city-131067/feature-mBt29zJ4mzvSfHHD
+/gyms/list/pref-130001/city-131211/feature-5Xdw8OmlLhakG0u2
+/gyms/list/pref-130001/city-131211/feature-BFC4ZaxemKF5aWTo
+/gyms/list/pref-130001/city-131211/feature-eRU0YicppbCLy4yg
+/gyms/list/pref-130001/city-131211/feature-jIvw9PJp2YTGI8os
