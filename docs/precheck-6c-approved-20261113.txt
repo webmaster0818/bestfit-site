@@ -6482,3 +6482,6 @@
 /gyms/list/pref-130001/city-131211/feature-BFC4ZaxemKF5aWTo
 /gyms/list/pref-130001/city-131211/feature-eRU0YicppbCLy4yg
 /gyms/list/pref-130001/city-131211/feature-jIvw9PJp2YTGI8os
+# 11/24 追加: 閉店の疑い5店の掲載終了（RISE 藤沢）で掲載が4件以下になり、11/8 の基準（掲載4件以下は sitemap 外）で外れた2件（藤沢市）。11/13 追加分と同じ扱い（回答B）
+/gyms/list/pref-140007/city-142051/feature-6zdj3YfuB4n4u0Tt
+/gyms/list/pref-140007/city-142051/feature-Zv2NMCiMcVmi004t
