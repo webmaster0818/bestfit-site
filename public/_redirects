@@ -205,3 +205,7 @@
 /gyms/list/:pref/:city/tag-031 /gyms/list/:pref/:city/feature-YaZpHT0bvjTrrmI8 301
 /gyms/list/:pref/tag-034 /gyms/list/:pref/feature-JkAKV67tH6dRdOGq 301
 /gyms/list/:pref/:city/tag-034 /gyms/list/:pref/:city/feature-JkAKV67tH6dRdOGq 301
+/gyms/rise/fujisawa /articles/station/fujisawa 301
+/gyms/ritastyle/kagoshima /articles/pref/kagoshima 301
+/gyms/gasy/nishishinjuku /articles/station/nishishinjuku 301
+/gyms/listed/gym-939660a8 /articles/station/kashiwa 301
