@@ -273,7 +273,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
     "/articles/brand/rizap": "2026-11-14",
     "/articles/brand/247workout": "2026-11-13",
-    "/articles/brand/curves": "2026-11-15",
+    "/articles/brand/curves": "2026-11-25",
     "/articles/brand/b-concept": "2026-11-14",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
@@ -326,7 +326,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
           <h2 className="bf-h2 mb-3">カーブスの月会費・入会金一覧と1年目の総額の目安</h2>
           <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-muted)" }}>
             カーブスの月会費は、店舗に通う「店舗プラン」で月7,150円～8,360円（税込）、入会金は通常16,500円（税込）です。下表の月会費・入会金は
-            <a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>の記載（2026年10月24日確認・2026年11月15日再確認）で、初月・1年目の総額は当サイトがその金額から計算した目安です。
+            <a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>の記載（2026年10月24日確認・2026年11月25日再確認）で、初月・1年目の総額は当サイトがその金額から計算した目安です。
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -387,6 +387,45 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
             <li>・Googleマップの評点は投稿者が任意に付けたもので、カーブス以外の要因（立地・駐車場など）を含む場合があります。口コミ件数が少ない店舗は1件で評点が大きく動くため、件数もあわせてご確認ください。</li>
             <li>・通う予定の店舗の評点と件数は、下の「カーブスとの相性と近くの店舗を診断」で確認できます。</li>
             <li>・公式サイトには年代別の<a href="https://www.curves.co.jp/voice/" target="_blank" rel="noopener" className="underline">お客様の声</a>が掲載されています（2026年11月15日確認）。口コミサイト「みん評」にもカーブスのページがありますが、当サイトの環境からは閲覧できなかったため、件数・点数は掲載しておりません。</li>
+          </ul>
+        </section>
+      )}
+      {isCurvesArticle && (
+        <section className="bf-card p-5 mb-6" id="w-plan">
+          {/* 2026-11-25 12:00成長ルーチン：「カーブス wプラン 口コミ」37表示・10.8位（GSC 11/16〜24）。上位はみん評（全般）のみでWプラン専用の情報が無い → 公式（11/25確認）と公式エッセイ9件の当サイト集計を追加 */}
+          <h2 className="bf-h2 mb-3">カーブスのWプラン（店舗＋おうち）の料金・口コミ</h2>
+          <p className="text-sm leading-7 mb-3" style={{ color: "var(--bf-ink)" }}>
+            Wプランは、店舗での運動と、スマホ・タブレットで受講する「おうちでカーブス」の両方を利用できるプランです。<a href="https://www.curves.co.jp/" target="_blank" rel="noopener" className="underline">カーブス公式サイト</a>では月8,300円（税込9,130円）と案内されています（2026年11月25日確認）。店舗プラン（税込7,150円～8,360円）との差額は月770円～1,980円、年間では9,240円～23,760円です（当サイトが公式の金額から計算）。
+          </p>
+          <h3 className="font-bold text-sm mb-2" style={{ color: "var(--bf-ink)" }}>「おうちでカーブス」で利用できる内容（公式サイト・2026年11月25日確認）</h3>
+          <ul className="text-sm leading-7 mb-3" style={{ color: "var(--bf-ink)" }}>
+            <li>・1回の運動は1日6分から選べます。録画メニューは24時間視聴でき、予約不要で参加できる生放送メニューもあります。</li>
+            <li>・飛んだり跳ねたりしない運動で、椅子1つ分のスペースがあれば実施できると案内されています。</li>
+            <li>・専用アプリが必要です。アプリは初回の無料体験時に店舗でインストールし、ログインできるのは入会した方のみです。</li>
+            <li>・初回の無料体験は店舗への来店と予約が必要です。また、おうちでカーブスを実施していない店舗が一部あります。</li>
+          </ul>
+          <h3 className="font-bold text-sm mb-2" style={{ color: "var(--bf-ink)" }}>Wプラン利用者の声の傾向（公式エッセイ9件を当サイトが分類）</h3>
+          <p className="text-sm leading-7 mb-2" style={{ color: "var(--bf-ink)" }}>
+            Wプランに絞った口コミをまとめたページは、2026年11月25日時点で見当たりませんでした。そこで、カーブス公式サイトの「カーブス体験談 エッセイ大賞 2023」で<a href="https://www.curves.co.jp/convey/essay/2023/symptom/cat-9000/cat-9024/" target="_blank" rel="noopener" className="underline">「おうちでカーブス」に分類されている入賞作品9件</a>を当サイトがすべて読み、使い方と理由を数えました。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse mb-3">
+              <tbody>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">店舗とおうちを併用（うち「Wプラン」と明記3件）</td><td className="p-2 text-right font-bold">5件</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">おうちのみ、または一時的におうちへ切り替え（帰省先での滞在・店舗の閉鎖・店舗が遠い）</td><td className="p-2 text-right">3件</td></tr>
+                <tr className="border-b" style={{ borderColor: "var(--bf-line)" }}><td className="p-2">本文から併用かどうか判断できない</td><td className="p-2 text-right">1件</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ul className="text-sm leading-7 mb-3" style={{ color: "var(--bf-ink)" }}>
+            <li>・<strong>併用を始めた理由（5件）</strong>：仕事や予定で店舗に行ける回数が減った3件、店舗まで遠く通えない日がある1件、Wプランを知って興味を持った1件でした。雪の時期や職場の事情で店舗に行けない間も自宅で続けられた、という内容が目立ちます。</li>
+            <li>・<strong>よかった点として書かれていること</strong>：短いメニューやストレッチなら毎日できる、生放送で店舗のコーチとつながれる、予約なしで空いた時間に運動できる、といった点です。</li>
+            <li>・<strong>始めは戸惑った点として書かれていること（2件）</strong>：マシンの代わりに使うボールやバンドに慣れるまで時間がかかった、マシンなしで筋トレになるのか不安だった、という内容です。</li>
+            <li>・個人のブログ（<a href="https://ameblo.jp/uka0914/entry-12875534254.html" target="_blank" rel="noopener" className="underline">うっかりうかちゃん「おうちでカーブス始めました」</a>）では、店舗に行けない月が続いたためWプランに切り替えたこと、会費とは別にヨガマット・ボール・ゴムバンドなどの用具一式を購入したことが書かれています（金額の記載はありません）。用具の要否と費用は、入会予定の店舗でご確認ください。</li>
+          </ul>
+          <ul className="text-[12px] leading-6" style={{ color: "var(--bf-muted)" }}>
+            <li>・公式エッセイは入賞作品のため、好意的な内容に偏っています。満足度の割合を示すものではありません。</li>
+            <li>・店舗に月に何回も通える方は店舗プランで足ります。店舗に行けない週がある方、店舗まで遠い方は、差額（月770円～1,980円）と自宅で続けられるかを比べてご判断ください。</li>
           </ul>
         </section>
       )}
