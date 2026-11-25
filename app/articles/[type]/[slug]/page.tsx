@@ -271,8 +271,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/brand/hper": "2026-10-15",
     "/articles/brand/mybodylabo": "2026-10-15",
     // 2026-10-17: 口コミ・評判の上位記事と比較し、料金総額・返金/退会の規約・口コミ集計の出典を追加（公式確認）
-    "/articles/brand/rizap": "2026-11-14",
-    "/articles/brand/247workout": "2026-11-13",
+    "/articles/brand/rizap": "2026-11-26",
+    "/articles/brand/247workout": "2026-11-26",
     "/articles/brand/curves": "2026-11-25",
     "/articles/brand/b-concept": "2026-11-14",
   };
