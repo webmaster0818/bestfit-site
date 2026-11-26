@@ -275,6 +275,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/brand/247workout": "2026-11-26",
     "/articles/brand/curves": "2026-11-25",
     "/articles/brand/b-concept": "2026-11-14",
+    // 2026-11-27: 0:00受け皿強化（ELEMENT：規約・メニュー・店舗数・口コミの出典件数／ASPI：マンスリー料金と入会金条件を公式店舗ページどおりに是正）
+    "/articles/brand/element": "2026-11-27",
+    "/articles/brand/aspi": "2026-11-27",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
