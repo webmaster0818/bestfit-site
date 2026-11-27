@@ -15,3 +15,4 @@
 
 2026-11-13: 本番で末尾4本の静的ルールが効かない事象（ファイル約12.4KB・193ルール目以降）。コメントを外し、静的→動的の順（Cloudflare 推奨）に並べ替えた。
 - 2026-11-24: /gyms/rise/fujisawa・/gyms/ritastyle/kagoshima・/gyms/gasy/nishishinjuku・/gyms/listed/gym-939660a8（ヴェリアス）→ 各記事へ 301（公式の店舗一覧に無い・11/23 宣言の既定案）
+- 2026-11-27 /gyms/tryve/sendai → /gyms/tryve/jozenji 301（TRYVE 仙台駅前店は公式一覧に無し・施主承認の切り替え）
