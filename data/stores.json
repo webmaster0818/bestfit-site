@@ -573879,5 +573879,368 @@
       "wardName": "中央区",
       "wardKana": "ﾁｭｳｵｳｸ"
     }
+  },
+  "/gyms/tpg/toyosu": {
+    "id": "tDKPcAgkuk85UKYR",
+    "updatedAt": "2026-11-27T00:00:00.000Z",
+    "createdAt": "2026-11-27T00:00:00.000Z",
+    "group": null,
+    "_draft": null,
+    "_published": true,
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "scheduledPublishAt": null,
+    "scheduledUnpublishAt": null,
+    "brandId": "79FtVHLN7VbNgXuV",
+    "slug": "toyosu",
+    "name": "豊洲店",
+    "basicInformation": null,
+    "trialPlan1TrainingTime": "40",
+    "trialPlan1CounselingTime": "30",
+    "trialPlan1Price": "0",
+    "trialPlan2CounselingTime": null,
+    "trialPlan2Price": null,
+    "trialDiscountInfo": "公式サイトでは、体験トレーニング・カウンセリング・入会金はすべて無料と案内されています。店舗回答（2026年11月27日）では、体験当日の入会で入会金（22,000円）が無料になります。",
+    "trialPlanSupplement": "無料体験は約90分です。カウンセリング（約30分）、体験パーソナルトレーニング（約40分）、フィードバック（約20分）の流れで進みます。",
+    "trialTrainingRequiredItems": "動きやすい服装（運動着）と室内用シューズをお持ちください。レンタルウェアもあります。",
+    "addressPrefecture": null,
+    "addressMunicipalities": null,
+    "addressStreet": null,
+    "address": "東京都江東区豊洲四丁目1-5 寿和ビル3階",
+    "prefectureId": "738pdVp3oSDvqoNF",
+    "cityId": "MSNG8lEXnte1vOIk",
+    "wardId": null,
+    "telephoneNumber": null,
+    "access": "豊洲駅（東京メトロ有楽町線）4番出口から徒歩約1分\n豊洲駅（ゆりかもめ）から徒歩約3分",
+    "openingHours": "07:00~23:00\n最終受付22:00",
+    "url": null,
+    "affiliateLink": "https://px.a8.net/svt/ejp?a8mat=45E3Q1+1PBO36+5I98+5YJRM",
+    "affiliateLinkCvTag": "<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www17.a8.net/0.gif?a8mat=45E3Q1+1PBO36+5I98+5YJRM\" alt=\"\">",
+    "catchcopy": "豊洲駅4番出口から徒歩約1分、朝7時から夜23時まで営業のパーソナルジム",
+    "lead": "THE PERSONAL GYM 豊洲店は、東京メトロ有楽町線「豊洲駅」4番出口から徒歩約1分、ゆりかもめ「豊洲駅」から徒歩約3分の場所にあるパーソナルジムです。営業時間は7:00〜23:00（最終受付22:00）で、お仕事帰りにも立ち寄りやすい時間帯に営業しています。店内は約79㎡で、マルチラック2台やレッグエクステンションなどのマシンを備え、更衣室は2つあります。ウェア・タオルのレンタルがあり、トレーナーの指名や食事指導にも対応しています。コースは、食事管理付きのボディメイクコンサルコース、回数券、月額コースの3種類です。",
+    "featuredImage": {},
+    "featuredImageAlt": null,
+    "featuredImageCite": null,
+    "recommendedFor": null,
+    "exposeToConsumerFlag": true,
+    "score": null,
+    "genderRatio": null,
+    "features": [
+      {
+        "id": "2QXooMFohdFJsYK1",
+        "name": "ダイエット"
+      },
+      {
+        "id": "lV7bwsP4oRNlgcKh",
+        "name": "食事指導"
+      },
+      {
+        "id": "59LjqHB6raw2Edfz",
+        "name": "手ぶらOK"
+      },
+      {
+        "id": "ZKS5zbvLiS84AC1j",
+        "name": "早朝深夜"
+      },
+      {
+        "id": "hSvoqkFkXCCDRqDt",
+        "name": "入会金不要"
+      },
+      {
+        "id": "sGSCtxosyziST0Qi",
+        "name": "月額制"
+      },
+      {
+        "id": "Zv2NMCiMcVmi004t",
+        "name": "トレーナー担当制"
+      },
+      {
+        "id": "BFC4ZaxemKF5aWTo",
+        "name": "子連れOK"
+      },
+      {
+        "id": "K89P6oZN8FaAOQD9",
+        "name": "シューズ預かり"
+      },
+      {
+        "id": "josLUtWiR7R3bD0u",
+        "name": "マシン"
+      },
+      {
+        "id": "eRU0YicppbCLy4yg",
+        "name": "毎日"
+      },
+      {
+        "id": "ZFZmxowrn6Aurtnr",
+        "name": "管理栄養士"
+      },
+      {
+        "id": "8xj3NofQO8iEPcpD",
+        "name": "カロリー計算"
+      },
+      {
+        "id": "t2WmLnGQV2bmveyJ",
+        "name": "厳しい制限無し"
+      },
+      {
+        "id": "2oBS6TpcnxuMKrPw",
+        "name": "ボディシェイプ"
+      },
+      {
+        "id": "403vA5xN3ljygtXt",
+        "name": "姿勢改善"
+      },
+      {
+        "id": "YaZpHT0bvjTrrmI8",
+        "name": "健康・体型維持"
+      },
+      {
+        "id": "bQwY8HlcHG0GMlZK",
+        "name": "運動不足解消"
+      },
+      {
+        "id": "xTUmb5OjOwC9iZVv",
+        "name": "脱・リバウンド"
+      },
+      {
+        "id": "JkAKV67tH6dRdOGq",
+        "name": "産後ダイエット"
+      }
+    ],
+    "trainers": [],
+    "ageRatio": null,
+    "rentalItems": [
+      {
+        "id": "xjWDCECJWIXRCtTy",
+        "itemId": "8CMxu7D9N8vxonZd",
+        "type": "free"
+      },
+      {
+        "id": "ibWF4lH5Zs0p3oGD",
+        "itemId": "rmNeHCFxvd5Sf6Jt",
+        "type": "free"
+      }
+    ],
+    "reviews": [],
+    "tags": [
+      {
+        "key": "002",
+        "name": "食事指導"
+      },
+      {
+        "key": "003",
+        "name": "入会金不要"
+      },
+      {
+        "key": "034",
+        "name": "産後ダイエット"
+      },
+      {
+        "key": "031",
+        "name": "健康・体型維持"
+      },
+      {
+        "key": "023",
+        "name": "ダイエット"
+      },
+      {
+        "key": "017",
+        "name": "子連れOK"
+      },
+      {
+        "key": "014",
+        "name": "手ぶらOK"
+      },
+      {
+        "key": "009",
+        "name": "月額制"
+      }
+    ],
+    "nearbyStores": [],
+    "pricePlans": [
+      {
+        "id": "cLq0tI1jkszp88r7",
+        "name": "ボディメイクコンサルコース（2ヶ月16回）",
+        "membershipFee": 0,
+        "price": 281600,
+        "sessionCount": "16",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 60,
+        "note": "トレーニング（約60分）のほか、毎日の食事指導、AIカロリー計算、個人ロッカー、水・プロテイン・EAA、ウェア・タオルの無料レンタルを含みます。料金は公式サイトの料金ページの表示です（税込・2026年11月27日時点）。代表トレーナー・店長が担当する場合は料金が異なる店舗があると案内されています。",
+        "isRecommended": false
+      },
+      {
+        "id": "fYkDc96kVncLVPFj",
+        "name": "ボディメイクコンサルコース（3ヶ月24回）",
+        "membershipFee": 0,
+        "price": 408000,
+        "sessionCount": "24",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 90,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "TTZ2bdC37H4KVPRI",
+        "name": "ボディメイクコンサルコース（6ヶ月48回）",
+        "membershipFee": 0,
+        "price": 720000,
+        "sessionCount": "48",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": 180,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "VrEScHcEYpYGky8q",
+        "name": "回数券（10回券）",
+        "membershipFee": 0,
+        "price": 88000,
+        "sessionCount": "10",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": "トレーニング（約60分）とウェア・タオルの無料レンタルを含みます。40回券は1回あたり7,150円です。回数券の有効期限は購入時に券種ごとに案内されます。",
+        "isRecommended": false
+      },
+      {
+        "id": "06jrTAGiDO5psXGH",
+        "name": "回数券（20回券）",
+        "membershipFee": 0,
+        "price": 165000,
+        "sessionCount": "20",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "gQT4Rrg3iuRfFkKf",
+        "name": "回数券（30回券）",
+        "membershipFee": 0,
+        "price": 231000,
+        "sessionCount": "30",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "eb3Q1MSc0sorvCNq",
+        "name": "回数券（40回券）",
+        "membershipFee": 0,
+        "price": 286000,
+        "sessionCount": "40",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "pafMuhXXF9WXIGEY",
+        "name": "月額コース（月2回）",
+        "membershipFee": 0,
+        "price": 17600,
+        "sessionCount": "2",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": "トレーニング（約60分）とウェア・タオルの無料レンタルを含みます。月額コースは分割払いの対象外です。",
+        "isRecommended": false
+      },
+      {
+        "id": "SslBo43qgguc6STN",
+        "name": "月額コース（月4回）",
+        "membershipFee": 0,
+        "price": 33000,
+        "sessionCount": "4",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "scLelQdVJoKerzsd",
+        "name": "月額コース（月6回）",
+        "membershipFee": 0,
+        "price": 47850,
+        "sessionCount": "6",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      },
+      {
+        "id": "EdrSZ9r3LjyzteI7",
+        "name": "月額コース（月8回）",
+        "membershipFee": 0,
+        "price": 61600,
+        "sessionCount": "8",
+        "numberOfTimes": null,
+        "minutes": 60,
+        "days": null,
+        "note": null,
+        "isRecommended": false
+      }
+    ],
+    "paymentMethods": [],
+    "metadata": null,
+    "city": {
+      "code": "131083",
+      "type": "city",
+      "name": "東京都江東区",
+      "prefCode": "130001",
+      "prefName": "東京都",
+      "cityCode": "131083",
+      "cityName": "江東区",
+      "wardName": null
+    },
+    "prefecture": {
+      "id": "738pdVp3oSDvqoNF",
+      "updatedAt": "2025-10-23T06:06:17.201Z",
+      "createdAt": "2025-10-23T06:06:17.201Z",
+      "group": null,
+      "_draft": null,
+      "_published": true,
+      "publishedAt": "2025-10-23T06:06:17.195Z",
+      "scheduledPublishAt": null,
+      "scheduledUnpublishAt": null,
+      "code": "130001",
+      "type": "pref",
+      "name": "東京都",
+      "kana": "ﾄｳｷｮｳﾄ",
+      "prefCode": "130001",
+      "prefKana": "ﾄｳｷｮｳﾄ",
+      "prefName": "東京都",
+      "cityCode": null,
+      "cityName": null,
+      "cityKana": null,
+      "wardName": null,
+      "wardKana": null
+    },
+    "ward": null,
+    "_prefCode": "130001",
+    "_prefName": "東京都",
+    "_cityCode": "131083",
+    "_cityName": "江東区",
+    "_wardCode": null,
+    "_wardName": null,
+    "_tagKeys": [
+      "002",
+      "003",
+      "034",
+      "031",
+      "023",
+      "017",
+      "014",
+      "009"
+    ]
   }
 }
