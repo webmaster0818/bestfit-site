@@ -238,7 +238,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   // 個別に改修した記事はこちらで上書きする。触っていない記事に新しい日付を出さないため、
   // 一括の定数は変えずに記事単位で持つ(2026-10-09: エクササイズコーチの表記・営業時間・料金を公式実査で修正した20本)
   const ARTICLE_DATE_MODIFIED_BY_PATH: Record<string, string> = {
-    "/articles/brand/drtraining": "2026-11-13",
+    "/articles/brand/drtraining": "2026-11-28",
     "/articles/city/kawasaki": "2026-10-09",
     "/articles/city/kobe": "2026-10-09",
     "/articles/city/tachikawa": "2026-10-09",
@@ -278,6 +278,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     // 2026-11-27: 0:00受け皿強化（ELEMENT：規約・メニュー・店舗数・口コミの出典件数／ASPI：マンスリー料金と入会金条件を公式店舗ページどおりに是正）
     "/articles/brand/element": "2026-11-27",
     "/articles/brand/aspi": "2026-11-27",
+    // 2026-11-28: 0:00受け皿強化（UNDEUX：月額制への改定・宅配食・完全個室/専任制の記載を公式どおりに是正／MIYAZAKI GYM：店舗数46・48回の入会金無料の記載を削除・入会金の記載差を明記／Dr.トレーニング：店舗数42・地域別料金・口コミ集計の出典）
+    "/articles/brand/undeux": "2026-11-28",
+    "/articles/brand/miyazaki-gym": "2026-11-28",
+    "/articles/brand/katagirijuku": "2026-11-28",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {
