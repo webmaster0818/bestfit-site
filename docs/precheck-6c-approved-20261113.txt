@@ -6485,3 +6485,17 @@
 # 11/24 追加: 閉店の疑い5店の掲載終了（RISE 藤沢）で掲載が4件以下になり、11/8 の基準（掲載4件以下は sitemap 外）で外れた2件（藤沢市）。11/13 追加分と同じ扱い（回答B）
 /gyms/list/pref-140007/city-142051/feature-6zdj3YfuB4n4u0Tt
 /gyms/list/pref-140007/city-142051/feature-Zv2NMCiMcVmi004t
+# 11/27 追加: TRYVE 仙台駅前店の掲載終了（定禅寺通店へ切り替え・施主承認）で掲載が4件以下になり、11/8 の基準（掲載4件以下は sitemap 外）で外れた13件（宮城県の特徴別5・仙台市の特徴別7・青葉区1）。11/13 追加分と同じ扱い（回答B）
+/gyms/list/pref-040002/city-041009/feature-6zdj3YfuB4n4u0Tt
+/gyms/list/pref-040002/city-041009/feature-K89P6oZN8FaAOQD9
+/gyms/list/pref-040002/city-041009/feature-YaZpHT0bvjTrrmI8
+/gyms/list/pref-040002/city-041009/feature-bQwY8HlcHG0GMlZK
+/gyms/list/pref-040002/city-041009/feature-josLUtWiR7R3bD0u
+/gyms/list/pref-040002/city-041009/feature-qW52olWvgbex8Hyq
+/gyms/list/pref-040002/city-041009/feature-rRtmQaAfI4BBCk09
+/gyms/list/pref-040002/city-041009/ward-041017
+/gyms/list/pref-040002/feature-6zdj3YfuB4n4u0Tt
+/gyms/list/pref-040002/feature-UVLIEY5LG6OxUfpI
+/gyms/list/pref-040002/feature-Zv2NMCiMcVmi004t
+/gyms/list/pref-040002/feature-owcdygZEPEGSEvOQ
+/gyms/list/pref-040002/feature-rRtmQaAfI4BBCk09
