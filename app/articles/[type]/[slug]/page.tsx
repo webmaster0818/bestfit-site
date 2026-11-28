@@ -209,7 +209,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
   })();
   const bsRated = brandStores.filter((s) => typeof s.rating === "number");
   const bsAvg = bsRated.length >= 3 ? bsRated.reduce((a, s) => a + (s.rating || 0), 0) / bsRated.length : null;
-  const showStores = isBrand && brandStores.length >= 2;
+  // 2026-11-28: brand-price に無いブランド記事（gymcube・workoutholic・exe）は本文に店舗リストがあるため出さない（bp が null で落ちるのも防ぐ）
+  const showStores = isBrand && !!bp && brandStores.length >= 2;
   // モバイル最適化: 診断用の全国店舗データ(約820KB)はHTML同梱をやめCurvesFinder側でfetch
   const isCurvesArticle = prm.type === "brand" && prm.slug === "curves";
   const areaArticlesIdx = isCurvesArticle
