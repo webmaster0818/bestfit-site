@@ -12,6 +12,14 @@ const EXTRA_BRAND_ARTICLES = [
   { slug: "dee-gym", name: "Dee GYM" },
   { slug: "hper", name: "HPER" },
   { slug: "mybodylabo", name: "MY BODY LABO" },
+  // 2026-11-28: 11/27 提携の複数店舗ブランド
+  { slug: "applegym", name: "Apple GYM" },
+  { slug: "t-balance", name: "T-BALANCE" },
+  { slug: "evigym", name: "eviGym" },
+  { slug: "gymcube", name: "GYM CUBE" },
+  { slug: "workoutholic", name: "WORKOUTHOLIC" },
+  { slug: "exe", name: "EXE" },
+  { slug: "calorie-trade-japan", name: "CALORIE TRADE JAPAN" },
 ];
 import PageHero from "@/components/PageHero";
 import ArticleEnhancer from "@/components/ArticleEnhancer";
@@ -282,6 +290,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ type: 
     "/articles/brand/undeux": "2026-11-28",
     "/articles/brand/miyazaki-gym": "2026-11-28",
     "/articles/brand/katagirijuku": "2026-11-28",
+    // 2026-11-28: 11/27 提携の複数店舗ブランドの受け皿記事を新設（公式確認）
+    "/articles/brand/applegym": "2026-11-28",
+    "/articles/brand/t-balance": "2026-11-28",
+    "/articles/brand/evigym": "2026-11-28",
+    "/articles/brand/gymcube": "2026-11-28",
+    "/articles/brand/workoutholic": "2026-11-28",
+    "/articles/brand/exe": "2026-11-28",
+    "/articles/brand/calorie-trade-japan": "2026-11-28",
   };
   const canonicalUrl = `https://fit-best.com${m?.canonical || p}`;
   const articleLd = {

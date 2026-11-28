@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { stores, metaFor, brands, storeReviews, brandPrice, listPaths } from "@/lib/data";
+import { stores, metaFor, brands, storeReviews, brandPrice, listPaths, articleHtml } from "@/lib/data";
 import { IcoPin, IcoTrain, IcoYen, IcoClock, IcoPhone, IcoStore, IcoChevron } from "@/components/Ico";
 import PageHero from "@/components/PageHero";
 import { planPriceLabel } from "@/lib/data";
@@ -85,7 +85,8 @@ export default async function StorePage({ params }: { params: Promise<{ brand: s
   // ブランド記事への逆リンク(双方向ハブ化・2026-07-31)。店舗ブランドslug→記事slugの差異を吸収
   const ARTICLE_SLUG_MAP: Record<string, string> = { katagiri: "katagirijuku", miyazakigym: "miyazaki-gym", bconcept: "b-concept", tpg: "the-personal-gym" };
   const articleSlug = ARTICLE_SLUG_MAP[prm.brand.toLowerCase()] || prm.brand.toLowerCase();
-  const brandArticleHref = brandPrice(articleSlug) ? `/articles/brand/${articleSlug}` : null;
+  // 2026-11-28: brand-price に無いブランド記事（11/27 提携の gymcube・workoutholic・exe）も本文があれば逆リンクする
+  const brandArticleHref = brandPrice(articleSlug) || articleHtml(`/articles/brand/${articleSlug}`) ? `/articles/brand/${articleSlug}` : null;
   const plans: any[] = Array.isArray(s.pricePlans) ? s.pricePlans : [];
   const features: any[] = Array.isArray(s.features) ? s.features : [];
   // 近隣店舗: CMSのnearbyStoresは全nullのため、concierge座標DBから実距離で算出(ブランド不問・4件)

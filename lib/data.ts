@@ -205,6 +205,11 @@ const BRAND_ARTICLE_BY_NAME: [RegExp, string, string][] = [
   [/^Dee GYM/i, "/articles/brand/dee-gym", "Dee GYM（ディージム）"],
   [/^HPER/i, "/articles/brand/hper", "HPER（ハイパー）"],
   [/^MY BODY LABO/i, "/articles/brand/mybodylabo", "MY BODY LABO（マイボディラボ）"],
+  // 2026-11-28: 11/27 提携の複数店舗ブランド（掲載ジムの名前で照合）
+  [/^Apple ?GYM/i, "/articles/brand/applegym", "Apple GYM（アップルジム）"],
+  [/^T-BALANCE/i, "/articles/brand/t-balance", "T-BALANCE（ティーバランス）"],
+  [/^eviGym/i, "/articles/brand/evigym", "eviGym（エビジム）"],
+  [/^CALORIE TRADE JAPAN/i, "/articles/brand/calorie-trade-japan", "CALORIE TRADE JAPAN（カロリートレードジャパン）"],
 ];
 export function brandArticleForGymName(name: string): { href: string; name: string } | null {
   const n = (name || "").trim();
